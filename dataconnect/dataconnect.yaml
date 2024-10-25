@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "speak-website-data-connect-service"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "general"
+      cloudSql:
+        instanceId: "speakwebsiteparentdb"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
