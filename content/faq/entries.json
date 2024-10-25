@@ -1,0 +1,32 @@
+{
+  "general": [
+    {
+      "id": "what-is-nft",
+      "question": "What is an NFT?",
+      "answer": "An NFT (Non-Fungible Token) is a unique digital asset that represents ownership of a specific item or piece of content on the blockchain. In our platform, NFTs represent unique voice recordings and audio content.",
+      "tags": ["basics", "nft", "blockchain"]
+    },
+    {
+      "id": "how-to-start",
+      "question": "How do I get started?",
+      "answer": "To get started, connect your wallet, create a profile, and you can begin recording and minting your voice NFTs. Visit our quick start guide for detailed instructions.",
+      "tags": ["getting started", "basics"]
+    }
+  ],
+  "technical": [
+    {
+      "id": "supported-wallets",
+      "question": "Which wallets are supported?",
+      "answer": "We support MetaMask, WalletConnect, and other major Ethereum wallets. Make sure your wallet is compatible with ERC-721 tokens.",
+      "tags": ["wallet", "technical"]
+    }
+  ],
+  "nfts": [
+    {
+      "id": "create-nft",
+      "question": "How do I create a voice NFT?",
+      "answer": "Use our voice recording feature, customize your NFT metadata, set your price, and mint your NFT. The process is simple and guided.",
+      "tags": ["creation", "minting"]
+    }
+  ]
+}

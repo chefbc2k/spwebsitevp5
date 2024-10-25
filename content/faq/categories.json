@@ -1,0 +1,27 @@
+{
+  "general": {
+    "id": "general",
+    "title": "General Questions",
+    "description": "Basic information about our platform and services"
+  },
+  "technical": {
+    "id": "technical",
+    "title": "Technical Support",
+    "description": "Technical questions about using the platform"
+  },
+  "nfts": {
+    "id": "nfts",
+    "title": "NFTs & Digital Assets",
+    "description": "Information about NFTs, creation, and trading"
+  },
+  "legal": {
+    "id": "legal",
+    "title": "Legal & Compliance",
+    "description": "Legal questions and compliance information"
+  },
+  "wallet": {
+    "id": "wallet",
+    "title": "Wallet & Payments",
+    "description": "Questions about wallets and transactions"
+  }
+}

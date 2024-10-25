@@ -1,0 +1,3491 @@
+# Enums
+
+enum AccessLevel {
+  PUBLIC
+  USER_ANON
+  USER
+  USER_EMAIL_VERIFIED
+  NO_ACCESS
+}
+
+enum VoicePitch {
+  BASS
+  BARITONE
+  TENOR
+  ALTO
+  SOPRANO
+  MEZZO_SOPRANO
+  FALSETTO
+  CONTRALTO
+  LYRIC_TENOR
+  DRAMATIC_SOPRANO
+}
+
+enum VoiceTexture {
+  SMOOTH
+  RASPY
+  BREATHY
+  CLEAR
+  HUSKY
+  GRAVELLY
+  SILKY
+  SMOKY
+  CRISP
+  METALLIC
+}
+
+enum VolumeRange {
+  WHISPER
+  SOFT
+  MODERATE
+  LOUD
+  PROJECTION
+  CONTROLLED_CRESCENDOS
+  STAGE_READY
+  THEATER_LEVEL
+  AMPLIFIED
+  POWER_BELT
+}
+
+enum Versatility {
+  SINGLE_STYLE
+  MULTI_STYLE
+  IMPERSONATION
+  SINGING
+  VOICE_ACTING
+  NARRATION
+  MULTI_ACCENT
+  RANGE_FLEXIBILITY
+  EMOTIONAL_RANGE
+  TONE_SHIFTS
+}
+
+enum Language {
+  ENGLISH
+  SPANISH
+  MANDARIN
+  FRENCH
+  ARABIC
+  GERMAN
+  JAPANESE
+  RUSSIAN
+  PORTUGUESE
+  HINDI
+}
+
+enum SecondaryLanguageLevel {
+  FLUENT
+  CONVERSATIONAL
+  BEGINNER
+  MULTILINGUAL
+  CODE_SWITCHING
+  PIDGIN_USE
+  CREOLE_INFLUENCE
+  TRANSLATION_ABILITY
+  BILINGUAL
+  NATIVE_LEVEL_FLUENCY
+}
+
+enum RegionalDialect {
+  SOUTHERN_US_DEEP_SOUTH
+  SOUTHERN_US_APPALACHIAN
+  NEW_YORK_BROOKLYN
+  NEW_YORK_MANHATTAN
+  MIDWESTERN_CHICAGO
+  MIDWESTERN_MINNESOTA
+  WEST_COAST_LA
+  WEST_COAST_SF
+  TEXAN_EAST
+  TEXAN_WEST
+  BOSTONIAN
+  NEW_ORLEANS_YAT
+  PHILADELPHIA_DELCO
+  AAVE
+  CHICANO_ENGLISH_CA
+  CHICANO_ENGLISH_TX
+  VALLEY_GIRL
+  CALIFORNIA_SURFER
+  HAWAIIAN_PIDGIN
+  GENERAL_AMERICAN
+  BRITISH_RP
+  COCKNEY
+  AUSTRALIAN
+  SCOTTISH
+  JAMAICAN_PATOIS
+  QUEBEC_FRENCH
+  MEXICAN_SPANISH
+  MIDDLE_EASTERN_ARABIC
+}
+
+enum TimeZone {
+  GMT
+  EST
+  PST
+  CST
+  IST
+  CET
+  AEST
+  JST
+  SAST
+  UTC
+}
+
+enum StudioAvailability {
+  REMOTE_ONLY
+  STUDIO_REQUIRED
+  HYBRID
+  REMOTE_LIVE_DIRECTION
+  ASYNCHRONOUS
+  LIMITED_STUDIO_ACCESS
+  IN_PERSON_SESSION
+  ON_CALL_AVAILABILITY
+  TRAVEL_READY
+  MOBILE_RECORDING_STUDIO
+}
+
+enum CommercialStyle {
+  UPBEAT
+  CALL_TO_ACTION
+  PROMOTIONAL
+  LUXURY
+  FRIENDLY
+  PROFESSIONAL
+  FUN
+  ENERGETIC
+  RELAXED
+  DIRECT
+}
+
+enum NarrationStyle {
+  FICTION
+  NON_FICTION
+  MEMOIRS
+  FIRST_PERSON
+  THIRD_PERSON
+  INSTRUCTIONAL
+  HISTORICAL
+  DOCUMENTARIES
+  GUIDED_TOURS
+  MEDITATION
+}
+
+enum CharacterStyle {
+  HERO
+  VILLAIN
+  SIDEKICK
+  ANIMAL_LIKE
+  FANTASY
+  SCI_FI
+  CHILDREN_CONTENT
+  MYTHICAL_CREATURES
+  COMEDY
+  HORROR
+}
+
+enum CorporateStyle {
+  MOTIVATIONAL
+  INFORMATIVE
+  LEADERSHIP
+  COACHING
+  TRAINING_MODULES
+  PRESENTATION
+  INSTRUCTIONAL_VIDEOS
+  B2B_COMMUNICATION
+  ONBOARDING
+  COMPLIANCE
+}
+
+enum AudioQuality {
+  BIT_16
+  BIT_24
+  BIT_32
+  MONO
+  STEREO
+  LOSSLESS
+  COMPRESSED
+  WAV
+  FLAC
+  MP3
+}
+
+enum SampleRate {
+  KHZ_44_1
+  KHZ_48
+  KHZ_96
+  KHZ_192
+  KHZ_22
+  CD_QUALITY
+  STREAMING_QUALITY
+  HIGH_FIDELITY
+  ADAPTIVE_BIT_RATE
+  STUDIO_GRADE
+}
+
+enum Equipment {
+  CONDENSER_MIC
+  DYNAMIC_MIC
+  PREAMP
+  MIXER
+  INTERFACE
+  POP_FILTER
+  HEADPHONES
+  DAW
+  SOUNDPROOFING
+  PORTABLE_RECORDING_GEAR
+}
+
+enum PostProduction {
+  EQ
+  COMPRESSION
+  DE_ESSING
+  REVERB
+  NOISE_REMOVAL
+  MASTERING
+  SOUND_DESIGN
+  NORMALIZATION
+  MULTI_TRACK_EDITING
+  SYNC_WITH_VIDEO
+}
+
+enum BroadcastQuality {
+  MASTERED
+  TV_OPTIMIZED
+  STREAMING_OPTIMIZED
+  RADIO_COMPRESSED
+  SUBMISSION_READY
+  VETTED
+  POLISHED
+  FINAL_MIX
+  COMPLIANCE_CHECKED
+  FM_AM_QUALITY
+}
+
+enum ProfessionalGrade {
+  HIGH_QUALITY
+  STUDIO_GRADE
+  FULL_MASTERING
+  PODCAST_OPTIMIZED
+  VOICEOVER_APPROVED
+  MEDIA_READY
+  PORTFOLIO_LEVEL
+  CONSISTENT
+  RELIABLE
+  MARKETABLE
+}
+
+enum ExperienceLevel {
+  NOVICE
+  INTERMEDIATE
+  EXPERT
+}
+
+enum Category {
+  ENTERTAINMENT_MEDIA
+  ADVERTISING_MARKETING
+  ELEARNING_EDUCATION
+  TECHNOLOGY_TELECOM
+  CORPORATE_BUSINESS
+  HEALTHCARE
+  GOVERNMENT_SERVICES
+  TRANSPORTATION
+  HOSPITALITY_TOURISM
+  RETAIL
+  RELIGIOUS_CONTENT
+  REAL_ESTATE
+  EVENT_HOSTING
+  PODCASTS
+  LEGAL
+  FINANCE
+  CONTRACT_TYPES
+  PRICING_MODELS
+}
+
+enum VerificationStatus {
+  VERIFIED
+  UNVERIFIED
+}
+
+enum UserStatus {
+  ACTIVE
+  INACTIVE
+  SUSPENDED
+}
+
+enum ProfileVisibility {
+  PUBLIC
+  PRIVATE
+  FRIENDS_ONLY
+}
+
+enum Theme {
+  LIGHT
+  DARK
+  SYSTEM
+}
+
+enum ClipStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
+enum MarketplaceStatus {
+  LISTED
+  SOLD
+  DELISTED
+  PENDING
+}
+
+enum AIModelType {
+  VOICE_ANALYSIS
+  CONTENT_RECOMMENDATION
+  FRAUD_DETECTION
+  QUALITY_PREDICTION
+  PRICING_OPTIMIZATION
+  TREND_ANALYSIS
+  SENTIMENT_ANALYSIS
+  CONTENT_CATEGORIZATION
+}
+
+enum MLTaskStatus {
+  QUEUED
+  PROCESSING
+  COMPLETED
+  FAILED
+  CANCELLED
+  PENDING_REVIEW
+}
+
+enum QualityCheckType {
+  AUDIO_QUALITY
+  CONTENT_COMPLIANCE
+  COPYRIGHT_VERIFICATION
+  PERFORMANCE_BENCHMARK
+  SECURITY_SCAN
+  METADATA_VALIDATION
+  FORMAT_VALIDATION
+}
+
+enum DisputeStatus {
+  FILED
+  UNDER_REVIEW
+  MEDIATION
+  RESOLVED
+  ESCALATED
+  APPEALED
+  CLOSED
+}
+
+enum DisputeType {
+  COPYRIGHT
+  PAYMENT
+  QUALITY
+  DELIVERY
+  TERMS_VIOLATION
+  CONTENT_OWNERSHIP
+  COLLABORATION_CONFLICT
+}
+
+enum PaymentMethod {
+  CRYPTO
+  FIAT
+  SMART_CONTRACT
+  ESCROW
+  ROYALTY_SPLIT
+  SUBSCRIPTION
+  MICROTRANSACTION
+}
+
+enum PaymentStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+  REFUNDED
+  DISPUTED
+  ESCROW_HELD
+}
+
+enum PlatformType {
+  SOCIAL_MEDIA
+  STREAMING_SERVICE
+  NFT_MARKETPLACE
+  CONTENT_PLATFORM
+  MOBILE_APP
+  WEB_PLATFORM
+  BROADCAST_MEDIA
+}
+
+enum DistributionStatus {
+  QUEUED
+  PROCESSING
+  PUBLISHED
+  FAILED
+  TAKEN_DOWN
+  SCHEDULED
+  ARCHIVED
+}
+
+enum BatchProcessingType {
+  CONTENT_UPLOAD
+  QUALITY_CHECK
+  DISTRIBUTION
+  ANALYTICS
+  PAYMENT_PROCESSING
+  RIGHTS_MANAGEMENT
+}
+
+enum BatchStatus {
+  QUEUED
+  PROCESSING
+  COMPLETED
+  FAILED
+  PARTIAL_SUCCESS
+}
+
+enum SecurityLevel {
+  BASIC
+  ENHANCED
+  PREMIUM
+  ENTERPRISE
+}
+
+enum AuthenticationMethod {
+  PASSWORD
+  TWO_FACTOR
+  BIOMETRIC
+  HARDWARE_KEY
+  SMART_CONTRACT
+  MULTI_SIG
+}
+
+enum OrderDirection {
+  ASC
+  DESC
+}
+
+enum IndexFieldOrder {
+  ASC
+  DESC
+}
+
+enum IndexType {
+  BTREE
+  GIN
+  HNSW
+  IVFFLAT
+}
+
+enum VectorSimilarityMethod {
+  L2
+  COSINE
+  INNER_PRODUCT
+}
+
+# Scalars
+
+scalar DateTime
+scalar Upload
+scalar Vector
+scalar Email
+scalar URL
+scalar JSON
+scalar SchemaCoordinate
+scalar UUID @specifiedBy(url: "https://tools.ietf.org/html/rfc4122")
+scalar Int64
+scalar Any @specifiedBy(url: "https://www.json.org/json-en.html")
+scalar Void
+scalar True @fdc_forbiddenAsFieldType @fdc_forbiddenAsVariableType @fdc_example(value: true, description: "The only allowed value.")
+scalar Boolean_Expr @specifiedBy(url: "https://github.com/google/cel-spec") @fdc_celExpression(returnType: "bool") @fdc_forbiddenAsVariableType @fdc_forbiddenAsFieldType @fdc_example(value: "auth != null", description: "Allow only if a Firebase Auth user is present.")
+scalar String_Expr @specifiedBy(url: "https://github.com/google/cel-spec") @fdc_celExpression(returnType: "string") @fdc_forbiddenAsVariableType @fdc_forbiddenAsFieldType @fdc_example(value: "auth.uid", description: "The ID of the currently logged in user in Firebase Auth. (Errors if not logged in.)") @fdc_example(value: "uuidV4()", description: "Generates a new random UUID (version 4) string, formatted as 32 lower-case hex digits without delimiters.")
+scalar UUID_Expr @specifiedBy(url: "https://github.com/google/cel-spec") @fdc_celExpression(returnType: "string") @fdc_forbiddenAsVariableType @fdc_forbiddenAsFieldType @fdc_example(value: "uuidV4()", description: "Generates a new random UUID (version 4) every time.")
+scalar Any_Expr @specifiedBy(url: "https://github.com/google/cel-spec") @fdc_celExpression @fdc_forbiddenAsVariableType @fdc_forbiddenAsFieldType @fdc_example(value: "auth.uid", description: "The ID of the currently logged in user in Firebase Auth. (Errors if not logged in.)") @fdc_example(value: "uuidV4()", description: "Generates a new random UUID version 4 (formatted as 32 lower-case hex digits without delimiters if result type is String).") @fdc_example(value: "request.time", description: "The timestamp when the request is received (with microseconds precision).")
+scalar Any_SQL @specifiedBy(url: "https://www.postgresql.org/docs/current/sql-expressions.html") @fdc_sqlExpression @fdc_forbiddenAsVariableType @fdc_forbiddenAsFieldType
+scalar Date @specifiedBy(url: "https://scalars.graphql.org/andimarek/local-date.html")
+scalar Timestamp @specifiedBy(url: "https://scalars.graphql.org/andimarek/date-time")
+scalar Timestamp_Expr @specifiedBy(url: "https://github.com/google/cel-spec") @fdc_celExpression(returnType: "google.protobuf.Timestamp") @fdc_forbiddenAsVariableType @fdc_forbiddenAsFieldType @fdc_example(value: "request.time", description: "The timestamp when the request is received (with microseconds precision).")
+scalar Date_Expr @specifiedBy(url: "https://github.com/google/cel-spec") @fdc_celExpression(returnType: "google.protobuf.Timestamp") @fdc_forbiddenAsVariableType @fdc_forbiddenAsFieldType @fdc_example(value: "request.time", description: "The UTC date on which the request is received.")
+scalar Vector_Embed_Model @specifiedBy(url: "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versioning") @fdc_forbiddenAsVariableType @fdc_forbiddenAsFieldType @fdc_example(value: "textembedding-gecko@003", description: "A stable version of the textembedding-gecko model") @fdc_example(value: "textembedding-gecko@001", description: "An older version of the textembedding-gecko model") @fdc_example(value: "text-embedding-004", description: "Another textembedding model")
+
+# Directives
+
+directive @auth(
+  level: AccessLevel @fdc_oneOf(required: true)
+  expr: Boolean_Expr @fdc_oneOf(required: true)
+) on QUERY | MUTATION
+
+directive @transaction on MUTATION
+
+directive @fdc_generated(
+  from: SchemaCoordinate!
+  purpose: GeneratedPurpose!
+) on SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+directive @fdc_deprecated(reason: String = "No longer supported") on SCHEMA | SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+directive @fdc_celExpression(
+  returnType: String
+) on SCALAR
+
+directive @fdc_sqlExpression(
+  dataType: String
+) on SCALAR
+
+directive @fdc_forbiddenAsVariableType on SCALAR | OBJECT | INTERFACE | UNION | ENUM | INPUT_OBJECT
+
+directive @fdc_forbiddenAsFieldType on SCALAR | OBJECT | INTERFACE | UNION | ENUM | INPUT_OBJECT
+
+directive @fdc_example(
+  value: Any
+  description: String
+) repeatable on SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+directive @fdc_oneOf(
+  group: String! = ""
+  required: Boolean! = false
+) repeatable on FIELD_DEFINITION | ARGUMENT_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @view(
+  name: String @fdc_oneOf
+  sql: String @fdc_oneOf
+  singular: String
+  plural: String
+) on OBJECT
+
+directive @col(
+  name: String
+  dataType: String
+  size: Int
+) on FIELD_DEFINITION
+
+directive @ref(
+  constraintName: String
+  fields: [String!]
+  references: [String!]
+) on FIELD_DEFINITION
+
+directive @index(
+  name: String
+  fields: [String!]
+  order: [IndexFieldOrder!]
+  type: IndexType
+  vector_method: VectorSimilarityMethod
+) repeatable on FIELD_DEFINITION | OBJECT
+
+directive @unique(
+  indexName: String
+  fields: [String!]
+) repeatable on FIELD_DEFINITION | OBJECT
+
+directive @default(
+  value: Any @fdc_oneOf(required: true)
+  expr: Any_Expr @fdc_oneOf(required: true)
+  sql: Any_SQL @fdc_oneOf(required: true)
+) on FIELD_DEFINITION
+
+# Types
+
+type User {
+  id: ID!
+  profile: UserProfile!
+  voiceClips: [VoiceClip!]!
+  nfts: [NFT!]!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  statistics: UserStatistics!
+  preferences: UserPreferences!
+  relationships: UserRelationships!
+}
+
+type VoiceClip {
+  id: ID!
+  owner: User!
+  metadata: Metadata!
+  voiceTraits: VoiceTraits!
+  locationLanguage: LocationLanguage!
+  styleTone: StyleTone
+  technicalSpecs: TechnicalSpecs!
+  productionQualitySpecs: ProductionQualitySpecs!
+  category: Category!
+  subcategory: String!
+  history: [VoiceClipHistory!]!
+  nftVersion: NFT
+  collaborators: [User!]
+  permissions: Permissions!
+  status: ClipStatus!
+  embedding: Vector
+}
+
+type NFT {
+  id: ID!
+  originalVoiceClip: VoiceClip!
+  owner: User!
+  metadata: Metadata!
+  voiceTraits: VoiceTraits!
+  locationLanguage: LocationLanguage!
+  styleTone: StyleTone
+  technicalSpecs: TechnicalSpecs!
+  productionQualitySpecs: ProductionQualitySpecs!
+  category: Category!
+  subcategory: String!
+  transactionHistory: [NFTTransaction!]!
+  marketplaceStatus: MarketplaceStatus!
+  smartContract: SmartContract!
+}
+
+type NFTTransaction {
+  id: ID!
+  timestamp: DateTime!
+  from: User!
+  to: User!
+  price: Float!
+  currency: String!
+  transactionHash: String!
+}
+
+type SmartContract {
+  address: String!
+  blockchain: String!
+  standard: String!
+  metadata: String!
+  deployedAt: DateTime!
+  owner: User!
+}
+
+type Offer {
+  id: ID!
+  nft: NFT!
+  buyer: User!
+  price: Float!
+  currency: String!
+  timestamp: DateTime!
+}
+
+type PriceUpdate {
+  nft: NFT!
+  oldPrice: Float!
+  newPrice: Float!
+  timestamp: DateTime!
+}
+
+type MarketMetrics {
+  totalListings: Int!
+  totalSales: Int!
+  totalRevenue: Float!
+}
+
+type Resolution {
+  summary: String!
+  outcome: String!
+  implementedBy: User!
+  timestamp: DateTime!
+}
+
+type DisputeAction {
+  id: ID!
+  action: String!
+  actor: User!
+  timestamp: DateTime!
+  details: String!
+}
+
+type BatchError {
+  id: ID!
+  itemId: ID!
+  message: String!
+}
+
+type SecurityConfig {
+  id: ID!
+  level: SecurityLevel!
+  authMethods: [AuthenticationMethod!]!
+  accessControls: [AccessControl!]!
+  encryptionSettings: EncryptionSettings!
+  auditLog: [SecurityAuditEvent!]!
+}
+
+type EncryptionSettings {
+  encryptionType: String!
+  keyRotationFrequency: String!
+  keyStorage: String!
+}
+
+type AccessControl {
+  id: ID!
+  resource: String!
+  permissions: [String!]!
+  roles: [String!]!
+  conditions: JSON
+}
+
+type SecurityAuditEvent {
+  id: ID!
+  eventType: String!
+  timestamp: DateTime!
+  actor: User!
+  resource: String!
+  details: JSON!
+}
+
+type UserProfile {
+  username: String!
+  email: Email!
+  displayName: String
+  bio: String
+  avatarUrl: URL
+  website: String
+  socialLinks: [SocialLink!]
+  verificationStatus: VerificationStatus!
+  activeStatus: UserStatus!
+}
+
+type SocialLink {
+  platform: String!
+  url: URL!
+}
+
+type UserStatistics {
+  totalVoiceClips: Int!
+  totalNFTs: Int!
+  totalRevenue: Float!
+  reputation: Float!
+  activityScore: Float!
+}
+
+type NotificationSettings {
+  emailNotifications: Boolean!
+  pushNotifications: Boolean!
+  smsNotifications: Boolean!
+}
+
+type PrivacySettings {
+  profileVisibility: ProfileVisibility!
+  dataSharing: Boolean!
+}
+
+type DisplayPreferences {
+  theme: Theme!
+  language: Language!
+}
+
+type UserPreferences {
+  notificationSettings: NotificationSettings!
+  privacySettings: PrivacySettings!
+  displayPreferences: DisplayPreferences!
+}
+
+type UserRelationships {
+  followers: [User!]!
+  following: [User!]!
+  collaborators: [User!]!
+  blockedUsers: [User!]!
+}
+
+type Permissions {
+  canEdit: Boolean!
+  canDelete: Boolean!
+  canView: Boolean!
+}
+
+type VoiceClipHistory {
+  id: ID!
+  timestamp: DateTime!
+  action: HistoryAction!
+  actor: User!
+  changes: [HistoryChange!]!
+}
+
+type HistoryChange {
+  field: String!
+  oldValue: String
+  newValue: String!
+}
+
+type AIAnalysis {
+  id: ID!
+  modelType: AIModelType!
+  status: MLTaskStatus!
+  confidence: Float!
+  results: JSON!
+  timestamp: DateTime!
+  metadata: JSON
+  recommendations: [AIRecommendation!]!
+}
+
+type AIRecommendation {
+  id: ID!
+  category: String!
+  suggestion: String!
+  confidence: Float!
+  impact: String!
+  implementationSteps: [String!]
+}
+
+type AutomatedQualityCheck {
+  id: ID!
+  type: QualityCheckType!
+  status: MLTaskStatus!
+  results: [QualityCheckResult!]!
+  timestamp: DateTime!
+  nextScheduledCheck: DateTime
+  automationRules: [AutomationRule!]!
+}
+
+type QualityCheckResult {
+  id: ID!
+  checkType: QualityCheckType!
+  passed: Boolean!
+  score: Float
+  issues: [QualityIssue!]
+  recommendations: [String!]
+}
+
+type QualityIssue {
+  id: ID!
+  description: String!
+  severity: String!
+  recommendedAction: String!
+}
+
+type AutomationRule {
+  id: ID!
+  ruleName: String!
+  conditions: JSON!
+  actions: [String!]!
+}
+
+type Dispute {
+  id: ID!
+  type: DisputeType!
+  status: DisputeStatus!
+  parties: [User!]!
+  filedDate: DateTime!
+  description: String!
+  evidence: [Evidence!]!
+  resolution: Resolution
+  mediator: User
+  history: [DisputeAction!]!
+}
+
+type Evidence {
+  id: ID!
+  type: String!
+  description: String!
+  url: String
+  uploadedBy: User!
+  timestamp: DateTime!
+  verified: Boolean!
+}
+
+type PaymentTransaction {
+  id: ID!
+  method: PaymentMethod!
+  status: PaymentStatus!
+  amount: Float!
+  currency: String!
+  sender: User!
+  recipient: User!
+  timestamp: DateTime!
+  escrowDetails: EscrowDetails
+  smartContractAddress: String
+  metadata: JSON
+}
+
+type EscrowDetails {
+  id: ID!
+  releaseConditions: [String!]!
+  validUntil: DateTime!
+  mediator: User
+  status: String!
+}
+
+type Distribution {
+  id: ID!
+  platform: PlatformType!
+  status: DistributionStatus!
+  url: String
+  analytics: DistributionAnalytics!
+  schedule: DistributionSchedule
+  settings: JSON!
+}
+
+type DistributionAnalytics {
+  views: Int!
+  engagement: Float!
+  revenue: Float!
+  audience: JSON!
+  performance: JSON!
+}
+
+type DistributionSchedule {
+  scheduledAt: DateTime!
+  frequency: String!
+}
+
+type BatchJob {
+  id: ID!
+  type: BatchProcessingType!
+  status: BatchStatus!
+  items: [BatchItem!]!
+  progress: Float!
+  startTime: DateTime!
+  completionTime: DateTime
+  errors: [BatchError!]
+}
+
+type BatchItem {
+  id: ID!
+  status: BatchStatus!
+  result: JSON
+  errors: [String!]
+}
+
+type SecurityConfig {
+  id: ID!
+  level: SecurityLevel!
+  authMethods: [AuthenticationMethod!]!
+  accessControls: [AccessControl!]!
+  encryptionSettings: EncryptionSettings!
+  auditLog: [SecurityAuditEvent!]!
+}
+
+type EncryptionSettings {
+  encryptionType: String!
+  keyRotationFrequency: String!
+  keyStorage: String!
+}
+
+type UserProfile {
+  username: String!
+  email: Email!
+  displayName: String
+  bio: String
+  avatarUrl: URL
+  website: String
+  socialLinks: [SocialLink!]
+  verificationStatus: VerificationStatus!
+  activeStatus: UserStatus!
+}
+
+type SocialLink {
+  platform: String!
+  url: URL!
+}
+
+type UserStatistics {
+  totalVoiceClips: Int!
+  totalNFTs: Int!
+  totalRevenue: Float!
+  reputation: Float!
+  activityScore: Float!
+}
+
+type NotificationSettings {
+  emailNotifications: Boolean!
+  pushNotifications: Boolean!
+  smsNotifications: Boolean!
+}
+
+type PrivacySettings {
+  profileVisibility: ProfileVisibility!
+  dataSharing: Boolean!
+}
+
+type DisplayPreferences {
+  theme: Theme!
+  language: Language!
+}
+
+type UserPreferences {
+  notificationSettings: NotificationSettings!
+  privacySettings: PrivacySettings!
+  displayPreferences: DisplayPreferences!
+}
+
+type UserRelationships {
+  followers: [User!]!
+  following: [User!]!
+  collaborators: [User!]!
+  blockedUsers: [User!]!
+}
+
+type Permissions {
+  canEdit: Boolean!
+  canDelete: Boolean!
+  canView: Boolean!
+}
+
+type VoiceClipHistory {
+  id: ID!
+  timestamp: DateTime!
+  action: HistoryAction!
+  actor: User!
+  changes: [HistoryChange!]!
+}
+
+type HistoryChange {
+  field: String!
+  oldValue: String
+  newValue: String!
+}
+
+type AIAnalysis {
+  id: ID!
+  modelType: AIModelType!
+  status: MLTaskStatus!
+  confidence: Float!
+  results: JSON!
+  timestamp: DateTime!
+  metadata: JSON
+  recommendations: [AIRecommendation!]!
+}
+
+type AIRecommendation {
+  id: ID!
+  category: String!
+  suggestion: String!
+  confidence: Float!
+  impact: String!
+  implementationSteps: [String!]
+}
+
+type AutomatedQualityCheck {
+  id: ID!
+  type: QualityCheckType!
+  status: MLTaskStatus!
+  results: [QualityCheckResult!]!
+  timestamp: DateTime!
+  nextScheduledCheck: DateTime
+  automationRules: [AutomationRule!]!
+}
+
+type QualityCheckResult {
+  id: ID!
+  checkType: QualityCheckType!
+  passed: Boolean!
+  score: Float
+  issues: [QualityIssue!]
+  recommendations: [String!]
+}
+
+type QualityIssue {
+  id: ID!
+  description: String!
+  severity: String!
+  recommendedAction: String!
+}
+
+type AutomationRule {
+  id: ID!
+  ruleName: String!
+  conditions: JSON!
+  actions: [String!]!
+}
+
+type Dispute {
+  id: ID!
+  type: DisputeType!
+  status: DisputeStatus!
+  parties: [User!]!
+  filedDate: DateTime!
+  description: String!
+  evidence: [Evidence!]!
+  resolution: Resolution
+  mediator: User
+  history: [DisputeAction!]!
+}
+
+type Evidence {
+  id: ID!
+  type: String!
+  description: String!
+  url: String
+  uploadedBy: User!
+  timestamp: DateTime!
+  verified: Boolean!
+}
+
+type Resolution {
+  summary: String!
+  outcome: String!
+  implementedBy: User!
+  timestamp: DateTime!
+}
+
+type DisputeAction {
+  id: ID!
+  action: String!
+  actor: User!
+  timestamp: DateTime!
+  details: String!
+}
+
+type PaymentTransaction {
+  id: ID!
+  method: PaymentMethod!
+  status: PaymentStatus!
+  amount: Float!
+  currency: String!
+  sender: User!
+  recipient: User!
+  timestamp: DateTime!
+  escrowDetails: EscrowDetails
+  smartContractAddress: String
+  metadata: JSON
+}
+
+type EscrowDetails {
+  id: ID!
+  releaseConditions: [String!]!
+  validUntil: DateTime!
+  mediator: User
+  status: String!
+}
+
+type Distribution {
+  id: ID!
+  platform: PlatformType!
+  status: DistributionStatus!
+  url: String
+  analytics: DistributionAnalytics!
+  schedule: DistributionSchedule
+  settings: JSON!
+}
+
+type DistributionAnalytics {
+  views: Int!
+  engagement: Float!
+  revenue: Float!
+  audience: JSON!
+  performance: JSON!
+}
+
+type DistributionSchedule {
+  scheduledAt: DateTime!
+  frequency: String!
+}
+
+type BatchJob {
+  id: ID!
+  type: BatchProcessingType!
+  status: BatchStatus!
+  items: [BatchItem!]!
+  progress: Float!
+  startTime: DateTime!
+  completionTime: DateTime
+  errors: [BatchError!]
+}
+
+type BatchItem {
+  id: ID!
+  status: BatchStatus!
+  result: JSON
+  errors: [String!]
+}
+
+type SecurityConfig {
+  id: ID!
+  level: SecurityLevel!
+  authMethods: [AuthenticationMethod!]!
+  accessControls: [AccessControl!]!
+  encryptionSettings: EncryptionSettings!
+  auditLog: [SecurityAuditEvent!]!
+}
+
+type EncryptionSettings {
+  encryptionType: String!
+  keyRotationFrequency: String!
+  keyStorage: String!
+}
+
+type AccessControl {
+  id: ID!
+  resource: String!
+  permissions: [String!]!
+  roles: [String!]!
+  conditions: JSON
+}
+
+type SecurityAuditEvent {
+  id: ID!
+  eventType: String!
+  timestamp: DateTime!
+  actor: User!
+  resource: String!
+  details: JSON!
+}
+
+type UserProfile {
+  username: String!
+  email: Email!
+  displayName: String
+  bio: String
+  avatarUrl: URL
+  website: String
+  socialLinks: [SocialLink!]
+  verificationStatus: VerificationStatus!
+  activeStatus: UserStatus!
+}
+
+type SocialLink {
+  platform: String!
+  url: URL!
+}
+
+type UserStatistics {
+  totalVoiceClips: Int!
+  totalNFTs: Int!
+  totalRevenue: Float!
+  reputation: Float!
+  activityScore: Float!
+}
+
+type NotificationSettings {
+  emailNotifications: Boolean!
+  pushNotifications: Boolean!
+  smsNotifications: Boolean!
+}
+
+type PrivacySettings {
+  profileVisibility: ProfileVisibility!
+  dataSharing: Boolean!
+}
+
+type DisplayPreferences {
+  theme: Theme!
+  language: Language!
+}
+
+type UserPreferences {
+  notificationSettings: NotificationSettings!
+  privacySettings: PrivacySettings!
+  displayPreferences: DisplayPreferences!
+}
+
+type UserRelationships {
+  followers: [User!]!
+  following: [User!]!
+  collaborators: [User!]!
+  blockedUsers: [User!]!
+}
+
+type Permissions {
+  canEdit: Boolean!
+  canDelete: Boolean!
+  canView: Boolean!
+}
+
+type VoiceClipHistory {
+  id: ID!
+  timestamp: DateTime!
+  action: HistoryAction!
+  actor: User!
+  changes: [HistoryChange!]!
+}
+
+type HistoryChange {
+  field: String!
+  oldValue: String
+  newValue: String!
+}
+
+type AIAnalysis {
+  id: ID!
+  modelType: AIModelType!
+  status: MLTaskStatus!
+  confidence: Float!
+  results: JSON!
+  timestamp: DateTime!
+  metadata: JSON
+  recommendations: [AIRecommendation!]!
+}
+
+type AIRecommendation {
+  id: ID!
+  category: String!
+  suggestion: String!
+  confidence: Float!
+  impact: String!
+  implementationSteps: [String!]
+}
+
+type AutomatedQualityCheck {
+  id: ID!
+  type: QualityCheckType!
+  status: MLTaskStatus!
+  results: [QualityCheckResult!]!
+  timestamp: DateTime!
+  nextScheduledCheck: DateTime
+  automationRules: [AutomationRule!]!
+}
+
+type QualityCheckResult {
+  id: ID!
+  checkType: QualityCheckType!
+  passed: Boolean!
+  score: Float
+  issues: [QualityIssue!]
+  recommendations: [String!]
+}
+
+type QualityIssue {
+  id: ID!
+  description: String!
+  severity: String!
+  recommendedAction: String!
+}
+
+type AutomationRule {
+  id: ID!
+  ruleName: String!
+  conditions: JSON!
+  actions: [String!]!
+}
+
+type Dispute {
+  id: ID!
+  type: DisputeType!
+  status: DisputeStatus!
+  parties: [User!]!
+  filedDate: DateTime!
+  description: String!
+  evidence: [Evidence!]!
+  resolution: Resolution
+  mediator: User
+  history: [DisputeAction!]!
+}
+
+type Evidence {
+  id: ID!
+  type: String!
+  description: String!
+  url: String
+  uploadedBy: User!
+  timestamp: DateTime!
+  verified: Boolean!
+}
+
+type Resolution {
+  summary: String!
+  outcome: String!
+  implementedBy: User!
+  timestamp: DateTime!
+}
+
+type DisputeAction {
+  id: ID!
+  action: String!
+  actor: User!
+  timestamp: DateTime!
+  details: String!
+}
+
+type PaymentTransaction {
+  id: ID!
+  method: PaymentMethod!
+  status: PaymentStatus!
+  amount: Float!
+  currency: String!
+  sender: User!
+  recipient: User!
+  timestamp: DateTime!
+  escrowDetails: EscrowDetails
+  smartContractAddress: String
+  metadata: JSON
+}
+
+type EscrowDetails {
+  id: ID!
+  releaseConditions: [String!]!
+  validUntil: DateTime!
+  mediator: User
+  status: String!
+}
+
+type Distribution {
+  id: ID!
+  platform: PlatformType!
+  status: DistributionStatus!
+  url: String
+  analytics: DistributionAnalytics!
+  schedule: DistributionSchedule
+  settings: JSON!
+}
+
+type DistributionAnalytics {
+  views: Int!
+  engagement: Float!
+  revenue: Float!
+  audience: JSON!
+  performance: JSON!
+}
+
+type DistributionSchedule {
+  scheduledAt: DateTime!
+  frequency: String!
+}
+
+type BatchJob {
+  id: ID!
+  type: BatchProcessingType!
+  status: BatchStatus!
+  items: [BatchItem!]!
+  progress: Float!
+  startTime: DateTime!
+  completionTime: DateTime
+  errors: [BatchError!]
+}
+
+type BatchItem {
+  id: ID!
+  status: BatchStatus!
+  result: JSON
+  errors: [String!]
+}
+
+type SecurityConfig {
+  id: ID!
+  level: SecurityLevel!
+  authMethods: [AuthenticationMethod!]!
+  accessControls: [AccessControl!]!
+  encryptionSettings: EncryptionSettings!
+  auditLog: [SecurityAuditEvent!]!
+}
+
+type EncryptionSettings {
+  encryptionType: String!
+  keyRotationFrequency: String!
+  keyStorage: String!
+}
+
+type AccessControl {
+  id: ID!
+  resource: String!
+  permissions: [String!]!
+  roles: [String!]!
+  conditions: JSON
+}
+
+type SecurityAuditEvent {
+  id: ID!
+  eventType: String!
+  timestamp: DateTime!
+  actor: User!
+  resource: String!
+  details: JSON!
+}
+
+type UserProfile {
+  username: String!
+  email: Email!
+  displayName: String
+  bio: String
+  avatarUrl: URL
+  website: String
+  socialLinks: [SocialLink!]
+  verificationStatus: VerificationStatus!
+  activeStatus: UserStatus!
+}
+
+type SocialLink {
+  platform: String!
+  url: URL!
+}
+
+type UserStatistics {
+  totalVoiceClips: Int!
+  totalNFTs: Int!
+  totalRevenue: Float!
+  reputation: Float!
+  activityScore: Float!
+}
+
+type NotificationSettings {
+  emailNotifications: Boolean!
+  pushNotifications: Boolean!
+  smsNotifications: Boolean!
+}
+
+type PrivacySettings {
+  profileVisibility: ProfileVisibility!
+  dataSharing: Boolean!
+}
+
+type DisplayPreferences {
+  theme: Theme!
+  language: Language!
+}
+
+type UserPreferences {
+  notificationSettings: NotificationSettings!
+  privacySettings: PrivacySettings!
+  displayPreferences: DisplayPreferences!
+}
+
+type UserRelationships {
+  followers: [User!]!
+  following: [User!]!
+  collaborators: [User!]!
+  blockedUsers: [User!]!
+}
+
+type Permissions {
+  canEdit: Boolean!
+  canDelete: Boolean!
+  canView: Boolean!
+}
+
+type VoiceClipHistory {
+  id: ID!
+  timestamp: DateTime!
+  action: HistoryAction!
+  actor: User!
+  changes: [HistoryChange!]!
+}
+
+type HistoryChange {
+  field: String!
+  oldValue: String
+  newValue: String!
+}
+
+type AIAnalysis {
+  id: ID!
+  modelType: AIModelType!
+  status: MLTaskStatus!
+  confidence: Float!
+  results: JSON!
+  timestamp: DateTime!
+  metadata: JSON
+  recommendations: [AIRecommendation!]!
+}
+
+type AIRecommendation {
+  id: ID!
+  category: String!
+  suggestion: String!
+  confidence: Float!
+  impact: String!
+  implementationSteps: [String!]
+}
+
+type AutomatedQualityCheck {
+  id: ID!
+  type: QualityCheckType!
+  status: MLTaskStatus!
+  results: [QualityCheckResult!]!
+  timestamp: DateTime!
+  nextScheduledCheck: DateTime
+  automationRules: [AutomationRule!]!
+}
+
+type QualityCheckResult {
+  id: ID!
+  checkType: QualityCheckType!
+  passed: Boolean!
+  score: Float
+  issues: [QualityIssue!]
+  recommendations: [String!]
+}
+
+type QualityIssue {
+  id: ID!
+  description: String!
+  severity: String!
+  recommendedAction: String!
+}
+
+type AutomationRule {
+  id: ID!
+  ruleName: String!
+  conditions: JSON!
+  actions: [String!]!
+}
+
+type Dispute {
+  id: ID!
+  type: DisputeType!
+  status: DisputeStatus!
+  parties: [User!]!
+  filedDate: DateTime!
+  description: String!
+  evidence: [Evidence!]!
+  resolution: Resolution
+  mediator: User
+  history: [DisputeAction!]!
+}
+
+type Evidence {
+  id: ID!
+  type: String!
+  description: String!
+  url: String
+  uploadedBy: User!
+  timestamp: DateTime!
+  verified: Boolean!
+}
+
+type Resolution {
+  summary: String!
+  outcome: String!
+  implementedBy: User!
+  timestamp: DateTime!
+}
+
+type DisputeAction {
+  id: ID!
+  action: String!
+  actor: User!
+  timestamp: DateTime!
+  details: String!
+}
+
+type PaymentTransaction {
+  id: ID!
+  method: PaymentMethod!
+  status: PaymentStatus!
+  amount: Float!
+  currency: String!
+  sender: User!
+  recipient: User!
+  timestamp: DateTime!
+  escrowDetails: EscrowDetails
+  smartContractAddress: String
+  metadata: JSON
+}
+
+type EscrowDetails {
+  id: ID!
+  releaseConditions: [String!]!
+  validUntil: DateTime!
+  mediator: User
+  status: String!
+}
+
+type Distribution {
+  id: ID!
+  platform: PlatformType!
+  status: DistributionStatus!
+  url: String
+  analytics: DistributionAnalytics!
+  schedule: DistributionSchedule
+  settings: JSON!
+}
+
+type DistributionAnalytics {
+  views: Int!
+  engagement: Float!
+  revenue: Float!
+  audience: JSON!
+  performance: JSON!
+}
+
+type DistributionSchedule {
+  scheduledAt: DateTime!
+  frequency: String!
+}
+
+type BatchJob {
+  id: ID!
+  type: BatchProcessingType!
+  status: BatchStatus!
+  items: [BatchItem!]!
+  progress: Float!
+  startTime: DateTime!
+  completionTime: DateTime
+  errors: [BatchError!]
+}
+
+type BatchItem {
+  id: ID!
+  status: BatchStatus!
+  result: JSON
+  errors: [String!]
+}
+
+type SecurityConfig {
+  id: ID!
+  level: SecurityLevel!
+  authMethods: [AuthenticationMethod!]!
+  accessControls: [AccessControl!]!
+  encryptionSettings: EncryptionSettings!
+  auditLog: [SecurityAuditEvent!]!
+}
+
+type EncryptionSettings {
+  encryptionType: String!
+  keyRotationFrequency: String!
+  keyStorage: String!
+}
+
+type AccessControl {
+  id: ID!
+  resource: String!
+  permissions: [String!]!
+  roles: [String!]!
+  conditions: JSON
+}
+
+type SecurityAuditEvent {
+  id: ID!
+  eventType: String!
+  timestamp: DateTime!
+  actor: User!
+  resource: String!
+  details: JSON!
+}
+
+type UserProfile {
+  username: String!
+  email: Email!
+  displayName: String
+  bio: String
+  avatarUrl: URL
+  website: String
+  socialLinks: [SocialLink!]
+  verificationStatus: VerificationStatus!
+  activeStatus: UserStatus!
+}
+
+type SocialLink {
+  platform: String!
+  url: URL!
+}
+
+type UserStatistics {
+  totalVoiceClips: Int!
+  totalNFTs: Int!
+  totalRevenue: Float!
+  reputation: Float!
+  activityScore: Float!
+}
+
+type NotificationSettings {
+  emailNotifications: Boolean!
+  pushNotifications: Boolean!
+  smsNotifications: Boolean!
+}
+
+type PrivacySettings {
+  profileVisibility: ProfileVisibility!
+  dataSharing: Boolean!
+}
+
+type DisplayPreferences {
+  theme: Theme!
+  language: Language!
+}
+
+type UserPreferences {
+  notificationSettings: NotificationSettings!
+  privacySettings: PrivacySettings!
+  displayPreferences: DisplayPreferences!
+}
+
+type UserRelationships {
+  followers: [User!]!
+  following: [User!]!
+  collaborators: [User!]!
+  blockedUsers: [User!]!
+}
+
+type Permissions {
+  canEdit: Boolean!
+  canDelete: Boolean!
+  canView: Boolean!
+}
+
+type VoiceClipHistory {
+  id: ID!
+  timestamp: DateTime!
+  action: HistoryAction!
+  actor: User!
+  changes: [HistoryChange!]!
+}
+
+type HistoryChange {
+  field: String!
+  oldValue: String
+  newValue: String!
+}
+
+type AIAnalysis {
+  id: ID!
+  modelType: AIModelType!
+  status: MLTaskStatus!
+  confidence: Float!
+  results: JSON!
+  timestamp: DateTime!
+  metadata: JSON
+  recommendations: [AIRecommendation!]!
+}
+
+type AIRecommendation {
+  id: ID!
+  category: String!
+  suggestion: String!
+  confidence: Float!
+  impact: String!
+  implementationSteps: [String!]
+}
+
+type AutomatedQualityCheck {
+  id: ID!
+  type: QualityCheckType!
+  status: MLTaskStatus!
+  results: [QualityCheckResult!]!
+  timestamp: DateTime!
+  nextScheduledCheck: DateTime
+  automationRules: [AutomationRule!]!
+}
+
+type QualityCheckResult {
+  id: ID!
+  checkType: QualityCheckType!
+  passed: Boolean!
+  score: Float
+  issues: [QualityIssue!]
+  recommendations: [String!]
+}
+
+type QualityIssue {
+  id: ID!
+  description: String!
+  severity: String!
+  recommendedAction: String!
+}
+
+type AutomationRule {
+  id: ID!
+  ruleName: String!
+  conditions: JSON!
+  actions: [String!]!
+}
+
+type Dispute {
+  id: ID!
+  type: DisputeType!
+  status: DisputeStatus!
+  parties: [User!]!
+  filedDate: DateTime!
+  description: String!
+  evidence: [Evidence!]!
+  resolution: Resolution
+  mediator: User
+  history: [DisputeAction!]!
+}
+
+type Evidence {
+  id: ID!
+  type: String!
+  description: String!
+  url: String
+  uploadedBy: User!
+  timestamp: DateTime!
+  verified: Boolean!
+}
+
+type Resolution {
+  summary: String!
+  outcome: String!
+  implementedBy: User!
+  timestamp: DateTime!
+}
+
+type DisputeAction {
+  id: ID!
+  action: String!
+  actor: User!
+  timestamp: DateTime!
+  details: String!
+}
+
+type PaymentTransaction {
+  id: ID!
+  method: PaymentMethod!
+  status: PaymentStatus!
+  amount: Float!
+  currency: String!
+  sender: User!
+  recipient: User!
+  timestamp: DateTime!
+  escrowDetails: EscrowDetails
+  smartContractAddress: String
+  metadata: JSON
+}
+
+type EscrowDetails {
+  id: ID!
+  releaseConditions: [String!]!
+  validUntil: DateTime!
+  mediator: User
+  status: String!
+}
+
+type Distribution {
+  id: ID!
+  platform: PlatformType!
+  status: DistributionStatus!
+  url: String
+  analytics: DistributionAnalytics!
+  schedule: DistributionSchedule
+  settings: JSON!
+}
+
+type DistributionAnalytics {
+  views: Int!
+  engagement: Float!
+  revenue: Float!
+  audience: JSON!
+  performance: JSON!
+}
+
+type DistributionSchedule {
+  scheduledAt: DateTime!
+  frequency: String!
+}
+
+type BatchJob {
+  id: ID!
+  type: BatchProcessingType!
+  status: BatchStatus!
+  items: [BatchItem!]!
+  progress: Float!
+  startTime: DateTime!
+  completionTime: DateTime
+  errors: [BatchError!]
+}
+
+type BatchItem {
+  id: ID!
+  status: BatchStatus!
+  result: JSON
+  errors: [String!]
+}
+
+type SecurityConfig {
+  id: ID!
+  level: SecurityLevel!
+  authMethods: [AuthenticationMethod!]!
+  accessControls: [AccessControl!]!
+  encryptionSettings: EncryptionSettings!
+  auditLog: [SecurityAuditEvent!]!
+}
+
+type EncryptionSettings {
+  encryptionType: String!
+  keyRotationFrequency: String!
+  keyStorage: String!
+}
+
+type AccessControl {
+  id: ID!
+  resource: String!
+  permissions: [String!]!
+  roles: [String!]!
+  conditions: JSON
+}
+
+type SecurityAuditEvent {
+  id: ID!
+  eventType: String!
+  timestamp: DateTime!
+  actor: User!
+  resource: String!
+  details: JSON!
+}
+
+type UserProfile {
+  username: String!
+  email: Email!
+  displayName: String
+  bio: String
+  avatarUrl: URL
+  website: String
+  socialLinks: [SocialLink!]
+  verificationStatus: VerificationStatus!
+  activeStatus: UserStatus!
+}
+
+type SocialLink {
+  platform: String!
+  url: URL!
+}
+
+type UserStatistics {
+  totalVoiceClips: Int!
+  totalNFTs: Int!
+  totalRevenue: Float!
+  reputation: Float!
+  activityScore: Float!
+}
+
+type NotificationSettings {
+  emailNotifications: Boolean!
+  pushNotifications: Boolean!
+  smsNotifications: Boolean!
+}
+
+type PrivacySettings {
+  profileVisibility: ProfileVisibility!
+  dataSharing: Boolean!
+}
+
+type DisplayPreferences {
+  theme: Theme!
+  language: Language!
+}
+
+type UserPreferences {
+  notificationSettings: NotificationSettings!
+  privacySettings: PrivacySettings!
+  displayPreferences: DisplayPreferences!
+}
+
+type UserRelationships {
+  followers: [User!]!
+  following: [User!]!
+  collaborators: [User!]!
+  blockedUsers: [User!]!
+}
+
+type Permissions {
+  canEdit: Boolean!
+  canDelete: Boolean!
+  canView: Boolean!
+}
+
+type VoiceClipHistory {
+  id: ID!
+  timestamp: DateTime!
+  action: HistoryAction!
+  actor: User!
+  changes: [HistoryChange!]!
+}
+
+type HistoryChange {
+  field: String!
+  oldValue: String
+  newValue: String!
+}
+
+type AIAnalysis {
+  id: ID!
+  modelType: AIModelType!
+  status: MLTaskStatus!
+  confidence: Float!
+  results: JSON!
+  timestamp: DateTime!
+  metadata: JSON
+  recommendations: [AIRecommendation!]!
+}
+
+type AIRecommendation {
+  id: ID!
+  category: String!
+  suggestion: String!
+  confidence: Float!
+  impact: String!
+  implementationSteps: [String!]
+}
+
+type AutomatedQualityCheck {
+  id: ID!
+  type: QualityCheckType!
+  status: MLTaskStatus!
+  results: [QualityCheckResult!]!
+  timestamp: DateTime!
+  nextScheduledCheck: DateTime
+  automationRules: [AutomationRule!]!
+}
+
+type QualityCheckResult {
+  id: ID!
+  checkType: QualityCheckType!
+  passed: Boolean!
+  score: Float
+  issues: [QualityIssue!]
+  recommendations: [String!]
+}
+
+type QualityIssue {
+  id: ID!
+  description: String!
+  severity: String!
+  recommendedAction: String!
+}
+
+type AutomationRule {
+  id: ID!
+  ruleName: String!
+  conditions: JSON!
+  actions: [String!]!
+}
+
+type Dispute {
+  id: ID!
+  type: DisputeType!
+  status: DisputeStatus!
+  parties: [User!]!
+  filedDate: DateTime!
+  description: String!
+  evidence: [Evidence!]!
+  resolution: Resolution
+  mediator: User
+  history: [DisputeAction!]!
+}
+
+type Evidence {
+  id: ID!
+  type: String!
+  description: String!
+  url: String
+  uploadedBy: User!
+  timestamp: DateTime!
+  verified: Boolean!
+}
+
+type Resolution {
+  summary: String!
+  outcome: String!
+  implementedBy: User!
+  timestamp: DateTime!
+}
+
+type DisputeAction {
+  id: ID!
+  action: String!
+  actor: User!
+  timestamp: DateTime!
+  details: String!
+}
+
+type PaymentTransaction {
+  id: ID!
+  method: PaymentMethod!
+  status: PaymentStatus!
+  amount: Float!
+  currency: String!
+  sender: User!
+  recipient: User!
+  timestamp: DateTime!
+  escrowDetails: EscrowDetails
+  smartContractAddress: String
+  metadata: JSON
+}
+
+type EscrowDetails {
+  id: ID!
+  releaseConditions: [String!]!
+  validUntil: DateTime!
+  mediator: User
+  status: String!
+}
+
+type Distribution {
+  id: ID!
+  platform: PlatformType!
+  status: DistributionStatus!
+  url: String
+  analytics: DistributionAnalytics!
+  schedule: DistributionSchedule
+  settings: JSON!
+}
+
+type DistributionAnalytics {
+  views: Int!
+  engagement: Float!
+  revenue: Float!
+  audience: JSON!
+  performance: JSON!
+}
+
+type DistributionSchedule {
+  scheduledAt: DateTime!
+  frequency: String!
+}
+
+type BatchJob {
+  id: ID!
+  type: BatchProcessingType!
+  status: BatchStatus!
+  items: [BatchItem!]!
+  progress: Float!
+  startTime: DateTime!
+  completionTime: DateTime
+  errors: [BatchError!]
+}
+
+type BatchItem {
+  id: ID!
+  status: BatchStatus!
+  result: JSON
+  errors: [String!]
+}
+
+type SecurityConfig {
+  id: ID!
+  level: SecurityLevel!
+  authMethods: [AuthenticationMethod!]!
+  accessControls: [AccessControl!]!
+  encryptionSettings: EncryptionSettings!
+  auditLog: [SecurityAuditEvent!]!
+}
+
+type EncryptionSettings {
+  encryptionType: String!
+  keyRotationFrequency: String!
+  keyStorage: String!
+}
+
+type AccessControl {
+  id: ID!
+  resource: String!
+  permissions: [String!]!
+  roles: [String!]!
+  conditions: JSON
+}
+
+type SecurityAuditEvent {
+  id: ID!
+  eventType: String!
+  timestamp: DateTime!
+  actor: User!
+  resource: String!
+  details: JSON!
+}
+
+# Input Types
+
+input SecurityConfigInput {
+  level: SecurityLevel!
+  authMethods: [AuthenticationMethod!]!
+  accessControls: [AccessControlInput!]!
+  encryptionSettings: EncryptionSettingsInput!
+}
+
+input EncryptionSettingsInput {
+  encryptionType: String!
+  keyRotationFrequency: String!
+  keyStorage: String!
+}
+
+input AccessControlInput {
+  resource: String!
+  permissions: [String!]!
+  roles: [String!]!
+  conditions: JSON
+}
+
+input CreateUserInput {
+  email: Email!
+  username: String!
+  walletAddress: String!
+  profilePictureUrl: URL!
+}
+
+input UpdateUserInput {
+  email: Email
+  username: String
+  walletAddress: String
+  profilePictureUrl: URL
+  profile: UserProfileInput
+  preferences: UserPreferencesInput
+}
+
+input CreateVoiceClipInput {
+  audioFile: Upload!
+  voiceTraits: VoiceTraitsInput!
+  locationLanguage: LocationLanguageInput!
+  styleTone: StyleToneInput
+  technicalSpecs: TechnicalSpecsInput!
+  productionQualitySpecs: ProductionQualitySpecsInput
+  category: Category!
+  subcategory: String!
+  permissions: PermissionsInput!
+}
+
+input UpdateVoiceClipInput {
+  audioFile: Upload
+  voiceTraits: VoiceTraitsInput
+  locationLanguage: LocationLanguageInput
+  styleTone: StyleToneInput
+  technicalSpecs: TechnicalSpecsInput
+  productionQualitySpecs: ProductionQualitySpecsInput
+  category: Category
+  subcategory: String
+  permissions: PermissionsInput
+}
+
+input MintNFTInput {
+  voiceClipId: ID!
+  initialPrice: Float!
+  currency: String!
+  blockchain: String!
+  royaltyPercentage: Float!
+}
+
+input UpdateNFTInput {
+  name: String
+  description: String
+  mediaUrl: URL
+  voiceClipId: ID
+  pictureUrl: URL
+  categories: [String!]
+  productionQuality: ProductionQuality
+  experienceLevel: ExperienceLevel
+  transcript: String
+  languageCode: String
+  speechAttributes: [String!]
+  blockchainData: BlockchainDataInput
+  voiceTraits: VoiceTraitsInput
+  locationLanguage: LocationLanguageInput
+  styleTone: StyleToneInput
+  technicalSpecs: TechnicalSpecsInput
+  productionQualitySpecs: ProductionQualitySpecsInput
+  category: Category
+  subcategory: String
+}
+
+input DisputeInput {
+  type: DisputeType!
+  parties: [ID!]!
+  description: String!
+}
+
+input EvidenceInput {
+  type: String!
+  description: String!
+  url: String
+}
+
+input PaymentInput {
+  method: PaymentMethod!
+  amount: Float!
+  currency: String!
+  senderId: ID!
+  recipientId: ID!
+  metadata: JSON
+}
+
+input EscrowInput {
+  releaseConditions: [String!]!
+  validUntil: DateTime!
+  mediatorId: ID
+}
+
+input DistributionScheduleInput {
+  scheduledAt: DateTime!
+  frequency: String!
+}
+
+input DistributionInput {
+  platform: PlatformType!
+  settings: JSON!
+  schedule: DistributionScheduleInput
+}
+
+input BatchItemInput {
+  id: ID!
+}
+
+input AutomationRuleInput {
+  ruleName: String!
+  conditions: JSON!
+  actions: [String!]!
+}
+
+input QualityCheckConfig {
+  autoRetry: Boolean!
+  notificationOnFailure: Boolean!
+}
+
+# Update Inputs
+
+input Date_Filter {
+  isNull: Boolean
+  eq: Date
+  eq_expr: Date_Expr
+  eq_date: Date_Relative
+  ne: Date
+  ne_expr: Date_Expr
+  ne_date: Date_Relative
+  in: [Date!]
+  nin: [Date!]
+  gt: Date
+  gt_expr: Date_Expr
+  gt_time: Date_Relative
+  ge: Date
+  ge_expr: Date_Expr
+  ge_time: Date_Relative
+  lt: Date
+  lt_expr: Date_Expr
+  lt_time: Date_Relative
+  le: Date
+  le_expr: Date_Expr
+  le_time: Date_Relative
+}
+
+input Date_ListFilter {
+  includes: Date
+  excludes: Date
+  includesAll: [Date!]
+  excludesAll: [Date!]
+}
+
+input Timestamp_Filter {
+  isNull: Boolean
+  eq: Timestamp
+  eq_expr: Timestamp_Expr
+  eq_time: Timestamp_Relative
+  ne: Timestamp
+  ne_expr: Timestamp_Expr
+  ne_time: Timestamp_Relative
+  in: [Timestamp!]
+  nin: [Timestamp!]
+  gt: Timestamp
+  gt_expr: Timestamp_Expr
+  gt_time: Timestamp_Relative
+  ge: Timestamp
+  ge_expr: Timestamp_Expr
+  ge_time: Timestamp_Relative
+  lt: Timestamp
+  lt_expr: Timestamp_Expr
+  lt_time: Timestamp_Relative
+  le: Timestamp
+  le_expr: Timestamp_Expr
+  le_time: Timestamp_Relative
+}
+
+input Timestamp_ListFilter {
+  includes: Timestamp
+  excludes: Timestamp
+  includesAll: [Timestamp!]
+  excludesAll: [Timestamp!]
+}
+
+input Date_Update {
+  set: Date
+  set_expr: Date_Expr
+  set_date: Date_Relative
+}
+
+input Date_ListUpdate {
+  set: [Date!]
+  append: [Date!]
+  prepend: [Date!]
+  delete: Int
+  i: Int
+  update: Date
+}
+
+input Timestamp_Update {
+  set: Timestamp
+  set_expr: Timestamp_Expr
+  set_time: Timestamp_Relative
+}
+
+input Timestamp_ListUpdate {
+  set: [Timestamp!]
+  append: [Timestamp!]
+  prepend: [Timestamp!]
+  delete: Int
+  i: Int
+  update: Timestamp
+}
+
+input Timestamp_Relative {
+  now: True
+  at: Timestamp
+  add: Timestamp_Duration
+  sub: Timestamp_Duration
+  truncateTo: Timestamp_Interval
+}
+
+input Timestamp_Duration {
+  milliseconds: Int! = 0
+  seconds: Int! = 0
+  minutes: Int! = 0
+  hours: Int! = 0
+  days: Int! = 0
+  weeks: Int! = 0
+  months: Int! = 0
+  years: Int! = 0
+}
+
+enum Timestamp_Interval {
+  SECOND
+  MINUTE
+  HOUR
+  DAY
+  WEEK
+  MONTH
+  YEAR
+}
+
+input Date_Relative {
+  today: True
+  on: Date
+  add: Date_Duration
+  sub: Date_Duration
+  truncateTo: Date_Interval
+}
+
+input Date_Duration {
+  days: Int! = 0
+  weeks: Int! = 0
+  months: Int! = 0
+  years: Int! = 0
+}
+
+enum Date_Interval {
+  WEEK
+  MONTH
+  YEAR
+}
+
+input String_Update {
+  set: String
+  set_expr: String_Expr
+}
+
+input String_ListUpdate {
+  set: [String!]
+  append: [String!]
+  prepend: [String!]
+}
+
+input UUID_Update {
+  set: UUID
+  set_expr: UUID_Expr
+}
+
+input UUID_ListUpdate {
+  set: [UUID!]
+  append: [UUID!]
+  prepend: [UUID!]
+}
+
+input Int_Update {
+  set: Int
+  inc: Int
+  dec: Int
+}
+
+input Int_ListUpdate {
+  set: [Int!]
+  append: [Int!]
+  prepend: [Int!]
+}
+
+input Int64_Update {
+  set: Int64
+  inc: Int64
+  dec: Int64
+}
+
+input Int64_ListUpdate {
+  set: [Int64!]
+  append: [Int64!]
+  prepend: [Int64!]
+}
+
+input Float_Update {
+  set: Float
+  inc: Float
+  dec: Float
+}
+
+input Float_ListUpdate {
+  set: [Float!]
+  append: [Float!]
+  prepend: [Float!]
+}
+
+input Boolean_Update {
+  set: Boolean
+}
+
+input Boolean_ListUpdate {
+  set: [Boolean!]
+  append: [Boolean!]
+  prepend: [Boolean!]
+}
+
+input Any_Update {
+  set: Any
+}
+
+input Any_ListUpdate {
+  set: [Any!]
+  append: [Any!]
+  prepend: [Any!]
+}
+
+input Vector_Update {
+  set: Vector
+  set_embed: Vector_Embed
+}
+
+input Vector_Embed {
+  model: Vector_Embed_Model!
+  text: String!
+}
+
+# Queries
+
+type Query {
+  user(id: ID!): User!
+  userByUsername(username: String!): User
+  searchUsers(filter: UserSearchFilter!): [User!]!
+  
+  voiceClip(id: ID!): VoiceClip!
+  voiceClipsByUser(userId: ID!): [VoiceClip!]!
+  searchVoiceClips(filter: VoiceClipSearchFilter!): [VoiceClip!]!
+  
+  nft(id: ID!): NFT!
+  nftsByUser(userId: ID!): [NFT!]!
+  searchNFTs(filter: NFTSearchFilter!): [NFT!]!
+  
+  filterVoiceClipsByMetadata(filter: MetadataFilter!): [VoiceClip!]!
+  filterNFTsByMetadata(filter: MetadataFilter!): [NFT!]!
+  searchByAudioCharacteristics(filter: AudioSearchFilter!): [VoiceClip!]!
+  
+  paginatedNFTs(limit: Int!, offset: Int!, filter: NFTFilterInput): [NFT!]! @auth(level: PUBLIC)
+  
+  getAIAnalysis(id: ID!): AIAnalysis!
+  getModelPredictions(type: AIModelType!, input: JSON!): [AIRecommendation!]!
+  
+  getQualityCheckResults(id: ID!): [QualityCheckResult!]!
+  getAutomatedChecks(type: QualityCheckType!): [AutomatedQualityCheck!]!
+  
+  getDispute(id: ID!): Dispute!
+  getUserDisputes(userId: ID!): [Dispute!]!
+  
+  getTransaction(id: ID!): PaymentTransaction!
+  getEscrowDetails(id: ID!): EscrowDetails!
+  
+  getPlatformAnalytics(platformId: ID!): DistributionAnalytics!
+  getDistributionStatus(contentId: ID!): [Distribution!]!
+  
+  getBatchJob(id: ID!): BatchJob!
+  getBatchStatus(type: BatchProcessingType!): [BatchJob!]!
+  
+  getSecurityConfig(userId: ID!): SecurityConfig!
+  getAuditLog(resourceId: ID!): [SecurityAuditEvent!]!
+  
+  _service: _Service!
+}
+
+# Mutations
+
+type Mutation {
+  createUser(input: CreateUserInput!): User! @auth(level: ADMIN)
+  updateUser(input: UpdateUserInput!): User! @auth(level: USER)
+  deleteUser(id: ID!): Boolean! @auth(level: ADMIN)
+  
+  createVoiceClip(input: CreateVoiceClipInput!): VoiceClip! @auth(level: USER)
+  updateVoiceClip(id: ID!, input: UpdateVoiceClipInput!): VoiceClip! @auth(level: USER)
+  deleteVoiceClip(id: ID!): Boolean! @auth(level: USER)
+  
+  mintNFT(input: MintNFTInput!): NFT! @auth(level: USER)
+  updateNFT(id: ID!, input: UpdateNFTInput!): NFT! @auth(level: USER)
+  transferNFT(id: ID!, toAddress: String!): NFT! @auth(level: USER)
+  burnNFT(id: ID!): Boolean! @auth(level: USER)
+  
+  listNFTForSale(id: ID!, price: Float!): NFT! @auth(level: USER)
+  purchaseNFT(id: ID!): NFT! @auth(level: USER)
+  makeOffer(nftId: ID!, price: Float!): Offer! @auth(level: USER)
+  
+  followUser(userId: ID!): Boolean! @auth(level: USER)
+  unfollowUser(userId: ID!): Boolean! @auth(level: USER)
+  blockUser(userId: ID!): Boolean! @auth(level: USER)
+  
+  runAIAnalysis(type: AIModelType!, input: JSON!): AIAnalysis! @auth(level: USER)
+  updateModelPreferences(userId: ID!, preferences: JSON!): User! @auth(level: USER)
+  
+  initiateQualityCheck(type: QualityCheckType!, contentId: ID!): AutomatedQualityCheck! @auth(level: USER)
+  configureAutomatedChecks(input: QualityCheckConfig!): Boolean! @auth(level: ADMIN)
+  
+  fileDispute(input: DisputeInput!): Dispute! @auth(level: USER)
+  updateDisputeStatus(id: ID!, status: DisputeStatus!): Dispute! @auth(level: ADMIN)
+  submitEvidence(disputeId: ID!, evidence: EvidenceInput!): Evidence! @auth(level: USER)
+  
+  createPayment(input: PaymentInput!): PaymentTransaction! @auth(level: USER)
+  setupEscrow(input: EscrowInput!): EscrowDetails! @auth(level: USER)
+  releaseEscrow(id: ID!): PaymentTransaction! @auth(level: USER)
+  
+  createDistribution(input: DistributionInput!): Distribution! @auth(level: USER)
+  updateDistributionStatus(id: ID!, status: DistributionStatus!): Distribution! @auth(level: USER)
+  scheduleDistribution(id: ID!, schedule: DistributionScheduleInput!): Distribution! @auth(level: USER)
+  
+  createBatchJob(type: BatchProcessingType!, items: [BatchItemInput!]!): BatchJob! @auth(level: USER)
+  cancelBatchJob(id: ID!): Boolean! @auth(level: USER)
+  
+  updateSecurityConfig(input: SecurityConfigInput!): SecurityConfig! @auth(level: ADMIN)
+  addAuthenticationMethod(userId: ID!, method: AuthenticationMethod!): Boolean! @auth(level: ADMIN)
+  updateAccessControls(input: AccessControlInput!): AccessControl! @auth(level: ADMIN)
+}
+
+# Subscriptions
+
+type Subscription {
+  userUpdated(id: ID!): User! @auth(level: USER)
+  newFollower(userId: ID!): User! @auth(level: USER)
+  
+  voiceClipCreated(userId: ID): VoiceClip! @auth(level: USER)
+  voiceClipUpdated(id: ID!): VoiceClip! @auth(level: USER)
+  
+  nftMinted(userId: ID): NFT! @auth(level: USER)
+  nftListed(category: Category): NFT! @auth(level: PUBLIC)
+  nftSold(id: ID!): NFTTransaction! @auth(level: USER)
+  
+  newOffer(nftId: ID!): Offer! @auth(level: USER)
+  priceChanged(nftId: ID!): PriceUpdate! @auth(level: USER)
+  
+  userAnalyticsUpdated(userId: ID!): UserStatistics! @auth(level: USER)
+  marketMetricsUpdated: MarketMetrics! @auth(level: ADMIN)
+  
+  aiAnalysisCompleted(modelType: AIModelType!): AIAnalysis! @auth(level: USER)
+  
+  qualityCheckCompleted(contentId: ID!): AutomatedQualityCheck! @auth(level: USER)
+  
+  disputeUpdated(id: ID!): Dispute! @auth(level: ADMIN)
+  
+  paymentStatusChanged(id: ID!): PaymentTransaction! @auth(level: USER)
+  
+  distributionStatusChanged(contentId: ID!): Distribution! @auth(level: USER)
+  
+  batchJobStatusChanged(id: ID!): BatchJob! @auth(level: USER)
+  
+  securityAlert(userId: ID!): SecurityAuditEvent! @auth(level: ADMIN)
+}
+
+# Additional Input Types for Filtering and Searching
+
+input UserSearchFilter {
+  username: String
+  email: Email
+  displayName: String
+  bioContains: String
+  verificationStatus: VerificationStatus
+  activeStatus: UserStatus
+}
+
+input VoiceClipSearchFilter {
+  voiceTraits: VoiceTraitsInput
+  locationLanguage: LocationLanguageInput
+  styleTone: StyleToneInput
+  technicalSpecs: TechnicalSpecsInput
+  productionQualitySpecs: ProductionQualitySpecsInput
+  category: Category
+  subcategory: String
+  status: ClipStatus
+}
+
+input NFTSearchFilter {
+  voiceTraits: VoiceTraitsInput
+  locationLanguage: LocationLanguageInput
+  styleTone: StyleToneInput
+  technicalSpecs: TechnicalSpecsInput
+  productionQualitySpecs: ProductionQualitySpecsInput
+  category: Category
+  subcategory: String
+  marketplaceStatus: MarketplaceStatus
+}
+
+input MetadataFilter {
+  ipfsHash: String
+  blockchain: String
+  smartContractAddress: String
+  transactionHash: String
+  originalFileHash: String
+}
+
+input AudioSearchFilter {
+  voiceTraits: VoiceTraitsInput
+  technicalSpecs: TechnicalSpecsInput
+}
+
+input BatchProcessingConfig {
+  batchSize: Int!
+  retryAttempts: Int!
+  priority: String!
+}
+
+input QualityCheckConfig {
+  autoRetry: Boolean!
+  notificationOnFailure: Boolean!
+}
+
+# Core Types (Continued)
+
+type User {
+  id: ID!
+  profile: UserProfile!
+  voiceClips: [VoiceClip!]!
+  nfts: [NFT!]!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  statistics: UserStatistics!
+  preferences: UserPreferences!
+  relationships: UserRelationships!
+}
+
+type VoiceClip {
+  id: ID!
+  owner: User!
+  metadata: Metadata!
+  voiceTraits: VoiceTraits!
+  locationLanguage: LocationLanguage!
+  styleTone: StyleTone
+  technicalSpecs: TechnicalSpecs!
+  productionQualitySpecs: ProductionQualitySpecs!
+  category: Category!
+  subcategory: String!
+  history: [VoiceClipHistory!]!
+  nftVersion: NFT
+  collaborators: [User!]
+  permissions: Permissions!
+  status: ClipStatus!
+  embedding: Vector
+}
+
+type NFT {
+  id: ID!
+  originalVoiceClip: VoiceClip!
+  owner: User!
+  metadata: Metadata!
+  voiceTraits: VoiceTraits!
+  locationLanguage: LocationLanguage!
+  styleTone: StyleTone
+  technicalSpecs: TechnicalSpecs!
+  productionQualitySpecs: ProductionQualitySpecs!
+  category: Category!
+  subcategory: String!
+  transactionHistory: [NFTTransaction!]!
+  marketplaceStatus: MarketplaceStatus!
+  smartContract: SmartContract!
+}
+
+type NFTTransaction {
+  id: ID!
+  timestamp: DateTime!
+  from: User!
+  to: User!
+  price: Float!
+  currency: String!
+  transactionHash: String!
+}
+
+type SmartContract {
+  address: String!
+  blockchain: String!
+  standard: String!
+  metadata: String!
+  deployedAt: DateTime!
+  owner: User!
+}
+
+# Additional Types
+
+type Offer {
+  id: ID!
+  nft: NFT!
+  buyer: User!
+  price: Float!
+  currency: String!
+  timestamp: DateTime!
+}
+
+type PriceUpdate {
+  nft: NFT!
+  oldPrice: Float!
+  newPrice: Float!
+  timestamp: DateTime!
+}
+
+type MarketMetrics {
+  totalListings: Int!
+  totalSales: Int!
+  totalRevenue: Float!
+}
+
+type Resolution {
+  summary: String!
+  outcome: String!
+  implementedBy: User!
+  timestamp: DateTime!
+}
+
+type DisputeAction {
+  id: ID!
+  action: String!
+  actor: User!
+  timestamp: DateTime!
+  details: String!
+}
+
+type BatchError {
+  id: ID!
+  itemId: ID!
+  message: String!
+}
+
+type SecurityConfig {
+  id: ID!
+  level: SecurityLevel!
+  authMethods: [AuthenticationMethod!]!
+  accessControls: [AccessControl!]!
+  encryptionSettings: EncryptionSettings!
+  auditLog: [SecurityAuditEvent!]!
+}
+
+type EncryptionSettings {
+  encryptionType: String!
+  keyRotationFrequency: String!
+  keyStorage: String!
+}
+
+type AccessControl {
+  id: ID!
+  resource: String!
+  permissions: [String!]!
+  roles: [String!]!
+  conditions: JSON
+}
+
+type SecurityAuditEvent {
+  id: ID!
+  eventType: String!
+  timestamp: DateTime!
+  actor: User!
+  resource: String!
+  details: JSON!
+}
+
+# Input Types
+
+input CreateUserInput {
+  email: Email!
+  username: String!
+  walletAddress: String!
+  profilePictureUrl: URL!
+}
+
+input UpdateUserInput {
+  email: Email
+  username: String
+  walletAddress: String
+  profilePictureUrl: URL
+  profile: UserProfileInput
+  preferences: UserPreferencesInput
+}
+
+input CreateVoiceClipInput {
+  audioFile: Upload!
+  voiceTraits: VoiceTraitsInput!
+  locationLanguage: LocationLanguageInput!
+  styleTone: StyleToneInput
+  technicalSpecs: TechnicalSpecsInput!
+  productionQualitySpecs: ProductionQualitySpecsInput
+  category: Category!
+  subcategory: String!
+  permissions: PermissionsInput!
+}
+
+input UpdateVoiceClipInput {
+  audioFile: Upload
+  voiceTraits: VoiceTraitsInput
+  locationLanguage: LocationLanguageInput
+  styleTone: StyleToneInput
+  technicalSpecs: TechnicalSpecsInput
+  productionQualitySpecs: ProductionQualitySpecsInput
+  category: Category
+  subcategory: String
+  permissions: PermissionsInput
+}
+
+input MintNFTInput {
+  voiceClipId: ID!
+  initialPrice: Float!
+  currency: String!
+  blockchain: String!
+  royaltyPercentage: Float!
+}
+
+input UpdateNFTInput {
+  name: String
+  description: String
+  mediaUrl: URL
+  voiceClipId: ID
+  pictureUrl: URL
+  categories: [String!]
+  productionQuality: ProductionQuality
+  experienceLevel: ExperienceLevel
+  transcript: String
+  languageCode: String
+  speechAttributes: [String!]
+  blockchainData: BlockchainDataInput
+  voiceTraits: VoiceTraitsInput
+  locationLanguage: LocationLanguageInput
+  styleTone: StyleToneInput
+  technicalSpecs: TechnicalSpecsInput
+  productionQualitySpecs: ProductionQualitySpecsInput
+  category: Category
+  subcategory: String
+}
+
+input DisputeInput {
+  type: DisputeType!
+  parties: [ID!]!
+  description: String!
+}
+
+input EvidenceInput {
+  type: String!
+  description: String!
+  url: String
+}
+
+input PaymentInput {
+  method: PaymentMethod!
+  amount: Float!
+  currency: String!
+  senderId: ID!
+  recipientId: ID!
+  metadata: JSON
+}
+
+input EscrowInput {
+  releaseConditions: [String!]!
+  validUntil: DateTime!
+  mediatorId: ID
+}
+
+input DistributionScheduleInput {
+  scheduledAt: DateTime!
+  frequency: String!
+}
+
+input DistributionInput {
+  platform: PlatformType!
+  settings: JSON!
+  schedule: DistributionScheduleInput
+}
+
+input BatchItemInput {
+  id: ID!
+}
+
+input AutomationRuleInput {
+  ruleName: String!
+  conditions: JSON!
+  actions: [String!]!
+}
+
+input QualityCheckConfig {
+  autoRetry: Boolean!
+  notificationOnFailure: Boolean!
+}
+
+# Update Inputs
+
+input Date_Filter {
+  isNull: Boolean
+  eq: Date
+  eq_expr: Date_Expr
+  eq_date: Date_Relative
+  ne: Date
+  ne_expr: Date_Expr
+  ne_date: Date_Relative
+  in: [Date!]
+  nin: [Date!]
+  gt: Date
+  gt_expr: Date_Expr
+  gt_time: Date_Relative
+  ge: Date
+  ge_expr: Date_Expr
+  ge_time: Date_Relative
+  lt: Date
+  lt_expr: Date_Expr
+  lt_time: Date_Relative
+  le: Date
+  le_expr: Date_Expr
+  le_time: Date_Relative
+}
+
+input Date_ListFilter {
+  includes: Date
+  excludes: Date
+  includesAll: [Date!]
+  excludesAll: [Date!]
+}
+
+input Timestamp_Filter {
+  isNull: Boolean
+  eq: Timestamp
+  eq_expr: Timestamp_Expr
+  eq_time: Timestamp_Relative
+  ne: Timestamp
+  ne_expr: Timestamp_Expr
+  ne_time: Timestamp_Relative
+  in: [Timestamp!]
+  nin: [Timestamp!]
+  gt: Timestamp
+  gt_expr: Timestamp_Expr
+  gt_time: Timestamp_Relative
+  ge: Timestamp
+  ge_expr: Timestamp_Expr
+  ge_time: Timestamp_Relative
+  lt: Timestamp
+  lt_expr: Timestamp_Expr
+  lt_time: Timestamp_Relative
+  le: Timestamp
+  le_expr: Timestamp_Expr
+  le_time: Timestamp_Relative
+}
+
+input Timestamp_ListFilter {
+  includes: Timestamp
+  excludes: Timestamp
+  includesAll: [Timestamp!]
+  excludesAll: [Timestamp!]
+}
+
+input Date_Update {
+  set: Date
+  set_expr: Date_Expr
+  set_date: Date_Relative
+}
+
+input Date_ListUpdate {
+  set: [Date!]
+  append: [Date!]
+  prepend: [Date!]
+  delete: Int
+  i: Int
+  update: Date
+}
+
+input Timestamp_Update {
+  set: Timestamp
+  set_expr: Timestamp_Expr
+  set_time: Timestamp_Relative
+}
+
+input Timestamp_ListUpdate {
+  set: [Timestamp!]
+  append: [Timestamp!]
+  prepend: [Timestamp!]
+  delete: Int
+  i: Int
+  update: Timestamp
+}
+
+input Timestamp_Relative {
+  now: True
+  at: Timestamp
+  add: Timestamp_Duration
+  sub: Timestamp_Duration
+  truncateTo: Timestamp_Interval
+}
+
+input Timestamp_Duration {
+  milliseconds: Int! = 0
+  seconds: Int! = 0
+  minutes: Int! = 0
+  hours: Int! = 0
+  days: Int! = 0
+  weeks: Int! = 0
+  months: Int! = 0
+  years: Int! = 0
+}
+
+enum Timestamp_Interval {
+  SECOND
+  MINUTE
+  HOUR
+  DAY
+  WEEK
+  MONTH
+  YEAR
+}
+
+input Date_Relative {
+  today: True
+  on: Date
+  add: Date_Duration
+  sub: Date_Duration
+  truncateTo: Date_Interval
+}
+
+input Date_Duration {
+  days: Int! = 0
+  weeks: Int! = 0
+  months: Int! = 0
+  years: Int! = 0
+}
+
+enum Date_Interval {
+  WEEK
+  MONTH
+  YEAR
+}
+
+input String_Update {
+  set: String
+  set_expr: String_Expr
+}
+
+input String_ListUpdate {
+  set: [String!]
+  append: [String!]
+  prepend: [String!]
+}
+
+input UUID_Update {
+  set: UUID
+  set_expr: UUID_Expr
+}
+
+input UUID_ListUpdate {
+  set: [UUID!]
+  append: [UUID!]
+  prepend: [UUID!]
+}
+
+input Int_Update {
+  set: Int
+  inc: Int
+  dec: Int
+}
+
+input Int_ListUpdate {
+  set: [Int!]
+  append: [Int!]
+  prepend: [Int!]
+}
+
+input Int64_Update {
+  set: Int64
+  inc: Int64
+  dec: Int64
+}
+
+input Int64_ListUpdate {
+  set: [Int64!]
+  append: [Int64!]
+  prepend: [Int64!]
+}
+
+input Float_Update {
+  set: Float
+  inc: Float
+  dec: Float
+}
+
+input Float_ListUpdate {
+  set: [Float!]
+  append: [Float!]
+  prepend: [Float!]
+}
+
+input Boolean_Update {
+  set: Boolean
+}
+
+input Boolean_ListUpdate {
+  set: [Boolean!]
+  append: [Boolean!]
+  prepend: [Boolean!]
+}
+
+input Any_Update {
+  set: Any
+}
+
+input Any_ListUpdate {
+  set: [Any!]
+  append: [Any!]
+  prepend: [Any!]
+}
+
+input Vector_Update {
+  set: Vector
+  set_embed: Vector_Embed
+}
+
+input Vector_Embed {
+  model: Vector_Embed_Model!
+  text: String!
+}
+
+# Directives Definitions
+
+directive @auth(
+  level: AccessLevel @fdc_oneOf(required: true)
+  expr: Boolean_Expr @fdc_oneOf(required: true)
+) on QUERY | MUTATION
+
+directive @transaction on MUTATION
+
+directive @fdc_generated(
+  from: SchemaCoordinate!
+  purpose: GeneratedPurpose!
+) on SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+directive @fdc_deprecated(reason: String = "No longer supported") on SCHEMA | SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+directive @fdc_celExpression(
+  returnType: String
+) on SCALAR
+
+directive @fdc_sqlExpression(
+  dataType: String
+) on SCALAR
+
+directive @fdc_forbiddenAsVariableType on SCALAR | OBJECT | INTERFACE | UNION | ENUM | INPUT_OBJECT
+
+directive @fdc_forbiddenAsFieldType on SCALAR | OBJECT | INTERFACE | UNION | ENUM | INPUT_OBJECT
+
+directive @fdc_example(
+  value: Any
+  description: String
+) repeatable on SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | INPUT_OBJECT | INPUT_FIELD_DEFINITION
+
+directive @fdc_oneOf(
+  group: String! = ""
+  required: Boolean! = false
+) repeatable on FIELD_DEFINITION | ARGUMENT_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @view(
+  name: String @fdc_oneOf
+  sql: String @fdc_oneOf
+  singular: String
+  plural: String
+) on OBJECT
+
+directive @col(
+  name: String
+  dataType: String
+  size: Int
+) on FIELD_DEFINITION
+
+directive @ref(
+  constraintName: String
+  fields: [String!]
+  references: [String!]
+) on FIELD_DEFINITION
+
+directive @index(
+  name: String
+  fields: [String!]
+  order: [IndexFieldOrder!]
+  type: IndexType
+  vector_method: VectorSimilarityMethod
+) repeatable on FIELD_DEFINITION | OBJECT
+
+directive @unique(
+  indexName: String
+  fields: [String!]
+) repeatable on FIELD_DEFINITION | OBJECT
+
+directive @default(
+  value: Any @fdc_oneOf(required: true)
+  expr: Any_Expr @fdc_oneOf(required: true)
+  sql: Any_SQL @fdc_oneOf(required: true)
+) on FIELD_DEFINITION
+
+# Internal Types
+
+type _Service {
+  sdl: String!
+  schema: String!
+  docs: [_Doc!]!
+}
+
+type _Doc {
+  page: String!
+  markdown: String!
+}
+
+# Subscriptions Support
+
+type Subscription {
+  userUpdated(id: ID!): User! @auth(level: USER)
+  newFollower(userId: ID!): User! @auth(level: USER)
+  
+  voiceClipCreated(userId: ID): VoiceClip! @auth(level: USER)
+  voiceClipUpdated(id: ID!): VoiceClip! @auth(level: USER)
+  
+  nftMinted(userId: ID): NFT! @auth(level: USER)
+  nftListed(category: Category): NFT! @auth(level: PUBLIC)
+  nftSold(id: ID!): NFTTransaction! @auth(level: USER)
+  
+  newOffer(nftId: ID!): Offer! @auth(level: USER)
+  priceChanged(nftId: ID!): PriceUpdate! @auth(level: USER)
+  
+  userAnalyticsUpdated(userId: ID!): UserStatistics! @auth(level: USER)
+  marketMetricsUpdated: MarketMetrics! @auth(level: ADMIN)
+  
+  aiAnalysisCompleted(modelType: AIModelType!): AIAnalysis! @auth(level: USER)
+  
+  qualityCheckCompleted(contentId: ID!): AutomatedQualityCheck! @auth(level: USER)
+  
+  disputeUpdated(id: ID!): Dispute! @auth(level: ADMIN)
+  
+  paymentStatusChanged(id: ID!): PaymentTransaction! @auth(level: USER)
+  
+  distributionStatusChanged(contentId: ID!): Distribution! @auth(level: USER)
+  
+  batchJobStatusChanged(id: ID!): BatchJob! @auth(level: USER)
+  
+  securityAlert(userId: ID!): SecurityAuditEvent! @auth(level: ADMIN)
+}
+
+# Complete Schema
+
+type Query {
+  user(id: ID!): User!
+  userByUsername(username: String!): User
+  searchUsers(filter: UserSearchFilter!): [User!]!
+  
+  voiceClip(id: ID!): VoiceClip!
+  voiceClipsByUser(userId: ID!): [VoiceClip!]!
+  searchVoiceClips(filter: VoiceClipSearchFilter!): [VoiceClip!]!
+  
+  nft(id: ID!): NFT!
+  nftsByUser(userId: ID!): [NFT!]!
+  searchNFTs(filter: NFTSearchFilter!): [NFT!]!
+  
+  filterVoiceClipsByMetadata(filter: MetadataFilter!): [VoiceClip!]!
+  filterNFTsByMetadata(filter: MetadataFilter!): [NFT!]!
+  searchByAudioCharacteristics(filter: AudioSearchFilter!): [VoiceClip!]!
+  
+  paginatedNFTs(limit: Int!, offset: Int!, filter: NFTFilterInput): [NFT!]! @auth(level: PUBLIC)
+  
+  getAIAnalysis(id: ID!): AIAnalysis!
+  getModelPredictions(type: AIModelType!, input: JSON!): [AIRecommendation!]!
+  
+  getQualityCheckResults(id: ID!): [QualityCheckResult!]!
+  getAutomatedChecks(type: QualityCheckType!): [AutomatedQualityCheck!]!
+  
+  getDispute(id: ID!): Dispute!
+  getUserDisputes(userId: ID!): [Dispute!]!
+  
+  getTransaction(id: ID!): PaymentTransaction!
+  getEscrowDetails(id: ID!): EscrowDetails!
+  
+  getPlatformAnalytics(platformId: ID!): DistributionAnalytics!
+  getDistributionStatus(contentId: ID!): [Distribution!]!
+  
+  getBatchJob(id: ID!): BatchJob!
+  getBatchStatus(type: BatchProcessingType!): [BatchJob!]!
+  
+  getSecurityConfig(userId: ID!): SecurityConfig!
+  getAuditLog(resourceId: ID!): [SecurityAuditEvent!]!
+  
+  _service: _Service!
+}

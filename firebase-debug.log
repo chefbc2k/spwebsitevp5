@@ -1,0 +1,166 @@
+[debug] [2024-10-25T22:16:12.391Z] ----------------------------------------------------------------------
+[debug] [2024-10-25T22:16:12.393Z] Command:       /opt/homebrew/Cellar/node/22.9.0_1/bin/node /Users/chefb/.npm/_npx/ba4f1959e38407b5/node_modules/.bin/firebase emulators:start --project speak-website-439103
+[debug] [2024-10-25T22:16:12.393Z] CLI Version:   13.23.0
+[debug] [2024-10-25T22:16:12.393Z] Platform:      darwin
+[debug] [2024-10-25T22:16:12.393Z] Node Version:  v22.9.0
+[debug] [2024-10-25T22:16:12.393Z] Time:          Fri Oct 25 2024 17:16:12 GMT-0500 (Central Daylight Time)
+[debug] [2024-10-25T22:16:12.393Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-25T22:16:12.440Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-25T22:16:12.440Z] > authorizing via signed-in user (chefbc2k@gmail.com)
+[info] i  emulators: Starting emulators: dataconnect {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: dataconnect"}}
+[debug] [2024-10-25T22:16:12.844Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-10-25T22:16:12.844Z] [dataconnect.postgres] postgres server for dataconnect only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-10-25T22:16:12.845Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"dataconnect":[{"address":"127.0.0.1","family":"IPv4","port":9399},{"address":"::1","family":"IPv6","port":9399}],"dataconnect.postgres":[{"address":"127.0.0.1","family":"IPv4","port":5432}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-10-25T22:16:12.846Z] [hub] writing locator at /var/folders/3w/fzn5s4xx4110kwbx4rh6cnwr0000gn/T/hub-speak-website-439103.json
+[debug] [2024-10-25T22:16:13.843Z] I1025 17:16:13.833386   44250 control.go:45] [engine.Service /emulator/speak-website-data-connect-service f27a] UpdateSchema(): done sources: schema/schema.gql [1384B] 
+I1025 17:16:13.841180   44250 control.go:73] [engine.Service /emulator/speak-website-data-connect-service f27a] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1025 17:16:13.833386   44250 control.go:45] [engine.Service /emulator/speak-website-data-connect-service f27a] UpdateSchema(): done sources: schema/schema.gql [1384B] \nI1025 17:16:13.841180   44250 control.go:73] [engine.Service /emulator/speak-website-data-connect-service f27a] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] \n"}}
+[debug] [2024-10-25T22:16:13.851Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-10-25T22:16:13.852Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-10-25T22:16:13.852Z] Starting Data Connect Emulator with command {"binary":"/Users/chefb/.cache/firebase/emulators/dataconnect-emulator-1.5.1","args":["--logtostderr","-v=2","dev","--listen=127.0.0.1:9399,[::1]:9399","--config_dir=/Users/chefb/spwebsitevp5/dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"/Users/chefb/.cache/firebase/emulators/dataconnect-emulator-1.5.1\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=127.0.0.1:9399,[::1]:9399\",\"--config_dir=/Users/chefb/spwebsitevp5/dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to \u001b[1mdataconnect-debug.log\u001b[22m"}}
+[debug] [2024-10-25T22:16:14.402Z] [Data Connect] Connecting to postgres://127.0.0.1:5432/general?sslmode=disable}...
+[debug] [2024-10-25T22:16:14.403Z] >>> [apiv2][query] POST http://127.0.0.1:9399/emulator/configure [none]
+[debug] [2024-10-25T22:16:14.403Z] >>> [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {"connectionString":"postgres://127.0.0.1:5432/general?sslmode=disable","database":"general","serviceId":"speak-website-data-connect-service","maxOpenConnections":1}
+[debug] [2024-10-25T22:16:14.406Z] I1025 17:16:14.019058   44251 load.go:37] Reloading schema and connectors...
+I1025 17:16:14.032518   44251 control.go:45] [engine.Service /emulator/speak-website-data-connect-service bab3] UpdateSchema(): done sources: schema/schema.gql [1384B] 
+I1025 17:16:14.039846   44251 control.go:73] [engine.Service /emulator/speak-website-data-connect-service bab3] UpdateConnector(default): done sources: connector/queries.gql [1855B] connector/mutations.gql [1163B] 
+I1025 17:16:14.055282   44251 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+I1025 17:16:14.061287   44251 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+I1025 17:16:14.062182   44251 collector.go:107] connector "default" javascriptSdk wrote into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+Generated sources: index.d.ts [264B] esm/index.esm.js [207B] esm/package.json [17B] index.cjs.js [248B] package.json [623B] 
+I1025 17:16:14.066572   44251 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation
+I1025 17:16:14.066658   44251 load.go:115] Finished reloading
+I1025 17:16:14.070659   44251 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+I1025 17:16:14.071515   44251 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1025 17:16:14.019058   44251 load.go:37] Reloading schema and connectors...\nI1025 17:16:14.032518   44251 control.go:45] [engine.Service /emulator/speak-website-data-connect-service bab3] UpdateSchema(): done sources: schema/schema.gql [1384B] \nI1025 17:16:14.039846   44251 control.go:73] [engine.Service /emulator/speak-website-data-connect-service bab3] UpdateConnector(default): done sources: connector/queries.gql [1855B] connector/mutations.gql [1163B] \nI1025 17:16:14.055282   44251 codegen.go:82] [connector \"default\" javascriptSdk] Generating sources into \"/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector\"\nI1025 17:16:14.061287   44251 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] \nI1025 17:16:14.062182   44251 collector.go:107] connector \"default\" javascriptSdk wrote into \"/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector\"\nGenerated sources: index.d.ts [264B] esm/index.esm.js [207B] esm/package.json [17B] index.cjs.js [248B] package.json [623B] \nI1025 17:16:14.066572   44251 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation\nI1025 17:16:14.066658   44251 load.go:115] Finished reloading\nI1025 17:16:14.070659   44251 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399\nI1025 17:16:14.071515   44251 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399\n"}}
+[debug] [2024-10-25T22:16:14.429Z] Frontend message 
+[debug] [2024-10-25T22:16:14.430Z] Backend message AuthenticationResponse
+[debug] [2024-10-25T22:16:14.431Z] Backend message ParameterStatus
+[debug] [2024-10-25T22:16:14.431Z] Backend message ReadyForQuery
+[debug] [2024-10-25T22:16:14.433Z] Frontend message Query
+[debug] [2024-10-25T22:16:14.434Z] Backend message EmptyQuery
+[debug] [2024-10-25T22:16:14.435Z] Backend message ReadyForQuery
+[debug] [2024-10-25T22:16:14.445Z] Frontend message Query
+[debug] [2024-10-25T22:16:14.447Z] Backend message RowDescriptionMessage
+[debug] [2024-10-25T22:16:14.448Z] Backend message DataRow
+[debug] [2024-10-25T22:16:14.449Z] Backend message CommandComplete
+[debug] [2024-10-25T22:16:14.449Z] Backend message ReadyForQuery
+[debug] [2024-10-25T22:16:14.451Z] Frontend message Parse
+[debug] [2024-10-25T22:16:14.451Z] Backend message ParseComplete
+[debug] [2024-10-25T22:16:14.452Z] Frontend message Describe
+[debug] [2024-10-25T22:16:14.452Z] Backend message ParameterDescriptionMessage
+[debug] [2024-10-25T22:16:14.452Z] Backend message RowDescriptionMessage
+[debug] [2024-10-25T22:16:14.452Z] Frontend message Sync
+[debug] [2024-10-25T22:16:14.452Z] Backend message ReadyForQuery
+[debug] [2024-10-25T22:16:14.452Z] Frontend message Bind
+[debug] [2024-10-25T22:16:14.453Z] Backend message BindComplete
+[debug] [2024-10-25T22:16:14.453Z] Frontend message Execute
+[debug] [2024-10-25T22:16:14.453Z] Backend message DataRow
+[debug] [2024-10-25T22:16:14.453Z] Backend message CommandComplete
+[debug] [2024-10-25T22:16:14.453Z] Frontend message Sync
+[debug] [2024-10-25T22:16:14.454Z] Backend message ReadyForQuery
+[debug] [2024-10-25T22:16:14.455Z] Frontend message Parse
+[debug] [2024-10-25T22:16:14.455Z] Backend message ParseComplete
+[debug] [2024-10-25T22:16:14.455Z] Frontend message Describe
+[debug] [2024-10-25T22:16:14.455Z] Backend message ParameterDescriptionMessage
+[debug] [2024-10-25T22:16:14.455Z] Backend message RowDescriptionMessage
+[debug] [2024-10-25T22:16:14.455Z] Frontend message Sync
+[debug] [2024-10-25T22:16:14.455Z] Backend message ReadyForQuery
+[debug] [2024-10-25T22:16:14.455Z] Frontend message Bind
+[debug] [2024-10-25T22:16:14.456Z] Backend message BindComplete
+[debug] [2024-10-25T22:16:14.456Z] Frontend message Execute
+[debug] [2024-10-25T22:16:14.456Z] Backend message CommandComplete
+[debug] [2024-10-25T22:16:14.456Z] Frontend message Sync
+[debug] [2024-10-25T22:16:14.456Z] Backend message ReadyForQuery
+[debug] [2024-10-25T22:16:14.457Z] Frontend message Parse
+[debug] [2024-10-25T22:16:14.457Z] Backend message ParseComplete
+[debug] [2024-10-25T22:16:14.457Z] Frontend message Describe
+[debug] [2024-10-25T22:16:14.457Z] Backend message ParameterDescriptionMessage
+[debug] [2024-10-25T22:16:14.458Z] Backend message RowDescriptionMessage
+[debug] [2024-10-25T22:16:14.458Z] Frontend message Sync
+[debug] [2024-10-25T22:16:14.458Z] Backend message ReadyForQuery
+[debug] [2024-10-25T22:16:14.458Z] Frontend message Bind
+[debug] [2024-10-25T22:16:14.460Z] Backend message BindComplete
+[debug] [2024-10-25T22:16:14.460Z] Frontend message Execute
+[debug] [2024-10-25T22:16:14.461Z] Backend message CommandComplete
+[debug] [2024-10-25T22:16:14.461Z] Frontend message Sync
+[debug] [2024-10-25T22:16:14.461Z] Backend message ReadyForQuery
+[debug] [2024-10-25T22:16:14.463Z] Frontend message Query
+[debug] [2024-10-25T22:16:14.463Z] Backend message RowDescriptionMessage
+[debug] [2024-10-25T22:16:14.463Z] Backend message DataRow
+[debug] [2024-10-25T22:16:14.463Z] Backend message CommandComplete
+[debug] [2024-10-25T22:16:14.463Z] Backend message ReadyForQuery
+[debug] [2024-10-25T22:16:14.464Z] Frontend message Parse
+[debug] [2024-10-25T22:16:14.464Z] Backend message ParseComplete
+[debug] [2024-10-25T22:16:14.464Z] Frontend message Describe
+[debug] [2024-10-25T22:16:14.464Z] Backend message ParameterDescriptionMessage
+[debug] [2024-10-25T22:16:14.464Z] Backend message RowDescriptionMessage
+[debug] [2024-10-25T22:16:14.464Z] Frontend message Sync
+[debug] [2024-10-25T22:16:14.464Z] Backend message ReadyForQuery
+[debug] [2024-10-25T22:16:14.465Z] Frontend message Bind
+[debug] [2024-10-25T22:16:14.465Z] Backend message BindComplete
+[debug] [2024-10-25T22:16:14.465Z] Frontend message Execute
+[debug] [2024-10-25T22:16:14.465Z] Backend message DataRow
+[debug] [2024-10-25T22:16:14.465Z] Backend message CommandComplete
+[debug] [2024-10-25T22:16:14.465Z] Frontend message Sync
+[debug] [2024-10-25T22:16:14.465Z] Backend message ReadyForQuery
+[debug] [2024-10-25T22:16:14.466Z] Frontend message Parse
+[debug] [2024-10-25T22:16:14.466Z] Backend message ParseComplete
+[debug] [2024-10-25T22:16:14.466Z] Frontend message Describe
+[debug] [2024-10-25T22:16:14.466Z] Backend message ParameterDescriptionMessage
+[debug] [2024-10-25T22:16:14.466Z] Backend message RowDescriptionMessage
+[debug] [2024-10-25T22:16:14.466Z] Frontend message Sync
+[debug] [2024-10-25T22:16:14.466Z] Backend message ReadyForQuery
+[debug] [2024-10-25T22:16:14.466Z] Frontend message Bind
+[debug] [2024-10-25T22:16:14.466Z] Backend message BindComplete
+[debug] [2024-10-25T22:16:14.466Z] Frontend message Execute
+[debug] [2024-10-25T22:16:14.466Z] Backend message CommandComplete
+[debug] [2024-10-25T22:16:14.466Z] Frontend message Sync
+[debug] [2024-10-25T22:16:14.466Z] Backend message ReadyForQuery
+[debug] [2024-10-25T22:16:14.467Z] Frontend message Parse
+[debug] [2024-10-25T22:16:14.467Z] Backend message ParseComplete
+[debug] [2024-10-25T22:16:14.467Z] Frontend message Describe
+[debug] [2024-10-25T22:16:14.467Z] Backend message ParameterDescriptionMessage
+[debug] [2024-10-25T22:16:14.467Z] Backend message RowDescriptionMessage
+[debug] [2024-10-25T22:16:14.467Z] Frontend message Sync
+[debug] [2024-10-25T22:16:14.467Z] Backend message ReadyForQuery
+[debug] [2024-10-25T22:16:14.467Z] Frontend message Bind
+[debug] [2024-10-25T22:16:14.469Z] Backend message BindComplete
+[debug] [2024-10-25T22:16:14.469Z] Frontend message Execute
+[debug] [2024-10-25T22:16:14.469Z] Backend message CommandComplete
+[debug] [2024-10-25T22:16:14.469Z] Frontend message Sync
+[debug] [2024-10-25T22:16:14.469Z] Backend message ReadyForQuery
+[debug] [2024-10-25T22:16:14.469Z] Frontend message Query
+[debug] [2024-10-25T22:16:14.469Z] Backend message RowDescriptionMessage
+[debug] [2024-10-25T22:16:14.469Z] Backend message DataRow
+[debug] [2024-10-25T22:16:14.469Z] Backend message CommandComplete
+[debug] [2024-10-25T22:16:14.469Z] Backend message ReadyForQuery
+[debug] [2024-10-25T22:16:14.469Z] I1025 17:16:14.469823   44251 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 29e9] UpdateSchema(): done sources: schema/schema.gql [1384B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1025 17:16:14.469823   44251 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 29e9] UpdateSchema(): done sources: schema/schema.gql [1384B] \n"}}
+[debug] [2024-10-25T22:16:14.470Z] I1025 17:16:14.470057   44251 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 29e9] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1025 17:16:14.470057   44251 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 29e9] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] \n"}}
+[debug] [2024-10-25T22:16:14.478Z] <<< [apiv2][status] POST http://127.0.0.1:9399/emulator/configure 200
+[debug] [2024-10-25T22:16:14.478Z] <<< [apiv2][body] POST http://127.0.0.1:9399/emulator/configure {}
+[debug] [2024-10-25T22:16:14.478Z] [Data Connect] Successfully connected to postgres://127.0.0.1:5432/general?sslmode=disable}
+[warn] ⚠  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[debug] [2024-10-25T22:16:14.480Z] >>> [apiv2][query] GET http://127.0.0.1:9399/emulator/info [none]
+[debug] [2024-10-25T22:16:14.483Z] <<< [apiv2][status] GET http://127.0.0.1:9399/emulator/info 200
+[debug] [2024-10-25T22:16:14.483Z] <<< [apiv2][body] GET http://127.0.0.1:9399/emulator/info {"version":"","services":[{"serviceId":"speak-website-data-connect-service","connectionString":"dbname='general' host='127.0.0.1' port='5432' sslmode='disable' dbname='general'"}]}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────────┬────────────────┐
+│ Emulator     │ Host:Port      │
+├──────────────┼────────────────┤
+│ Data Connect │ 127.0.0.1:9399 │
+└──────────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 

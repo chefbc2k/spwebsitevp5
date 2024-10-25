@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 86% 11%;
+  --foreground: 60 100% 97%;
+  --card: 220 86% 11%;
+  --card-foreground: 60 100% 97%;
+  --popover: 220 86% 11%;
+  --popover-foreground: 60 100% 97%;
+  --primary: 39 100% 50%;
+  --primary-foreground: 220 86% 11%;
+  --secondary: 9 100% 64%;
+  --secondary-foreground: 220 86% 11%;
+  --muted: 220 14% 25%;
+  --muted-foreground: 60 5% 80%;
+  --accent: 9 100% 64%;
+  --accent-foreground: 220 86% 11%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 100% 97%;
+  --border: 220 14% 25%;
+  --input: 220 14% 25%;
+  --ring: 39 100% 50%;
+  --radius: 0.5rem;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Audio Visualizer */
+.audio-visualizer {
+  display: flex;
+  align-items: flex-end;
+  height: 50px;
+  gap: 2px;
+}
+
+.audio-bar {
+  width: 3px;
+  background: linear-gradient(to top, var(--yellow), var(--orange));
+  border-radius: 2px;
+  transition: height 0.1s ease;
+}
+
+/* Premium Hover Effects */
+.premium-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.premium-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Grain Texture */
+.grain {
+  background-image: url('/noise.png');
+  opacity: 0.03;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--yellow), var(--orange));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange);
+}
