@@ -65,47 +65,62 @@ export interface NFTLocation {
   };
 }
 
+export interface Category {
+  name: string;
+  subcategories: string[];
+}
+
+export interface FilterSection {
+  [key: string]: Record<string, boolean>;
+}
+
 export interface FilterState {
-  geographic: {
-    continent: Record<string, boolean>;
-    country: Record<string, boolean>;
-    region: Record<string, boolean>;
-  };
-  speaker: {
-    age: Record<string, boolean>;
-    gender: Record<string, boolean>;
-    education: Record<string, boolean>;
-    languageLevel: Record<string, boolean>;
-  };
-  voice: {
+  voiceTraits?: {
     pitch: Record<string, boolean>;
-    speed: Record<string, boolean>;
-    clarity: Record<string, boolean>;
-    emotion: Record<string, boolean>;
+    texture: Record<string, boolean>;
+    volume: Record<string, boolean>;
+    versatility: Record<string, boolean>;
   };
-  language: {
-    primary: Record<string, boolean>;
-    heritage: Record<string, boolean>;
-    accent: Record<string, boolean>;
-    dialect: Record<string, boolean>;
-    pronunciation: Record<string, boolean>;
+  locationLanguage?: {
+    language: Record<string, boolean>;
+    secondaryLanguages: Record<string, boolean>;
+    regionalDialect: Record<string, boolean>;
+    timeZone: Record<string, boolean>;
+    studioAvailability: Record<string, boolean>;
   };
-  context: {
-    style: Record<string, boolean>;
-    format: Record<string, boolean>;
-    purpose: Record<string, boolean>;
-    background: Record<string, boolean>;
-    accessibility: Record<string, boolean>;
+  styleTone?: {
+    commercial: Record<string, boolean>;
+    narration: Record<string, boolean>;
+    character: Record<string, boolean>;
+    corporate: Record<string, boolean>;
   };
-  cultural: {
-    slang: Record<string, boolean>;
-    mixedLanguages: Record<string, boolean>;
-    localTerms: Record<string, boolean>;
-    formality: Record<string, boolean>;
+  technical?: {
+    audioQuality: Record<string, boolean>;
+    sampleRate: Record<string, boolean>;
+    equipment: Record<string, boolean>;
+    postProduction: Record<string, boolean>;
   };
-  technical: {
-    aiProcessed: Record<string, boolean>;
-    processing: Record<string, boolean>;
-    audioMix: Record<string, boolean>;
+  productionQuality?: {
+    broadcast: Record<string, boolean>;
+    professional: Record<string, boolean>;
   };
+  experience?: {
+    novice: Record<string, boolean>;
+    expert: Record<string, boolean>;
+  };
+  [key: string]: Record<string, Record<string, boolean>> | undefined;
+}
+
+export interface FilterCategory {
+  label: string;
+  sections: {
+    [key: string]: {
+      label: string;
+      options: string[];
+    };
+  };
+}
+
+export interface FilterCategories {
+  [key: string]: FilterCategory;
 }

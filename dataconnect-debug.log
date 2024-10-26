@@ -1,14 +1,12 @@
-I1025 17:16:14.019058   44251 load.go:37] Reloading schema and connectors...
-I1025 17:16:14.032518   44251 control.go:45] [engine.Service /emulator/speak-website-data-connect-service bab3] UpdateSchema(): done sources: schema/schema.gql [1384B] 
-I1025 17:16:14.039846   44251 control.go:73] [engine.Service /emulator/speak-website-data-connect-service bab3] UpdateConnector(default): done sources: connector/queries.gql [1855B] connector/mutations.gql [1163B] 
-I1025 17:16:14.055282   44251 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
-I1025 17:16:14.061287   44251 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+I1026 04:49:39.516797   49922 load.go:37] Reloading schema and connectors...
+E1026 04:49:39.522725   49922 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service "speak-website-data-connect-service". No service has a schema.
+E1026 04:49:39.522970   49922 load.go:79] Could not load sources: <nil>
+I1026 04:49:39.524454   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
 Generated sources: prelude.gql [60423B] 
-I1025 17:16:14.062182   44251 collector.go:107] connector "default" javascriptSdk wrote into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
-Generated sources: index.d.ts [264B] esm/index.esm.js [207B] esm/package.json [17B] index.cjs.js [248B] package.json [623B] 
-I1025 17:16:14.066572   44251 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation
-I1025 17:16:14.066658   44251 load.go:115] Finished reloading
-I1025 17:16:14.070659   44251 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
-I1025 17:16:14.071515   44251 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399
-I1025 17:16:14.469823   44251 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 29e9] UpdateSchema(): done sources: schema/schema.gql [1384B] 
-I1025 17:16:14.470057   44251 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 29e9] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
+I1026 04:49:39.524560   49922 load.go:80] Finished reloading
+I1026 04:49:39.529378   49922 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+I1026 04:49:39.531698   49922 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399
+I1026 04:49:40.011204   49922 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 1ab6] UpdateSchema(): done sources: 
+I1026 04:49:40.029259   49922 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 1ab6] UpdateSchema(): done sources: 
+I1026 04:49:40.030936   49922 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 1ab6] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
+I1026 04:49:40.032136   49922 service.go:133] Failed to load latest schema: schema/schema.gql:98: Undefined argument to for directive ref.

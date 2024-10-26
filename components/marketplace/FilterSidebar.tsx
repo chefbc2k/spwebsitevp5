@@ -9,7 +9,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { ChevronLeft, Search, Save, RotateCcw, Star } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Checkbox } from "@/components/ui/checkbox";
-import type { FilterState, Category } from '@/types/marketplace'; // Ensure Category is defined in your types
+import type { FilterState, Category, FilterCategories } from '@/types/marketplace';
 
 interface FilterSidebarProps {
   filters: FilterState;
@@ -18,7 +18,7 @@ interface FilterSidebarProps {
   showSidebar: boolean;
 }
 
-const filterCategories = {
+const filterCategories: FilterCategories = {
   voiceTraits: {
     label: 'Voice Traits',
     sections: {
@@ -78,7 +78,7 @@ const filterCategories = {
       },
       character: {
         label: 'Character/Animation',
-        options: ['Hero', 'Villain', 'Sidekick', 'Animal-like', 'Fantasy', 'Sci-fi', 'Children’s Content', 'Mythical Creatures', 'Comedy', 'Horror']
+        options: ['Hero', 'Villain', 'Sidekick', 'Animal-like', 'Fantasy', 'Sci-fi', 'Children\'s Content', 'Mythical Creatures', 'Comedy', 'Horror']
       },
       corporate: {
         label: 'Corporate',
@@ -135,7 +135,6 @@ const filterCategories = {
   }
 };
 
-// Additional Categories (if needed in the filter sidebar)
 const categories: Category[] = [
   {
     name: "Entertainment & Media",
@@ -226,17 +225,17 @@ export default function FilterSidebar({
   onClose,
   showSidebar
 }: FilterSidebarProps) {
-  const [localFilters, setLocalFilters] = useState(filters);
+  const [localFilters, setLocalFilters] = useState<FilterState>(filters);
   const [searchTerm, setSearchTerm] = useState('');
   const [activeFilterCount, setActiveFilterCount] = useState(0);
   const [recentFilters, setRecentFilters] = useState<string[]>([]);
   const [savedPresets, setSavedPresets] = useState<{ name: string; filters: FilterState }[]>([]);
 
   useEffect(() => {
-    const count = Object.values(localFilters).reduce((acc, category) => {
-      if (typeof category === 'object' && category !== null) {
+    const count = Object.entries(localFilters).reduce((acc, [_, category]) => {
+      if (category && typeof category === 'object') {
         return acc + Object.values(category).reduce((subAcc, section) => {
-          if (typeof section === 'object' && section !== null) {
+          if (section && typeof section === 'object') {
             return subAcc + Object.values(section).filter(Boolean).length;
           }
           return subAcc;
@@ -248,39 +247,41 @@ export default function FilterSidebar({
   }, [localFilters]);
 
   const handleFilterChange = (category: string, section: string, value: string, checked: boolean) => {
-    const updatedFilters = {
-      ...localFilters,
-      [category]: {
-        ...localFilters[category as keyof FilterState],
-        [section]: {
-          ...(localFilters[category as keyof FilterState] as Record<string, Record<string, boolean>>)[section],
-          [value]: checked
+    setLocalFilters((prev: FilterState) => {
+      const categoryFilters = prev[category] || {};
+      const sectionFilters = categoryFilters[section] || {};
+      
+      const updatedFilters: FilterState = {
+        ...prev,
+        [category]: {
+          ...categoryFilters,
+          [section]: {
+            ...sectionFilters,
+            [value]: checked
+          }
         }
+      };
+
+      if (checked && !recentFilters.includes(`${category}:${section}:${value}`)) {
+        setRecentFilters(prev => [
+          `${category}:${section}:${value}`,
+          ...prev.slice(0, 4)
+        ]);
       }
-    };
 
-    if (checked && !recentFilters.includes(`${category}:${section}:${value}`)) {
-      setRecentFilters(prev => [
-        `${category}:${section}:${value}`,
-        ...prev.slice(0, 4)
-      ]);
-    }
-
-    setLocalFilters(updatedFilters);
-    onFilterChange(updatedFilters);
+      onFilterChange(updatedFilters);
+      return updatedFilters;
+    });
   };
 
   const clearFilters = () => {
-    const clearedFilters = Object.keys(localFilters).reduce((acc, category) => ({
-      ...acc,
-      [category]: Object.keys(localFilters[category as keyof FilterState]).reduce(
-        (subAcc, section) => ({
-          ...subAcc,
-          [section]: {}
-        }),
-        {}
-      )
-    }), {} as FilterState);
+    const clearedFilters: FilterState = {};
+    Object.keys(filterCategories).forEach(category => {
+      clearedFilters[category] = {};
+      Object.keys(filterCategories[category].sections).forEach(section => {
+        clearedFilters[category]![section] = {};
+      });
+    });
 
     setLocalFilters(clearedFilters);
     onFilterChange(clearedFilters);
@@ -296,33 +297,45 @@ export default function FilterSidebar({
     onFilterChange(preset.filters);
   };
 
-  const getFilteredCategories = () => {
+  const getFilteredCategories = (): FilterCategories => {
     if (!searchTerm) return filterCategories;
 
     const searchLower = searchTerm.toLowerCase();
-    return Object.entries(filterCategories).reduce((acc, [key, category]) => {
-      const filteredSections = Object.entries(category.sections).reduce((secAcc, [secKey, section]) => {
-        const filteredOptions = section.options.filter(opt => 
+    const filtered: FilterCategories = {};
+
+    Object.entries(filterCategories).forEach(([key, category]) => {
+      const filteredSections: typeof category.sections = {};
+      
+      Object.entries(category.sections).forEach(([secKey, section]) => {
+        const filteredOptions = section.options.filter((opt: string) => 
           opt.toLowerCase().includes(searchLower)
         );
+        
         if (filteredOptions.length > 0) {
-          secAcc[secKey] = { ...section, options: filteredOptions };
+          filteredSections[secKey] = {
+            ...section,
+            options: filteredOptions
+          };
         }
-        return secAcc;
-      }, {} as Record<string, { options: string[]; label: string }>);
+      });
+
       if (Object.keys(filteredSections).length > 0) {
-        acc[key as keyof typeof filterCategories] = { ...category, sections: filteredSections as typeof category.sections };
+        filtered[key] = {
+          ...category,
+          sections: filteredSections
+        };
       }
-      return acc;
-    }, {} as Partial<typeof filterCategories>);
+    });
+
+    return filtered;
   };
 
   return (
     <div
-    className={`fixed inset-y-0 left-0 w-80 bg-blue-950 dark:bg-gray-900 shadow-lg transform transition-transform duration-300 ease-in-out ${
-      showSidebar ? 'translate-x-0' : '-translate-x-full'
-    } z-50`}
-  >
+      className={`fixed inset-y-0 left-0 w-80 bg-blue-950 dark:bg-gray-900 shadow-lg transform transition-transform duration-300 ease-in-out ${
+        showSidebar ? 'translate-x-0' : '-translate-x-full'
+      } z-50`}
+    >
       <div className="h-full flex flex-col">
         {/* Header */}
         <div className="p-4 border-b dark:border-gray-800">
@@ -338,7 +351,7 @@ export default function FilterSidebar({
               type="text"
               placeholder="Search filters..."
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchTerm(e.target.value)}
               className="pl-8"
             />
           </div>
@@ -395,13 +408,13 @@ export default function FilterSidebar({
                     <div key={sectionKey} className="mb-4">
                       <Label className="text-sm font-medium mb-2">{section.label}</Label>
                       <div className="space-y-2">
-                        {section.options.map((option) => (
+                        {section.options.map((option: string) => (
                           <div key={option} className="flex items-center space-x-2">
                             <Checkbox
                               id={`${categoryKey}-${sectionKey}-${option}`}
-                              checked={localFilters[categoryKey as keyof FilterState]?.[sectionKey]?.[option] || false}
-                              onCheckedChange={(checked) => 
-                                handleFilterChange(categoryKey, sectionKey, option, checked as boolean)
+                              checked={localFilters[categoryKey]?.[sectionKey]?.[option] || false}
+                              onCheckedChange={(checked: boolean) => 
+                                handleFilterChange(categoryKey, sectionKey, option, checked)
                               }
                             />
                             <Label
@@ -419,26 +432,6 @@ export default function FilterSidebar({
               </AccordionItem>
             ))}
           </Accordion>
-
-          {/* Optional: Additional Categories Display */}
-          {/* Uncomment the following section if you want to display the additional categories */}
-          {/*
-          <div className="mt-6">
-            <h4 className="text-sm font-medium mb-2">Additional Categories</h4>
-            {categories.map((cat, idx) => (
-              <div key={idx} className="mb-2">
-                <Label className="text-sm font-semibold">{cat.name}</Label>
-                <ul className="list-disc list-inside">
-                  {cat.subcategories.map((sub, subIdx) => (
-                    <li key={subIdx} className="text-sm">
-                      {sub}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-          */}
         </ScrollArea>
 
         {/* Footer with Save Preset and Save Filters */}
