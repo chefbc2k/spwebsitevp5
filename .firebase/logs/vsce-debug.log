@@ -1965,3 +1965,550 @@ Generated sources: package.json [623B] index.d.ts [3269B] esm/index.esm.js [207B
  {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 06:59:13.121591   80150 load.go:115] Finished reloading\n"}}
 [debug] [2024-10-26T11:59:13.258Z] I1026 06:59:13.258318   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
  {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 06:59:13.258318   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:17:30.372Z] I1026 07:17:30.371258   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:17:30.371258   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:17:30.381Z] E1026 07:17:30.381523   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:17:30.381523   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:17:30.384Z] I1026 07:17:30.384830   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] prelude.gql [60423B] main/implicit.gql [8039B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:17:30.384830   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] prelude.gql [60423B] main/implicit.gql [8039B] \n"}}
+[debug] [2024-10-26T12:17:30.385Z] I1026 07:17:30.384860   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:17:30.384860   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:17:30.536Z] I1026 07:17:30.536297   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:17:30.536297   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:17:54.207Z] I1026 07:17:54.206975   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:17:54.206975   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:17:54.209Z] E1026 07:17:54.209832   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:17:54.209832   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:17:54.211Z] I1026 07:17:54.211066   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:17:54.211066   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] \n"}}
+[debug] [2024-10-26T12:17:54.211Z] I1026 07:17:54.211090   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:17:54.211090   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:17:54.354Z] I1026 07:17:54.354481   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:17:54.354481   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:18:04.207Z] I1026 07:18:04.207721   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:04.207721   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:18:04.210Z] E1026 07:18:04.210650   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:18:04.210650   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:18:04.211Z] I1026 07:18:04.211579   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/query.gql [29309B] main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] 
+I1026 07:18:04.211602   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:04.211579   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/query.gql [29309B] main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] \nI1026 07:18:04.211602   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:18:04.351Z] I1026 07:18:04.351488   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:04.351488   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:18:14.208Z] I1026 07:18:14.208121   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:14.208121   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:18:14.213Z] E1026 07:18:14.213646   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:18:14.213646   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:18:14.215Z] I1026 07:18:14.215451   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:14.215451   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] \n"}}
+[debug] [2024-10-26T12:18:14.215Z] I1026 07:18:14.215494   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:14.215494   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:18:14.359Z] I1026 07:18:14.359255   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:14.359255   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:18:24.207Z] I1026 07:18:24.207586   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:24.207586   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:18:24.211Z] E1026 07:18:24.211562   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:18:24.211562   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:18:24.214Z] I1026 07:18:24.214920   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:24.214920   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] \n"}}
+[debug] [2024-10-26T12:18:24.215Z] I1026 07:18:24.214961   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:24.214961   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:18:24.377Z] I1026 07:18:24.377465   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:24.377465   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:18:34.208Z] I1026 07:18:34.208430   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:34.208430   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:18:34.212Z] E1026 07:18:34.212429   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:18:34.212429   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:18:34.213Z] I1026 07:18:34.213401   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] prelude.gql [60423B] main/implicit.gql [8039B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:34.213401   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] prelude.gql [60423B] main/implicit.gql [8039B] \n"}}
+[debug] [2024-10-26T12:18:34.213Z] I1026 07:18:34.213423   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:34.213423   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:18:34.363Z] I1026 07:18:34.363079   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:34.363079   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:18:44.206Z] I1026 07:18:44.206918   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:44.206918   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:18:44.210Z] E1026 07:18:44.210782   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:18:44.210782   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:18:44.211Z] I1026 07:18:44.211689   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/query.gql [29309B] prelude.gql [60423B] main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:44.211689   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/query.gql [29309B] prelude.gql [60423B] main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] \n"}}
+[debug] [2024-10-26T12:18:44.211Z] I1026 07:18:44.211713   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:44.211713   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:18:44.353Z] I1026 07:18:44.353483   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:44.353483   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:18:53.690Z] I1026 07:18:53.689810   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:53.689810   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:18:53.695Z] E1026 07:18:53.695844   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:18:53.695844   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:18:53.696Z] I1026 07:18:53.696628   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/query.gql [29309B] prelude.gql [60423B] main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] 
+I1026 07:18:53.696651   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:53.696628   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/query.gql [29309B] prelude.gql [60423B] main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] \nI1026 07:18:53.696651   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:18:53.877Z] I1026 07:18:53.877129   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:18:53.877129   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:07.153Z] I1026 07:19:07.153435   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:07.153435   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:07.156Z] E1026 07:19:07.156147   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:07.156147   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:07.156Z] I1026 07:19:07.156955   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/query.gql [29309B] main/mutation.gql [84222B] prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:07.156955   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/query.gql [29309B] main/mutation.gql [84222B] prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] \n"}}
+[debug] [2024-10-26T12:19:07.157Z] I1026 07:19:07.156979   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:07.156979   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:07.291Z] I1026 07:19:07.291833   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:07.291833   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:08.636Z] I1026 07:19:08.636163   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:08.636163   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:08.646Z] E1026 07:19:08.646371   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:08.646371   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:08.648Z] I1026 07:19:08.648288   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/relation.gql [37367B] prelude.gql [60423B] main/query.gql [29309B] main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:08.648288   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/relation.gql [37367B] prelude.gql [60423B] main/query.gql [29309B] main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] \n"}}
+[debug] [2024-10-26T12:19:08.648Z] I1026 07:19:08.648353   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:08.648353   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:08.802Z] I1026 07:19:08.802022   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:08.802022   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:11.651Z] I1026 07:19:11.650782   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:11.650782   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:11.665Z] E1026 07:19:11.664984   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:11.664984   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:11.666Z] I1026 07:19:11.666859   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] prelude.gql [60423B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:11.666859   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] prelude.gql [60423B] \n"}}
+[debug] [2024-10-26T12:19:11.667Z] I1026 07:19:11.666909   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:11.666909   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:11.800Z] I1026 07:19:11.800654   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:11.800654   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:12.728Z] I1026 07:19:12.728161   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:12.728161   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:12.731Z] E1026 07:19:12.731886   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:12.731886   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:12.732Z] I1026 07:19:12.732807   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/mutation.gql [84222B] prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] 
+I1026 07:19:12.732829   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:12.732807   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/mutation.gql [84222B] prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] \nI1026 07:19:12.732829   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:12.869Z] I1026 07:19:12.869548   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:12.869548   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:14.196Z] I1026 07:19:14.196064   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:14.196064   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:14.202Z] E1026 07:19:14.202142   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:14.202142   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:14.203Z] I1026 07:19:14.203622   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/mutation.gql [84222B] main/implicit.gql [8039B] prelude.gql [60423B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:14.203622   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/mutation.gql [84222B] main/implicit.gql [8039B] prelude.gql [60423B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] \n"}}
+[debug] [2024-10-26T12:19:14.203Z] I1026 07:19:14.203658   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:14.203658   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:14.359Z] I1026 07:19:14.359894   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:14.359894   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:15.329Z] I1026 07:19:15.327394   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:15.327394   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:15.337Z] E1026 07:19:15.337152   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:15.337152   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:15.339Z] I1026 07:19:15.339401   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] 
+I1026 07:19:15.339452   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:15.339401   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] \nI1026 07:19:15.339452   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:15.497Z] I1026 07:19:15.497862   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:15.497862   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:17.396Z] I1026 07:19:17.396448   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:17.396448   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:17.400Z] E1026 07:19:17.400217   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:17.400217   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:17.401Z] I1026 07:19:17.401400   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/query.gql [29309B] prelude.gql [60423B] main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] 
+I1026 07:19:17.401450   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:17.401400   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/query.gql [29309B] prelude.gql [60423B] main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] \nI1026 07:19:17.401450   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:17.541Z] I1026 07:19:17.541531   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:17.541531   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:20.013Z] I1026 07:19:20.012873   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:20.012873   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:20.019Z] E1026 07:19:20.019535   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:20.019535   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:20.021Z] I1026 07:19:20.021296   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] main/implicit.gql [8039B] 
+I1026 07:19:20.021328   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:20.021296   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] main/implicit.gql [8039B] \nI1026 07:19:20.021328   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:20.185Z] I1026 07:19:20.183911   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:20.183911   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:24.207Z] I1026 07:19:24.207827   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:24.207827   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:24.211Z] E1026 07:19:24.211014   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:24.211014   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:24.211Z] I1026 07:19:24.211770   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:24.211770   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] \n"}}
+[debug] [2024-10-26T12:19:24.211Z] I1026 07:19:24.211795   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:24.211795   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:24.350Z] I1026 07:19:24.350197   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:24.350197   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:27.506Z] I1026 07:19:27.506195   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:27.506195   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:27.513Z] E1026 07:19:27.513269   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:27.513269   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:27.514Z] I1026 07:19:27.514615   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/mutation.gql [84222B] prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:27.514615   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/mutation.gql [84222B] prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] \n"}}
+[debug] [2024-10-26T12:19:27.514Z] I1026 07:19:27.514639   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:27.514639   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:27.649Z] I1026 07:19:27.649647   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:27.649647   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:28.918Z] I1026 07:19:28.917451   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:28.917451   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:28.931Z] E1026 07:19:28.931485   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:28.931485   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:28.933Z] I1026 07:19:28.933506   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/mutation.gql [84222B] prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:28.933506   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/mutation.gql [84222B] prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] \n"}}
+[debug] [2024-10-26T12:19:28.934Z] I1026 07:19:28.933578   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:28.933578   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:29.068Z] I1026 07:19:29.067848   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:29.067848   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:33.530Z] I1026 07:19:33.530564   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:33.530564   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:33.537Z] E1026 07:19:33.537194   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:33.537194   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:33.539Z] I1026 07:19:33.539255   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] 
+I1026 07:19:33.539297   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:33.539255   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] \nI1026 07:19:33.539297   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:33.685Z] I1026 07:19:33.685727   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:33.685727   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:35.341Z] I1026 07:19:35.340559   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:35.340559   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:35.350Z] E1026 07:19:35.350113   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:35.350113   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:35.352Z] I1026 07:19:35.352111   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:35.352111   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] \n"}}
+[debug] [2024-10-26T12:19:35.352Z] I1026 07:19:35.352172   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:35.352172   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:35.486Z] I1026 07:19:35.486437   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:35.486437   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:36.356Z] I1026 07:19:36.356347   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:36.356347   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:36.371Z] E1026 07:19:36.368075   80150 load.go:79] Could not load sources: <nil>
+I1026 07:19:36.369297   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] 
+I1026 07:19:36.369336   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:36.368075   80150 load.go:79] Could not load sources: <nil>\nI1026 07:19:36.369297   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] \nI1026 07:19:36.369336   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:36.507Z] I1026 07:19:36.506783   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:36.506783   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:38.772Z] I1026 07:19:38.772514   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:38.772514   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:38.776Z] E1026 07:19:38.775617   80150 load.go:79] Could not load sources: <nil>
+I1026 07:19:38.776534   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] main/implicit.gql [8039B] 
+I1026 07:19:38.776560   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:38.775617   80150 load.go:79] Could not load sources: <nil>\nI1026 07:19:38.776534   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] main/implicit.gql [8039B] \nI1026 07:19:38.776560   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:38.915Z] I1026 07:19:38.915094   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:38.915094   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:40.433Z] I1026 07:19:40.433636   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:40.433636   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:40.438Z] E1026 07:19:40.438052   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:40.438052   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:40.439Z] I1026 07:19:40.439341   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/mutation.gql [84222B] prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] 
+I1026 07:19:40.439371   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:40.439341   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/mutation.gql [84222B] prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] \nI1026 07:19:40.439371   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:40.586Z] I1026 07:19:40.586161   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:40.586161   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:41.736Z] I1026 07:19:41.736541   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:41.736541   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:41.741Z] E1026 07:19:41.741071   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:41.741071   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:41.742Z] I1026 07:19:41.742242   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] main/implicit.gql [8039B] 
+I1026 07:19:41.742271   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:41.742242   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] main/implicit.gql [8039B] \nI1026 07:19:41.742271   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:41.885Z] I1026 07:19:41.885497   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:41.885497   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:43.191Z] I1026 07:19:43.191398   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:43.191398   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:43.197Z] E1026 07:19:43.197376   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:43.197376   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:43.198Z] I1026 07:19:43.198767   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/mutation.gql [84222B] main/implicit.gql [8039B] prelude.gql [60423B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] 
+I1026 07:19:43.198797   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:43.198767   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/mutation.gql [84222B] main/implicit.gql [8039B] prelude.gql [60423B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] \nI1026 07:19:43.198797   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:43.349Z] I1026 07:19:43.349531   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:43.349531   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:44.207Z] I1026 07:19:44.207902   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:44.207902   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:44.212Z] E1026 07:19:44.212090   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:44.212090   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:44.213Z] I1026 07:19:44.213295   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] main/implicit.gql [8039B] prelude.gql [60423B] main/input.gql [123471B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:44.213295   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] main/implicit.gql [8039B] prelude.gql [60423B] main/input.gql [123471B] \n"}}
+[debug] [2024-10-26T12:19:44.213Z] I1026 07:19:44.213327   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:44.213327   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:44.354Z] I1026 07:19:44.354670   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:44.354670   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:46.532Z] I1026 07:19:46.531644   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:46.531644   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:46.536Z] E1026 07:19:46.536482   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:46.536482   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:46.537Z] I1026 07:19:46.537246   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] prelude.gql [60423B] main/relation.gql [37367B] main/query.gql [29309B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:46.537246   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] prelude.gql [60423B] main/relation.gql [37367B] main/query.gql [29309B] \n"}}
+[debug] [2024-10-26T12:19:46.537Z] I1026 07:19:46.537269   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:46.537269   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:46.672Z] I1026 07:19:46.672786   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:46.672786   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:48.967Z] I1026 07:19:48.966946   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:48.966946   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:48.971Z] E1026 07:19:48.971872   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:48.971872   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:48.973Z] I1026 07:19:48.973085   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] 
+I1026 07:19:48.973116   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:48.973085   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] \nI1026 07:19:48.973116   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:49.114Z] I1026 07:19:49.114406   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:49.114406   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:52.181Z] I1026 07:19:52.181454   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:52.181454   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:52.185Z] E1026 07:19:52.185896   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:52.185896   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:52.187Z] I1026 07:19:52.187267   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] 
+I1026 07:19:52.187294   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:52.187267   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] \nI1026 07:19:52.187294   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:52.336Z] I1026 07:19:52.336357   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:52.336357   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:53.263Z] I1026 07:19:53.263794   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:53.263794   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:53.266Z] E1026 07:19:53.266784   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:53.266784   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:53.267Z] I1026 07:19:53.267644   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] 
+I1026 07:19:53.267665   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:53.267644   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] \nI1026 07:19:53.267665   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:53.404Z] I1026 07:19:53.404445   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:53.404445   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:19:54.208Z] I1026 07:19:54.207962   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:54.207962   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:19:54.211Z] E1026 07:19:54.211171   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:19:54.211171   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:19:54.212Z] I1026 07:19:54.212017   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:54.212017   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] \n"}}
+[debug] [2024-10-26T12:19:54.212Z] I1026 07:19:54.212044   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:54.212044   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:19:54.352Z] I1026 07:19:54.352557   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:19:54.352557   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:20:06.856Z] I1026 07:20:06.856460   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:20:06.856460   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:20:06.863Z] E1026 07:20:06.863894   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:20:06.863894   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:20:06.865Z] I1026 07:20:06.865300   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] 
+I1026 07:20:06.865335   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:20:06.865300   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] \nI1026 07:20:06.865335   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:20:07.018Z] I1026 07:20:07.017949   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:20:07.017949   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:20:31.927Z] I1026 07:20:31.926881   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:20:31.926881   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:20:31.995Z] I1026 07:20:31.994588   80150 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateSchema(): done sources: schema/schema.gql [8324B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:20:31.994588   80150 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateSchema(): done sources: schema/schema.gql [8324B] \n"}}
+[debug] [2024-10-26T12:20:32.018Z] I1026 07:20:32.018088   80150 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:20:32.018088   80150 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] \n"}}
+[debug] [2024-10-26T12:20:32.076Z] I1026 07:20:32.075970   80150 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:20:32.075970   80150 codegen.go:82] [connector \"default\" javascriptSdk] Generating sources into \"/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector\"\n"}}
+[debug] [2024-10-26T12:20:32.078Z] I1026 07:20:32.078512   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:20:32.078512   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] \n"}}
+[debug] [2024-10-26T12:20:32.079Z] I1026 07:20:32.079367   80150 collector.go:107] connector "default" javascriptSdk wrote into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+Generated sources: index.d.ts [3269B] esm/index.esm.js [207B] esm/package.json [17B] index.cjs.js [248B] package.json [623B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:20:32.079367   80150 collector.go:107] connector \"default\" javascriptSdk wrote into \"/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector\"\nGenerated sources: index.d.ts [3269B] esm/index.esm.js [207B] esm/package.json [17B] index.cjs.js [248B] package.json [623B] \n"}}
+[debug] [2024-10-26T12:20:32.083Z] I1026 07:20:32.083886   80150 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:20:32.083886   80150 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation\n"}}
+[debug] [2024-10-26T12:20:32.084Z] I1026 07:20:32.083922   80150 load.go:115] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:20:32.083922   80150 load.go:115] Finished reloading\n"}}
+[debug] [2024-10-26T12:20:32.217Z] I1026 07:20:32.217787   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:20:32.217787   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:21:43.703Z] I1026 07:21:43.702912   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:21:43.702912   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:21:43.717Z] E1026 07:21:43.717621   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:21:43.717621   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:21:43.721Z] I1026 07:21:43.720982   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] prelude.gql [60423B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:21:43.720982   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] prelude.gql [60423B] \n"}}
+[debug] [2024-10-26T12:21:43.721Z] I1026 07:21:43.721055   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:21:43.721055   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:21:43.867Z] I1026 07:21:43.867525   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:21:43.867525   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:25:17.018Z] I1026 07:25:17.017830   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:25:17.017830   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:25:17.032Z] E1026 07:25:17.032509   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:25:17.032509   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:25:17.036Z] I1026 07:25:17.036270   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] prelude.gql [60423B] main/mutation.gql [84222B] main/implicit.gql [8039B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:25:17.036270   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] prelude.gql [60423B] main/mutation.gql [84222B] main/implicit.gql [8039B] \n"}}
+[debug] [2024-10-26T12:25:17.036Z] I1026 07:25:17.036349   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:25:17.036349   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:25:17.177Z] I1026 07:25:17.177876   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:25:17.177876   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:25:33.549Z] I1026 07:25:33.549376   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:25:33.549376   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:25:33.552Z] E1026 07:25:33.552835   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:25:33.552835   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:25:33.554Z] I1026 07:25:33.554002   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] main/implicit.gql [8039B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:25:33.554002   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] main/implicit.gql [8039B] \n"}}
+[debug] [2024-10-26T12:25:33.554Z] I1026 07:25:33.554028   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:25:33.554028   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:25:33.696Z] I1026 07:25:33.696157   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:25:33.696157   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:27:29.099Z] I1026 07:27:29.099181   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:27:29.099181   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:27:29.154Z] E1026 07:27:29.154192   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:27:29.154192   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:27:29.166Z] I1026 07:27:29.166071   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] 
+I1026 07:27:29.166118   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:27:29.166071   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] \nI1026 07:27:29.166118   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:27:29.307Z] I1026 07:27:29.307235   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:27:29.307235   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:27:48.604Z] I1026 07:27:48.604490   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:27:48.604490   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:27:48.666Z] I1026 07:27:48.666042   80150 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateSchema(): done sources: schema/schema.gql [8324B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:27:48.666042   80150 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateSchema(): done sources: schema/schema.gql [8324B] \n"}}
+[debug] [2024-10-26T12:27:48.687Z] I1026 07:27:48.687082   80150 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:27:48.687082   80150 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] \n"}}
+[debug] [2024-10-26T12:27:48.739Z] I1026 07:27:48.738954   80150 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:27:48.738954   80150 codegen.go:82] [connector \"default\" javascriptSdk] Generating sources into \"/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector\"\n"}}
+[debug] [2024-10-26T12:27:48.741Z] I1026 07:27:48.741614   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:27:48.741614   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] \n"}}
+[debug] [2024-10-26T12:27:48.742Z] I1026 07:27:48.742515   80150 collector.go:107] connector "default" javascriptSdk wrote into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+Generated sources: esm/package.json [17B] index.cjs.js [248B] package.json [623B] index.d.ts [3269B] esm/index.esm.js [207B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:27:48.742515   80150 collector.go:107] connector \"default\" javascriptSdk wrote into \"/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector\"\nGenerated sources: esm/package.json [17B] index.cjs.js [248B] package.json [623B] index.d.ts [3269B] esm/index.esm.js [207B] \n"}}
+[debug] [2024-10-26T12:27:48.748Z] I1026 07:27:48.748020   80150 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation
+I1026 07:27:48.748053   80150 load.go:115] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:27:48.748020   80150 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation\nI1026 07:27:48.748053   80150 load.go:115] Finished reloading\n"}}
+[debug] [2024-10-26T12:27:48.881Z] I1026 07:27:48.881775   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:27:48.881775   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:32:19.470Z] I1026 07:32:19.470521   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:32:19.470521   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:32:19.483Z] E1026 07:32:19.483178   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:32:19.483178   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:32:19.485Z] I1026 07:32:19.485291   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] prelude.gql [60423B] main/implicit.gql [8039B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:32:19.485291   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/input.gql [123471B] main/relation.gql [37367B] main/query.gql [29309B] main/mutation.gql [84222B] prelude.gql [60423B] main/implicit.gql [8039B] \n"}}
+[debug] [2024-10-26T12:32:19.485Z] I1026 07:32:19.485326   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:32:19.485326   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:32:19.633Z] I1026 07:32:19.633303   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:32:19.633303   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:32:36.887Z] I1026 07:32:36.887222   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:32:36.887222   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:32:36.890Z] E1026 07:32:36.890587   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:32:36.890587   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:32:36.891Z] I1026 07:32:36.891464   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/query.gql [29309B] main/mutation.gql [84222B] prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:32:36.891464   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/query.gql [29309B] main/mutation.gql [84222B] prelude.gql [60423B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] \n"}}
+[debug] [2024-10-26T12:32:36.891Z] I1026 07:32:36.891486   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:32:36.891486   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:32:37.026Z] I1026 07:32:37.026595   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:32:37.026595   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:33:38.633Z] I1026 07:33:38.631252   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:33:38.631252   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:33:38.642Z] E1026 07:33:38.642417   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:33:38.642417   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:33:38.645Z] I1026 07:33:38.645558   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] prelude.gql [60423B] main/relation.gql [37367B] main/query.gql [29309B] 
+I1026 07:33:38.645617   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:33:38.645558   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] prelude.gql [60423B] main/relation.gql [37367B] main/query.gql [29309B] \nI1026 07:33:38.645617   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:33:38.799Z] I1026 07:33:38.799714   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:33:38.799714   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:35:33.502Z] I1026 07:35:33.502206   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:35:33.502206   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:35:33.634Z] I1026 07:35:33.634421   80150 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateSchema(): done sources: schema/schema.gql [12913B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:35:33.634421   80150 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateSchema(): done sources: schema/schema.gql [12913B] \n"}}
+[debug] [2024-10-26T12:35:33.667Z] I1026 07:35:33.667809   80150 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:35:33.667809   80150 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] \n"}}
+[debug] [2024-10-26T12:35:33.752Z] I1026 07:35:33.752614   80150 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:35:33.752614   80150 codegen.go:82] [connector \"default\" javascriptSdk] Generating sources into \"/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector\"\n"}}
+[debug] [2024-10-26T12:35:33.756Z] I1026 07:35:33.756417   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/mutation.gql [154346B] main/implicit.gql [20493B] main/input.gql [239014B] main/relation.gql [98628B] main/query.gql [53392B] prelude.gql [60423B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:35:33.756417   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/mutation.gql [154346B] main/implicit.gql [20493B] main/input.gql [239014B] main/relation.gql [98628B] main/query.gql [53392B] prelude.gql [60423B] \n"}}
+[debug] [2024-10-26T12:35:33.757Z] I1026 07:35:33.757085   80150 collector.go:107] connector "default" javascriptSdk wrote into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+Generated sources: esm/index.esm.js [207B] esm/package.json [17B] index.cjs.js [248B] package.json [623B] index.d.ts [6301B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:35:33.757085   80150 collector.go:107] connector \"default\" javascriptSdk wrote into \"/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector\"\nGenerated sources: esm/index.esm.js [207B] esm/package.json [17B] index.cjs.js [248B] package.json [623B] index.d.ts [6301B] \n"}}
+[debug] [2024-10-26T12:35:33.760Z] I1026 07:35:33.760460   80150 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation
+I1026 07:35:33.760486   80150 load.go:115] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:35:33.760460   80150 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation\nI1026 07:35:33.760486   80150 load.go:115] Finished reloading\n"}}
+[debug] [2024-10-26T12:35:33.922Z] I1026 07:35:33.922361   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:35:33.922361   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:41:01.408Z] I1026 07:41:01.407967   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:41:01.407967   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:41:01.529Z] I1026 07:41:01.528964   80150 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateSchema(): done sources: schema/schema.gql [14512B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:41:01.528964   80150 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateSchema(): done sources: schema/schema.gql [14512B] \n"}}
+[debug] [2024-10-26T12:41:01.563Z] I1026 07:41:01.563235   80150 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:41:01.563235   80150 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] \n"}}
+[debug] [2024-10-26T12:41:01.651Z] I1026 07:41:01.651711   80150 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:41:01.651711   80150 codegen.go:82] [connector \"default\" javascriptSdk] Generating sources into \"/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector\"\n"}}
+[debug] [2024-10-26T12:41:01.655Z] I1026 07:41:01.655450   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/mutation.gql [166204B] main/implicit.gql [22068B] prelude.gql [60423B] main/input.gql [261930B] main/relation.gql [106681B] main/query.gql [57507B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:41:01.655450   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/mutation.gql [166204B] main/implicit.gql [22068B] prelude.gql [60423B] main/input.gql [261930B] main/relation.gql [106681B] main/query.gql [57507B] \n"}}
+[debug] [2024-10-26T12:41:01.656Z] I1026 07:41:01.656100   80150 collector.go:107] connector "default" javascriptSdk wrote into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+Generated sources: index.d.ts [6751B] esm/index.esm.js [207B] esm/package.json [17B] index.cjs.js [248B] package.json [623B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:41:01.656100   80150 collector.go:107] connector \"default\" javascriptSdk wrote into \"/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector\"\nGenerated sources: index.d.ts [6751B] esm/index.esm.js [207B] esm/package.json [17B] index.cjs.js [248B] package.json [623B] \n"}}
+[debug] [2024-10-26T12:41:01.658Z] I1026 07:41:01.658714   80150 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:41:01.658714   80150 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation\n"}}
+[debug] [2024-10-26T12:41:01.658Z] I1026 07:41:01.658735   80150 load.go:115] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:41:01.658735   80150 load.go:115] Finished reloading\n"}}
+[debug] [2024-10-26T12:41:01.837Z] I1026 07:41:01.837301   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:41:01.837301   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:45:47.182Z] I1026 07:45:47.181719   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:45:47.181719   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:45:47.205Z] E1026 07:45:47.199095   80150 load.go:79] Could not load sources: <nil>
+I1026 07:45:47.200703   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/implicit.gql [22068B] main/input.gql [261930B] main/relation.gql [106681B] main/query.gql [57507B] main/mutation.gql [166204B] prelude.gql [60423B] 
+I1026 07:45:47.200746   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:45:47.199095   80150 load.go:79] Could not load sources: <nil>\nI1026 07:45:47.200703   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/implicit.gql [22068B] main/input.gql [261930B] main/relation.gql [106681B] main/query.gql [57507B] main/mutation.gql [166204B] prelude.gql [60423B] \nI1026 07:45:47.200746   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:45:47.371Z] I1026 07:45:47.370157   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:45:47.370157   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:47:19.416Z] I1026 07:47:19.412844   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:47:19.412844   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:47:19.420Z] E1026 07:47:19.420670   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:47:19.420670   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:47:19.422Z] I1026 07:47:19.422266   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/mutation.gql [166204B] main/implicit.gql [22068B] prelude.gql [60423B] main/input.gql [261930B] main/relation.gql [106681B] main/query.gql [57507B] 
+I1026 07:47:19.422295   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:47:19.422266   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/mutation.gql [166204B] main/implicit.gql [22068B] prelude.gql [60423B] main/input.gql [261930B] main/relation.gql [106681B] main/query.gql [57507B] \nI1026 07:47:19.422295   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:47:19.583Z] I1026 07:47:19.583814   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:47:19.583814   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:47:29.413Z] I1026 07:47:29.412849   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:47:29.412849   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:47:29.427Z] E1026 07:47:29.426899   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 07:47:29.426899   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T12:47:29.434Z] I1026 07:47:29.430883   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/mutation.gql [166204B] main/implicit.gql [22068B] main/input.gql [261930B] prelude.gql [60423B] main/relation.gql [106681B] main/query.gql [57507B] 
+I1026 07:47:29.430915   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:47:29.430883   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/mutation.gql [166204B] main/implicit.gql [22068B] main/input.gql [261930B] prelude.gql [60423B] main/relation.gql [106681B] main/query.gql [57507B] \nI1026 07:47:29.430915   80150 load.go:80] Finished reloading\n"}}
+[debug] [2024-10-26T12:47:29.598Z] I1026 07:47:29.597949   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:47:29.597949   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
+[debug] [2024-10-26T12:47:34.218Z] I1026 07:47:34.215421   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:47:34.215421   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T12:47:34.346Z] I1026 07:47:34.346411   80150 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateSchema(): done sources: schema/schema.gql [21297B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:47:34.346411   80150 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateSchema(): done sources: schema/schema.gql [21297B] \n"}}
+[debug] [2024-10-26T12:47:34.393Z] I1026 07:47:34.393648   80150 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:47:34.393648   80150 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] \n"}}
+[debug] [2024-10-26T12:47:34.519Z] I1026 07:47:34.518960   80150 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:47:34.518960   80150 codegen.go:82] [connector \"default\" javascriptSdk] Generating sources into \"/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector\"\n"}}
+[debug] [2024-10-26T12:47:34.523Z] I1026 07:47:34.523290   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/relation.gql [127932B] main/query.gql [75224B] main/mutation.gql [216677B] main/implicit.gql [28419B] main/input.gql [350676B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:47:34.523290   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] main/relation.gql [127932B] main/query.gql [75224B] main/mutation.gql [216677B] main/implicit.gql [28419B] main/input.gql [350676B] \n"}}
+[debug] [2024-10-26T12:47:34.524Z] I1026 07:47:34.524941   80150 collector.go:107] connector "default" javascriptSdk wrote into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+Generated sources: esm/package.json [17B] index.cjs.js [248B] package.json [623B] index.d.ts [8341B] esm/index.esm.js [207B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:47:34.524941   80150 collector.go:107] connector \"default\" javascriptSdk wrote into \"/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector\"\nGenerated sources: esm/package.json [17B] index.cjs.js [248B] package.json [623B] index.d.ts [8341B] esm/index.esm.js [207B] \n"}}
+[debug] [2024-10-26T12:47:34.528Z] I1026 07:47:34.528023   80150 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:47:34.528023   80150 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation\n"}}
+[debug] [2024-10-26T12:47:34.528Z] I1026 07:47:34.528067   80150 load.go:115] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:47:34.528067   80150 load.go:115] Finished reloading\n"}}
+[debug] [2024-10-26T12:47:34.708Z] I1026 07:47:34.708319   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 07:47:34.708319   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}

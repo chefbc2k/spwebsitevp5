@@ -1,5 +1,32 @@
 extend type Mutation {
   """
+  ✨ Insert a single `ActivityLog` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  activityLog_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: ActivityLog_Data!
+  ): ActivityLog_KeyOutput! @fdc_generated(from: "ActivityLog", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `AnalyticsEvent` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  analyticsEvent_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: AnalyticsEvent_Data!
+  ): AnalyticsEvent_KeyOutput! @fdc_generated(from: "AnalyticsEvent", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `Bid` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  bid_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: Bid_Data!
+  ): Bid_KeyOutput! @fdc_generated(from: "Bid", purpose: INSERT_SINGLE)
+  """
   ✨ Insert a single `Category` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
   category_insert(
@@ -8,6 +35,60 @@ extend type Mutation {
     """
     data: Category_Data!
   ): Category_KeyOutput! @fdc_generated(from: "Category", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `Collection` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  collection_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: Collection_Data!
+  ): Collection_KeyOutput! @fdc_generated(from: "Collection", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `CollectionNFT` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  collectionNFT_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: CollectionNFT_Data!
+  ): CollectionNFT_KeyOutput! @fdc_generated(from: "CollectionNFT", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `Contract` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  contract_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: Contract_Data!
+  ): Contract_KeyOutput! @fdc_generated(from: "Contract", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `ContractNFT` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  contractNFT_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: ContractNFT_Data!
+  ): ContractNFT_KeyOutput! @fdc_generated(from: "ContractNFT", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `ContractUser` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  contractUser_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: ContractUser_Data!
+  ): ContractUser_KeyOutput! @fdc_generated(from: "ContractUser", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `ContractVoice` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  contractVoice_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: ContractVoice_Data!
+  ): ContractVoice_KeyOutput! @fdc_generated(from: "ContractVoice", purpose: INSERT_SINGLE)
   """
   ✨ Insert a single `ExperienceLevel` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
@@ -18,6 +99,15 @@ extend type Mutation {
     data: ExperienceLevel_Data!
   ): ExperienceLevel_KeyOutput! @fdc_generated(from: "ExperienceLevel", purpose: INSERT_SINGLE)
   """
+  ✨ Insert a single `Favorite` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  favorite_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: Favorite_Data!
+  ): Favorite_KeyOutput! @fdc_generated(from: "Favorite", purpose: INSERT_SINGLE)
+  """
   ✨ Insert a single `Language` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
   language_insert(
@@ -26,6 +116,24 @@ extend type Mutation {
     """
     data: Language_Data!
   ): Language_KeyOutput! @fdc_generated(from: "Language", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `Listing` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  listing_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: Listing_Data!
+  ): Listing_KeyOutput! @fdc_generated(from: "Listing", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `Message` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  message_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: Message_Data!
+  ): Message_KeyOutput! @fdc_generated(from: "Message", purpose: INSERT_SINGLE)
   """
   ✨ Insert a single `NFT` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
@@ -126,6 +234,15 @@ extend type Mutation {
     data: NFTVoiceTrait_Data!
   ): NFTVoiceTrait_KeyOutput! @fdc_generated(from: "NFTVoiceTrait", purpose: INSERT_SINGLE)
   """
+  ✨ Insert a single `Notification` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  notification_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: Notification_Data!
+  ): Notification_KeyOutput! @fdc_generated(from: "Notification", purpose: INSERT_SINGLE)
+  """
   ✨ Insert a single `Ownership` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
   ownership_insert(
@@ -134,6 +251,24 @@ extend type Mutation {
     """
     data: Ownership_Data!
   ): Ownership_KeyOutput! @fdc_generated(from: "Ownership", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `PaymentMethod` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  paymentMethod_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: PaymentMethod_Data!
+  ): PaymentMethod_KeyOutput! @fdc_generated(from: "PaymentMethod", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `Permission` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  permission_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: Permission_Data!
+  ): Permission_KeyOutput! @fdc_generated(from: "Permission", purpose: INSERT_SINGLE)
   """
   ✨ Insert a single `ProductionQuality` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
@@ -152,6 +287,42 @@ extend type Mutation {
     """
     data: RegionalDialect_Data!
   ): RegionalDialect_KeyOutput! @fdc_generated(from: "RegionalDialect", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `Review` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  review_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: Review_Data!
+  ): Review_KeyOutput! @fdc_generated(from: "Review", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `Role` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  role_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: Role_Data!
+  ): Role_KeyOutput! @fdc_generated(from: "Role", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `RolePermission` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  rolePermission_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: RolePermission_Data!
+  ): RolePermission_KeyOutput! @fdc_generated(from: "RolePermission", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `Royalty` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  royalty_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: Royalty_Data!
+  ): Royalty_KeyOutput! @fdc_generated(from: "Royalty", purpose: INSERT_SINGLE)
   """
   ✨ Insert a single `SecondaryLanguage` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
@@ -189,6 +360,15 @@ extend type Mutation {
     data: StyleToneOption_Data!
   ): StyleToneOption_KeyOutput! @fdc_generated(from: "StyleToneOption", purpose: INSERT_SINGLE)
   """
+  ✨ Insert a single `SupportTicket` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  supportTicket_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: SupportTicket_Data!
+  ): SupportTicket_KeyOutput! @fdc_generated(from: "SupportTicket", purpose: INSERT_SINGLE)
+  """
   ✨ Insert a single `TechnicalSpecification` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
   technicalSpecification_insert(
@@ -225,6 +405,15 @@ extend type Mutation {
     data: User_Data!
   ): User_KeyOutput! @fdc_generated(from: "User", purpose: INSERT_SINGLE)
   """
+  ✨ Insert a single `UserCategory` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userCategory_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: UserCategory_Data!
+  ): UserCategory_KeyOutput! @fdc_generated(from: "UserCategory", purpose: INSERT_SINGLE)
+  """
   ✨ Insert a single `UserExperience` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
   userExperience_insert(
@@ -233,6 +422,195 @@ extend type Mutation {
     """
     data: UserExperience_Data!
   ): UserExperience_KeyOutput! @fdc_generated(from: "UserExperience", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `UserLanguage` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userLanguage_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: UserLanguage_Data!
+  ): UserLanguage_KeyOutput! @fdc_generated(from: "UserLanguage", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `UserProductionQuality` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userProductionQuality_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: UserProductionQuality_Data!
+  ): UserProductionQuality_KeyOutput! @fdc_generated(from: "UserProductionQuality", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `UserRegionalDialect` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userRegionalDialect_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: UserRegionalDialect_Data!
+  ): UserRegionalDialect_KeyOutput! @fdc_generated(from: "UserRegionalDialect", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `UserRole` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userRole_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: UserRole_Data!
+  ): UserRole_KeyOutput! @fdc_generated(from: "UserRole", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `UserSecondaryLanguage` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userSecondaryLanguage_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: UserSecondaryLanguage_Data!
+  ): UserSecondaryLanguage_KeyOutput! @fdc_generated(from: "UserSecondaryLanguage", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `UserStudioAvailability` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userStudioAvailability_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: UserStudioAvailability_Data!
+  ): UserStudioAvailability_KeyOutput! @fdc_generated(from: "UserStudioAvailability", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `UserStyleToneOption` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userStyleToneOption_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: UserStyleToneOption_Data!
+  ): UserStyleToneOption_KeyOutput! @fdc_generated(from: "UserStyleToneOption", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `UserTechnicalSpecification` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userTechnicalSpecification_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: UserTechnicalSpecification_Data!
+  ): UserTechnicalSpecification_KeyOutput! @fdc_generated(from: "UserTechnicalSpecification", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `UserTimeZone` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userTimeZone_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: UserTimeZone_Data!
+  ): UserTimeZone_KeyOutput! @fdc_generated(from: "UserTimeZone", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `UserVoiceTrait` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userVoiceTrait_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: UserVoiceTrait_Data!
+  ): UserVoiceTrait_KeyOutput! @fdc_generated(from: "UserVoiceTrait", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `Voice` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voice_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: Voice_Data!
+  ): Voice_KeyOutput! @fdc_generated(from: "Voice", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `VoiceCategory` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceCategory_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: VoiceCategory_Data!
+  ): VoiceCategory_KeyOutput! @fdc_generated(from: "VoiceCategory", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `VoiceExperience` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceExperience_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: VoiceExperience_Data!
+  ): VoiceExperience_KeyOutput! @fdc_generated(from: "VoiceExperience", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `VoiceLanguage` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceLanguage_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: VoiceLanguage_Data!
+  ): VoiceLanguage_KeyOutput! @fdc_generated(from: "VoiceLanguage", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `VoiceProductionQuality` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceProductionQuality_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: VoiceProductionQuality_Data!
+  ): VoiceProductionQuality_KeyOutput! @fdc_generated(from: "VoiceProductionQuality", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `VoiceRegionalDialect` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceRegionalDialect_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: VoiceRegionalDialect_Data!
+  ): VoiceRegionalDialect_KeyOutput! @fdc_generated(from: "VoiceRegionalDialect", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `VoiceSecondaryLanguage` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceSecondaryLanguage_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: VoiceSecondaryLanguage_Data!
+  ): VoiceSecondaryLanguage_KeyOutput! @fdc_generated(from: "VoiceSecondaryLanguage", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `VoiceStudioAvailability` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceStudioAvailability_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: VoiceStudioAvailability_Data!
+  ): VoiceStudioAvailability_KeyOutput! @fdc_generated(from: "VoiceStudioAvailability", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `VoiceStyleToneOption` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceStyleToneOption_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: VoiceStyleToneOption_Data!
+  ): VoiceStyleToneOption_KeyOutput! @fdc_generated(from: "VoiceStyleToneOption", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `VoiceTechnicalSpecification` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceTechnicalSpecification_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: VoiceTechnicalSpecification_Data!
+  ): VoiceTechnicalSpecification_KeyOutput! @fdc_generated(from: "VoiceTechnicalSpecification", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `VoiceTimeZone` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceTimeZone_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: VoiceTimeZone_Data!
+  ): VoiceTimeZone_KeyOutput! @fdc_generated(from: "VoiceTimeZone", purpose: INSERT_SINGLE)
   """
   ✨ Insert a single `VoiceTrait` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
@@ -243,6 +621,42 @@ extend type Mutation {
     data: VoiceTrait_Data!
   ): VoiceTrait_KeyOutput! @fdc_generated(from: "VoiceTrait", purpose: INSERT_SINGLE)
   """
+  ✨ Insert a single `VoiceVoiceTrait` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceVoiceTrait_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: VoiceVoiceTrait_Data!
+  ): VoiceVoiceTrait_KeyOutput! @fdc_generated(from: "VoiceVoiceTrait", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert `ActivityLog` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  activityLog_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [ActivityLog_Data!]!
+  ): [ActivityLog_KeyOutput!]! @fdc_generated(from: "ActivityLog", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `AnalyticsEvent` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  analyticsEvent_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [AnalyticsEvent_Data!]!
+  ): [AnalyticsEvent_KeyOutput!]! @fdc_generated(from: "AnalyticsEvent", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `Bid` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  bid_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [Bid_Data!]!
+  ): [Bid_KeyOutput!]! @fdc_generated(from: "Bid", purpose: INSERT_MULTIPLE)
+  """
   ✨ Insert `Category` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
   category_insertMany(
@@ -251,6 +665,60 @@ extend type Mutation {
     """
     data: [Category_Data!]!
   ): [Category_KeyOutput!]! @fdc_generated(from: "Category", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `Collection` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  collection_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [Collection_Data!]!
+  ): [Collection_KeyOutput!]! @fdc_generated(from: "Collection", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `CollectionNFT` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  collectionNFT_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [CollectionNFT_Data!]!
+  ): [CollectionNFT_KeyOutput!]! @fdc_generated(from: "CollectionNFT", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `Contract` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  contract_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [Contract_Data!]!
+  ): [Contract_KeyOutput!]! @fdc_generated(from: "Contract", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `ContractNFT` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  contractNFT_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [ContractNFT_Data!]!
+  ): [ContractNFT_KeyOutput!]! @fdc_generated(from: "ContractNFT", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `ContractUser` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  contractUser_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [ContractUser_Data!]!
+  ): [ContractUser_KeyOutput!]! @fdc_generated(from: "ContractUser", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `ContractVoice` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  contractVoice_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [ContractVoice_Data!]!
+  ): [ContractVoice_KeyOutput!]! @fdc_generated(from: "ContractVoice", purpose: INSERT_MULTIPLE)
   """
   ✨ Insert `ExperienceLevel` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
@@ -261,6 +729,15 @@ extend type Mutation {
     data: [ExperienceLevel_Data!]!
   ): [ExperienceLevel_KeyOutput!]! @fdc_generated(from: "ExperienceLevel", purpose: INSERT_MULTIPLE)
   """
+  ✨ Insert `Favorite` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  favorite_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [Favorite_Data!]!
+  ): [Favorite_KeyOutput!]! @fdc_generated(from: "Favorite", purpose: INSERT_MULTIPLE)
+  """
   ✨ Insert `Language` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
   language_insertMany(
@@ -269,6 +746,24 @@ extend type Mutation {
     """
     data: [Language_Data!]!
   ): [Language_KeyOutput!]! @fdc_generated(from: "Language", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `Listing` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  listing_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [Listing_Data!]!
+  ): [Listing_KeyOutput!]! @fdc_generated(from: "Listing", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `Message` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  message_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [Message_Data!]!
+  ): [Message_KeyOutput!]! @fdc_generated(from: "Message", purpose: INSERT_MULTIPLE)
   """
   ✨ Insert `NFT` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
@@ -369,6 +864,15 @@ extend type Mutation {
     data: [NFTVoiceTrait_Data!]!
   ): [NFTVoiceTrait_KeyOutput!]! @fdc_generated(from: "NFTVoiceTrait", purpose: INSERT_MULTIPLE)
   """
+  ✨ Insert `Notification` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  notification_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [Notification_Data!]!
+  ): [Notification_KeyOutput!]! @fdc_generated(from: "Notification", purpose: INSERT_MULTIPLE)
+  """
   ✨ Insert `Ownership` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
   ownership_insertMany(
@@ -377,6 +881,24 @@ extend type Mutation {
     """
     data: [Ownership_Data!]!
   ): [Ownership_KeyOutput!]! @fdc_generated(from: "Ownership", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `PaymentMethod` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  paymentMethod_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [PaymentMethod_Data!]!
+  ): [PaymentMethod_KeyOutput!]! @fdc_generated(from: "PaymentMethod", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `Permission` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  permission_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [Permission_Data!]!
+  ): [Permission_KeyOutput!]! @fdc_generated(from: "Permission", purpose: INSERT_MULTIPLE)
   """
   ✨ Insert `ProductionQuality` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
@@ -395,6 +917,42 @@ extend type Mutation {
     """
     data: [RegionalDialect_Data!]!
   ): [RegionalDialect_KeyOutput!]! @fdc_generated(from: "RegionalDialect", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `Review` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  review_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [Review_Data!]!
+  ): [Review_KeyOutput!]! @fdc_generated(from: "Review", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `Role` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  role_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [Role_Data!]!
+  ): [Role_KeyOutput!]! @fdc_generated(from: "Role", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `RolePermission` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  rolePermission_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [RolePermission_Data!]!
+  ): [RolePermission_KeyOutput!]! @fdc_generated(from: "RolePermission", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `Royalty` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  royalty_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [Royalty_Data!]!
+  ): [Royalty_KeyOutput!]! @fdc_generated(from: "Royalty", purpose: INSERT_MULTIPLE)
   """
   ✨ Insert `SecondaryLanguage` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
@@ -432,6 +990,15 @@ extend type Mutation {
     data: [StyleToneOption_Data!]!
   ): [StyleToneOption_KeyOutput!]! @fdc_generated(from: "StyleToneOption", purpose: INSERT_MULTIPLE)
   """
+  ✨ Insert `SupportTicket` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  supportTicket_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [SupportTicket_Data!]!
+  ): [SupportTicket_KeyOutput!]! @fdc_generated(from: "SupportTicket", purpose: INSERT_MULTIPLE)
+  """
   ✨ Insert `TechnicalSpecification` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
   technicalSpecification_insertMany(
@@ -468,6 +1035,15 @@ extend type Mutation {
     data: [User_Data!]!
   ): [User_KeyOutput!]! @fdc_generated(from: "User", purpose: INSERT_MULTIPLE)
   """
+  ✨ Insert `UserCategory` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userCategory_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [UserCategory_Data!]!
+  ): [UserCategory_KeyOutput!]! @fdc_generated(from: "UserCategory", purpose: INSERT_MULTIPLE)
+  """
   ✨ Insert `UserExperience` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
   userExperience_insertMany(
@@ -476,6 +1052,195 @@ extend type Mutation {
     """
     data: [UserExperience_Data!]!
   ): [UserExperience_KeyOutput!]! @fdc_generated(from: "UserExperience", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `UserLanguage` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userLanguage_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [UserLanguage_Data!]!
+  ): [UserLanguage_KeyOutput!]! @fdc_generated(from: "UserLanguage", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `UserProductionQuality` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userProductionQuality_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [UserProductionQuality_Data!]!
+  ): [UserProductionQuality_KeyOutput!]! @fdc_generated(from: "UserProductionQuality", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `UserRegionalDialect` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userRegionalDialect_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [UserRegionalDialect_Data!]!
+  ): [UserRegionalDialect_KeyOutput!]! @fdc_generated(from: "UserRegionalDialect", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `UserRole` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userRole_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [UserRole_Data!]!
+  ): [UserRole_KeyOutput!]! @fdc_generated(from: "UserRole", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `UserSecondaryLanguage` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userSecondaryLanguage_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [UserSecondaryLanguage_Data!]!
+  ): [UserSecondaryLanguage_KeyOutput!]! @fdc_generated(from: "UserSecondaryLanguage", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `UserStudioAvailability` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userStudioAvailability_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [UserStudioAvailability_Data!]!
+  ): [UserStudioAvailability_KeyOutput!]! @fdc_generated(from: "UserStudioAvailability", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `UserStyleToneOption` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userStyleToneOption_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [UserStyleToneOption_Data!]!
+  ): [UserStyleToneOption_KeyOutput!]! @fdc_generated(from: "UserStyleToneOption", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `UserTechnicalSpecification` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userTechnicalSpecification_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [UserTechnicalSpecification_Data!]!
+  ): [UserTechnicalSpecification_KeyOutput!]! @fdc_generated(from: "UserTechnicalSpecification", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `UserTimeZone` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userTimeZone_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [UserTimeZone_Data!]!
+  ): [UserTimeZone_KeyOutput!]! @fdc_generated(from: "UserTimeZone", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `UserVoiceTrait` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userVoiceTrait_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [UserVoiceTrait_Data!]!
+  ): [UserVoiceTrait_KeyOutput!]! @fdc_generated(from: "UserVoiceTrait", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `Voice` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voice_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [Voice_Data!]!
+  ): [Voice_KeyOutput!]! @fdc_generated(from: "Voice", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `VoiceCategory` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceCategory_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [VoiceCategory_Data!]!
+  ): [VoiceCategory_KeyOutput!]! @fdc_generated(from: "VoiceCategory", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `VoiceExperience` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceExperience_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [VoiceExperience_Data!]!
+  ): [VoiceExperience_KeyOutput!]! @fdc_generated(from: "VoiceExperience", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `VoiceLanguage` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceLanguage_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [VoiceLanguage_Data!]!
+  ): [VoiceLanguage_KeyOutput!]! @fdc_generated(from: "VoiceLanguage", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `VoiceProductionQuality` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceProductionQuality_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [VoiceProductionQuality_Data!]!
+  ): [VoiceProductionQuality_KeyOutput!]! @fdc_generated(from: "VoiceProductionQuality", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `VoiceRegionalDialect` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceRegionalDialect_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [VoiceRegionalDialect_Data!]!
+  ): [VoiceRegionalDialect_KeyOutput!]! @fdc_generated(from: "VoiceRegionalDialect", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `VoiceSecondaryLanguage` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceSecondaryLanguage_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [VoiceSecondaryLanguage_Data!]!
+  ): [VoiceSecondaryLanguage_KeyOutput!]! @fdc_generated(from: "VoiceSecondaryLanguage", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `VoiceStudioAvailability` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceStudioAvailability_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [VoiceStudioAvailability_Data!]!
+  ): [VoiceStudioAvailability_KeyOutput!]! @fdc_generated(from: "VoiceStudioAvailability", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `VoiceStyleToneOption` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceStyleToneOption_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [VoiceStyleToneOption_Data!]!
+  ): [VoiceStyleToneOption_KeyOutput!]! @fdc_generated(from: "VoiceStyleToneOption", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `VoiceTechnicalSpecification` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceTechnicalSpecification_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [VoiceTechnicalSpecification_Data!]!
+  ): [VoiceTechnicalSpecification_KeyOutput!]! @fdc_generated(from: "VoiceTechnicalSpecification", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `VoiceTimeZone` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceTimeZone_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [VoiceTimeZone_Data!]!
+  ): [VoiceTimeZone_KeyOutput!]! @fdc_generated(from: "VoiceTimeZone", purpose: INSERT_MULTIPLE)
   """
   ✨ Insert `VoiceTrait` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
@@ -486,6 +1251,42 @@ extend type Mutation {
     data: [VoiceTrait_Data!]!
   ): [VoiceTrait_KeyOutput!]! @fdc_generated(from: "VoiceTrait", purpose: INSERT_MULTIPLE)
   """
+  ✨ Insert `VoiceVoiceTrait` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceVoiceTrait_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [VoiceVoiceTrait_Data!]!
+  ): [VoiceVoiceTrait_KeyOutput!]! @fdc_generated(from: "VoiceVoiceTrait", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert or update a single `ActivityLog` into the table, based on the primary key. Returns the key of the newly inserted `ActivityLog`.
+  """
+  activityLog_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: ActivityLog_Data!
+  ): ActivityLog_KeyOutput! @fdc_generated(from: "ActivityLog", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `AnalyticsEvent` into the table, based on the primary key. Returns the key of the newly inserted `AnalyticsEvent`.
+  """
+  analyticsEvent_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: AnalyticsEvent_Data!
+  ): AnalyticsEvent_KeyOutput! @fdc_generated(from: "AnalyticsEvent", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `Bid` into the table, based on the primary key. Returns the key of the newly inserted `Bid`.
+  """
+  bid_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: Bid_Data!
+  ): Bid_KeyOutput! @fdc_generated(from: "Bid", purpose: UPSERT_SINGLE)
+  """
   ✨ Insert or update a single `Category` into the table, based on the primary key. Returns the key of the newly inserted `Category`.
   """
   category_upsert(
@@ -494,6 +1295,60 @@ extend type Mutation {
     """
     data: Category_Data!
   ): Category_KeyOutput! @fdc_generated(from: "Category", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `Collection` into the table, based on the primary key. Returns the key of the newly inserted `Collection`.
+  """
+  collection_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: Collection_Data!
+  ): Collection_KeyOutput! @fdc_generated(from: "Collection", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `CollectionNFT` into the table, based on the primary key. Returns the key of the newly inserted `CollectionNFT`.
+  """
+  collectionNFT_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: CollectionNFT_Data!
+  ): CollectionNFT_KeyOutput! @fdc_generated(from: "CollectionNFT", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `Contract` into the table, based on the primary key. Returns the key of the newly inserted `Contract`.
+  """
+  contract_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: Contract_Data!
+  ): Contract_KeyOutput! @fdc_generated(from: "Contract", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `ContractNFT` into the table, based on the primary key. Returns the key of the newly inserted `ContractNFT`.
+  """
+  contractNFT_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: ContractNFT_Data!
+  ): ContractNFT_KeyOutput! @fdc_generated(from: "ContractNFT", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `ContractUser` into the table, based on the primary key. Returns the key of the newly inserted `ContractUser`.
+  """
+  contractUser_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: ContractUser_Data!
+  ): ContractUser_KeyOutput! @fdc_generated(from: "ContractUser", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `ContractVoice` into the table, based on the primary key. Returns the key of the newly inserted `ContractVoice`.
+  """
+  contractVoice_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: ContractVoice_Data!
+  ): ContractVoice_KeyOutput! @fdc_generated(from: "ContractVoice", purpose: UPSERT_SINGLE)
   """
   ✨ Insert or update a single `ExperienceLevel` into the table, based on the primary key. Returns the key of the newly inserted `ExperienceLevel`.
   """
@@ -504,6 +1359,15 @@ extend type Mutation {
     data: ExperienceLevel_Data!
   ): ExperienceLevel_KeyOutput! @fdc_generated(from: "ExperienceLevel", purpose: UPSERT_SINGLE)
   """
+  ✨ Insert or update a single `Favorite` into the table, based on the primary key. Returns the key of the newly inserted `Favorite`.
+  """
+  favorite_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: Favorite_Data!
+  ): Favorite_KeyOutput! @fdc_generated(from: "Favorite", purpose: UPSERT_SINGLE)
+  """
   ✨ Insert or update a single `Language` into the table, based on the primary key. Returns the key of the newly inserted `Language`.
   """
   language_upsert(
@@ -512,6 +1376,24 @@ extend type Mutation {
     """
     data: Language_Data!
   ): Language_KeyOutput! @fdc_generated(from: "Language", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `Listing` into the table, based on the primary key. Returns the key of the newly inserted `Listing`.
+  """
+  listing_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: Listing_Data!
+  ): Listing_KeyOutput! @fdc_generated(from: "Listing", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `Message` into the table, based on the primary key. Returns the key of the newly inserted `Message`.
+  """
+  message_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: Message_Data!
+  ): Message_KeyOutput! @fdc_generated(from: "Message", purpose: UPSERT_SINGLE)
   """
   ✨ Insert or update a single `NFT` into the table, based on the primary key. Returns the key of the newly inserted `NFT`.
   """
@@ -612,6 +1494,15 @@ extend type Mutation {
     data: NFTVoiceTrait_Data!
   ): NFTVoiceTrait_KeyOutput! @fdc_generated(from: "NFTVoiceTrait", purpose: UPSERT_SINGLE)
   """
+  ✨ Insert or update a single `Notification` into the table, based on the primary key. Returns the key of the newly inserted `Notification`.
+  """
+  notification_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: Notification_Data!
+  ): Notification_KeyOutput! @fdc_generated(from: "Notification", purpose: UPSERT_SINGLE)
+  """
   ✨ Insert or update a single `Ownership` into the table, based on the primary key. Returns the key of the newly inserted `Ownership`.
   """
   ownership_upsert(
@@ -620,6 +1511,24 @@ extend type Mutation {
     """
     data: Ownership_Data!
   ): Ownership_KeyOutput! @fdc_generated(from: "Ownership", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `PaymentMethod` into the table, based on the primary key. Returns the key of the newly inserted `PaymentMethod`.
+  """
+  paymentMethod_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: PaymentMethod_Data!
+  ): PaymentMethod_KeyOutput! @fdc_generated(from: "PaymentMethod", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `Permission` into the table, based on the primary key. Returns the key of the newly inserted `Permission`.
+  """
+  permission_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: Permission_Data!
+  ): Permission_KeyOutput! @fdc_generated(from: "Permission", purpose: UPSERT_SINGLE)
   """
   ✨ Insert or update a single `ProductionQuality` into the table, based on the primary key. Returns the key of the newly inserted `ProductionQuality`.
   """
@@ -638,6 +1547,42 @@ extend type Mutation {
     """
     data: RegionalDialect_Data!
   ): RegionalDialect_KeyOutput! @fdc_generated(from: "RegionalDialect", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `Review` into the table, based on the primary key. Returns the key of the newly inserted `Review`.
+  """
+  review_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: Review_Data!
+  ): Review_KeyOutput! @fdc_generated(from: "Review", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `Role` into the table, based on the primary key. Returns the key of the newly inserted `Role`.
+  """
+  role_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: Role_Data!
+  ): Role_KeyOutput! @fdc_generated(from: "Role", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `RolePermission` into the table, based on the primary key. Returns the key of the newly inserted `RolePermission`.
+  """
+  rolePermission_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: RolePermission_Data!
+  ): RolePermission_KeyOutput! @fdc_generated(from: "RolePermission", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `Royalty` into the table, based on the primary key. Returns the key of the newly inserted `Royalty`.
+  """
+  royalty_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: Royalty_Data!
+  ): Royalty_KeyOutput! @fdc_generated(from: "Royalty", purpose: UPSERT_SINGLE)
   """
   ✨ Insert or update a single `SecondaryLanguage` into the table, based on the primary key. Returns the key of the newly inserted `SecondaryLanguage`.
   """
@@ -675,6 +1620,15 @@ extend type Mutation {
     data: StyleToneOption_Data!
   ): StyleToneOption_KeyOutput! @fdc_generated(from: "StyleToneOption", purpose: UPSERT_SINGLE)
   """
+  ✨ Insert or update a single `SupportTicket` into the table, based on the primary key. Returns the key of the newly inserted `SupportTicket`.
+  """
+  supportTicket_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: SupportTicket_Data!
+  ): SupportTicket_KeyOutput! @fdc_generated(from: "SupportTicket", purpose: UPSERT_SINGLE)
+  """
   ✨ Insert or update a single `TechnicalSpecification` into the table, based on the primary key. Returns the key of the newly inserted `TechnicalSpecification`.
   """
   technicalSpecification_upsert(
@@ -711,6 +1665,15 @@ extend type Mutation {
     data: User_Data!
   ): User_KeyOutput! @fdc_generated(from: "User", purpose: UPSERT_SINGLE)
   """
+  ✨ Insert or update a single `UserCategory` into the table, based on the primary key. Returns the key of the newly inserted `UserCategory`.
+  """
+  userCategory_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: UserCategory_Data!
+  ): UserCategory_KeyOutput! @fdc_generated(from: "UserCategory", purpose: UPSERT_SINGLE)
+  """
   ✨ Insert or update a single `UserExperience` into the table, based on the primary key. Returns the key of the newly inserted `UserExperience`.
   """
   userExperience_upsert(
@@ -720,6 +1683,195 @@ extend type Mutation {
     data: UserExperience_Data!
   ): UserExperience_KeyOutput! @fdc_generated(from: "UserExperience", purpose: UPSERT_SINGLE)
   """
+  ✨ Insert or update a single `UserLanguage` into the table, based on the primary key. Returns the key of the newly inserted `UserLanguage`.
+  """
+  userLanguage_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: UserLanguage_Data!
+  ): UserLanguage_KeyOutput! @fdc_generated(from: "UserLanguage", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `UserProductionQuality` into the table, based on the primary key. Returns the key of the newly inserted `UserProductionQuality`.
+  """
+  userProductionQuality_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: UserProductionQuality_Data!
+  ): UserProductionQuality_KeyOutput! @fdc_generated(from: "UserProductionQuality", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `UserRegionalDialect` into the table, based on the primary key. Returns the key of the newly inserted `UserRegionalDialect`.
+  """
+  userRegionalDialect_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: UserRegionalDialect_Data!
+  ): UserRegionalDialect_KeyOutput! @fdc_generated(from: "UserRegionalDialect", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `UserRole` into the table, based on the primary key. Returns the key of the newly inserted `UserRole`.
+  """
+  userRole_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: UserRole_Data!
+  ): UserRole_KeyOutput! @fdc_generated(from: "UserRole", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `UserSecondaryLanguage` into the table, based on the primary key. Returns the key of the newly inserted `UserSecondaryLanguage`.
+  """
+  userSecondaryLanguage_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: UserSecondaryLanguage_Data!
+  ): UserSecondaryLanguage_KeyOutput! @fdc_generated(from: "UserSecondaryLanguage", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `UserStudioAvailability` into the table, based on the primary key. Returns the key of the newly inserted `UserStudioAvailability`.
+  """
+  userStudioAvailability_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: UserStudioAvailability_Data!
+  ): UserStudioAvailability_KeyOutput! @fdc_generated(from: "UserStudioAvailability", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `UserStyleToneOption` into the table, based on the primary key. Returns the key of the newly inserted `UserStyleToneOption`.
+  """
+  userStyleToneOption_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: UserStyleToneOption_Data!
+  ): UserStyleToneOption_KeyOutput! @fdc_generated(from: "UserStyleToneOption", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `UserTechnicalSpecification` into the table, based on the primary key. Returns the key of the newly inserted `UserTechnicalSpecification`.
+  """
+  userTechnicalSpecification_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: UserTechnicalSpecification_Data!
+  ): UserTechnicalSpecification_KeyOutput! @fdc_generated(from: "UserTechnicalSpecification", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `UserTimeZone` into the table, based on the primary key. Returns the key of the newly inserted `UserTimeZone`.
+  """
+  userTimeZone_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: UserTimeZone_Data!
+  ): UserTimeZone_KeyOutput! @fdc_generated(from: "UserTimeZone", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `UserVoiceTrait` into the table, based on the primary key. Returns the key of the newly inserted `UserVoiceTrait`.
+  """
+  userVoiceTrait_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: UserVoiceTrait_Data!
+  ): UserVoiceTrait_KeyOutput! @fdc_generated(from: "UserVoiceTrait", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `Voice` into the table, based on the primary key. Returns the key of the newly inserted `Voice`.
+  """
+  voice_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: Voice_Data!
+  ): Voice_KeyOutput! @fdc_generated(from: "Voice", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `VoiceCategory` into the table, based on the primary key. Returns the key of the newly inserted `VoiceCategory`.
+  """
+  voiceCategory_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: VoiceCategory_Data!
+  ): VoiceCategory_KeyOutput! @fdc_generated(from: "VoiceCategory", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `VoiceExperience` into the table, based on the primary key. Returns the key of the newly inserted `VoiceExperience`.
+  """
+  voiceExperience_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: VoiceExperience_Data!
+  ): VoiceExperience_KeyOutput! @fdc_generated(from: "VoiceExperience", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `VoiceLanguage` into the table, based on the primary key. Returns the key of the newly inserted `VoiceLanguage`.
+  """
+  voiceLanguage_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: VoiceLanguage_Data!
+  ): VoiceLanguage_KeyOutput! @fdc_generated(from: "VoiceLanguage", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `VoiceProductionQuality` into the table, based on the primary key. Returns the key of the newly inserted `VoiceProductionQuality`.
+  """
+  voiceProductionQuality_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: VoiceProductionQuality_Data!
+  ): VoiceProductionQuality_KeyOutput! @fdc_generated(from: "VoiceProductionQuality", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `VoiceRegionalDialect` into the table, based on the primary key. Returns the key of the newly inserted `VoiceRegionalDialect`.
+  """
+  voiceRegionalDialect_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: VoiceRegionalDialect_Data!
+  ): VoiceRegionalDialect_KeyOutput! @fdc_generated(from: "VoiceRegionalDialect", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `VoiceSecondaryLanguage` into the table, based on the primary key. Returns the key of the newly inserted `VoiceSecondaryLanguage`.
+  """
+  voiceSecondaryLanguage_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: VoiceSecondaryLanguage_Data!
+  ): VoiceSecondaryLanguage_KeyOutput! @fdc_generated(from: "VoiceSecondaryLanguage", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `VoiceStudioAvailability` into the table, based on the primary key. Returns the key of the newly inserted `VoiceStudioAvailability`.
+  """
+  voiceStudioAvailability_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: VoiceStudioAvailability_Data!
+  ): VoiceStudioAvailability_KeyOutput! @fdc_generated(from: "VoiceStudioAvailability", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `VoiceStyleToneOption` into the table, based on the primary key. Returns the key of the newly inserted `VoiceStyleToneOption`.
+  """
+  voiceStyleToneOption_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: VoiceStyleToneOption_Data!
+  ): VoiceStyleToneOption_KeyOutput! @fdc_generated(from: "VoiceStyleToneOption", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `VoiceTechnicalSpecification` into the table, based on the primary key. Returns the key of the newly inserted `VoiceTechnicalSpecification`.
+  """
+  voiceTechnicalSpecification_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: VoiceTechnicalSpecification_Data!
+  ): VoiceTechnicalSpecification_KeyOutput! @fdc_generated(from: "VoiceTechnicalSpecification", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `VoiceTimeZone` into the table, based on the primary key. Returns the key of the newly inserted `VoiceTimeZone`.
+  """
+  voiceTimeZone_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: VoiceTimeZone_Data!
+  ): VoiceTimeZone_KeyOutput! @fdc_generated(from: "VoiceTimeZone", purpose: UPSERT_SINGLE)
+  """
   ✨ Insert or update a single `VoiceTrait` into the table, based on the primary key. Returns the key of the newly inserted `VoiceTrait`.
   """
   voiceTrait_upsert(
@@ -728,6 +1880,87 @@ extend type Mutation {
     """
     data: VoiceTrait_Data!
   ): VoiceTrait_KeyOutput! @fdc_generated(from: "VoiceTrait", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `VoiceVoiceTrait` into the table, based on the primary key. Returns the key of the newly inserted `VoiceVoiceTrait`.
+  """
+  voiceVoiceTrait_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: VoiceVoiceTrait_Data!
+  ): VoiceVoiceTrait_KeyOutput! @fdc_generated(from: "VoiceVoiceTrait", purpose: UPSERT_SINGLE)
+  """
+  ✨ Update a single `ActivityLog` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  activityLog_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: ActivityLog_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: ActivityLog_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: ActivityLog_Data!
+  ): ActivityLog_KeyOutput @fdc_generated(from: "ActivityLog", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `AnalyticsEvent` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  analyticsEvent_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: AnalyticsEvent_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: AnalyticsEvent_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: AnalyticsEvent_Data!
+  ): AnalyticsEvent_KeyOutput @fdc_generated(from: "AnalyticsEvent", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `Bid` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  bid_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Bid_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Bid_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: Bid_Data!
+  ): Bid_KeyOutput @fdc_generated(from: "Bid", purpose: UPDATE_SINGLE)
   """
   ✨ Update a single `Category` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
   """
@@ -753,6 +1986,130 @@ extend type Mutation {
     data: Category_Data!
   ): Category_KeyOutput @fdc_generated(from: "Category", purpose: UPDATE_SINGLE)
   """
+  ✨ Update a single `Collection` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  collection_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Collection_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Collection_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: Collection_Data!
+  ): Collection_KeyOutput @fdc_generated(from: "Collection", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `CollectionNFT` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  collectionNFT_update(
+    """
+    The key used to identify the object.
+    """
+    key: CollectionNFT_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: CollectionNFT_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: CollectionNFT_Data!
+  ): CollectionNFT_KeyOutput @fdc_generated(from: "CollectionNFT", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `Contract` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  contract_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Contract_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Contract_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: Contract_Data!
+  ): Contract_KeyOutput @fdc_generated(from: "Contract", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `ContractNFT` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  contractNFT_update(
+    """
+    The key used to identify the object.
+    """
+    key: ContractNFT_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: ContractNFT_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: ContractNFT_Data!
+  ): ContractNFT_KeyOutput @fdc_generated(from: "ContractNFT", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `ContractUser` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  contractUser_update(
+    """
+    The key used to identify the object.
+    """
+    key: ContractUser_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: ContractUser_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: ContractUser_Data!
+  ): ContractUser_KeyOutput @fdc_generated(from: "ContractUser", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `ContractVoice` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  contractVoice_update(
+    """
+    The key used to identify the object.
+    """
+    key: ContractVoice_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: ContractVoice_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: ContractVoice_Data!
+  ): ContractVoice_KeyOutput @fdc_generated(from: "ContractVoice", purpose: UPDATE_SINGLE)
+  """
   ✨ Update a single `ExperienceLevel` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
   """
   experienceLevel_update(
@@ -777,6 +2134,25 @@ extend type Mutation {
     data: ExperienceLevel_Data!
   ): ExperienceLevel_KeyOutput @fdc_generated(from: "ExperienceLevel", purpose: UPDATE_SINGLE)
   """
+  ✨ Update a single `Favorite` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  favorite_update(
+    """
+    The key used to identify the object.
+    """
+    key: Favorite_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Favorite_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: Favorite_Data!
+  ): Favorite_KeyOutput @fdc_generated(from: "Favorite", purpose: UPDATE_SINGLE)
+  """
   ✨ Update a single `Language` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
   """
   language_update(
@@ -800,6 +2176,54 @@ extend type Mutation {
     """
     data: Language_Data!
   ): Language_KeyOutput @fdc_generated(from: "Language", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `Listing` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  listing_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Listing_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Listing_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: Listing_Data!
+  ): Listing_KeyOutput @fdc_generated(from: "Listing", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `Message` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  message_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Message_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Message_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: Message_Data!
+  ): Message_KeyOutput @fdc_generated(from: "Message", purpose: UPDATE_SINGLE)
   """
   ✨ Update a single `NFT` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
   """
@@ -1015,6 +2439,30 @@ extend type Mutation {
     data: NFTVoiceTrait_Data!
   ): NFTVoiceTrait_KeyOutput @fdc_generated(from: "NFTVoiceTrait", purpose: UPDATE_SINGLE)
   """
+  ✨ Update a single `Notification` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  notification_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Notification_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Notification_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: Notification_Data!
+  ): Notification_KeyOutput @fdc_generated(from: "Notification", purpose: UPDATE_SINGLE)
+  """
   ✨ Update a single `Ownership` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
   """
   ownership_update(
@@ -1033,6 +2481,54 @@ extend type Mutation {
     """
     data: Ownership_Data!
   ): Ownership_KeyOutput @fdc_generated(from: "Ownership", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `PaymentMethod` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  paymentMethod_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: PaymentMethod_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: PaymentMethod_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: PaymentMethod_Data!
+  ): PaymentMethod_KeyOutput @fdc_generated(from: "PaymentMethod", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `Permission` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  permission_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Permission_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Permission_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: Permission_Data!
+  ): Permission_KeyOutput @fdc_generated(from: "Permission", purpose: UPDATE_SINGLE)
   """
   ✨ Update a single `ProductionQuality` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
   """
@@ -1081,6 +2577,97 @@ extend type Mutation {
     """
     data: RegionalDialect_Data!
   ): RegionalDialect_KeyOutput @fdc_generated(from: "RegionalDialect", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `Review` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  review_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Review_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Review_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: Review_Data!
+  ): Review_KeyOutput @fdc_generated(from: "Review", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `Role` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  role_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Role_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Role_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: Role_Data!
+  ): Role_KeyOutput @fdc_generated(from: "Role", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `RolePermission` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  rolePermission_update(
+    """
+    The key used to identify the object.
+    """
+    key: RolePermission_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: RolePermission_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: RolePermission_Data!
+  ): RolePermission_KeyOutput @fdc_generated(from: "RolePermission", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `Royalty` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  royalty_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Royalty_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Royalty_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: Royalty_Data!
+  ): Royalty_KeyOutput @fdc_generated(from: "Royalty", purpose: UPDATE_SINGLE)
   """
   ✨ Update a single `SecondaryLanguage` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
   """
@@ -1178,6 +2765,30 @@ extend type Mutation {
     data: StyleToneOption_Data!
   ): StyleToneOption_KeyOutput @fdc_generated(from: "StyleToneOption", purpose: UPDATE_SINGLE)
   """
+  ✨ Update a single `SupportTicket` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  supportTicket_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: SupportTicket_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: SupportTicket_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: SupportTicket_Data!
+  ): SupportTicket_KeyOutput @fdc_generated(from: "SupportTicket", purpose: UPDATE_SINGLE)
+  """
   ✨ Update a single `TechnicalSpecification` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
   """
   technicalSpecification_update(
@@ -1274,6 +2885,25 @@ extend type Mutation {
     data: User_Data!
   ): User_KeyOutput @fdc_generated(from: "User", purpose: UPDATE_SINGLE)
   """
+  ✨ Update a single `UserCategory` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  userCategory_update(
+    """
+    The key used to identify the object.
+    """
+    key: UserCategory_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserCategory_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: UserCategory_Data!
+  ): UserCategory_KeyOutput @fdc_generated(from: "UserCategory", purpose: UPDATE_SINGLE)
+  """
   ✨ Update a single `UserExperience` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
   """
   userExperience_update(
@@ -1292,6 +2922,410 @@ extend type Mutation {
     """
     data: UserExperience_Data!
   ): UserExperience_KeyOutput @fdc_generated(from: "UserExperience", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `UserLanguage` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  userLanguage_update(
+    """
+    The key used to identify the object.
+    """
+    key: UserLanguage_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserLanguage_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: UserLanguage_Data!
+  ): UserLanguage_KeyOutput @fdc_generated(from: "UserLanguage", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `UserProductionQuality` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  userProductionQuality_update(
+    """
+    The key used to identify the object.
+    """
+    key: UserProductionQuality_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserProductionQuality_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: UserProductionQuality_Data!
+  ): UserProductionQuality_KeyOutput @fdc_generated(from: "UserProductionQuality", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `UserRegionalDialect` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  userRegionalDialect_update(
+    """
+    The key used to identify the object.
+    """
+    key: UserRegionalDialect_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserRegionalDialect_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: UserRegionalDialect_Data!
+  ): UserRegionalDialect_KeyOutput @fdc_generated(from: "UserRegionalDialect", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `UserRole` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  userRole_update(
+    """
+    The key used to identify the object.
+    """
+    key: UserRole_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserRole_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: UserRole_Data!
+  ): UserRole_KeyOutput @fdc_generated(from: "UserRole", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `UserSecondaryLanguage` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  userSecondaryLanguage_update(
+    """
+    The key used to identify the object.
+    """
+    key: UserSecondaryLanguage_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserSecondaryLanguage_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: UserSecondaryLanguage_Data!
+  ): UserSecondaryLanguage_KeyOutput @fdc_generated(from: "UserSecondaryLanguage", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `UserStudioAvailability` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  userStudioAvailability_update(
+    """
+    The key used to identify the object.
+    """
+    key: UserStudioAvailability_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserStudioAvailability_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: UserStudioAvailability_Data!
+  ): UserStudioAvailability_KeyOutput @fdc_generated(from: "UserStudioAvailability", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `UserStyleToneOption` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  userStyleToneOption_update(
+    """
+    The key used to identify the object.
+    """
+    key: UserStyleToneOption_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserStyleToneOption_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: UserStyleToneOption_Data!
+  ): UserStyleToneOption_KeyOutput @fdc_generated(from: "UserStyleToneOption", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `UserTechnicalSpecification` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  userTechnicalSpecification_update(
+    """
+    The key used to identify the object.
+    """
+    key: UserTechnicalSpecification_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserTechnicalSpecification_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: UserTechnicalSpecification_Data!
+  ): UserTechnicalSpecification_KeyOutput @fdc_generated(from: "UserTechnicalSpecification", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `UserTimeZone` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  userTimeZone_update(
+    """
+    The key used to identify the object.
+    """
+    key: UserTimeZone_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserTimeZone_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: UserTimeZone_Data!
+  ): UserTimeZone_KeyOutput @fdc_generated(from: "UserTimeZone", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `UserVoiceTrait` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  userVoiceTrait_update(
+    """
+    The key used to identify the object.
+    """
+    key: UserVoiceTrait_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserVoiceTrait_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: UserVoiceTrait_Data!
+  ): UserVoiceTrait_KeyOutput @fdc_generated(from: "UserVoiceTrait", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `Voice` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  voice_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Voice_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Voice_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: Voice_Data!
+  ): Voice_KeyOutput @fdc_generated(from: "Voice", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `VoiceCategory` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  voiceCategory_update(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceCategory_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceCategory_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: VoiceCategory_Data!
+  ): VoiceCategory_KeyOutput @fdc_generated(from: "VoiceCategory", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `VoiceExperience` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  voiceExperience_update(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceExperience_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceExperience_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: VoiceExperience_Data!
+  ): VoiceExperience_KeyOutput @fdc_generated(from: "VoiceExperience", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `VoiceLanguage` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  voiceLanguage_update(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceLanguage_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceLanguage_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: VoiceLanguage_Data!
+  ): VoiceLanguage_KeyOutput @fdc_generated(from: "VoiceLanguage", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `VoiceProductionQuality` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  voiceProductionQuality_update(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceProductionQuality_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceProductionQuality_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: VoiceProductionQuality_Data!
+  ): VoiceProductionQuality_KeyOutput @fdc_generated(from: "VoiceProductionQuality", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `VoiceRegionalDialect` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  voiceRegionalDialect_update(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceRegionalDialect_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceRegionalDialect_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: VoiceRegionalDialect_Data!
+  ): VoiceRegionalDialect_KeyOutput @fdc_generated(from: "VoiceRegionalDialect", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `VoiceSecondaryLanguage` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  voiceSecondaryLanguage_update(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceSecondaryLanguage_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceSecondaryLanguage_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: VoiceSecondaryLanguage_Data!
+  ): VoiceSecondaryLanguage_KeyOutput @fdc_generated(from: "VoiceSecondaryLanguage", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `VoiceStudioAvailability` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  voiceStudioAvailability_update(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceStudioAvailability_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceStudioAvailability_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: VoiceStudioAvailability_Data!
+  ): VoiceStudioAvailability_KeyOutput @fdc_generated(from: "VoiceStudioAvailability", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `VoiceStyleToneOption` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  voiceStyleToneOption_update(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceStyleToneOption_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceStyleToneOption_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: VoiceStyleToneOption_Data!
+  ): VoiceStyleToneOption_KeyOutput @fdc_generated(from: "VoiceStyleToneOption", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `VoiceTechnicalSpecification` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  voiceTechnicalSpecification_update(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceTechnicalSpecification_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceTechnicalSpecification_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: VoiceTechnicalSpecification_Data!
+  ): VoiceTechnicalSpecification_KeyOutput @fdc_generated(from: "VoiceTechnicalSpecification", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `VoiceTimeZone` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  voiceTimeZone_update(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceTimeZone_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceTimeZone_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: VoiceTimeZone_Data!
+  ): VoiceTimeZone_KeyOutput @fdc_generated(from: "VoiceTimeZone", purpose: UPDATE_SINGLE)
   """
   ✨ Update a single `VoiceTrait` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
   """
@@ -1317,6 +3351,82 @@ extend type Mutation {
     data: VoiceTrait_Data!
   ): VoiceTrait_KeyOutput @fdc_generated(from: "VoiceTrait", purpose: UPDATE_SINGLE)
   """
+  ✨ Update a single `VoiceVoiceTrait` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  voiceVoiceTrait_update(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceVoiceTrait_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceVoiceTrait_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: VoiceVoiceTrait_Data!
+  ): VoiceVoiceTrait_KeyOutput @fdc_generated(from: "VoiceVoiceTrait", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update `ActivityLog` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  activityLog_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: ActivityLog_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: ActivityLog_Data!
+  ): Int! @fdc_generated(from: "ActivityLog", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `AnalyticsEvent` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  analyticsEvent_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: AnalyticsEvent_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: AnalyticsEvent_Data!
+  ): Int! @fdc_generated(from: "AnalyticsEvent", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `Bid` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  bid_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: Bid_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: Bid_Data!
+  ): Int! @fdc_generated(from: "Bid", purpose: UPDATE_MULTIPLE)
+  """
   ✨ Update `Category` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
   """
   category_updateMany(
@@ -1335,6 +3445,120 @@ extend type Mutation {
     """
     data: Category_Data!
   ): Int! @fdc_generated(from: "Category", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `Collection` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  collection_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: Collection_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: Collection_Data!
+  ): Int! @fdc_generated(from: "Collection", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `CollectionNFT` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  collectionNFT_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: CollectionNFT_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: CollectionNFT_Data!
+  ): Int! @fdc_generated(from: "CollectionNFT", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `Contract` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  contract_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: Contract_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: Contract_Data!
+  ): Int! @fdc_generated(from: "Contract", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `ContractNFT` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  contractNFT_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: ContractNFT_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: ContractNFT_Data!
+  ): Int! @fdc_generated(from: "ContractNFT", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `ContractUser` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  contractUser_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: ContractUser_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: ContractUser_Data!
+  ): Int! @fdc_generated(from: "ContractUser", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `ContractVoice` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  contractVoice_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: ContractVoice_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: ContractVoice_Data!
+  ): Int! @fdc_generated(from: "ContractVoice", purpose: UPDATE_MULTIPLE)
   """
   ✨ Update `ExperienceLevel` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
   """
@@ -1355,6 +3579,25 @@ extend type Mutation {
     data: ExperienceLevel_Data!
   ): Int! @fdc_generated(from: "ExperienceLevel", purpose: UPDATE_MULTIPLE)
   """
+  ✨ Update `Favorite` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  favorite_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: Favorite_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: Favorite_Data!
+  ): Int! @fdc_generated(from: "Favorite", purpose: UPDATE_MULTIPLE)
+  """
   ✨ Update `Language` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
   """
   language_updateMany(
@@ -1373,6 +3616,44 @@ extend type Mutation {
     """
     data: Language_Data!
   ): Int! @fdc_generated(from: "Language", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `Listing` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  listing_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: Listing_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: Listing_Data!
+  ): Int! @fdc_generated(from: "Listing", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `Message` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  message_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: Message_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: Message_Data!
+  ): Int! @fdc_generated(from: "Message", purpose: UPDATE_MULTIPLE)
   """
   ✨ Update `NFT` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
   """
@@ -1583,6 +3864,25 @@ extend type Mutation {
     data: NFTVoiceTrait_Data!
   ): Int! @fdc_generated(from: "NFTVoiceTrait", purpose: UPDATE_MULTIPLE)
   """
+  ✨ Update `Notification` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  notification_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: Notification_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: Notification_Data!
+  ): Int! @fdc_generated(from: "Notification", purpose: UPDATE_MULTIPLE)
+  """
   ✨ Update `Ownership` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
   """
   ownership_updateMany(
@@ -1601,6 +3901,44 @@ extend type Mutation {
     """
     data: Ownership_Data!
   ): Int! @fdc_generated(from: "Ownership", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `PaymentMethod` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  paymentMethod_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: PaymentMethod_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: PaymentMethod_Data!
+  ): Int! @fdc_generated(from: "PaymentMethod", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `Permission` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  permission_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: Permission_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: Permission_Data!
+  ): Int! @fdc_generated(from: "Permission", purpose: UPDATE_MULTIPLE)
   """
   ✨ Update `ProductionQuality` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
   """
@@ -1639,6 +3977,82 @@ extend type Mutation {
     """
     data: RegionalDialect_Data!
   ): Int! @fdc_generated(from: "RegionalDialect", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `Review` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  review_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: Review_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: Review_Data!
+  ): Int! @fdc_generated(from: "Review", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `Role` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  role_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: Role_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: Role_Data!
+  ): Int! @fdc_generated(from: "Role", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `RolePermission` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  rolePermission_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: RolePermission_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: RolePermission_Data!
+  ): Int! @fdc_generated(from: "RolePermission", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `Royalty` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  royalty_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: Royalty_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: Royalty_Data!
+  ): Int! @fdc_generated(from: "Royalty", purpose: UPDATE_MULTIPLE)
   """
   ✨ Update `SecondaryLanguage` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
   """
@@ -1716,6 +4130,25 @@ extend type Mutation {
     data: StyleToneOption_Data!
   ): Int! @fdc_generated(from: "StyleToneOption", purpose: UPDATE_MULTIPLE)
   """
+  ✨ Update `SupportTicket` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  supportTicket_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: SupportTicket_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: SupportTicket_Data!
+  ): Int! @fdc_generated(from: "SupportTicket", purpose: UPDATE_MULTIPLE)
+  """
   ✨ Update `TechnicalSpecification` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
   """
   technicalSpecification_updateMany(
@@ -1792,6 +4225,25 @@ extend type Mutation {
     data: User_Data!
   ): Int! @fdc_generated(from: "User", purpose: UPDATE_MULTIPLE)
   """
+  ✨ Update `UserCategory` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  userCategory_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: UserCategory_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: UserCategory_Data!
+  ): Int! @fdc_generated(from: "UserCategory", purpose: UPDATE_MULTIPLE)
+  """
   ✨ Update `UserExperience` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
   """
   userExperience_updateMany(
@@ -1810,6 +4262,405 @@ extend type Mutation {
     """
     data: UserExperience_Data!
   ): Int! @fdc_generated(from: "UserExperience", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `UserLanguage` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  userLanguage_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: UserLanguage_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: UserLanguage_Data!
+  ): Int! @fdc_generated(from: "UserLanguage", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `UserProductionQuality` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  userProductionQuality_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: UserProductionQuality_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: UserProductionQuality_Data!
+  ): Int! @fdc_generated(from: "UserProductionQuality", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `UserRegionalDialect` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  userRegionalDialect_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: UserRegionalDialect_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: UserRegionalDialect_Data!
+  ): Int! @fdc_generated(from: "UserRegionalDialect", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `UserRole` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  userRole_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: UserRole_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: UserRole_Data!
+  ): Int! @fdc_generated(from: "UserRole", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `UserSecondaryLanguage` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  userSecondaryLanguage_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: UserSecondaryLanguage_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: UserSecondaryLanguage_Data!
+  ): Int! @fdc_generated(from: "UserSecondaryLanguage", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `UserStudioAvailability` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  userStudioAvailability_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: UserStudioAvailability_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: UserStudioAvailability_Data!
+  ): Int! @fdc_generated(from: "UserStudioAvailability", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `UserStyleToneOption` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  userStyleToneOption_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: UserStyleToneOption_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: UserStyleToneOption_Data!
+  ): Int! @fdc_generated(from: "UserStyleToneOption", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `UserTechnicalSpecification` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  userTechnicalSpecification_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: UserTechnicalSpecification_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: UserTechnicalSpecification_Data!
+  ): Int! @fdc_generated(from: "UserTechnicalSpecification", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `UserTimeZone` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  userTimeZone_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: UserTimeZone_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: UserTimeZone_Data!
+  ): Int! @fdc_generated(from: "UserTimeZone", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `UserVoiceTrait` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  userVoiceTrait_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: UserVoiceTrait_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: UserVoiceTrait_Data!
+  ): Int! @fdc_generated(from: "UserVoiceTrait", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `Voice` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  voice_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: Voice_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: Voice_Data!
+  ): Int! @fdc_generated(from: "Voice", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `VoiceCategory` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  voiceCategory_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: VoiceCategory_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: VoiceCategory_Data!
+  ): Int! @fdc_generated(from: "VoiceCategory", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `VoiceExperience` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  voiceExperience_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: VoiceExperience_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: VoiceExperience_Data!
+  ): Int! @fdc_generated(from: "VoiceExperience", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `VoiceLanguage` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  voiceLanguage_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: VoiceLanguage_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: VoiceLanguage_Data!
+  ): Int! @fdc_generated(from: "VoiceLanguage", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `VoiceProductionQuality` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  voiceProductionQuality_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: VoiceProductionQuality_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: VoiceProductionQuality_Data!
+  ): Int! @fdc_generated(from: "VoiceProductionQuality", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `VoiceRegionalDialect` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  voiceRegionalDialect_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: VoiceRegionalDialect_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: VoiceRegionalDialect_Data!
+  ): Int! @fdc_generated(from: "VoiceRegionalDialect", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `VoiceSecondaryLanguage` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  voiceSecondaryLanguage_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: VoiceSecondaryLanguage_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: VoiceSecondaryLanguage_Data!
+  ): Int! @fdc_generated(from: "VoiceSecondaryLanguage", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `VoiceStudioAvailability` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  voiceStudioAvailability_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: VoiceStudioAvailability_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: VoiceStudioAvailability_Data!
+  ): Int! @fdc_generated(from: "VoiceStudioAvailability", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `VoiceStyleToneOption` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  voiceStyleToneOption_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: VoiceStyleToneOption_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: VoiceStyleToneOption_Data!
+  ): Int! @fdc_generated(from: "VoiceStyleToneOption", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `VoiceTechnicalSpecification` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  voiceTechnicalSpecification_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: VoiceTechnicalSpecification_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: VoiceTechnicalSpecification_Data!
+  ): Int! @fdc_generated(from: "VoiceTechnicalSpecification", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `VoiceTimeZone` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  voiceTimeZone_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: VoiceTimeZone_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: VoiceTimeZone_Data!
+  ): Int! @fdc_generated(from: "VoiceTimeZone", purpose: UPDATE_MULTIPLE)
   """
   ✨ Update `VoiceTrait` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
   """
@@ -1830,6 +4681,82 @@ extend type Mutation {
     data: VoiceTrait_Data!
   ): Int! @fdc_generated(from: "VoiceTrait", purpose: UPDATE_MULTIPLE)
   """
+  ✨ Update `VoiceVoiceTrait` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  voiceVoiceTrait_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: VoiceVoiceTrait_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: VoiceVoiceTrait_Data!
+  ): Int! @fdc_generated(from: "VoiceVoiceTrait", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Delete a single `ActivityLog` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  activityLog_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: ActivityLog_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: ActivityLog_FirstRow
+  ): ActivityLog_KeyOutput @fdc_generated(from: "ActivityLog", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `AnalyticsEvent` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  analyticsEvent_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: AnalyticsEvent_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: AnalyticsEvent_FirstRow
+  ): AnalyticsEvent_KeyOutput @fdc_generated(from: "AnalyticsEvent", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `Bid` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  bid_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Bid_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Bid_FirstRow
+  ): Bid_KeyOutput @fdc_generated(from: "Bid", purpose: DELETE_SINGLE)
+  """
   ✨ Delete a single `Category` based on `id`, `key` or `first` and return its key (or `null` if not found).
   """
   category_delete(
@@ -1848,6 +4775,100 @@ extend type Mutation {
     """
     first: Category_FirstRow
   ): Category_KeyOutput @fdc_generated(from: "Category", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `Collection` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  collection_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Collection_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Collection_FirstRow
+  ): Collection_KeyOutput @fdc_generated(from: "Collection", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `CollectionNFT` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  collectionNFT_delete(
+    """
+    The key used to identify the object.
+    """
+    key: CollectionNFT_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: CollectionNFT_FirstRow
+  ): CollectionNFT_KeyOutput @fdc_generated(from: "CollectionNFT", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `Contract` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  contract_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Contract_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Contract_FirstRow
+  ): Contract_KeyOutput @fdc_generated(from: "Contract", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `ContractNFT` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  contractNFT_delete(
+    """
+    The key used to identify the object.
+    """
+    key: ContractNFT_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: ContractNFT_FirstRow
+  ): ContractNFT_KeyOutput @fdc_generated(from: "ContractNFT", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `ContractUser` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  contractUser_delete(
+    """
+    The key used to identify the object.
+    """
+    key: ContractUser_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: ContractUser_FirstRow
+  ): ContractUser_KeyOutput @fdc_generated(from: "ContractUser", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `ContractVoice` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  contractVoice_delete(
+    """
+    The key used to identify the object.
+    """
+    key: ContractVoice_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: ContractVoice_FirstRow
+  ): ContractVoice_KeyOutput @fdc_generated(from: "ContractVoice", purpose: DELETE_SINGLE)
   """
   ✨ Delete a single `ExperienceLevel` based on `id`, `key` or `first` and return its key (or `null` if not found).
   """
@@ -1868,6 +4889,20 @@ extend type Mutation {
     first: ExperienceLevel_FirstRow
   ): ExperienceLevel_KeyOutput @fdc_generated(from: "ExperienceLevel", purpose: DELETE_SINGLE)
   """
+  ✨ Delete a single `Favorite` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  favorite_delete(
+    """
+    The key used to identify the object.
+    """
+    key: Favorite_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Favorite_FirstRow
+  ): Favorite_KeyOutput @fdc_generated(from: "Favorite", purpose: DELETE_SINGLE)
+  """
   ✨ Delete a single `Language` based on `id`, `key` or `first` and return its key (or `null` if not found).
   """
   language_delete(
@@ -1886,6 +4921,44 @@ extend type Mutation {
     """
     first: Language_FirstRow
   ): Language_KeyOutput @fdc_generated(from: "Language", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `Listing` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  listing_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Listing_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Listing_FirstRow
+  ): Listing_KeyOutput @fdc_generated(from: "Listing", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `Message` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  message_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Message_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Message_FirstRow
+  ): Message_KeyOutput @fdc_generated(from: "Message", purpose: DELETE_SINGLE)
   """
   ✨ Delete a single `NFT` based on `id`, `key` or `first` and return its key (or `null` if not found).
   """
@@ -2046,6 +5119,25 @@ extend type Mutation {
     first: NFTVoiceTrait_FirstRow
   ): NFTVoiceTrait_KeyOutput @fdc_generated(from: "NFTVoiceTrait", purpose: DELETE_SINGLE)
   """
+  ✨ Delete a single `Notification` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  notification_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Notification_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Notification_FirstRow
+  ): Notification_KeyOutput @fdc_generated(from: "Notification", purpose: DELETE_SINGLE)
+  """
   ✨ Delete a single `Ownership` based on `id`, `key` or `first` and return its key (or `null` if not found).
   """
   ownership_delete(
@@ -2059,6 +5151,44 @@ extend type Mutation {
     """
     first: Ownership_FirstRow
   ): Ownership_KeyOutput @fdc_generated(from: "Ownership", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `PaymentMethod` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  paymentMethod_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: PaymentMethod_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: PaymentMethod_FirstRow
+  ): PaymentMethod_KeyOutput @fdc_generated(from: "PaymentMethod", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `Permission` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  permission_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Permission_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Permission_FirstRow
+  ): Permission_KeyOutput @fdc_generated(from: "Permission", purpose: DELETE_SINGLE)
   """
   ✨ Delete a single `ProductionQuality` based on `id`, `key` or `first` and return its key (or `null` if not found).
   """
@@ -2097,6 +5227,77 @@ extend type Mutation {
     """
     first: RegionalDialect_FirstRow
   ): RegionalDialect_KeyOutput @fdc_generated(from: "RegionalDialect", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `Review` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  review_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Review_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Review_FirstRow
+  ): Review_KeyOutput @fdc_generated(from: "Review", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `Role` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  role_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Role_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Role_FirstRow
+  ): Role_KeyOutput @fdc_generated(from: "Role", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `RolePermission` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  rolePermission_delete(
+    """
+    The key used to identify the object.
+    """
+    key: RolePermission_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: RolePermission_FirstRow
+  ): RolePermission_KeyOutput @fdc_generated(from: "RolePermission", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `Royalty` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  royalty_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Royalty_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Royalty_FirstRow
+  ): Royalty_KeyOutput @fdc_generated(from: "Royalty", purpose: DELETE_SINGLE)
   """
   ✨ Delete a single `SecondaryLanguage` based on `id`, `key` or `first` and return its key (or `null` if not found).
   """
@@ -2174,6 +5375,25 @@ extend type Mutation {
     first: StyleToneOption_FirstRow
   ): StyleToneOption_KeyOutput @fdc_generated(from: "StyleToneOption", purpose: DELETE_SINGLE)
   """
+  ✨ Delete a single `SupportTicket` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  supportTicket_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: SupportTicket_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: SupportTicket_FirstRow
+  ): SupportTicket_KeyOutput @fdc_generated(from: "SupportTicket", purpose: DELETE_SINGLE)
+  """
   ✨ Delete a single `TechnicalSpecification` based on `id`, `key` or `first` and return its key (or `null` if not found).
   """
   technicalSpecification_delete(
@@ -2250,6 +5470,20 @@ extend type Mutation {
     first: User_FirstRow
   ): User_KeyOutput @fdc_generated(from: "User", purpose: DELETE_SINGLE)
   """
+  ✨ Delete a single `UserCategory` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  userCategory_delete(
+    """
+    The key used to identify the object.
+    """
+    key: UserCategory_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserCategory_FirstRow
+  ): UserCategory_KeyOutput @fdc_generated(from: "UserCategory", purpose: DELETE_SINGLE)
+  """
   ✨ Delete a single `UserExperience` based on `id`, `key` or `first` and return its key (or `null` if not found).
   """
   userExperience_delete(
@@ -2263,6 +5497,305 @@ extend type Mutation {
     """
     first: UserExperience_FirstRow
   ): UserExperience_KeyOutput @fdc_generated(from: "UserExperience", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `UserLanguage` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  userLanguage_delete(
+    """
+    The key used to identify the object.
+    """
+    key: UserLanguage_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserLanguage_FirstRow
+  ): UserLanguage_KeyOutput @fdc_generated(from: "UserLanguage", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `UserProductionQuality` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  userProductionQuality_delete(
+    """
+    The key used to identify the object.
+    """
+    key: UserProductionQuality_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserProductionQuality_FirstRow
+  ): UserProductionQuality_KeyOutput @fdc_generated(from: "UserProductionQuality", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `UserRegionalDialect` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  userRegionalDialect_delete(
+    """
+    The key used to identify the object.
+    """
+    key: UserRegionalDialect_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserRegionalDialect_FirstRow
+  ): UserRegionalDialect_KeyOutput @fdc_generated(from: "UserRegionalDialect", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `UserRole` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  userRole_delete(
+    """
+    The key used to identify the object.
+    """
+    key: UserRole_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserRole_FirstRow
+  ): UserRole_KeyOutput @fdc_generated(from: "UserRole", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `UserSecondaryLanguage` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  userSecondaryLanguage_delete(
+    """
+    The key used to identify the object.
+    """
+    key: UserSecondaryLanguage_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserSecondaryLanguage_FirstRow
+  ): UserSecondaryLanguage_KeyOutput @fdc_generated(from: "UserSecondaryLanguage", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `UserStudioAvailability` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  userStudioAvailability_delete(
+    """
+    The key used to identify the object.
+    """
+    key: UserStudioAvailability_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserStudioAvailability_FirstRow
+  ): UserStudioAvailability_KeyOutput @fdc_generated(from: "UserStudioAvailability", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `UserStyleToneOption` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  userStyleToneOption_delete(
+    """
+    The key used to identify the object.
+    """
+    key: UserStyleToneOption_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserStyleToneOption_FirstRow
+  ): UserStyleToneOption_KeyOutput @fdc_generated(from: "UserStyleToneOption", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `UserTechnicalSpecification` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  userTechnicalSpecification_delete(
+    """
+    The key used to identify the object.
+    """
+    key: UserTechnicalSpecification_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserTechnicalSpecification_FirstRow
+  ): UserTechnicalSpecification_KeyOutput @fdc_generated(from: "UserTechnicalSpecification", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `UserTimeZone` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  userTimeZone_delete(
+    """
+    The key used to identify the object.
+    """
+    key: UserTimeZone_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserTimeZone_FirstRow
+  ): UserTimeZone_KeyOutput @fdc_generated(from: "UserTimeZone", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `UserVoiceTrait` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  userVoiceTrait_delete(
+    """
+    The key used to identify the object.
+    """
+    key: UserVoiceTrait_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserVoiceTrait_FirstRow
+  ): UserVoiceTrait_KeyOutput @fdc_generated(from: "UserVoiceTrait", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `Voice` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  voice_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Voice_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Voice_FirstRow
+  ): Voice_KeyOutput @fdc_generated(from: "Voice", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `VoiceCategory` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  voiceCategory_delete(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceCategory_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceCategory_FirstRow
+  ): VoiceCategory_KeyOutput @fdc_generated(from: "VoiceCategory", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `VoiceExperience` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  voiceExperience_delete(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceExperience_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceExperience_FirstRow
+  ): VoiceExperience_KeyOutput @fdc_generated(from: "VoiceExperience", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `VoiceLanguage` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  voiceLanguage_delete(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceLanguage_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceLanguage_FirstRow
+  ): VoiceLanguage_KeyOutput @fdc_generated(from: "VoiceLanguage", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `VoiceProductionQuality` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  voiceProductionQuality_delete(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceProductionQuality_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceProductionQuality_FirstRow
+  ): VoiceProductionQuality_KeyOutput @fdc_generated(from: "VoiceProductionQuality", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `VoiceRegionalDialect` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  voiceRegionalDialect_delete(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceRegionalDialect_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceRegionalDialect_FirstRow
+  ): VoiceRegionalDialect_KeyOutput @fdc_generated(from: "VoiceRegionalDialect", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `VoiceSecondaryLanguage` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  voiceSecondaryLanguage_delete(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceSecondaryLanguage_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceSecondaryLanguage_FirstRow
+  ): VoiceSecondaryLanguage_KeyOutput @fdc_generated(from: "VoiceSecondaryLanguage", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `VoiceStudioAvailability` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  voiceStudioAvailability_delete(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceStudioAvailability_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceStudioAvailability_FirstRow
+  ): VoiceStudioAvailability_KeyOutput @fdc_generated(from: "VoiceStudioAvailability", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `VoiceStyleToneOption` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  voiceStyleToneOption_delete(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceStyleToneOption_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceStyleToneOption_FirstRow
+  ): VoiceStyleToneOption_KeyOutput @fdc_generated(from: "VoiceStyleToneOption", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `VoiceTechnicalSpecification` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  voiceTechnicalSpecification_delete(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceTechnicalSpecification_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceTechnicalSpecification_FirstRow
+  ): VoiceTechnicalSpecification_KeyOutput @fdc_generated(from: "VoiceTechnicalSpecification", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `VoiceTimeZone` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  voiceTimeZone_delete(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceTimeZone_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceTimeZone_FirstRow
+  ): VoiceTimeZone_KeyOutput @fdc_generated(from: "VoiceTimeZone", purpose: DELETE_SINGLE)
   """
   ✨ Delete a single `VoiceTrait` based on `id`, `key` or `first` and return its key (or `null` if not found).
   """
@@ -2283,6 +5816,62 @@ extend type Mutation {
     first: VoiceTrait_FirstRow
   ): VoiceTrait_KeyOutput @fdc_generated(from: "VoiceTrait", purpose: DELETE_SINGLE)
   """
+  ✨ Delete a single `VoiceVoiceTrait` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  voiceVoiceTrait_delete(
+    """
+    The key used to identify the object.
+    """
+    key: VoiceVoiceTrait_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceVoiceTrait_FirstRow
+  ): VoiceVoiceTrait_KeyOutput @fdc_generated(from: "VoiceVoiceTrait", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete `ActivityLog` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  activityLog_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: ActivityLog_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "ActivityLog", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `AnalyticsEvent` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  analyticsEvent_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: AnalyticsEvent_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "AnalyticsEvent", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `Bid` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  bid_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: Bid_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "Bid", purpose: DELETE_MULTIPLE)
+  """
   ✨ Delete `Category` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
   """
   category_deleteMany(
@@ -2296,6 +5885,90 @@ extend type Mutation {
     """
     all: Boolean = false
   ): Int! @fdc_generated(from: "Category", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `Collection` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  collection_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: Collection_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "Collection", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `CollectionNFT` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  collectionNFT_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: CollectionNFT_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "CollectionNFT", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `Contract` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  contract_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: Contract_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "Contract", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `ContractNFT` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  contractNFT_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: ContractNFT_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "ContractNFT", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `ContractUser` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  contractUser_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: ContractUser_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "ContractUser", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `ContractVoice` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  contractVoice_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: ContractVoice_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "ContractVoice", purpose: DELETE_MULTIPLE)
   """
   ✨ Delete `ExperienceLevel` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
   """
@@ -2311,6 +5984,20 @@ extend type Mutation {
     all: Boolean = false
   ): Int! @fdc_generated(from: "ExperienceLevel", purpose: DELETE_MULTIPLE)
   """
+  ✨ Delete `Favorite` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  favorite_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: Favorite_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "Favorite", purpose: DELETE_MULTIPLE)
+  """
   ✨ Delete `Language` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
   """
   language_deleteMany(
@@ -2324,6 +6011,34 @@ extend type Mutation {
     """
     all: Boolean = false
   ): Int! @fdc_generated(from: "Language", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `Listing` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  listing_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: Listing_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "Listing", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `Message` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  message_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: Message_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "Message", purpose: DELETE_MULTIPLE)
   """
   ✨ Delete `NFT` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
   """
@@ -2479,6 +6194,20 @@ extend type Mutation {
     all: Boolean = false
   ): Int! @fdc_generated(from: "NFTVoiceTrait", purpose: DELETE_MULTIPLE)
   """
+  ✨ Delete `Notification` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  notification_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: Notification_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "Notification", purpose: DELETE_MULTIPLE)
+  """
   ✨ Delete `Ownership` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
   """
   ownership_deleteMany(
@@ -2492,6 +6221,34 @@ extend type Mutation {
     """
     all: Boolean = false
   ): Int! @fdc_generated(from: "Ownership", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `PaymentMethod` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  paymentMethod_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: PaymentMethod_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "PaymentMethod", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `Permission` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  permission_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: Permission_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "Permission", purpose: DELETE_MULTIPLE)
   """
   ✨ Delete `ProductionQuality` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
   """
@@ -2520,6 +6277,62 @@ extend type Mutation {
     """
     all: Boolean = false
   ): Int! @fdc_generated(from: "RegionalDialect", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `Review` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  review_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: Review_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "Review", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `Role` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  role_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: Role_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "Role", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `RolePermission` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  rolePermission_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: RolePermission_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "RolePermission", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `Royalty` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  royalty_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: Royalty_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "Royalty", purpose: DELETE_MULTIPLE)
   """
   ✨ Delete `SecondaryLanguage` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
   """
@@ -2577,6 +6390,20 @@ extend type Mutation {
     all: Boolean = false
   ): Int! @fdc_generated(from: "StyleToneOption", purpose: DELETE_MULTIPLE)
   """
+  ✨ Delete `SupportTicket` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  supportTicket_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: SupportTicket_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "SupportTicket", purpose: DELETE_MULTIPLE)
+  """
   ✨ Delete `TechnicalSpecification` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
   """
   technicalSpecification_deleteMany(
@@ -2633,6 +6460,20 @@ extend type Mutation {
     all: Boolean = false
   ): Int! @fdc_generated(from: "User", purpose: DELETE_MULTIPLE)
   """
+  ✨ Delete `UserCategory` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  userCategory_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: UserCategory_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "UserCategory", purpose: DELETE_MULTIPLE)
+  """
   ✨ Delete `UserExperience` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
   """
   userExperience_deleteMany(
@@ -2647,6 +6488,300 @@ extend type Mutation {
     all: Boolean = false
   ): Int! @fdc_generated(from: "UserExperience", purpose: DELETE_MULTIPLE)
   """
+  ✨ Delete `UserLanguage` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  userLanguage_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: UserLanguage_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "UserLanguage", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `UserProductionQuality` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  userProductionQuality_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: UserProductionQuality_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "UserProductionQuality", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `UserRegionalDialect` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  userRegionalDialect_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: UserRegionalDialect_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "UserRegionalDialect", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `UserRole` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  userRole_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: UserRole_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "UserRole", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `UserSecondaryLanguage` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  userSecondaryLanguage_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: UserSecondaryLanguage_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "UserSecondaryLanguage", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `UserStudioAvailability` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  userStudioAvailability_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: UserStudioAvailability_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "UserStudioAvailability", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `UserStyleToneOption` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  userStyleToneOption_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: UserStyleToneOption_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "UserStyleToneOption", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `UserTechnicalSpecification` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  userTechnicalSpecification_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: UserTechnicalSpecification_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "UserTechnicalSpecification", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `UserTimeZone` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  userTimeZone_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: UserTimeZone_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "UserTimeZone", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `UserVoiceTrait` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  userVoiceTrait_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: UserVoiceTrait_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "UserVoiceTrait", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `Voice` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  voice_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: Voice_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "Voice", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `VoiceCategory` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  voiceCategory_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: VoiceCategory_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "VoiceCategory", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `VoiceExperience` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  voiceExperience_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: VoiceExperience_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "VoiceExperience", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `VoiceLanguage` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  voiceLanguage_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: VoiceLanguage_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "VoiceLanguage", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `VoiceProductionQuality` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  voiceProductionQuality_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: VoiceProductionQuality_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "VoiceProductionQuality", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `VoiceRegionalDialect` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  voiceRegionalDialect_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: VoiceRegionalDialect_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "VoiceRegionalDialect", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `VoiceSecondaryLanguage` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  voiceSecondaryLanguage_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: VoiceSecondaryLanguage_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "VoiceSecondaryLanguage", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `VoiceStudioAvailability` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  voiceStudioAvailability_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: VoiceStudioAvailability_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "VoiceStudioAvailability", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `VoiceStyleToneOption` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  voiceStyleToneOption_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: VoiceStyleToneOption_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "VoiceStyleToneOption", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `VoiceTechnicalSpecification` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  voiceTechnicalSpecification_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: VoiceTechnicalSpecification_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "VoiceTechnicalSpecification", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `VoiceTimeZone` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  voiceTimeZone_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: VoiceTimeZone_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "VoiceTimeZone", purpose: DELETE_MULTIPLE)
+  """
   ✨ Delete `VoiceTrait` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
   """
   voiceTrait_deleteMany(
@@ -2660,4 +6795,18 @@ extend type Mutation {
     """
     all: Boolean = false
   ): Int! @fdc_generated(from: "VoiceTrait", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `VoiceVoiceTrait` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  voiceVoiceTrait_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: VoiceVoiceTrait_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "VoiceVoiceTrait", purpose: DELETE_MULTIPLE)
 }

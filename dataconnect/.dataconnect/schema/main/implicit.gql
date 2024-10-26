@@ -1,3 +1,101 @@
+extend type ActivityLog {
+  """
+  ✨ Implicit foreign key field based on `ActivityLog`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "ActivityLog.user", purpose: IMPLICIT_REF_FIELD)
+}
+extend type AnalyticsEvent {
+  """
+  ✨ Implicit foreign key field based on `AnalyticsEvent`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID @fdc_generated(from: "AnalyticsEvent.user", purpose: IMPLICIT_REF_FIELD)
+}
+extend type Bid {
+  """
+  ✨ Implicit foreign key field based on `Bid`.`bidder`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  bidderId: UUID! @fdc_generated(from: "Bid.bidder", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `Bid`.`listing`. It must match the value of `Listing`.`id`. See `@ref` for how to customize it.
+  """
+  listingId: UUID! @fdc_generated(from: "Bid.listing", purpose: IMPLICIT_REF_FIELD)
+}
+extend type Collection {
+  """
+  ✨ Implicit foreign key field based on `Collection`.`owner`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  ownerId: UUID! @fdc_generated(from: "Collection.owner", purpose: IMPLICIT_REF_FIELD)
+}
+extend type CollectionNFT {
+  """
+  ✨ Implicit foreign key field based on `CollectionNFT`.`collection`. It must match the value of `Collection`.`id`. See `@ref` for how to customize it.
+  """
+  collectionId: UUID! @fdc_generated(from: "CollectionNFT.collection", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `CollectionNFT`.`nft`. It must match the value of `NFT`.`id`. See `@ref` for how to customize it.
+  """
+  nftId: UUID! @fdc_generated(from: "CollectionNFT.nft", purpose: IMPLICIT_REF_FIELD)
+}
+extend type ContractNFT {
+  """
+  ✨ Implicit foreign key field based on `ContractNFT`.`contract`. It must match the value of `Contract`.`id`. See `@ref` for how to customize it.
+  """
+  contractId: UUID! @fdc_generated(from: "ContractNFT.contract", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `ContractNFT`.`nft`. It must match the value of `NFT`.`id`. See `@ref` for how to customize it.
+  """
+  nftId: UUID! @fdc_generated(from: "ContractNFT.nft", purpose: IMPLICIT_REF_FIELD)
+}
+extend type ContractUser {
+  """
+  ✨ Implicit foreign key field based on `ContractUser`.`contract`. It must match the value of `Contract`.`id`. See `@ref` for how to customize it.
+  """
+  contractId: UUID! @fdc_generated(from: "ContractUser.contract", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `ContractUser`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "ContractUser.user", purpose: IMPLICIT_REF_FIELD)
+}
+extend type ContractVoice {
+  """
+  ✨ Implicit foreign key field based on `ContractVoice`.`contract`. It must match the value of `Contract`.`id`. See `@ref` for how to customize it.
+  """
+  contractId: UUID! @fdc_generated(from: "ContractVoice.contract", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `ContractVoice`.`voice`. It must match the value of `Voice`.`id`. See `@ref` for how to customize it.
+  """
+  voiceId: UUID! @fdc_generated(from: "ContractVoice.voice", purpose: IMPLICIT_REF_FIELD)
+}
+extend type Favorite {
+  """
+  ✨ Implicit foreign key field based on `Favorite`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "Favorite.user", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `Favorite`.`nft`. It must match the value of `NFT`.`id`. See `@ref` for how to customize it.
+  """
+  nftId: UUID! @fdc_generated(from: "Favorite.nft", purpose: IMPLICIT_REF_FIELD)
+}
+extend type Listing {
+  """
+  ✨ Implicit foreign key field based on `Listing`.`nft`. It must match the value of `NFT`.`id`. See `@ref` for how to customize it.
+  """
+  nftId: UUID! @fdc_generated(from: "Listing.nft", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `Listing`.`seller`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  sellerId: UUID! @fdc_generated(from: "Listing.seller", purpose: IMPLICIT_REF_FIELD)
+}
+extend type Message {
+  """
+  ✨ Implicit foreign key field based on `Message`.`receiver`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  receiverId: UUID! @fdc_generated(from: "Message.receiver", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `Message`.`sender`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  senderId: UUID! @fdc_generated(from: "Message.sender", purpose: IMPLICIT_REF_FIELD)
+}
 extend type NFT {
   """
   ✨ Implicit foreign key field based on `NFT`.`creator`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
@@ -104,6 +202,12 @@ extend type NFTVoiceTrait {
   """
   voiceTraitId: UUID! @fdc_generated(from: "NFTVoiceTrait.voiceTrait", purpose: IMPLICIT_REF_FIELD)
 }
+extend type Notification {
+  """
+  ✨ Implicit foreign key field based on `Notification`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "Notification.user", purpose: IMPLICIT_REF_FIELD)
+}
 extend type Ownership {
   """
   ✨ Implicit foreign key field based on `Ownership`.`nft`. It must match the value of `NFT`.`id`. See `@ref` for how to customize it.
@@ -114,11 +218,57 @@ extend type Ownership {
   """
   ownerId: UUID! @fdc_generated(from: "Ownership.owner", purpose: IMPLICIT_REF_FIELD)
 }
+extend type PaymentMethod {
+  """
+  ✨ Implicit foreign key field based on `PaymentMethod`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "PaymentMethod.user", purpose: IMPLICIT_REF_FIELD)
+}
+extend type Review {
+  """
+  ✨ Implicit foreign key field based on `Review`.`creator`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  creatorId: UUID @fdc_generated(from: "Review.creator", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `Review`.`nft`. It must match the value of `NFT`.`id`. See `@ref` for how to customize it.
+  """
+  nftId: UUID @fdc_generated(from: "Review.nft", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `Review`.`reviewer`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  reviewerId: UUID! @fdc_generated(from: "Review.reviewer", purpose: IMPLICIT_REF_FIELD)
+}
+extend type RolePermission {
+  """
+  ✨ Implicit foreign key field based on `RolePermission`.`role`. It must match the value of `Role`.`id`. See `@ref` for how to customize it.
+  """
+  roleId: UUID! @fdc_generated(from: "RolePermission.role", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `RolePermission`.`permission`. It must match the value of `Permission`.`id`. See `@ref` for how to customize it.
+  """
+  permissionId: UUID! @fdc_generated(from: "RolePermission.permission", purpose: IMPLICIT_REF_FIELD)
+}
+extend type Royalty {
+  """
+  ✨ Implicit foreign key field based on `Royalty`.`creator`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  creatorId: UUID! @fdc_generated(from: "Royalty.creator", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `Royalty`.`nft`. It must match the value of `NFT`.`id`. See `@ref` for how to customize it.
+  """
+  nftId: UUID! @fdc_generated(from: "Royalty.nft", purpose: IMPLICIT_REF_FIELD)
+}
 extend type StyleToneOption {
   """
   ✨ Implicit foreign key field based on `StyleToneOption`.`category`. It must match the value of `StyleToneCategory`.`id`. See `@ref` for how to customize it.
   """
   categoryId: UUID! @fdc_generated(from: "StyleToneOption.category", purpose: IMPLICIT_REF_FIELD)
+}
+extend type SupportTicket {
+  """
+  ✨ Implicit foreign key field based on `SupportTicket`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "SupportTicket.user", purpose: IMPLICIT_REF_FIELD)
 }
 extend type Transaction {
   """
@@ -134,6 +284,16 @@ extend type Transaction {
   """
   sellerId: UUID! @fdc_generated(from: "Transaction.seller", purpose: IMPLICIT_REF_FIELD)
 }
+extend type UserCategory {
+  """
+  ✨ Implicit foreign key field based on `UserCategory`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "UserCategory.user", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `UserCategory`.`category`. It must match the value of `Category`.`id`. See `@ref` for how to customize it.
+  """
+  categoryId: UUID! @fdc_generated(from: "UserCategory.category", purpose: IMPLICIT_REF_FIELD)
+}
 extend type UserExperience {
   """
   ✨ Implicit foreign key field based on `UserExperience`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
@@ -143,4 +303,220 @@ extend type UserExperience {
   ✨ Implicit foreign key field based on `UserExperience`.`experienceLevel`. It must match the value of `ExperienceLevel`.`id`. See `@ref` for how to customize it.
   """
   experienceLevelId: UUID! @fdc_generated(from: "UserExperience.experienceLevel", purpose: IMPLICIT_REF_FIELD)
+}
+extend type UserLanguage {
+  """
+  ✨ Implicit foreign key field based on `UserLanguage`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "UserLanguage.user", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `UserLanguage`.`language`. It must match the value of `Language`.`id`. See `@ref` for how to customize it.
+  """
+  languageId: UUID! @fdc_generated(from: "UserLanguage.language", purpose: IMPLICIT_REF_FIELD)
+}
+extend type UserProductionQuality {
+  """
+  ✨ Implicit foreign key field based on `UserProductionQuality`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "UserProductionQuality.user", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `UserProductionQuality`.`productionQuality`. It must match the value of `ProductionQuality`.`id`. See `@ref` for how to customize it.
+  """
+  productionQualityId: UUID! @fdc_generated(from: "UserProductionQuality.productionQuality", purpose: IMPLICIT_REF_FIELD)
+}
+extend type UserRegionalDialect {
+  """
+  ✨ Implicit foreign key field based on `UserRegionalDialect`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "UserRegionalDialect.user", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `UserRegionalDialect`.`regionalDialect`. It must match the value of `RegionalDialect`.`id`. See `@ref` for how to customize it.
+  """
+  regionalDialectId: UUID! @fdc_generated(from: "UserRegionalDialect.regionalDialect", purpose: IMPLICIT_REF_FIELD)
+}
+extend type UserRole {
+  """
+  ✨ Implicit foreign key field based on `UserRole`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "UserRole.user", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `UserRole`.`role`. It must match the value of `Role`.`id`. See `@ref` for how to customize it.
+  """
+  roleId: UUID! @fdc_generated(from: "UserRole.role", purpose: IMPLICIT_REF_FIELD)
+}
+extend type UserSecondaryLanguage {
+  """
+  ✨ Implicit foreign key field based on `UserSecondaryLanguage`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "UserSecondaryLanguage.user", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `UserSecondaryLanguage`.`secondaryLanguage`. It must match the value of `SecondaryLanguage`.`id`. See `@ref` for how to customize it.
+  """
+  secondaryLanguageId: UUID! @fdc_generated(from: "UserSecondaryLanguage.secondaryLanguage", purpose: IMPLICIT_REF_FIELD)
+}
+extend type UserStudioAvailability {
+  """
+  ✨ Implicit foreign key field based on `UserStudioAvailability`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "UserStudioAvailability.user", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `UserStudioAvailability`.`studioAvailability`. It must match the value of `StudioAvailability`.`id`. See `@ref` for how to customize it.
+  """
+  studioAvailabilityId: UUID! @fdc_generated(from: "UserStudioAvailability.studioAvailability", purpose: IMPLICIT_REF_FIELD)
+}
+extend type UserStyleToneOption {
+  """
+  ✨ Implicit foreign key field based on `UserStyleToneOption`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "UserStyleToneOption.user", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `UserStyleToneOption`.`styleToneOption`. It must match the value of `StyleToneOption`.`id`. See `@ref` for how to customize it.
+  """
+  styleToneOptionId: UUID! @fdc_generated(from: "UserStyleToneOption.styleToneOption", purpose: IMPLICIT_REF_FIELD)
+}
+extend type UserTechnicalSpecification {
+  """
+  ✨ Implicit foreign key field based on `UserTechnicalSpecification`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "UserTechnicalSpecification.user", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `UserTechnicalSpecification`.`technicalSpecification`. It must match the value of `TechnicalSpecification`.`id`. See `@ref` for how to customize it.
+  """
+  technicalSpecificationId: UUID! @fdc_generated(from: "UserTechnicalSpecification.technicalSpecification", purpose: IMPLICIT_REF_FIELD)
+}
+extend type UserTimeZone {
+  """
+  ✨ Implicit foreign key field based on `UserTimeZone`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "UserTimeZone.user", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `UserTimeZone`.`timeZone`. It must match the value of `TimeZone`.`id`. See `@ref` for how to customize it.
+  """
+  timeZoneId: UUID! @fdc_generated(from: "UserTimeZone.timeZone", purpose: IMPLICIT_REF_FIELD)
+}
+extend type UserVoiceTrait {
+  """
+  ✨ Implicit foreign key field based on `UserVoiceTrait`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "UserVoiceTrait.user", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `UserVoiceTrait`.`voiceTrait`. It must match the value of `VoiceTrait`.`id`. See `@ref` for how to customize it.
+  """
+  voiceTraitId: UUID! @fdc_generated(from: "UserVoiceTrait.voiceTrait", purpose: IMPLICIT_REF_FIELD)
+}
+extend type Voice {
+  """
+  ✨ Implicit foreign key field based on `Voice`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "Voice.user", purpose: IMPLICIT_REF_FIELD)
+}
+extend type VoiceCategory {
+  """
+  ✨ Implicit foreign key field based on `VoiceCategory`.`voice`. It must match the value of `Voice`.`id`. See `@ref` for how to customize it.
+  """
+  voiceId: UUID! @fdc_generated(from: "VoiceCategory.voice", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `VoiceCategory`.`category`. It must match the value of `Category`.`id`. See `@ref` for how to customize it.
+  """
+  categoryId: UUID! @fdc_generated(from: "VoiceCategory.category", purpose: IMPLICIT_REF_FIELD)
+}
+extend type VoiceExperience {
+  """
+  ✨ Implicit foreign key field based on `VoiceExperience`.`voice`. It must match the value of `Voice`.`id`. See `@ref` for how to customize it.
+  """
+  voiceId: UUID! @fdc_generated(from: "VoiceExperience.voice", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `VoiceExperience`.`experienceLevel`. It must match the value of `ExperienceLevel`.`id`. See `@ref` for how to customize it.
+  """
+  experienceLevelId: UUID! @fdc_generated(from: "VoiceExperience.experienceLevel", purpose: IMPLICIT_REF_FIELD)
+}
+extend type VoiceLanguage {
+  """
+  ✨ Implicit foreign key field based on `VoiceLanguage`.`voice`. It must match the value of `Voice`.`id`. See `@ref` for how to customize it.
+  """
+  voiceId: UUID! @fdc_generated(from: "VoiceLanguage.voice", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `VoiceLanguage`.`language`. It must match the value of `Language`.`id`. See `@ref` for how to customize it.
+  """
+  languageId: UUID! @fdc_generated(from: "VoiceLanguage.language", purpose: IMPLICIT_REF_FIELD)
+}
+extend type VoiceProductionQuality {
+  """
+  ✨ Implicit foreign key field based on `VoiceProductionQuality`.`voice`. It must match the value of `Voice`.`id`. See `@ref` for how to customize it.
+  """
+  voiceId: UUID! @fdc_generated(from: "VoiceProductionQuality.voice", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `VoiceProductionQuality`.`productionQuality`. It must match the value of `ProductionQuality`.`id`. See `@ref` for how to customize it.
+  """
+  productionQualityId: UUID! @fdc_generated(from: "VoiceProductionQuality.productionQuality", purpose: IMPLICIT_REF_FIELD)
+}
+extend type VoiceRegionalDialect {
+  """
+  ✨ Implicit foreign key field based on `VoiceRegionalDialect`.`voice`. It must match the value of `Voice`.`id`. See `@ref` for how to customize it.
+  """
+  voiceId: UUID! @fdc_generated(from: "VoiceRegionalDialect.voice", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `VoiceRegionalDialect`.`regionalDialect`. It must match the value of `RegionalDialect`.`id`. See `@ref` for how to customize it.
+  """
+  regionalDialectId: UUID! @fdc_generated(from: "VoiceRegionalDialect.regionalDialect", purpose: IMPLICIT_REF_FIELD)
+}
+extend type VoiceSecondaryLanguage {
+  """
+  ✨ Implicit foreign key field based on `VoiceSecondaryLanguage`.`voice`. It must match the value of `Voice`.`id`. See `@ref` for how to customize it.
+  """
+  voiceId: UUID! @fdc_generated(from: "VoiceSecondaryLanguage.voice", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `VoiceSecondaryLanguage`.`secondaryLanguage`. It must match the value of `SecondaryLanguage`.`id`. See `@ref` for how to customize it.
+  """
+  secondaryLanguageId: UUID! @fdc_generated(from: "VoiceSecondaryLanguage.secondaryLanguage", purpose: IMPLICIT_REF_FIELD)
+}
+extend type VoiceStudioAvailability {
+  """
+  ✨ Implicit foreign key field based on `VoiceStudioAvailability`.`voice`. It must match the value of `Voice`.`id`. See `@ref` for how to customize it.
+  """
+  voiceId: UUID! @fdc_generated(from: "VoiceStudioAvailability.voice", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `VoiceStudioAvailability`.`studioAvailability`. It must match the value of `StudioAvailability`.`id`. See `@ref` for how to customize it.
+  """
+  studioAvailabilityId: UUID! @fdc_generated(from: "VoiceStudioAvailability.studioAvailability", purpose: IMPLICIT_REF_FIELD)
+}
+extend type VoiceStyleToneOption {
+  """
+  ✨ Implicit foreign key field based on `VoiceStyleToneOption`.`voice`. It must match the value of `Voice`.`id`. See `@ref` for how to customize it.
+  """
+  voiceId: UUID! @fdc_generated(from: "VoiceStyleToneOption.voice", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `VoiceStyleToneOption`.`styleToneOption`. It must match the value of `StyleToneOption`.`id`. See `@ref` for how to customize it.
+  """
+  styleToneOptionId: UUID! @fdc_generated(from: "VoiceStyleToneOption.styleToneOption", purpose: IMPLICIT_REF_FIELD)
+}
+extend type VoiceTechnicalSpecification {
+  """
+  ✨ Implicit foreign key field based on `VoiceTechnicalSpecification`.`voice`. It must match the value of `Voice`.`id`. See `@ref` for how to customize it.
+  """
+  voiceId: UUID! @fdc_generated(from: "VoiceTechnicalSpecification.voice", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `VoiceTechnicalSpecification`.`technicalSpecification`. It must match the value of `TechnicalSpecification`.`id`. See `@ref` for how to customize it.
+  """
+  technicalSpecificationId: UUID! @fdc_generated(from: "VoiceTechnicalSpecification.technicalSpecification", purpose: IMPLICIT_REF_FIELD)
+}
+extend type VoiceTimeZone {
+  """
+  ✨ Implicit foreign key field based on `VoiceTimeZone`.`voice`. It must match the value of `Voice`.`id`. See `@ref` for how to customize it.
+  """
+  voiceId: UUID! @fdc_generated(from: "VoiceTimeZone.voice", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `VoiceTimeZone`.`timeZone`. It must match the value of `TimeZone`.`id`. See `@ref` for how to customize it.
+  """
+  timeZoneId: UUID! @fdc_generated(from: "VoiceTimeZone.timeZone", purpose: IMPLICIT_REF_FIELD)
+}
+extend type VoiceVoiceTrait {
+  """
+  ✨ Implicit foreign key field based on `VoiceVoiceTrait`.`voice`. It must match the value of `Voice`.`id`. See `@ref` for how to customize it.
+  """
+  voiceId: UUID! @fdc_generated(from: "VoiceVoiceTrait.voice", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `VoiceVoiceTrait`.`voiceTrait`. It must match the value of `VoiceTrait`.`id`. See `@ref` for how to customize it.
+  """
+  voiceTraitId: UUID! @fdc_generated(from: "VoiceVoiceTrait.voiceTrait", purpose: IMPLICIT_REF_FIELD)
 }
