@@ -1,5 +1,62 @@
 extend type Query {
   """
+  ✨ Look up a single `Category` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  category(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Category_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Category_FirstRow
+  ): Category @fdc_generated(from: "Category", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `ExperienceLevel` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  experienceLevel(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: ExperienceLevel_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: ExperienceLevel_FirstRow
+  ): ExperienceLevel @fdc_generated(from: "ExperienceLevel", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `Language` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  language(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Language_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Language_FirstRow
+  ): Language @fdc_generated(from: "Language", purpose: QUERY_SINGLE)
+  """
   ✨ Look up a single `NFT` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
   """
   nft(
@@ -19,6 +76,146 @@ extend type Query {
     first: NFT_FirstRow
   ): NFT @fdc_generated(from: "NFT", purpose: QUERY_SINGLE)
   """
+  ✨ Look up a single `NFTCategory` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  nFTCategory(
+    """
+    The key used to identify the object.
+    """
+    key: NFTCategory_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTCategory_FirstRow
+  ): NFTCategory @fdc_generated(from: "NFTCategory", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `NFTLanguage` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  nFTLanguage(
+    """
+    The key used to identify the object.
+    """
+    key: NFTLanguage_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTLanguage_FirstRow
+  ): NFTLanguage @fdc_generated(from: "NFTLanguage", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `NFTProductionQuality` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  nFTProductionQuality(
+    """
+    The key used to identify the object.
+    """
+    key: NFTProductionQuality_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTProductionQuality_FirstRow
+  ): NFTProductionQuality @fdc_generated(from: "NFTProductionQuality", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `NFTRegionalDialect` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  nFTRegionalDialect(
+    """
+    The key used to identify the object.
+    """
+    key: NFTRegionalDialect_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTRegionalDialect_FirstRow
+  ): NFTRegionalDialect @fdc_generated(from: "NFTRegionalDialect", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `NFTSecondaryLanguage` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  nFTSecondaryLanguage(
+    """
+    The key used to identify the object.
+    """
+    key: NFTSecondaryLanguage_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTSecondaryLanguage_FirstRow
+  ): NFTSecondaryLanguage @fdc_generated(from: "NFTSecondaryLanguage", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `NFTStudioAvailability` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  nFTStudioAvailability(
+    """
+    The key used to identify the object.
+    """
+    key: NFTStudioAvailability_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTStudioAvailability_FirstRow
+  ): NFTStudioAvailability @fdc_generated(from: "NFTStudioAvailability", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `NFTStyleToneOption` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  nFTStyleToneOption(
+    """
+    The key used to identify the object.
+    """
+    key: NFTStyleToneOption_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTStyleToneOption_FirstRow
+  ): NFTStyleToneOption @fdc_generated(from: "NFTStyleToneOption", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `NFTTechnicalSpecification` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  nFTTechnicalSpecification(
+    """
+    The key used to identify the object.
+    """
+    key: NFTTechnicalSpecification_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTTechnicalSpecification_FirstRow
+  ): NFTTechnicalSpecification @fdc_generated(from: "NFTTechnicalSpecification", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `NFTTimeZone` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  nFTTimeZone(
+    """
+    The key used to identify the object.
+    """
+    key: NFTTimeZone_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTTimeZone_FirstRow
+  ): NFTTimeZone @fdc_generated(from: "NFTTimeZone", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `NFTVoiceTrait` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  nFTVoiceTrait(
+    """
+    The key used to identify the object.
+    """
+    key: NFTVoiceTrait_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTVoiceTrait_FirstRow
+  ): NFTVoiceTrait @fdc_generated(from: "NFTVoiceTrait", purpose: QUERY_SINGLE)
+  """
   ✨ Look up a single `Ownership` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
   """
   ownership(
@@ -32,6 +229,158 @@ extend type Query {
     """
     first: Ownership_FirstRow
   ): Ownership @fdc_generated(from: "Ownership", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `ProductionQuality` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  productionQuality(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: ProductionQuality_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: ProductionQuality_FirstRow
+  ): ProductionQuality @fdc_generated(from: "ProductionQuality", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `RegionalDialect` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  regionalDialect(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: RegionalDialect_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: RegionalDialect_FirstRow
+  ): RegionalDialect @fdc_generated(from: "RegionalDialect", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `SecondaryLanguage` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  secondaryLanguage(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: SecondaryLanguage_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: SecondaryLanguage_FirstRow
+  ): SecondaryLanguage @fdc_generated(from: "SecondaryLanguage", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `StudioAvailability` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  studioAvailability(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: StudioAvailability_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: StudioAvailability_FirstRow
+  ): StudioAvailability @fdc_generated(from: "StudioAvailability", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `StyleToneCategory` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  styleToneCategory(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: StyleToneCategory_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: StyleToneCategory_FirstRow
+  ): StyleToneCategory @fdc_generated(from: "StyleToneCategory", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `StyleToneOption` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  styleToneOption(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: StyleToneOption_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: StyleToneOption_FirstRow
+  ): StyleToneOption @fdc_generated(from: "StyleToneOption", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `TechnicalSpecification` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  technicalSpecification(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: TechnicalSpecification_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: TechnicalSpecification_FirstRow
+  ): TechnicalSpecification @fdc_generated(from: "TechnicalSpecification", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `TimeZone` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  timeZone(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: TimeZone_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: TimeZone_FirstRow
+  ): TimeZone @fdc_generated(from: "TimeZone", purpose: QUERY_SINGLE)
   """
   ✨ Look up a single `Transaction` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
   """
@@ -71,6 +420,111 @@ extend type Query {
     first: User_FirstRow
   ): User @fdc_generated(from: "User", purpose: QUERY_SINGLE)
   """
+  ✨ Look up a single `UserExperience` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  userExperience(
+    """
+    The key used to identify the object.
+    """
+    key: UserExperience_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserExperience_FirstRow
+  ): UserExperience @fdc_generated(from: "UserExperience", purpose: QUERY_SINGLE)
+  """
+  ✨ Look up a single `VoiceTrait` based on `id`, `key` or `first` and return selected fields (or `null` if not found).
+  """
+  voiceTrait(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: VoiceTrait_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceTrait_FirstRow
+  ): VoiceTrait @fdc_generated(from: "VoiceTrait", purpose: QUERY_SINGLE)
+  """
+  ✨ List `Category` objects in the table, optionally filtered by `where` conditions.
+  """
+  categories(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: Category_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [Category_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [Category!]! @fdc_generated(from: "Category", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `ExperienceLevel` objects in the table, optionally filtered by `where` conditions.
+  """
+  experienceLevels(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: ExperienceLevel_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [ExperienceLevel_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [ExperienceLevel!]! @fdc_generated(from: "ExperienceLevel", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `Language` objects in the table, optionally filtered by `where` conditions.
+  """
+  languages(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: Language_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [Language_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [Language!]! @fdc_generated(from: "Language", purpose: QUERY_MULTIPLE)
+  """
   ✨ List `NFT` objects in the table, optionally filtered by `where` conditions.
   """
   nfts(
@@ -95,6 +549,246 @@ extend type Query {
     limit: Int = 100
   ): [NFT!]! @fdc_generated(from: "NFT", purpose: QUERY_MULTIPLE)
   """
+  ✨ List `NFTCategory` objects in the table, optionally filtered by `where` conditions.
+  """
+  nFTCategories(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTCategory_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTCategory_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTCategory!]! @fdc_generated(from: "NFTCategory", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `NFTLanguage` objects in the table, optionally filtered by `where` conditions.
+  """
+  nFTLanguages(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTLanguage_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTLanguage_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTLanguage!]! @fdc_generated(from: "NFTLanguage", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `NFTProductionQuality` objects in the table, optionally filtered by `where` conditions.
+  """
+  nFTProductionQualities(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTProductionQuality_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTProductionQuality_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTProductionQuality!]! @fdc_generated(from: "NFTProductionQuality", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `NFTRegionalDialect` objects in the table, optionally filtered by `where` conditions.
+  """
+  nFTRegionalDialects(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTRegionalDialect_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTRegionalDialect_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTRegionalDialect!]! @fdc_generated(from: "NFTRegionalDialect", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `NFTSecondaryLanguage` objects in the table, optionally filtered by `where` conditions.
+  """
+  nFTSecondaryLanguages(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTSecondaryLanguage_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTSecondaryLanguage_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTSecondaryLanguage!]! @fdc_generated(from: "NFTSecondaryLanguage", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `NFTStudioAvailability` objects in the table, optionally filtered by `where` conditions.
+  """
+  nFTStudioAvailabilities(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTStudioAvailability_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTStudioAvailability_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTStudioAvailability!]! @fdc_generated(from: "NFTStudioAvailability", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `NFTStyleToneOption` objects in the table, optionally filtered by `where` conditions.
+  """
+  nFTStyleToneOptions(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTStyleToneOption_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTStyleToneOption_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTStyleToneOption!]! @fdc_generated(from: "NFTStyleToneOption", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `NFTTechnicalSpecification` objects in the table, optionally filtered by `where` conditions.
+  """
+  nFTTechnicalSpecifications(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTTechnicalSpecification_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTTechnicalSpecification_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTTechnicalSpecification!]! @fdc_generated(from: "NFTTechnicalSpecification", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `NFTTimeZone` objects in the table, optionally filtered by `where` conditions.
+  """
+  nFTTimeZones(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTTimeZone_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTTimeZone_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTTimeZone!]! @fdc_generated(from: "NFTTimeZone", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `NFTVoiceTrait` objects in the table, optionally filtered by `where` conditions.
+  """
+  nFTVoiceTraits(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTVoiceTrait_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTVoiceTrait_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTVoiceTrait!]! @fdc_generated(from: "NFTVoiceTrait", purpose: QUERY_MULTIPLE)
+  """
   ✨ List `Ownership` objects in the table, optionally filtered by `where` conditions.
   """
   ownerships(
@@ -118,6 +812,198 @@ extend type Query {
     """
     limit: Int = 100
   ): [Ownership!]! @fdc_generated(from: "Ownership", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `ProductionQuality` objects in the table, optionally filtered by `where` conditions.
+  """
+  productionQualities(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: ProductionQuality_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [ProductionQuality_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [ProductionQuality!]! @fdc_generated(from: "ProductionQuality", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `RegionalDialect` objects in the table, optionally filtered by `where` conditions.
+  """
+  regionalDialects(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: RegionalDialect_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [RegionalDialect_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [RegionalDialect!]! @fdc_generated(from: "RegionalDialect", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `SecondaryLanguage` objects in the table, optionally filtered by `where` conditions.
+  """
+  secondaryLanguages(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: SecondaryLanguage_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [SecondaryLanguage_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [SecondaryLanguage!]! @fdc_generated(from: "SecondaryLanguage", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `StudioAvailability` objects in the table, optionally filtered by `where` conditions.
+  """
+  studioAvailabilities(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: StudioAvailability_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [StudioAvailability_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [StudioAvailability!]! @fdc_generated(from: "StudioAvailability", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `StyleToneCategory` objects in the table, optionally filtered by `where` conditions.
+  """
+  styleToneCategories(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: StyleToneCategory_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [StyleToneCategory_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [StyleToneCategory!]! @fdc_generated(from: "StyleToneCategory", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `StyleToneOption` objects in the table, optionally filtered by `where` conditions.
+  """
+  styleToneOptions(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: StyleToneOption_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [StyleToneOption_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [StyleToneOption!]! @fdc_generated(from: "StyleToneOption", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `TechnicalSpecification` objects in the table, optionally filtered by `where` conditions.
+  """
+  technicalSpecifications(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: TechnicalSpecification_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [TechnicalSpecification_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [TechnicalSpecification!]! @fdc_generated(from: "TechnicalSpecification", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `TimeZone` objects in the table, optionally filtered by `where` conditions.
+  """
+  timeZones(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: TimeZone_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [TimeZone_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [TimeZone!]! @fdc_generated(from: "TimeZone", purpose: QUERY_MULTIPLE)
   """
   ✨ List `Transaction` objects in the table, optionally filtered by `where` conditions.
   """
@@ -166,4 +1052,52 @@ extend type Query {
     """
     limit: Int = 100
   ): [User!]! @fdc_generated(from: "User", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `UserExperience` objects in the table, optionally filtered by `where` conditions.
+  """
+  userExperiences(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: UserExperience_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [UserExperience_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [UserExperience!]! @fdc_generated(from: "UserExperience", purpose: QUERY_MULTIPLE)
+  """
+  ✨ List `VoiceTrait` objects in the table, optionally filtered by `where` conditions.
+  """
+  voiceTraits(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: VoiceTrait_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [VoiceTrait_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [VoiceTrait!]! @fdc_generated(from: "VoiceTrait", purpose: QUERY_MULTIPLE)
 }

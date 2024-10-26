@@ -298,7 +298,9 @@ export default function FilterSidebar({
   };
 
   const getFilteredCategories = (): FilterCategories => {
-    if (!searchTerm) return filterCategories;
+    if (!searchTerm) {
+      return filterCategories;
+    }
 
     const searchLower = searchTerm.toLowerCase();
     const filtered: FilterCategories = {};

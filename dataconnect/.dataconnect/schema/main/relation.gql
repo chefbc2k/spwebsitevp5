@@ -1,4 +1,394 @@
+extend type Category {
+  """
+  ✨ List `NFTCategory` objects in a one-to-many relationship (where `NFTCategory`.`category` is this object).
+  """
+  nFTCategories_on_category(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTCategory_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTCategory_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTCategory!]! @fdc_generated(from: "NFTCategory.category", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `NFT` objects using `NFTCategory` as the join table (a `NFTCategory` object exists where its `category` is this and its `nft` is that).
+  """
+  nfts_via_NFTCategory(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTCategory_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTCategory_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFT!]! @fdc_generated(from: "NFTCategory", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+}
+extend type ExperienceLevel {
+  """
+  ✨ List `UserExperience` objects in a one-to-many relationship (where `UserExperience`.`experienceLevel` is this object).
+  """
+  userExperiences_on_experienceLevel(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: UserExperience_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [UserExperience_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [UserExperience!]! @fdc_generated(from: "UserExperience.experienceLevel", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `User` objects using `UserExperience` as the join table (a `UserExperience` object exists where its `experienceLevel` is this and its `user` is that).
+  """
+  users_via_UserExperience(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: UserExperience_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [UserExperience_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [User!]! @fdc_generated(from: "UserExperience", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+}
+extend type Language {
+  """
+  ✨ List `NFTLanguage` objects in a one-to-many relationship (where `NFTLanguage`.`language` is this object).
+  """
+  nFTLanguages_on_language(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTLanguage_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTLanguage_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTLanguage!]! @fdc_generated(from: "NFTLanguage.language", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `NFT` objects using `NFTLanguage` as the join table (a `NFTLanguage` object exists where its `language` is this and its `nft` is that).
+  """
+  nfts_via_NFTLanguage(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTLanguage_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTLanguage_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFT!]! @fdc_generated(from: "NFTLanguage", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+}
 extend type NFT {
+  """
+  ✨ List `NFTCategory` objects in a one-to-many relationship (where `NFTCategory`.`nft` is this object).
+  """
+  nFTCategories_on_nft(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTCategory_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTCategory_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTCategory!]! @fdc_generated(from: "NFTCategory.nft", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `NFTLanguage` objects in a one-to-many relationship (where `NFTLanguage`.`nft` is this object).
+  """
+  nFTLanguages_on_nft(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTLanguage_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTLanguage_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTLanguage!]! @fdc_generated(from: "NFTLanguage.nft", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `NFTProductionQuality` objects in a one-to-many relationship (where `NFTProductionQuality`.`nft` is this object).
+  """
+  nFTProductionQualities_on_nft(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTProductionQuality_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTProductionQuality_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTProductionQuality!]! @fdc_generated(from: "NFTProductionQuality.nft", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `NFTRegionalDialect` objects in a one-to-many relationship (where `NFTRegionalDialect`.`nft` is this object).
+  """
+  nFTRegionalDialects_on_nft(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTRegionalDialect_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTRegionalDialect_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTRegionalDialect!]! @fdc_generated(from: "NFTRegionalDialect.nft", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `NFTSecondaryLanguage` objects in a one-to-many relationship (where `NFTSecondaryLanguage`.`nft` is this object).
+  """
+  nFTSecondaryLanguages_on_nft(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTSecondaryLanguage_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTSecondaryLanguage_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTSecondaryLanguage!]! @fdc_generated(from: "NFTSecondaryLanguage.nft", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `NFTStudioAvailability` objects in a one-to-many relationship (where `NFTStudioAvailability`.`nft` is this object).
+  """
+  nFTStudioAvailabilities_on_nft(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTStudioAvailability_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTStudioAvailability_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTStudioAvailability!]! @fdc_generated(from: "NFTStudioAvailability.nft", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `NFTStyleToneOption` objects in a one-to-many relationship (where `NFTStyleToneOption`.`nft` is this object).
+  """
+  nFTStyleToneOptions_on_nft(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTStyleToneOption_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTStyleToneOption_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTStyleToneOption!]! @fdc_generated(from: "NFTStyleToneOption.nft", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `NFTTechnicalSpecification` objects in a one-to-many relationship (where `NFTTechnicalSpecification`.`nft` is this object).
+  """
+  nFTTechnicalSpecifications_on_nft(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTTechnicalSpecification_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTTechnicalSpecification_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTTechnicalSpecification!]! @fdc_generated(from: "NFTTechnicalSpecification.nft", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `NFTTimeZone` objects in a one-to-many relationship (where `NFTTimeZone`.`nft` is this object).
+  """
+  nFTTimeZones_on_nft(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTTimeZone_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTTimeZone_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTTimeZone!]! @fdc_generated(from: "NFTTimeZone.nft", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `NFTVoiceTrait` objects in a one-to-many relationship (where `NFTVoiceTrait`.`nft` is this object).
+  """
+  nFTVoiceTraits_on_nft(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTVoiceTrait_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTVoiceTrait_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTVoiceTrait!]! @fdc_generated(from: "NFTVoiceTrait.nft", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
   """
   ✨ List `Ownership` objects in a one-to-many relationship (where `Ownership`.`nft` is this object).
   """
@@ -48,6 +438,222 @@ extend type NFT {
     limit: Int = 100
   ): [Transaction!]! @fdc_generated(from: "Transaction.nft", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
   """
+  ✨ List `Category` objects using `NFTCategory` as the join table (a `NFTCategory` object exists where its `nft` is this and its `category` is that).
+  """
+  categories_via_NFTCategory(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTCategory_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTCategory_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [Category!]! @fdc_generated(from: "NFTCategory", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+  """
+  ✨ List `Language` objects using `NFTLanguage` as the join table (a `NFTLanguage` object exists where its `nft` is this and its `language` is that).
+  """
+  languages_via_NFTLanguage(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTLanguage_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTLanguage_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [Language!]! @fdc_generated(from: "NFTLanguage", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+  """
+  ✨ List `ProductionQuality` objects using `NFTProductionQuality` as the join table (a `NFTProductionQuality` object exists where its `nft` is this and its `productionQuality` is that).
+  """
+  productionQualities_via_NFTProductionQuality(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTProductionQuality_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTProductionQuality_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [ProductionQuality!]! @fdc_generated(from: "NFTProductionQuality", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+  """
+  ✨ List `RegionalDialect` objects using `NFTRegionalDialect` as the join table (a `NFTRegionalDialect` object exists where its `nft` is this and its `regionalDialect` is that).
+  """
+  regionalDialects_via_NFTRegionalDialect(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTRegionalDialect_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTRegionalDialect_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [RegionalDialect!]! @fdc_generated(from: "NFTRegionalDialect", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+  """
+  ✨ List `SecondaryLanguage` objects using `NFTSecondaryLanguage` as the join table (a `NFTSecondaryLanguage` object exists where its `nft` is this and its `secondaryLanguage` is that).
+  """
+  secondaryLanguages_via_NFTSecondaryLanguage(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTSecondaryLanguage_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTSecondaryLanguage_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [SecondaryLanguage!]! @fdc_generated(from: "NFTSecondaryLanguage", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+  """
+  ✨ List `StudioAvailability` objects using `NFTStudioAvailability` as the join table (a `NFTStudioAvailability` object exists where its `nft` is this and its `studioAvailability` is that).
+  """
+  studioAvailabilities_via_NFTStudioAvailability(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTStudioAvailability_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTStudioAvailability_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [StudioAvailability!]! @fdc_generated(from: "NFTStudioAvailability", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+  """
+  ✨ List `StyleToneOption` objects using `NFTStyleToneOption` as the join table (a `NFTStyleToneOption` object exists where its `nft` is this and its `styleToneOption` is that).
+  """
+  styleToneOptions_via_NFTStyleToneOption(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTStyleToneOption_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTStyleToneOption_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [StyleToneOption!]! @fdc_generated(from: "NFTStyleToneOption", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+  """
+  ✨ List `TechnicalSpecification` objects using `NFTTechnicalSpecification` as the join table (a `NFTTechnicalSpecification` object exists where its `nft` is this and its `technicalSpecification` is that).
+  """
+  technicalSpecifications_via_NFTTechnicalSpecification(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTTechnicalSpecification_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTTechnicalSpecification_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [TechnicalSpecification!]! @fdc_generated(from: "NFTTechnicalSpecification", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+  """
+  ✨ List `TimeZone` objects using `NFTTimeZone` as the join table (a `NFTTimeZone` object exists where its `nft` is this and its `timeZone` is that).
+  """
+  timeZones_via_NFTTimeZone(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTTimeZone_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTTimeZone_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [TimeZone!]! @fdc_generated(from: "NFTTimeZone", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+  """
   ✨ List `User` objects using `Ownership` as the join table (a `Ownership` object exists where its `nft` is this and its `owner` is that).
   """
   users_via_Ownership(
@@ -71,6 +677,406 @@ extend type NFT {
     """
     limit: Int = 100
   ): [User!]! @fdc_generated(from: "Ownership", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+  """
+  ✨ List `VoiceTrait` objects using `NFTVoiceTrait` as the join table (a `NFTVoiceTrait` object exists where its `nft` is this and its `voiceTrait` is that).
+  """
+  voiceTraits_via_NFTVoiceTrait(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTVoiceTrait_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTVoiceTrait_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [VoiceTrait!]! @fdc_generated(from: "NFTVoiceTrait", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+}
+extend type ProductionQuality {
+  """
+  ✨ List `NFTProductionQuality` objects in a one-to-many relationship (where `NFTProductionQuality`.`productionQuality` is this object).
+  """
+  nFTProductionQualities_on_productionQuality(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTProductionQuality_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTProductionQuality_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTProductionQuality!]! @fdc_generated(from: "NFTProductionQuality.productionQuality", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `NFT` objects using `NFTProductionQuality` as the join table (a `NFTProductionQuality` object exists where its `productionQuality` is this and its `nft` is that).
+  """
+  nfts_via_NFTProductionQuality(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTProductionQuality_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTProductionQuality_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFT!]! @fdc_generated(from: "NFTProductionQuality", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+}
+extend type RegionalDialect {
+  """
+  ✨ List `NFTRegionalDialect` objects in a one-to-many relationship (where `NFTRegionalDialect`.`regionalDialect` is this object).
+  """
+  nFTRegionalDialects_on_regionalDialect(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTRegionalDialect_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTRegionalDialect_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTRegionalDialect!]! @fdc_generated(from: "NFTRegionalDialect.regionalDialect", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `NFT` objects using `NFTRegionalDialect` as the join table (a `NFTRegionalDialect` object exists where its `regionalDialect` is this and its `nft` is that).
+  """
+  nfts_via_NFTRegionalDialect(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTRegionalDialect_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTRegionalDialect_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFT!]! @fdc_generated(from: "NFTRegionalDialect", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+}
+extend type SecondaryLanguage {
+  """
+  ✨ List `NFTSecondaryLanguage` objects in a one-to-many relationship (where `NFTSecondaryLanguage`.`secondaryLanguage` is this object).
+  """
+  nFTSecondaryLanguages_on_secondaryLanguage(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTSecondaryLanguage_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTSecondaryLanguage_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTSecondaryLanguage!]! @fdc_generated(from: "NFTSecondaryLanguage.secondaryLanguage", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `NFT` objects using `NFTSecondaryLanguage` as the join table (a `NFTSecondaryLanguage` object exists where its `secondaryLanguage` is this and its `nft` is that).
+  """
+  nfts_via_NFTSecondaryLanguage(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTSecondaryLanguage_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTSecondaryLanguage_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFT!]! @fdc_generated(from: "NFTSecondaryLanguage", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+}
+extend type StudioAvailability {
+  """
+  ✨ List `NFTStudioAvailability` objects in a one-to-many relationship (where `NFTStudioAvailability`.`studioAvailability` is this object).
+  """
+  nFTStudioAvailabilities_on_studioAvailability(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTStudioAvailability_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTStudioAvailability_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTStudioAvailability!]! @fdc_generated(from: "NFTStudioAvailability.studioAvailability", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `NFT` objects using `NFTStudioAvailability` as the join table (a `NFTStudioAvailability` object exists where its `studioAvailability` is this and its `nft` is that).
+  """
+  nfts_via_NFTStudioAvailability(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTStudioAvailability_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTStudioAvailability_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFT!]! @fdc_generated(from: "NFTStudioAvailability", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+}
+extend type StyleToneCategory {
+  """
+  ✨ List `StyleToneOption` objects in a one-to-many relationship (where `StyleToneOption`.`category` is this object).
+  """
+  styleToneOptions_on_category(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: StyleToneOption_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [StyleToneOption_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [StyleToneOption!]! @fdc_generated(from: "StyleToneOption.category", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+}
+extend type StyleToneOption {
+  """
+  ✨ List `NFTStyleToneOption` objects in a one-to-many relationship (where `NFTStyleToneOption`.`styleToneOption` is this object).
+  """
+  nFTStyleToneOptions_on_styleToneOption(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTStyleToneOption_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTStyleToneOption_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTStyleToneOption!]! @fdc_generated(from: "NFTStyleToneOption.styleToneOption", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `NFT` objects using `NFTStyleToneOption` as the join table (a `NFTStyleToneOption` object exists where its `styleToneOption` is this and its `nft` is that).
+  """
+  nfts_via_NFTStyleToneOption(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTStyleToneOption_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTStyleToneOption_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFT!]! @fdc_generated(from: "NFTStyleToneOption", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+}
+extend type TechnicalSpecification {
+  """
+  ✨ List `NFTTechnicalSpecification` objects in a one-to-many relationship (where `NFTTechnicalSpecification`.`technicalSpecification` is this object).
+  """
+  nFTTechnicalSpecifications_on_technicalSpecification(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTTechnicalSpecification_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTTechnicalSpecification_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTTechnicalSpecification!]! @fdc_generated(from: "NFTTechnicalSpecification.technicalSpecification", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `NFT` objects using `NFTTechnicalSpecification` as the join table (a `NFTTechnicalSpecification` object exists where its `technicalSpecification` is this and its `nft` is that).
+  """
+  nfts_via_NFTTechnicalSpecification(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTTechnicalSpecification_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTTechnicalSpecification_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFT!]! @fdc_generated(from: "NFTTechnicalSpecification", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+}
+extend type TimeZone {
+  """
+  ✨ List `NFTTimeZone` objects in a one-to-many relationship (where `NFTTimeZone`.`timeZone` is this object).
+  """
+  nFTTimeZones_on_timeZone(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTTimeZone_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTTimeZone_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTTimeZone!]! @fdc_generated(from: "NFTTimeZone.timeZone", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `NFT` objects using `NFTTimeZone` as the join table (a `NFTTimeZone` object exists where its `timeZone` is this and its `nft` is that).
+  """
+  nfts_via_NFTTimeZone(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTTimeZone_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTTimeZone_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFT!]! @fdc_generated(from: "NFTTimeZone", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
 }
 extend type User {
   """
@@ -170,6 +1176,54 @@ extend type User {
     limit: Int = 100
   ): [Transaction!]! @fdc_generated(from: "Transaction.seller", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
   """
+  ✨ List `UserExperience` objects in a one-to-many relationship (where `UserExperience`.`user` is this object).
+  """
+  userExperiences_on_user(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: UserExperience_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [UserExperience_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [UserExperience!]! @fdc_generated(from: "UserExperience.user", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `ExperienceLevel` objects using `UserExperience` as the join table (a `UserExperience` object exists where its `user` is this and its `experienceLevel` is that).
+  """
+  experienceLevels_via_UserExperience(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: UserExperience_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [UserExperience_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [ExperienceLevel!]! @fdc_generated(from: "UserExperience", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+  """
   ✨ List `NFT` objects using `Ownership` as the join table (a `Ownership` object exists where its `owner` is this and its `nft` is that).
   """
   nfts_via_Ownership(
@@ -193,4 +1247,54 @@ extend type User {
     """
     limit: Int = 100
   ): [NFT!]! @fdc_generated(from: "Ownership", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+}
+extend type VoiceTrait {
+  """
+  ✨ List `NFTVoiceTrait` objects in a one-to-many relationship (where `NFTVoiceTrait`.`voiceTrait` is this object).
+  """
+  nFTVoiceTraits_on_voiceTrait(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTVoiceTrait_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTVoiceTrait_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFTVoiceTrait!]! @fdc_generated(from: "NFTVoiceTrait.voiceTrait", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `NFT` objects using `NFTVoiceTrait` as the join table (a `NFTVoiceTrait` object exists where its `voiceTrait` is this and its `nft` is that).
+  """
+  nfts_via_NFTVoiceTrait(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFTVoiceTrait_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFTVoiceTrait_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFT!]! @fdc_generated(from: "NFTVoiceTrait", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
 }

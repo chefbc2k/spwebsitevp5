@@ -1,15 +1,141 @@
 """
+✨ `Category_KeyOutput` returns the primary key fields of table type `Category`.
+
+It has the same format as `Category_Key`, but is only used as mutation return value.
+"""
+scalar Category_KeyOutput
+"""
+✨ `ExperienceLevel_KeyOutput` returns the primary key fields of table type `ExperienceLevel`.
+
+It has the same format as `ExperienceLevel_Key`, but is only used as mutation return value.
+"""
+scalar ExperienceLevel_KeyOutput
+"""
+✨ `Language_KeyOutput` returns the primary key fields of table type `Language`.
+
+It has the same format as `Language_Key`, but is only used as mutation return value.
+"""
+scalar Language_KeyOutput
+"""
 ✨ `NFT_KeyOutput` returns the primary key fields of table type `NFT`.
 
 It has the same format as `NFT_Key`, but is only used as mutation return value.
 """
 scalar NFT_KeyOutput
 """
+✨ `NFTCategory_KeyOutput` returns the primary key fields of table type `NFTCategory`.
+
+It has the same format as `NFTCategory_Key`, but is only used as mutation return value.
+"""
+scalar NFTCategory_KeyOutput
+"""
+✨ `NFTLanguage_KeyOutput` returns the primary key fields of table type `NFTLanguage`.
+
+It has the same format as `NFTLanguage_Key`, but is only used as mutation return value.
+"""
+scalar NFTLanguage_KeyOutput
+"""
+✨ `NFTProductionQuality_KeyOutput` returns the primary key fields of table type `NFTProductionQuality`.
+
+It has the same format as `NFTProductionQuality_Key`, but is only used as mutation return value.
+"""
+scalar NFTProductionQuality_KeyOutput
+"""
+✨ `NFTRegionalDialect_KeyOutput` returns the primary key fields of table type `NFTRegionalDialect`.
+
+It has the same format as `NFTRegionalDialect_Key`, but is only used as mutation return value.
+"""
+scalar NFTRegionalDialect_KeyOutput
+"""
+✨ `NFTSecondaryLanguage_KeyOutput` returns the primary key fields of table type `NFTSecondaryLanguage`.
+
+It has the same format as `NFTSecondaryLanguage_Key`, but is only used as mutation return value.
+"""
+scalar NFTSecondaryLanguage_KeyOutput
+"""
+✨ `NFTStudioAvailability_KeyOutput` returns the primary key fields of table type `NFTStudioAvailability`.
+
+It has the same format as `NFTStudioAvailability_Key`, but is only used as mutation return value.
+"""
+scalar NFTStudioAvailability_KeyOutput
+"""
+✨ `NFTStyleToneOption_KeyOutput` returns the primary key fields of table type `NFTStyleToneOption`.
+
+It has the same format as `NFTStyleToneOption_Key`, but is only used as mutation return value.
+"""
+scalar NFTStyleToneOption_KeyOutput
+"""
+✨ `NFTTechnicalSpecification_KeyOutput` returns the primary key fields of table type `NFTTechnicalSpecification`.
+
+It has the same format as `NFTTechnicalSpecification_Key`, but is only used as mutation return value.
+"""
+scalar NFTTechnicalSpecification_KeyOutput
+"""
+✨ `NFTTimeZone_KeyOutput` returns the primary key fields of table type `NFTTimeZone`.
+
+It has the same format as `NFTTimeZone_Key`, but is only used as mutation return value.
+"""
+scalar NFTTimeZone_KeyOutput
+"""
+✨ `NFTVoiceTrait_KeyOutput` returns the primary key fields of table type `NFTVoiceTrait`.
+
+It has the same format as `NFTVoiceTrait_Key`, but is only used as mutation return value.
+"""
+scalar NFTVoiceTrait_KeyOutput
+"""
 ✨ `Ownership_KeyOutput` returns the primary key fields of table type `Ownership`.
 
 It has the same format as `Ownership_Key`, but is only used as mutation return value.
 """
 scalar Ownership_KeyOutput
+"""
+✨ `ProductionQuality_KeyOutput` returns the primary key fields of table type `ProductionQuality`.
+
+It has the same format as `ProductionQuality_Key`, but is only used as mutation return value.
+"""
+scalar ProductionQuality_KeyOutput
+"""
+✨ `RegionalDialect_KeyOutput` returns the primary key fields of table type `RegionalDialect`.
+
+It has the same format as `RegionalDialect_Key`, but is only used as mutation return value.
+"""
+scalar RegionalDialect_KeyOutput
+"""
+✨ `SecondaryLanguage_KeyOutput` returns the primary key fields of table type `SecondaryLanguage`.
+
+It has the same format as `SecondaryLanguage_Key`, but is only used as mutation return value.
+"""
+scalar SecondaryLanguage_KeyOutput
+"""
+✨ `StudioAvailability_KeyOutput` returns the primary key fields of table type `StudioAvailability`.
+
+It has the same format as `StudioAvailability_Key`, but is only used as mutation return value.
+"""
+scalar StudioAvailability_KeyOutput
+"""
+✨ `StyleToneCategory_KeyOutput` returns the primary key fields of table type `StyleToneCategory`.
+
+It has the same format as `StyleToneCategory_Key`, but is only used as mutation return value.
+"""
+scalar StyleToneCategory_KeyOutput
+"""
+✨ `StyleToneOption_KeyOutput` returns the primary key fields of table type `StyleToneOption`.
+
+It has the same format as `StyleToneOption_Key`, but is only used as mutation return value.
+"""
+scalar StyleToneOption_KeyOutput
+"""
+✨ `TechnicalSpecification_KeyOutput` returns the primary key fields of table type `TechnicalSpecification`.
+
+It has the same format as `TechnicalSpecification_Key`, but is only used as mutation return value.
+"""
+scalar TechnicalSpecification_KeyOutput
+"""
+✨ `TimeZone_KeyOutput` returns the primary key fields of table type `TimeZone`.
+
+It has the same format as `TimeZone_Key`, but is only used as mutation return value.
+"""
+scalar TimeZone_KeyOutput
 """
 ✨ `Transaction_KeyOutput` returns the primary key fields of table type `Transaction`.
 
@@ -22,6 +148,352 @@ scalar Transaction_KeyOutput
 It has the same format as `User_Key`, but is only used as mutation return value.
 """
 scalar User_KeyOutput
+"""
+✨ `UserExperience_KeyOutput` returns the primary key fields of table type `UserExperience`.
+
+It has the same format as `UserExperience_Key`, but is only used as mutation return value.
+"""
+scalar UserExperience_KeyOutput
+"""
+✨ `VoiceTrait_KeyOutput` returns the primary key fields of table type `VoiceTrait`.
+
+It has the same format as `VoiceTrait_Key`, but is only used as mutation return value.
+"""
+scalar VoiceTrait_KeyOutput
+"""
+✨ Generated data input type for table 'Category'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input Category_Data {
+  """
+  ✨ Generated from Field `Category`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `Category`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+  """
+  ✨ Generated from Field `Category`.`name` of type `String!`
+  """
+  name: String
+  """
+  ✨ `_expr` server value variant of `name` (✨ Generated from Field `Category`.`name` of type `String!`)
+  """
+  name_expr: String_Expr
+  """
+  ✨ Generated from Field `Category`.`subcategories` of type `[String]`
+  """
+  subcategories: [String!]
+}
+"""
+✨ Generated filter input type for table 'Category'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input Category_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [Category_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: Category_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [Category_Filter!]
+  """
+  ✨ Generated from Field `Category`.`id` of type `UUID!`
+  """
+  id: UUID_Filter
+  """
+  ✨ Generated from Field `Category`.`name` of type `String!`
+  """
+  name: String_Filter
+  """
+  ✨ Generated from Field `Category`.`subcategories` of type `[String]`
+  """
+  subcategories: String_ListFilter
+  """
+  ✨ Generated from Field `Category`.`nFTCategories_on_category` of type `[NFTCategory!]!`
+  """
+  nFTCategories_on_category: NFTCategory_ListFilter
+  """
+  ✨ Generated from Field `Category`.`nfts_via_NFTCategory` of type `[NFT!]!`
+  """
+  nfts_via_NFTCategory: NFT_ListFilter
+}
+"""
+✨ Generated first-row input type for table 'Category'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input Category_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [Category_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: Category_Filter
+}
+"""
+✨ Generated key input type for table 'Category'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input Category_Key {
+  """
+  ✨ Generated from Field `Category`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `Category`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'Category'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input Category_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: Category_Filter
+}
+"""
+✨ Generated order input type for table 'Category'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input Category_Order {
+  """
+  ✨ Generated from Field `Category`.`id` of type `UUID!`
+  """
+  id: OrderDirection
+  """
+  ✨ Generated from Field `Category`.`name` of type `String!`
+  """
+  name: OrderDirection
+}
+"""
+✨ Generated data input type for table 'ExperienceLevel'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input ExperienceLevel_Data {
+  """
+  ✨ Generated from Field `ExperienceLevel`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `ExperienceLevel`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+  """
+  ✨ Generated from Field `ExperienceLevel`.`description` of type `[String]`
+  """
+  description: [String!]
+  """
+  ✨ Generated from Field `ExperienceLevel`.`level` of type `String!`
+  """
+  level: String
+  """
+  ✨ `_expr` server value variant of `level` (✨ Generated from Field `ExperienceLevel`.`level` of type `String!`)
+  """
+  level_expr: String_Expr
+}
+"""
+✨ Generated filter input type for table 'ExperienceLevel'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input ExperienceLevel_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [ExperienceLevel_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: ExperienceLevel_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [ExperienceLevel_Filter!]
+  """
+  ✨ Generated from Field `ExperienceLevel`.`id` of type `UUID!`
+  """
+  id: UUID_Filter
+  """
+  ✨ Generated from Field `ExperienceLevel`.`description` of type `[String]`
+  """
+  description: String_ListFilter
+  """
+  ✨ Generated from Field `ExperienceLevel`.`level` of type `String!`
+  """
+  level: String_Filter
+  """
+  ✨ Generated from Field `ExperienceLevel`.`userExperiences_on_experienceLevel` of type `[UserExperience!]!`
+  """
+  userExperiences_on_experienceLevel: UserExperience_ListFilter
+  """
+  ✨ Generated from Field `ExperienceLevel`.`users_via_UserExperience` of type `[User!]!`
+  """
+  users_via_UserExperience: User_ListFilter
+}
+"""
+✨ Generated first-row input type for table 'ExperienceLevel'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input ExperienceLevel_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [ExperienceLevel_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: ExperienceLevel_Filter
+}
+"""
+✨ Generated key input type for table 'ExperienceLevel'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input ExperienceLevel_Key {
+  """
+  ✨ Generated from Field `ExperienceLevel`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `ExperienceLevel`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'ExperienceLevel'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input ExperienceLevel_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: ExperienceLevel_Filter
+}
+"""
+✨ Generated order input type for table 'ExperienceLevel'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input ExperienceLevel_Order {
+  """
+  ✨ Generated from Field `ExperienceLevel`.`id` of type `UUID!`
+  """
+  id: OrderDirection
+  """
+  ✨ Generated from Field `ExperienceLevel`.`level` of type `String!`
+  """
+  level: OrderDirection
+}
+"""
+✨ Generated data input type for table 'Language'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input Language_Data {
+  """
+  ✨ Generated from Field `Language`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `Language`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+  """
+  ✨ Generated from Field `Language`.`name` of type `String!`
+  """
+  name: String
+  """
+  ✨ `_expr` server value variant of `name` (✨ Generated from Field `Language`.`name` of type `String!`)
+  """
+  name_expr: String_Expr
+}
+"""
+✨ Generated filter input type for table 'Language'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input Language_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [Language_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: Language_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [Language_Filter!]
+  """
+  ✨ Generated from Field `Language`.`id` of type `UUID!`
+  """
+  id: UUID_Filter
+  """
+  ✨ Generated from Field `Language`.`name` of type `String!`
+  """
+  name: String_Filter
+  """
+  ✨ Generated from Field `Language`.`nFTLanguages_on_language` of type `[NFTLanguage!]!`
+  """
+  nFTLanguages_on_language: NFTLanguage_ListFilter
+  """
+  ✨ Generated from Field `Language`.`nfts_via_NFTLanguage` of type `[NFT!]!`
+  """
+  nfts_via_NFTLanguage: NFT_ListFilter
+}
+"""
+✨ Generated first-row input type for table 'Language'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input Language_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [Language_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: Language_Filter
+}
+"""
+✨ Generated key input type for table 'Language'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input Language_Key {
+  """
+  ✨ Generated from Field `Language`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `Language`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'Language'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input Language_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: Language_Filter
+}
+"""
+✨ Generated order input type for table 'Language'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input Language_Order {
+  """
+  ✨ Generated from Field `Language`.`id` of type `UUID!`
+  """
+  id: OrderDirection
+  """
+  ✨ Generated from Field `Language`.`name` of type `String!`
+  """
+  name: OrderDirection
+}
 """
 ✨ Generated data input type for table 'NFT'. It includes all necessary fields for creating or upserting rows into table.
 """
@@ -75,9 +547,25 @@ input NFT_Data {
   """
   fileUrl_expr: String_Expr
   """
+  ✨ Generated from Field `NFT`.`geolocation` of type `String`
+  """
+  geolocation: String
+  """
+  ✨ `_expr` server value variant of `geolocation` (✨ Generated from Field `NFT`.`geolocation` of type `String`)
+  """
+  geolocation_expr: String_Expr
+  """
   ✨ Generated from Field `NFT`.`price` of type `Float!`
   """
   price: Float
+  """
+  ✨ Generated from Field `NFT`.`smartContractAddress` of type `String`
+  """
+  smartContractAddress: String
+  """
+  ✨ `_expr` server value variant of `smartContractAddress` (✨ Generated from Field `NFT`.`smartContractAddress` of type `String`)
+  """
+  smartContractAddress_expr: String_Expr
   """
   ✨ Generated from Field `NFT`.`title` of type `String!`
   """
@@ -128,13 +616,61 @@ input NFT_Filter {
   """
   fileUrl: String_Filter
   """
+  ✨ Generated from Field `NFT`.`geolocation` of type `String`
+  """
+  geolocation: String_Filter
+  """
   ✨ Generated from Field `NFT`.`price` of type `Float!`
   """
   price: Float_Filter
   """
+  ✨ Generated from Field `NFT`.`smartContractAddress` of type `String`
+  """
+  smartContractAddress: String_Filter
+  """
   ✨ Generated from Field `NFT`.`title` of type `String!`
   """
   title: String_Filter
+  """
+  ✨ Generated from Field `NFT`.`nFTCategories_on_nft` of type `[NFTCategory!]!`
+  """
+  nFTCategories_on_nft: NFTCategory_ListFilter
+  """
+  ✨ Generated from Field `NFT`.`nFTLanguages_on_nft` of type `[NFTLanguage!]!`
+  """
+  nFTLanguages_on_nft: NFTLanguage_ListFilter
+  """
+  ✨ Generated from Field `NFT`.`nFTProductionQualities_on_nft` of type `[NFTProductionQuality!]!`
+  """
+  nFTProductionQualities_on_nft: NFTProductionQuality_ListFilter
+  """
+  ✨ Generated from Field `NFT`.`nFTRegionalDialects_on_nft` of type `[NFTRegionalDialect!]!`
+  """
+  nFTRegionalDialects_on_nft: NFTRegionalDialect_ListFilter
+  """
+  ✨ Generated from Field `NFT`.`nFTSecondaryLanguages_on_nft` of type `[NFTSecondaryLanguage!]!`
+  """
+  nFTSecondaryLanguages_on_nft: NFTSecondaryLanguage_ListFilter
+  """
+  ✨ Generated from Field `NFT`.`nFTStudioAvailabilities_on_nft` of type `[NFTStudioAvailability!]!`
+  """
+  nFTStudioAvailabilities_on_nft: NFTStudioAvailability_ListFilter
+  """
+  ✨ Generated from Field `NFT`.`nFTStyleToneOptions_on_nft` of type `[NFTStyleToneOption!]!`
+  """
+  nFTStyleToneOptions_on_nft: NFTStyleToneOption_ListFilter
+  """
+  ✨ Generated from Field `NFT`.`nFTTechnicalSpecifications_on_nft` of type `[NFTTechnicalSpecification!]!`
+  """
+  nFTTechnicalSpecifications_on_nft: NFTTechnicalSpecification_ListFilter
+  """
+  ✨ Generated from Field `NFT`.`nFTTimeZones_on_nft` of type `[NFTTimeZone!]!`
+  """
+  nFTTimeZones_on_nft: NFTTimeZone_ListFilter
+  """
+  ✨ Generated from Field `NFT`.`nFTVoiceTraits_on_nft` of type `[NFTVoiceTrait!]!`
+  """
+  nFTVoiceTraits_on_nft: NFTVoiceTrait_ListFilter
   """
   ✨ Generated from Field `NFT`.`ownerships_on_nft` of type `[Ownership!]!`
   """
@@ -144,9 +680,49 @@ input NFT_Filter {
   """
   transactions_on_nft: Transaction_ListFilter
   """
+  ✨ Generated from Field `NFT`.`categories_via_NFTCategory` of type `[Category!]!`
+  """
+  categories_via_NFTCategory: Category_ListFilter
+  """
+  ✨ Generated from Field `NFT`.`languages_via_NFTLanguage` of type `[Language!]!`
+  """
+  languages_via_NFTLanguage: Language_ListFilter
+  """
+  ✨ Generated from Field `NFT`.`productionQualities_via_NFTProductionQuality` of type `[ProductionQuality!]!`
+  """
+  productionQualities_via_NFTProductionQuality: ProductionQuality_ListFilter
+  """
+  ✨ Generated from Field `NFT`.`regionalDialects_via_NFTRegionalDialect` of type `[RegionalDialect!]!`
+  """
+  regionalDialects_via_NFTRegionalDialect: RegionalDialect_ListFilter
+  """
+  ✨ Generated from Field `NFT`.`secondaryLanguages_via_NFTSecondaryLanguage` of type `[SecondaryLanguage!]!`
+  """
+  secondaryLanguages_via_NFTSecondaryLanguage: SecondaryLanguage_ListFilter
+  """
+  ✨ Generated from Field `NFT`.`studioAvailabilities_via_NFTStudioAvailability` of type `[StudioAvailability!]!`
+  """
+  studioAvailabilities_via_NFTStudioAvailability: StudioAvailability_ListFilter
+  """
+  ✨ Generated from Field `NFT`.`styleToneOptions_via_NFTStyleToneOption` of type `[StyleToneOption!]!`
+  """
+  styleToneOptions_via_NFTStyleToneOption: StyleToneOption_ListFilter
+  """
+  ✨ Generated from Field `NFT`.`technicalSpecifications_via_NFTTechnicalSpecification` of type `[TechnicalSpecification!]!`
+  """
+  technicalSpecifications_via_NFTTechnicalSpecification: TechnicalSpecification_ListFilter
+  """
+  ✨ Generated from Field `NFT`.`timeZones_via_NFTTimeZone` of type `[TimeZone!]!`
+  """
+  timeZones_via_NFTTimeZone: TimeZone_ListFilter
+  """
   ✨ Generated from Field `NFT`.`users_via_Ownership` of type `[User!]!`
   """
   users_via_Ownership: User_ListFilter
+  """
+  ✨ Generated from Field `NFT`.`voiceTraits_via_NFTVoiceTrait` of type `[VoiceTrait!]!`
+  """
+  voiceTraits_via_NFTVoiceTrait: VoiceTrait_ListFilter
 }
 """
 ✨ Generated first-row input type for table 'NFT'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
@@ -216,13 +792,1321 @@ input NFT_Order {
   """
   fileUrl: OrderDirection
   """
+  ✨ Generated from Field `NFT`.`geolocation` of type `String`
+  """
+  geolocation: OrderDirection
+  """
   ✨ Generated from Field `NFT`.`price` of type `Float!`
   """
   price: OrderDirection
   """
+  ✨ Generated from Field `NFT`.`smartContractAddress` of type `String`
+  """
+  smartContractAddress: OrderDirection
+  """
   ✨ Generated from Field `NFT`.`title` of type `String!`
   """
   title: OrderDirection
+}
+"""
+✨ Generated data input type for table 'NFTCategory'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input NFTCategory_Data {
+  """
+  ✨ Generated from Field `NFTCategory`.`nftId` of type `UUID!`
+  """
+  nftId: UUID
+  """
+  ✨ `_expr` server value variant of `nftId` (✨ Generated from Field `NFTCategory`.`nftId` of type `UUID!`)
+  """
+  nftId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTCategory`.`categoryId` of type `UUID!`
+  """
+  categoryId: UUID
+  """
+  ✨ `_expr` server value variant of `categoryId` (✨ Generated from Field `NFTCategory`.`categoryId` of type `UUID!`)
+  """
+  categoryId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTCategory`.`category` of type `Category!`
+  """
+  category: Category_Key
+  """
+  ✨ Generated from Field `NFTCategory`.`nft` of type `NFT!`
+  """
+  nft: NFT_Key
+}
+"""
+✨ Generated filter input type for table 'NFTCategory'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input NFTCategory_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [NFTCategory_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: NFTCategory_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [NFTCategory_Filter!]
+  """
+  ✨ Generated from Field `NFTCategory`.`nftId` of type `UUID!`
+  """
+  nftId: UUID_Filter
+  """
+  ✨ Generated from Field `NFTCategory`.`categoryId` of type `UUID!`
+  """
+  categoryId: UUID_Filter
+  """
+  ✨ Generated from Field `NFTCategory`.`category` of type `Category!`
+  """
+  category: Category_Filter
+  """
+  ✨ Generated from Field `NFTCategory`.`nft` of type `NFT!`
+  """
+  nft: NFT_Filter
+}
+"""
+✨ Generated first-row input type for table 'NFTCategory'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input NFTCategory_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [NFTCategory_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: NFTCategory_Filter
+}
+"""
+✨ Generated key input type for table 'NFTCategory'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input NFTCategory_Key {
+  """
+  ✨ Generated from Field `NFTCategory`.`nftId` of type `UUID!`
+  """
+  nftId: UUID
+  """
+  ✨ `_expr` server value variant of `nftId` (✨ Generated from Field `NFTCategory`.`nftId` of type `UUID!`)
+  """
+  nftId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTCategory`.`categoryId` of type `UUID!`
+  """
+  categoryId: UUID
+  """
+  ✨ `_expr` server value variant of `categoryId` (✨ Generated from Field `NFTCategory`.`categoryId` of type `UUID!`)
+  """
+  categoryId_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'NFTCategory'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input NFTCategory_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: NFTCategory_Filter
+}
+"""
+✨ Generated order input type for table 'NFTCategory'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input NFTCategory_Order {
+  """
+  ✨ Generated from Field `NFTCategory`.`nftId` of type `UUID!`
+  """
+  nftId: OrderDirection
+  """
+  ✨ Generated from Field `NFTCategory`.`categoryId` of type `UUID!`
+  """
+  categoryId: OrderDirection
+  """
+  ✨ Generated from Field `NFTCategory`.`category` of type `Category!`
+  """
+  category: Category_Order
+  """
+  ✨ Generated from Field `NFTCategory`.`nft` of type `NFT!`
+  """
+  nft: NFT_Order
+}
+"""
+✨ Generated data input type for table 'NFTLanguage'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input NFTLanguage_Data {
+  """
+  ✨ Generated from Field `NFTLanguage`.`nftId` of type `UUID!`
+  """
+  nftId: UUID
+  """
+  ✨ `_expr` server value variant of `nftId` (✨ Generated from Field `NFTLanguage`.`nftId` of type `UUID!`)
+  """
+  nftId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTLanguage`.`languageId` of type `UUID!`
+  """
+  languageId: UUID
+  """
+  ✨ `_expr` server value variant of `languageId` (✨ Generated from Field `NFTLanguage`.`languageId` of type `UUID!`)
+  """
+  languageId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTLanguage`.`language` of type `Language!`
+  """
+  language: Language_Key
+  """
+  ✨ Generated from Field `NFTLanguage`.`nft` of type `NFT!`
+  """
+  nft: NFT_Key
+}
+"""
+✨ Generated filter input type for table 'NFTLanguage'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input NFTLanguage_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [NFTLanguage_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: NFTLanguage_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [NFTLanguage_Filter!]
+  """
+  ✨ Generated from Field `NFTLanguage`.`nftId` of type `UUID!`
+  """
+  nftId: UUID_Filter
+  """
+  ✨ Generated from Field `NFTLanguage`.`languageId` of type `UUID!`
+  """
+  languageId: UUID_Filter
+  """
+  ✨ Generated from Field `NFTLanguage`.`language` of type `Language!`
+  """
+  language: Language_Filter
+  """
+  ✨ Generated from Field `NFTLanguage`.`nft` of type `NFT!`
+  """
+  nft: NFT_Filter
+}
+"""
+✨ Generated first-row input type for table 'NFTLanguage'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input NFTLanguage_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [NFTLanguage_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: NFTLanguage_Filter
+}
+"""
+✨ Generated key input type for table 'NFTLanguage'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input NFTLanguage_Key {
+  """
+  ✨ Generated from Field `NFTLanguage`.`nftId` of type `UUID!`
+  """
+  nftId: UUID
+  """
+  ✨ `_expr` server value variant of `nftId` (✨ Generated from Field `NFTLanguage`.`nftId` of type `UUID!`)
+  """
+  nftId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTLanguage`.`languageId` of type `UUID!`
+  """
+  languageId: UUID
+  """
+  ✨ `_expr` server value variant of `languageId` (✨ Generated from Field `NFTLanguage`.`languageId` of type `UUID!`)
+  """
+  languageId_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'NFTLanguage'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input NFTLanguage_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: NFTLanguage_Filter
+}
+"""
+✨ Generated order input type for table 'NFTLanguage'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input NFTLanguage_Order {
+  """
+  ✨ Generated from Field `NFTLanguage`.`nftId` of type `UUID!`
+  """
+  nftId: OrderDirection
+  """
+  ✨ Generated from Field `NFTLanguage`.`languageId` of type `UUID!`
+  """
+  languageId: OrderDirection
+  """
+  ✨ Generated from Field `NFTLanguage`.`language` of type `Language!`
+  """
+  language: Language_Order
+  """
+  ✨ Generated from Field `NFTLanguage`.`nft` of type `NFT!`
+  """
+  nft: NFT_Order
+}
+"""
+✨ Generated data input type for table 'NFTProductionQuality'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input NFTProductionQuality_Data {
+  """
+  ✨ Generated from Field `NFTProductionQuality`.`nftId` of type `UUID!`
+  """
+  nftId: UUID
+  """
+  ✨ `_expr` server value variant of `nftId` (✨ Generated from Field `NFTProductionQuality`.`nftId` of type `UUID!`)
+  """
+  nftId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTProductionQuality`.`productionQualityId` of type `UUID!`
+  """
+  productionQualityId: UUID
+  """
+  ✨ `_expr` server value variant of `productionQualityId` (✨ Generated from Field `NFTProductionQuality`.`productionQualityId` of type `UUID!`)
+  """
+  productionQualityId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTProductionQuality`.`nft` of type `NFT!`
+  """
+  nft: NFT_Key
+  """
+  ✨ Generated from Field `NFTProductionQuality`.`productionQuality` of type `ProductionQuality!`
+  """
+  productionQuality: ProductionQuality_Key
+}
+"""
+✨ Generated filter input type for table 'NFTProductionQuality'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input NFTProductionQuality_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [NFTProductionQuality_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: NFTProductionQuality_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [NFTProductionQuality_Filter!]
+  """
+  ✨ Generated from Field `NFTProductionQuality`.`nftId` of type `UUID!`
+  """
+  nftId: UUID_Filter
+  """
+  ✨ Generated from Field `NFTProductionQuality`.`productionQualityId` of type `UUID!`
+  """
+  productionQualityId: UUID_Filter
+  """
+  ✨ Generated from Field `NFTProductionQuality`.`nft` of type `NFT!`
+  """
+  nft: NFT_Filter
+  """
+  ✨ Generated from Field `NFTProductionQuality`.`productionQuality` of type `ProductionQuality!`
+  """
+  productionQuality: ProductionQuality_Filter
+}
+"""
+✨ Generated first-row input type for table 'NFTProductionQuality'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input NFTProductionQuality_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [NFTProductionQuality_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: NFTProductionQuality_Filter
+}
+"""
+✨ Generated key input type for table 'NFTProductionQuality'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input NFTProductionQuality_Key {
+  """
+  ✨ Generated from Field `NFTProductionQuality`.`nftId` of type `UUID!`
+  """
+  nftId: UUID
+  """
+  ✨ `_expr` server value variant of `nftId` (✨ Generated from Field `NFTProductionQuality`.`nftId` of type `UUID!`)
+  """
+  nftId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTProductionQuality`.`productionQualityId` of type `UUID!`
+  """
+  productionQualityId: UUID
+  """
+  ✨ `_expr` server value variant of `productionQualityId` (✨ Generated from Field `NFTProductionQuality`.`productionQualityId` of type `UUID!`)
+  """
+  productionQualityId_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'NFTProductionQuality'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input NFTProductionQuality_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: NFTProductionQuality_Filter
+}
+"""
+✨ Generated order input type for table 'NFTProductionQuality'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input NFTProductionQuality_Order {
+  """
+  ✨ Generated from Field `NFTProductionQuality`.`nftId` of type `UUID!`
+  """
+  nftId: OrderDirection
+  """
+  ✨ Generated from Field `NFTProductionQuality`.`productionQualityId` of type `UUID!`
+  """
+  productionQualityId: OrderDirection
+  """
+  ✨ Generated from Field `NFTProductionQuality`.`nft` of type `NFT!`
+  """
+  nft: NFT_Order
+  """
+  ✨ Generated from Field `NFTProductionQuality`.`productionQuality` of type `ProductionQuality!`
+  """
+  productionQuality: ProductionQuality_Order
+}
+"""
+✨ Generated data input type for table 'NFTRegionalDialect'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input NFTRegionalDialect_Data {
+  """
+  ✨ Generated from Field `NFTRegionalDialect`.`nftId` of type `UUID!`
+  """
+  nftId: UUID
+  """
+  ✨ `_expr` server value variant of `nftId` (✨ Generated from Field `NFTRegionalDialect`.`nftId` of type `UUID!`)
+  """
+  nftId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTRegionalDialect`.`regionalDialectId` of type `UUID!`
+  """
+  regionalDialectId: UUID
+  """
+  ✨ `_expr` server value variant of `regionalDialectId` (✨ Generated from Field `NFTRegionalDialect`.`regionalDialectId` of type `UUID!`)
+  """
+  regionalDialectId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTRegionalDialect`.`nft` of type `NFT!`
+  """
+  nft: NFT_Key
+  """
+  ✨ Generated from Field `NFTRegionalDialect`.`regionalDialect` of type `RegionalDialect!`
+  """
+  regionalDialect: RegionalDialect_Key
+}
+"""
+✨ Generated filter input type for table 'NFTRegionalDialect'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input NFTRegionalDialect_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [NFTRegionalDialect_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: NFTRegionalDialect_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [NFTRegionalDialect_Filter!]
+  """
+  ✨ Generated from Field `NFTRegionalDialect`.`nftId` of type `UUID!`
+  """
+  nftId: UUID_Filter
+  """
+  ✨ Generated from Field `NFTRegionalDialect`.`regionalDialectId` of type `UUID!`
+  """
+  regionalDialectId: UUID_Filter
+  """
+  ✨ Generated from Field `NFTRegionalDialect`.`nft` of type `NFT!`
+  """
+  nft: NFT_Filter
+  """
+  ✨ Generated from Field `NFTRegionalDialect`.`regionalDialect` of type `RegionalDialect!`
+  """
+  regionalDialect: RegionalDialect_Filter
+}
+"""
+✨ Generated first-row input type for table 'NFTRegionalDialect'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input NFTRegionalDialect_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [NFTRegionalDialect_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: NFTRegionalDialect_Filter
+}
+"""
+✨ Generated key input type for table 'NFTRegionalDialect'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input NFTRegionalDialect_Key {
+  """
+  ✨ Generated from Field `NFTRegionalDialect`.`nftId` of type `UUID!`
+  """
+  nftId: UUID
+  """
+  ✨ `_expr` server value variant of `nftId` (✨ Generated from Field `NFTRegionalDialect`.`nftId` of type `UUID!`)
+  """
+  nftId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTRegionalDialect`.`regionalDialectId` of type `UUID!`
+  """
+  regionalDialectId: UUID
+  """
+  ✨ `_expr` server value variant of `regionalDialectId` (✨ Generated from Field `NFTRegionalDialect`.`regionalDialectId` of type `UUID!`)
+  """
+  regionalDialectId_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'NFTRegionalDialect'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input NFTRegionalDialect_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: NFTRegionalDialect_Filter
+}
+"""
+✨ Generated order input type for table 'NFTRegionalDialect'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input NFTRegionalDialect_Order {
+  """
+  ✨ Generated from Field `NFTRegionalDialect`.`nftId` of type `UUID!`
+  """
+  nftId: OrderDirection
+  """
+  ✨ Generated from Field `NFTRegionalDialect`.`regionalDialectId` of type `UUID!`
+  """
+  regionalDialectId: OrderDirection
+  """
+  ✨ Generated from Field `NFTRegionalDialect`.`nft` of type `NFT!`
+  """
+  nft: NFT_Order
+  """
+  ✨ Generated from Field `NFTRegionalDialect`.`regionalDialect` of type `RegionalDialect!`
+  """
+  regionalDialect: RegionalDialect_Order
+}
+"""
+✨ Generated data input type for table 'NFTSecondaryLanguage'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input NFTSecondaryLanguage_Data {
+  """
+  ✨ Generated from Field `NFTSecondaryLanguage`.`nftId` of type `UUID!`
+  """
+  nftId: UUID
+  """
+  ✨ `_expr` server value variant of `nftId` (✨ Generated from Field `NFTSecondaryLanguage`.`nftId` of type `UUID!`)
+  """
+  nftId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTSecondaryLanguage`.`secondaryLanguageId` of type `UUID!`
+  """
+  secondaryLanguageId: UUID
+  """
+  ✨ `_expr` server value variant of `secondaryLanguageId` (✨ Generated from Field `NFTSecondaryLanguage`.`secondaryLanguageId` of type `UUID!`)
+  """
+  secondaryLanguageId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTSecondaryLanguage`.`nft` of type `NFT!`
+  """
+  nft: NFT_Key
+  """
+  ✨ Generated from Field `NFTSecondaryLanguage`.`secondaryLanguage` of type `SecondaryLanguage!`
+  """
+  secondaryLanguage: SecondaryLanguage_Key
+}
+"""
+✨ Generated filter input type for table 'NFTSecondaryLanguage'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input NFTSecondaryLanguage_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [NFTSecondaryLanguage_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: NFTSecondaryLanguage_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [NFTSecondaryLanguage_Filter!]
+  """
+  ✨ Generated from Field `NFTSecondaryLanguage`.`nftId` of type `UUID!`
+  """
+  nftId: UUID_Filter
+  """
+  ✨ Generated from Field `NFTSecondaryLanguage`.`secondaryLanguageId` of type `UUID!`
+  """
+  secondaryLanguageId: UUID_Filter
+  """
+  ✨ Generated from Field `NFTSecondaryLanguage`.`nft` of type `NFT!`
+  """
+  nft: NFT_Filter
+  """
+  ✨ Generated from Field `NFTSecondaryLanguage`.`secondaryLanguage` of type `SecondaryLanguage!`
+  """
+  secondaryLanguage: SecondaryLanguage_Filter
+}
+"""
+✨ Generated first-row input type for table 'NFTSecondaryLanguage'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input NFTSecondaryLanguage_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [NFTSecondaryLanguage_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: NFTSecondaryLanguage_Filter
+}
+"""
+✨ Generated key input type for table 'NFTSecondaryLanguage'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input NFTSecondaryLanguage_Key {
+  """
+  ✨ Generated from Field `NFTSecondaryLanguage`.`nftId` of type `UUID!`
+  """
+  nftId: UUID
+  """
+  ✨ `_expr` server value variant of `nftId` (✨ Generated from Field `NFTSecondaryLanguage`.`nftId` of type `UUID!`)
+  """
+  nftId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTSecondaryLanguage`.`secondaryLanguageId` of type `UUID!`
+  """
+  secondaryLanguageId: UUID
+  """
+  ✨ `_expr` server value variant of `secondaryLanguageId` (✨ Generated from Field `NFTSecondaryLanguage`.`secondaryLanguageId` of type `UUID!`)
+  """
+  secondaryLanguageId_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'NFTSecondaryLanguage'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input NFTSecondaryLanguage_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: NFTSecondaryLanguage_Filter
+}
+"""
+✨ Generated order input type for table 'NFTSecondaryLanguage'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input NFTSecondaryLanguage_Order {
+  """
+  ✨ Generated from Field `NFTSecondaryLanguage`.`nftId` of type `UUID!`
+  """
+  nftId: OrderDirection
+  """
+  ✨ Generated from Field `NFTSecondaryLanguage`.`secondaryLanguageId` of type `UUID!`
+  """
+  secondaryLanguageId: OrderDirection
+  """
+  ✨ Generated from Field `NFTSecondaryLanguage`.`nft` of type `NFT!`
+  """
+  nft: NFT_Order
+  """
+  ✨ Generated from Field `NFTSecondaryLanguage`.`secondaryLanguage` of type `SecondaryLanguage!`
+  """
+  secondaryLanguage: SecondaryLanguage_Order
+}
+"""
+✨ Generated data input type for table 'NFTStudioAvailability'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input NFTStudioAvailability_Data {
+  """
+  ✨ Generated from Field `NFTStudioAvailability`.`nftId` of type `UUID!`
+  """
+  nftId: UUID
+  """
+  ✨ `_expr` server value variant of `nftId` (✨ Generated from Field `NFTStudioAvailability`.`nftId` of type `UUID!`)
+  """
+  nftId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTStudioAvailability`.`studioAvailabilityId` of type `UUID!`
+  """
+  studioAvailabilityId: UUID
+  """
+  ✨ `_expr` server value variant of `studioAvailabilityId` (✨ Generated from Field `NFTStudioAvailability`.`studioAvailabilityId` of type `UUID!`)
+  """
+  studioAvailabilityId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTStudioAvailability`.`nft` of type `NFT!`
+  """
+  nft: NFT_Key
+  """
+  ✨ Generated from Field `NFTStudioAvailability`.`studioAvailability` of type `StudioAvailability!`
+  """
+  studioAvailability: StudioAvailability_Key
+}
+"""
+✨ Generated filter input type for table 'NFTStudioAvailability'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input NFTStudioAvailability_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [NFTStudioAvailability_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: NFTStudioAvailability_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [NFTStudioAvailability_Filter!]
+  """
+  ✨ Generated from Field `NFTStudioAvailability`.`nftId` of type `UUID!`
+  """
+  nftId: UUID_Filter
+  """
+  ✨ Generated from Field `NFTStudioAvailability`.`studioAvailabilityId` of type `UUID!`
+  """
+  studioAvailabilityId: UUID_Filter
+  """
+  ✨ Generated from Field `NFTStudioAvailability`.`nft` of type `NFT!`
+  """
+  nft: NFT_Filter
+  """
+  ✨ Generated from Field `NFTStudioAvailability`.`studioAvailability` of type `StudioAvailability!`
+  """
+  studioAvailability: StudioAvailability_Filter
+}
+"""
+✨ Generated first-row input type for table 'NFTStudioAvailability'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input NFTStudioAvailability_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [NFTStudioAvailability_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: NFTStudioAvailability_Filter
+}
+"""
+✨ Generated key input type for table 'NFTStudioAvailability'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input NFTStudioAvailability_Key {
+  """
+  ✨ Generated from Field `NFTStudioAvailability`.`nftId` of type `UUID!`
+  """
+  nftId: UUID
+  """
+  ✨ `_expr` server value variant of `nftId` (✨ Generated from Field `NFTStudioAvailability`.`nftId` of type `UUID!`)
+  """
+  nftId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTStudioAvailability`.`studioAvailabilityId` of type `UUID!`
+  """
+  studioAvailabilityId: UUID
+  """
+  ✨ `_expr` server value variant of `studioAvailabilityId` (✨ Generated from Field `NFTStudioAvailability`.`studioAvailabilityId` of type `UUID!`)
+  """
+  studioAvailabilityId_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'NFTStudioAvailability'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input NFTStudioAvailability_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: NFTStudioAvailability_Filter
+}
+"""
+✨ Generated order input type for table 'NFTStudioAvailability'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input NFTStudioAvailability_Order {
+  """
+  ✨ Generated from Field `NFTStudioAvailability`.`nftId` of type `UUID!`
+  """
+  nftId: OrderDirection
+  """
+  ✨ Generated from Field `NFTStudioAvailability`.`studioAvailabilityId` of type `UUID!`
+  """
+  studioAvailabilityId: OrderDirection
+  """
+  ✨ Generated from Field `NFTStudioAvailability`.`nft` of type `NFT!`
+  """
+  nft: NFT_Order
+  """
+  ✨ Generated from Field `NFTStudioAvailability`.`studioAvailability` of type `StudioAvailability!`
+  """
+  studioAvailability: StudioAvailability_Order
+}
+"""
+✨ Generated data input type for table 'NFTStyleToneOption'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input NFTStyleToneOption_Data {
+  """
+  ✨ Generated from Field `NFTStyleToneOption`.`nftId` of type `UUID!`
+  """
+  nftId: UUID
+  """
+  ✨ `_expr` server value variant of `nftId` (✨ Generated from Field `NFTStyleToneOption`.`nftId` of type `UUID!`)
+  """
+  nftId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTStyleToneOption`.`styleToneOptionId` of type `UUID!`
+  """
+  styleToneOptionId: UUID
+  """
+  ✨ `_expr` server value variant of `styleToneOptionId` (✨ Generated from Field `NFTStyleToneOption`.`styleToneOptionId` of type `UUID!`)
+  """
+  styleToneOptionId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTStyleToneOption`.`nft` of type `NFT!`
+  """
+  nft: NFT_Key
+  """
+  ✨ Generated from Field `NFTStyleToneOption`.`styleToneOption` of type `StyleToneOption!`
+  """
+  styleToneOption: StyleToneOption_Key
+}
+"""
+✨ Generated filter input type for table 'NFTStyleToneOption'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input NFTStyleToneOption_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [NFTStyleToneOption_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: NFTStyleToneOption_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [NFTStyleToneOption_Filter!]
+  """
+  ✨ Generated from Field `NFTStyleToneOption`.`nftId` of type `UUID!`
+  """
+  nftId: UUID_Filter
+  """
+  ✨ Generated from Field `NFTStyleToneOption`.`styleToneOptionId` of type `UUID!`
+  """
+  styleToneOptionId: UUID_Filter
+  """
+  ✨ Generated from Field `NFTStyleToneOption`.`nft` of type `NFT!`
+  """
+  nft: NFT_Filter
+  """
+  ✨ Generated from Field `NFTStyleToneOption`.`styleToneOption` of type `StyleToneOption!`
+  """
+  styleToneOption: StyleToneOption_Filter
+}
+"""
+✨ Generated first-row input type for table 'NFTStyleToneOption'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input NFTStyleToneOption_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [NFTStyleToneOption_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: NFTStyleToneOption_Filter
+}
+"""
+✨ Generated key input type for table 'NFTStyleToneOption'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input NFTStyleToneOption_Key {
+  """
+  ✨ Generated from Field `NFTStyleToneOption`.`nftId` of type `UUID!`
+  """
+  nftId: UUID
+  """
+  ✨ `_expr` server value variant of `nftId` (✨ Generated from Field `NFTStyleToneOption`.`nftId` of type `UUID!`)
+  """
+  nftId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTStyleToneOption`.`styleToneOptionId` of type `UUID!`
+  """
+  styleToneOptionId: UUID
+  """
+  ✨ `_expr` server value variant of `styleToneOptionId` (✨ Generated from Field `NFTStyleToneOption`.`styleToneOptionId` of type `UUID!`)
+  """
+  styleToneOptionId_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'NFTStyleToneOption'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input NFTStyleToneOption_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: NFTStyleToneOption_Filter
+}
+"""
+✨ Generated order input type for table 'NFTStyleToneOption'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input NFTStyleToneOption_Order {
+  """
+  ✨ Generated from Field `NFTStyleToneOption`.`nftId` of type `UUID!`
+  """
+  nftId: OrderDirection
+  """
+  ✨ Generated from Field `NFTStyleToneOption`.`styleToneOptionId` of type `UUID!`
+  """
+  styleToneOptionId: OrderDirection
+  """
+  ✨ Generated from Field `NFTStyleToneOption`.`nft` of type `NFT!`
+  """
+  nft: NFT_Order
+  """
+  ✨ Generated from Field `NFTStyleToneOption`.`styleToneOption` of type `StyleToneOption!`
+  """
+  styleToneOption: StyleToneOption_Order
+}
+"""
+✨ Generated data input type for table 'NFTTechnicalSpecification'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input NFTTechnicalSpecification_Data {
+  """
+  ✨ Generated from Field `NFTTechnicalSpecification`.`nftId` of type `UUID!`
+  """
+  nftId: UUID
+  """
+  ✨ `_expr` server value variant of `nftId` (✨ Generated from Field `NFTTechnicalSpecification`.`nftId` of type `UUID!`)
+  """
+  nftId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTTechnicalSpecification`.`technicalSpecificationId` of type `UUID!`
+  """
+  technicalSpecificationId: UUID
+  """
+  ✨ `_expr` server value variant of `technicalSpecificationId` (✨ Generated from Field `NFTTechnicalSpecification`.`technicalSpecificationId` of type `UUID!`)
+  """
+  technicalSpecificationId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTTechnicalSpecification`.`nft` of type `NFT!`
+  """
+  nft: NFT_Key
+  """
+  ✨ Generated from Field `NFTTechnicalSpecification`.`technicalSpecification` of type `TechnicalSpecification!`
+  """
+  technicalSpecification: TechnicalSpecification_Key
+}
+"""
+✨ Generated filter input type for table 'NFTTechnicalSpecification'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input NFTTechnicalSpecification_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [NFTTechnicalSpecification_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: NFTTechnicalSpecification_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [NFTTechnicalSpecification_Filter!]
+  """
+  ✨ Generated from Field `NFTTechnicalSpecification`.`nftId` of type `UUID!`
+  """
+  nftId: UUID_Filter
+  """
+  ✨ Generated from Field `NFTTechnicalSpecification`.`technicalSpecificationId` of type `UUID!`
+  """
+  technicalSpecificationId: UUID_Filter
+  """
+  ✨ Generated from Field `NFTTechnicalSpecification`.`nft` of type `NFT!`
+  """
+  nft: NFT_Filter
+  """
+  ✨ Generated from Field `NFTTechnicalSpecification`.`technicalSpecification` of type `TechnicalSpecification!`
+  """
+  technicalSpecification: TechnicalSpecification_Filter
+}
+"""
+✨ Generated first-row input type for table 'NFTTechnicalSpecification'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input NFTTechnicalSpecification_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [NFTTechnicalSpecification_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: NFTTechnicalSpecification_Filter
+}
+"""
+✨ Generated key input type for table 'NFTTechnicalSpecification'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input NFTTechnicalSpecification_Key {
+  """
+  ✨ Generated from Field `NFTTechnicalSpecification`.`nftId` of type `UUID!`
+  """
+  nftId: UUID
+  """
+  ✨ `_expr` server value variant of `nftId` (✨ Generated from Field `NFTTechnicalSpecification`.`nftId` of type `UUID!`)
+  """
+  nftId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTTechnicalSpecification`.`technicalSpecificationId` of type `UUID!`
+  """
+  technicalSpecificationId: UUID
+  """
+  ✨ `_expr` server value variant of `technicalSpecificationId` (✨ Generated from Field `NFTTechnicalSpecification`.`technicalSpecificationId` of type `UUID!`)
+  """
+  technicalSpecificationId_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'NFTTechnicalSpecification'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input NFTTechnicalSpecification_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: NFTTechnicalSpecification_Filter
+}
+"""
+✨ Generated order input type for table 'NFTTechnicalSpecification'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input NFTTechnicalSpecification_Order {
+  """
+  ✨ Generated from Field `NFTTechnicalSpecification`.`nftId` of type `UUID!`
+  """
+  nftId: OrderDirection
+  """
+  ✨ Generated from Field `NFTTechnicalSpecification`.`technicalSpecificationId` of type `UUID!`
+  """
+  technicalSpecificationId: OrderDirection
+  """
+  ✨ Generated from Field `NFTTechnicalSpecification`.`nft` of type `NFT!`
+  """
+  nft: NFT_Order
+  """
+  ✨ Generated from Field `NFTTechnicalSpecification`.`technicalSpecification` of type `TechnicalSpecification!`
+  """
+  technicalSpecification: TechnicalSpecification_Order
+}
+"""
+✨ Generated data input type for table 'NFTTimeZone'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input NFTTimeZone_Data {
+  """
+  ✨ Generated from Field `NFTTimeZone`.`nftId` of type `UUID!`
+  """
+  nftId: UUID
+  """
+  ✨ `_expr` server value variant of `nftId` (✨ Generated from Field `NFTTimeZone`.`nftId` of type `UUID!`)
+  """
+  nftId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTTimeZone`.`timeZoneId` of type `UUID!`
+  """
+  timeZoneId: UUID
+  """
+  ✨ `_expr` server value variant of `timeZoneId` (✨ Generated from Field `NFTTimeZone`.`timeZoneId` of type `UUID!`)
+  """
+  timeZoneId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTTimeZone`.`nft` of type `NFT!`
+  """
+  nft: NFT_Key
+  """
+  ✨ Generated from Field `NFTTimeZone`.`timeZone` of type `TimeZone!`
+  """
+  timeZone: TimeZone_Key
+}
+"""
+✨ Generated filter input type for table 'NFTTimeZone'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input NFTTimeZone_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [NFTTimeZone_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: NFTTimeZone_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [NFTTimeZone_Filter!]
+  """
+  ✨ Generated from Field `NFTTimeZone`.`nftId` of type `UUID!`
+  """
+  nftId: UUID_Filter
+  """
+  ✨ Generated from Field `NFTTimeZone`.`timeZoneId` of type `UUID!`
+  """
+  timeZoneId: UUID_Filter
+  """
+  ✨ Generated from Field `NFTTimeZone`.`nft` of type `NFT!`
+  """
+  nft: NFT_Filter
+  """
+  ✨ Generated from Field `NFTTimeZone`.`timeZone` of type `TimeZone!`
+  """
+  timeZone: TimeZone_Filter
+}
+"""
+✨ Generated first-row input type for table 'NFTTimeZone'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input NFTTimeZone_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [NFTTimeZone_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: NFTTimeZone_Filter
+}
+"""
+✨ Generated key input type for table 'NFTTimeZone'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input NFTTimeZone_Key {
+  """
+  ✨ Generated from Field `NFTTimeZone`.`nftId` of type `UUID!`
+  """
+  nftId: UUID
+  """
+  ✨ `_expr` server value variant of `nftId` (✨ Generated from Field `NFTTimeZone`.`nftId` of type `UUID!`)
+  """
+  nftId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTTimeZone`.`timeZoneId` of type `UUID!`
+  """
+  timeZoneId: UUID
+  """
+  ✨ `_expr` server value variant of `timeZoneId` (✨ Generated from Field `NFTTimeZone`.`timeZoneId` of type `UUID!`)
+  """
+  timeZoneId_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'NFTTimeZone'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input NFTTimeZone_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: NFTTimeZone_Filter
+}
+"""
+✨ Generated order input type for table 'NFTTimeZone'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input NFTTimeZone_Order {
+  """
+  ✨ Generated from Field `NFTTimeZone`.`nftId` of type `UUID!`
+  """
+  nftId: OrderDirection
+  """
+  ✨ Generated from Field `NFTTimeZone`.`timeZoneId` of type `UUID!`
+  """
+  timeZoneId: OrderDirection
+  """
+  ✨ Generated from Field `NFTTimeZone`.`nft` of type `NFT!`
+  """
+  nft: NFT_Order
+  """
+  ✨ Generated from Field `NFTTimeZone`.`timeZone` of type `TimeZone!`
+  """
+  timeZone: TimeZone_Order
+}
+"""
+✨ Generated data input type for table 'NFTVoiceTrait'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input NFTVoiceTrait_Data {
+  """
+  ✨ Generated from Field `NFTVoiceTrait`.`nftId` of type `UUID!`
+  """
+  nftId: UUID
+  """
+  ✨ `_expr` server value variant of `nftId` (✨ Generated from Field `NFTVoiceTrait`.`nftId` of type `UUID!`)
+  """
+  nftId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTVoiceTrait`.`voiceTraitId` of type `UUID!`
+  """
+  voiceTraitId: UUID
+  """
+  ✨ `_expr` server value variant of `voiceTraitId` (✨ Generated from Field `NFTVoiceTrait`.`voiceTraitId` of type `UUID!`)
+  """
+  voiceTraitId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTVoiceTrait`.`nft` of type `NFT!`
+  """
+  nft: NFT_Key
+  """
+  ✨ Generated from Field `NFTVoiceTrait`.`voiceTrait` of type `VoiceTrait!`
+  """
+  voiceTrait: VoiceTrait_Key
+}
+"""
+✨ Generated filter input type for table 'NFTVoiceTrait'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input NFTVoiceTrait_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [NFTVoiceTrait_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: NFTVoiceTrait_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [NFTVoiceTrait_Filter!]
+  """
+  ✨ Generated from Field `NFTVoiceTrait`.`nftId` of type `UUID!`
+  """
+  nftId: UUID_Filter
+  """
+  ✨ Generated from Field `NFTVoiceTrait`.`voiceTraitId` of type `UUID!`
+  """
+  voiceTraitId: UUID_Filter
+  """
+  ✨ Generated from Field `NFTVoiceTrait`.`nft` of type `NFT!`
+  """
+  nft: NFT_Filter
+  """
+  ✨ Generated from Field `NFTVoiceTrait`.`voiceTrait` of type `VoiceTrait!`
+  """
+  voiceTrait: VoiceTrait_Filter
+}
+"""
+✨ Generated first-row input type for table 'NFTVoiceTrait'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input NFTVoiceTrait_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [NFTVoiceTrait_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: NFTVoiceTrait_Filter
+}
+"""
+✨ Generated key input type for table 'NFTVoiceTrait'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input NFTVoiceTrait_Key {
+  """
+  ✨ Generated from Field `NFTVoiceTrait`.`nftId` of type `UUID!`
+  """
+  nftId: UUID
+  """
+  ✨ `_expr` server value variant of `nftId` (✨ Generated from Field `NFTVoiceTrait`.`nftId` of type `UUID!`)
+  """
+  nftId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `NFTVoiceTrait`.`voiceTraitId` of type `UUID!`
+  """
+  voiceTraitId: UUID
+  """
+  ✨ `_expr` server value variant of `voiceTraitId` (✨ Generated from Field `NFTVoiceTrait`.`voiceTraitId` of type `UUID!`)
+  """
+  voiceTraitId_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'NFTVoiceTrait'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input NFTVoiceTrait_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: NFTVoiceTrait_Filter
+}
+"""
+✨ Generated order input type for table 'NFTVoiceTrait'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input NFTVoiceTrait_Order {
+  """
+  ✨ Generated from Field `NFTVoiceTrait`.`nftId` of type `UUID!`
+  """
+  nftId: OrderDirection
+  """
+  ✨ Generated from Field `NFTVoiceTrait`.`voiceTraitId` of type `UUID!`
+  """
+  voiceTraitId: OrderDirection
+  """
+  ✨ Generated from Field `NFTVoiceTrait`.`nft` of type `NFT!`
+  """
+  nft: NFT_Order
+  """
+  ✨ Generated from Field `NFTVoiceTrait`.`voiceTrait` of type `VoiceTrait!`
+  """
+  voiceTrait: VoiceTrait_Order
 }
 """
 ✨ Generated data input type for table 'Ownership'. It includes all necessary fields for creating or upserting rows into table.
@@ -264,6 +2148,14 @@ input Ownership_Data {
   ✨ `_time` server value variant of `acquiredAt` (✨ Generated from Field `Ownership`.`acquiredAt` of type `Timestamp!`)
   """
   acquiredAt_time: Timestamp_Relative
+  """
+  ✨ Generated from Field `Ownership`.`ownershipType` of type `String!`
+  """
+  ownershipType: String
+  """
+  ✨ `_expr` server value variant of `ownershipType` (✨ Generated from Field `Ownership`.`ownershipType` of type `String!`)
+  """
+  ownershipType_expr: String_Expr
 }
 """
 ✨ Generated filter input type for table 'Ownership'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
@@ -301,6 +2193,10 @@ input Ownership_Filter {
   ✨ Generated from Field `Ownership`.`acquiredAt` of type `Timestamp!`
   """
   acquiredAt: Timestamp_Filter
+  """
+  ✨ Generated from Field `Ownership`.`ownershipType` of type `String!`
+  """
+  ownershipType: String_Filter
 }
 """
 ✨ Generated first-row input type for table 'Ownership'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
@@ -373,6 +2269,922 @@ input Ownership_Order {
   ✨ Generated from Field `Ownership`.`acquiredAt` of type `Timestamp!`
   """
   acquiredAt: OrderDirection
+  """
+  ✨ Generated from Field `Ownership`.`ownershipType` of type `String!`
+  """
+  ownershipType: OrderDirection
+}
+"""
+✨ Generated data input type for table 'ProductionQuality'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input ProductionQuality_Data {
+  """
+  ✨ Generated from Field `ProductionQuality`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `ProductionQuality`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+  """
+  ✨ Generated from Field `ProductionQuality`.`description` of type `[String]`
+  """
+  description: [String!]
+  """
+  ✨ Generated from Field `ProductionQuality`.`qualityType` of type `String!`
+  """
+  qualityType: String
+  """
+  ✨ `_expr` server value variant of `qualityType` (✨ Generated from Field `ProductionQuality`.`qualityType` of type `String!`)
+  """
+  qualityType_expr: String_Expr
+}
+"""
+✨ Generated filter input type for table 'ProductionQuality'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input ProductionQuality_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [ProductionQuality_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: ProductionQuality_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [ProductionQuality_Filter!]
+  """
+  ✨ Generated from Field `ProductionQuality`.`id` of type `UUID!`
+  """
+  id: UUID_Filter
+  """
+  ✨ Generated from Field `ProductionQuality`.`description` of type `[String]`
+  """
+  description: String_ListFilter
+  """
+  ✨ Generated from Field `ProductionQuality`.`qualityType` of type `String!`
+  """
+  qualityType: String_Filter
+  """
+  ✨ Generated from Field `ProductionQuality`.`nFTProductionQualities_on_productionQuality` of type `[NFTProductionQuality!]!`
+  """
+  nFTProductionQualities_on_productionQuality: NFTProductionQuality_ListFilter
+  """
+  ✨ Generated from Field `ProductionQuality`.`nfts_via_NFTProductionQuality` of type `[NFT!]!`
+  """
+  nfts_via_NFTProductionQuality: NFT_ListFilter
+}
+"""
+✨ Generated first-row input type for table 'ProductionQuality'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input ProductionQuality_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [ProductionQuality_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: ProductionQuality_Filter
+}
+"""
+✨ Generated key input type for table 'ProductionQuality'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input ProductionQuality_Key {
+  """
+  ✨ Generated from Field `ProductionQuality`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `ProductionQuality`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'ProductionQuality'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input ProductionQuality_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: ProductionQuality_Filter
+}
+"""
+✨ Generated order input type for table 'ProductionQuality'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input ProductionQuality_Order {
+  """
+  ✨ Generated from Field `ProductionQuality`.`id` of type `UUID!`
+  """
+  id: OrderDirection
+  """
+  ✨ Generated from Field `ProductionQuality`.`qualityType` of type `String!`
+  """
+  qualityType: OrderDirection
+}
+"""
+✨ Generated data input type for table 'RegionalDialect'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input RegionalDialect_Data {
+  """
+  ✨ Generated from Field `RegionalDialect`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `RegionalDialect`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+  """
+  ✨ Generated from Field `RegionalDialect`.`name` of type `String!`
+  """
+  name: String
+  """
+  ✨ `_expr` server value variant of `name` (✨ Generated from Field `RegionalDialect`.`name` of type `String!`)
+  """
+  name_expr: String_Expr
+}
+"""
+✨ Generated filter input type for table 'RegionalDialect'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input RegionalDialect_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [RegionalDialect_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: RegionalDialect_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [RegionalDialect_Filter!]
+  """
+  ✨ Generated from Field `RegionalDialect`.`id` of type `UUID!`
+  """
+  id: UUID_Filter
+  """
+  ✨ Generated from Field `RegionalDialect`.`name` of type `String!`
+  """
+  name: String_Filter
+  """
+  ✨ Generated from Field `RegionalDialect`.`nFTRegionalDialects_on_regionalDialect` of type `[NFTRegionalDialect!]!`
+  """
+  nFTRegionalDialects_on_regionalDialect: NFTRegionalDialect_ListFilter
+  """
+  ✨ Generated from Field `RegionalDialect`.`nfts_via_NFTRegionalDialect` of type `[NFT!]!`
+  """
+  nfts_via_NFTRegionalDialect: NFT_ListFilter
+}
+"""
+✨ Generated first-row input type for table 'RegionalDialect'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input RegionalDialect_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [RegionalDialect_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: RegionalDialect_Filter
+}
+"""
+✨ Generated key input type for table 'RegionalDialect'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input RegionalDialect_Key {
+  """
+  ✨ Generated from Field `RegionalDialect`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `RegionalDialect`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'RegionalDialect'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input RegionalDialect_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: RegionalDialect_Filter
+}
+"""
+✨ Generated order input type for table 'RegionalDialect'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input RegionalDialect_Order {
+  """
+  ✨ Generated from Field `RegionalDialect`.`id` of type `UUID!`
+  """
+  id: OrderDirection
+  """
+  ✨ Generated from Field `RegionalDialect`.`name` of type `String!`
+  """
+  name: OrderDirection
+}
+"""
+✨ Generated data input type for table 'SecondaryLanguage'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input SecondaryLanguage_Data {
+  """
+  ✨ Generated from Field `SecondaryLanguage`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `SecondaryLanguage`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+  """
+  ✨ Generated from Field `SecondaryLanguage`.`proficiency` of type `String!`
+  """
+  proficiency: String
+  """
+  ✨ `_expr` server value variant of `proficiency` (✨ Generated from Field `SecondaryLanguage`.`proficiency` of type `String!`)
+  """
+  proficiency_expr: String_Expr
+}
+"""
+✨ Generated filter input type for table 'SecondaryLanguage'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input SecondaryLanguage_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [SecondaryLanguage_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: SecondaryLanguage_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [SecondaryLanguage_Filter!]
+  """
+  ✨ Generated from Field `SecondaryLanguage`.`id` of type `UUID!`
+  """
+  id: UUID_Filter
+  """
+  ✨ Generated from Field `SecondaryLanguage`.`proficiency` of type `String!`
+  """
+  proficiency: String_Filter
+  """
+  ✨ Generated from Field `SecondaryLanguage`.`nFTSecondaryLanguages_on_secondaryLanguage` of type `[NFTSecondaryLanguage!]!`
+  """
+  nFTSecondaryLanguages_on_secondaryLanguage: NFTSecondaryLanguage_ListFilter
+  """
+  ✨ Generated from Field `SecondaryLanguage`.`nfts_via_NFTSecondaryLanguage` of type `[NFT!]!`
+  """
+  nfts_via_NFTSecondaryLanguage: NFT_ListFilter
+}
+"""
+✨ Generated first-row input type for table 'SecondaryLanguage'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input SecondaryLanguage_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [SecondaryLanguage_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: SecondaryLanguage_Filter
+}
+"""
+✨ Generated key input type for table 'SecondaryLanguage'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input SecondaryLanguage_Key {
+  """
+  ✨ Generated from Field `SecondaryLanguage`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `SecondaryLanguage`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'SecondaryLanguage'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input SecondaryLanguage_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: SecondaryLanguage_Filter
+}
+"""
+✨ Generated order input type for table 'SecondaryLanguage'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input SecondaryLanguage_Order {
+  """
+  ✨ Generated from Field `SecondaryLanguage`.`id` of type `UUID!`
+  """
+  id: OrderDirection
+  """
+  ✨ Generated from Field `SecondaryLanguage`.`proficiency` of type `String!`
+  """
+  proficiency: OrderDirection
+}
+"""
+✨ Generated data input type for table 'StudioAvailability'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input StudioAvailability_Data {
+  """
+  ✨ Generated from Field `StudioAvailability`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `StudioAvailability`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+  """
+  ✨ Generated from Field `StudioAvailability`.`availability` of type `String!`
+  """
+  availability: String
+  """
+  ✨ `_expr` server value variant of `availability` (✨ Generated from Field `StudioAvailability`.`availability` of type `String!`)
+  """
+  availability_expr: String_Expr
+}
+"""
+✨ Generated filter input type for table 'StudioAvailability'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input StudioAvailability_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [StudioAvailability_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: StudioAvailability_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [StudioAvailability_Filter!]
+  """
+  ✨ Generated from Field `StudioAvailability`.`id` of type `UUID!`
+  """
+  id: UUID_Filter
+  """
+  ✨ Generated from Field `StudioAvailability`.`availability` of type `String!`
+  """
+  availability: String_Filter
+  """
+  ✨ Generated from Field `StudioAvailability`.`nFTStudioAvailabilities_on_studioAvailability` of type `[NFTStudioAvailability!]!`
+  """
+  nFTStudioAvailabilities_on_studioAvailability: NFTStudioAvailability_ListFilter
+  """
+  ✨ Generated from Field `StudioAvailability`.`nfts_via_NFTStudioAvailability` of type `[NFT!]!`
+  """
+  nfts_via_NFTStudioAvailability: NFT_ListFilter
+}
+"""
+✨ Generated first-row input type for table 'StudioAvailability'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input StudioAvailability_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [StudioAvailability_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: StudioAvailability_Filter
+}
+"""
+✨ Generated key input type for table 'StudioAvailability'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input StudioAvailability_Key {
+  """
+  ✨ Generated from Field `StudioAvailability`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `StudioAvailability`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'StudioAvailability'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input StudioAvailability_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: StudioAvailability_Filter
+}
+"""
+✨ Generated order input type for table 'StudioAvailability'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input StudioAvailability_Order {
+  """
+  ✨ Generated from Field `StudioAvailability`.`id` of type `UUID!`
+  """
+  id: OrderDirection
+  """
+  ✨ Generated from Field `StudioAvailability`.`availability` of type `String!`
+  """
+  availability: OrderDirection
+}
+"""
+✨ Generated data input type for table 'StyleToneCategory'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input StyleToneCategory_Data {
+  """
+  ✨ Generated from Field `StyleToneCategory`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `StyleToneCategory`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+  """
+  ✨ Generated from Field `StyleToneCategory`.`name` of type `String!`
+  """
+  name: String
+  """
+  ✨ `_expr` server value variant of `name` (✨ Generated from Field `StyleToneCategory`.`name` of type `String!`)
+  """
+  name_expr: String_Expr
+}
+"""
+✨ Generated filter input type for table 'StyleToneCategory'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input StyleToneCategory_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [StyleToneCategory_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: StyleToneCategory_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [StyleToneCategory_Filter!]
+  """
+  ✨ Generated from Field `StyleToneCategory`.`id` of type `UUID!`
+  """
+  id: UUID_Filter
+  """
+  ✨ Generated from Field `StyleToneCategory`.`name` of type `String!`
+  """
+  name: String_Filter
+  """
+  ✨ Generated from Field `StyleToneCategory`.`styleToneOptions_on_category` of type `[StyleToneOption!]!`
+  """
+  styleToneOptions_on_category: StyleToneOption_ListFilter
+}
+"""
+✨ Generated first-row input type for table 'StyleToneCategory'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input StyleToneCategory_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [StyleToneCategory_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: StyleToneCategory_Filter
+}
+"""
+✨ Generated key input type for table 'StyleToneCategory'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input StyleToneCategory_Key {
+  """
+  ✨ Generated from Field `StyleToneCategory`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `StyleToneCategory`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'StyleToneCategory'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input StyleToneCategory_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: StyleToneCategory_Filter
+}
+"""
+✨ Generated order input type for table 'StyleToneCategory'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input StyleToneCategory_Order {
+  """
+  ✨ Generated from Field `StyleToneCategory`.`id` of type `UUID!`
+  """
+  id: OrderDirection
+  """
+  ✨ Generated from Field `StyleToneCategory`.`name` of type `String!`
+  """
+  name: OrderDirection
+}
+"""
+✨ Generated data input type for table 'StyleToneOption'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input StyleToneOption_Data {
+  """
+  ✨ Generated from Field `StyleToneOption`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `StyleToneOption`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+  """
+  ✨ Generated from Field `StyleToneOption`.`categoryId` of type `UUID!`
+  """
+  categoryId: UUID
+  """
+  ✨ `_expr` server value variant of `categoryId` (✨ Generated from Field `StyleToneOption`.`categoryId` of type `UUID!`)
+  """
+  categoryId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `StyleToneOption`.`category` of type `StyleToneCategory!`
+  """
+  category: StyleToneCategory_Key
+  """
+  ✨ Generated from Field `StyleToneOption`.`option` of type `String!`
+  """
+  option: String
+  """
+  ✨ `_expr` server value variant of `option` (✨ Generated from Field `StyleToneOption`.`option` of type `String!`)
+  """
+  option_expr: String_Expr
+}
+"""
+✨ Generated filter input type for table 'StyleToneOption'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input StyleToneOption_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [StyleToneOption_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: StyleToneOption_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [StyleToneOption_Filter!]
+  """
+  ✨ Generated from Field `StyleToneOption`.`id` of type `UUID!`
+  """
+  id: UUID_Filter
+  """
+  ✨ Generated from Field `StyleToneOption`.`categoryId` of type `UUID!`
+  """
+  categoryId: UUID_Filter
+  """
+  ✨ Generated from Field `StyleToneOption`.`category` of type `StyleToneCategory!`
+  """
+  category: StyleToneCategory_Filter
+  """
+  ✨ Generated from Field `StyleToneOption`.`option` of type `String!`
+  """
+  option: String_Filter
+  """
+  ✨ Generated from Field `StyleToneOption`.`nFTStyleToneOptions_on_styleToneOption` of type `[NFTStyleToneOption!]!`
+  """
+  nFTStyleToneOptions_on_styleToneOption: NFTStyleToneOption_ListFilter
+  """
+  ✨ Generated from Field `StyleToneOption`.`nfts_via_NFTStyleToneOption` of type `[NFT!]!`
+  """
+  nfts_via_NFTStyleToneOption: NFT_ListFilter
+}
+"""
+✨ Generated first-row input type for table 'StyleToneOption'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input StyleToneOption_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [StyleToneOption_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: StyleToneOption_Filter
+}
+"""
+✨ Generated key input type for table 'StyleToneOption'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input StyleToneOption_Key {
+  """
+  ✨ Generated from Field `StyleToneOption`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `StyleToneOption`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'StyleToneOption'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input StyleToneOption_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: StyleToneOption_Filter
+}
+"""
+✨ Generated order input type for table 'StyleToneOption'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input StyleToneOption_Order {
+  """
+  ✨ Generated from Field `StyleToneOption`.`id` of type `UUID!`
+  """
+  id: OrderDirection
+  """
+  ✨ Generated from Field `StyleToneOption`.`categoryId` of type `UUID!`
+  """
+  categoryId: OrderDirection
+  """
+  ✨ Generated from Field `StyleToneOption`.`category` of type `StyleToneCategory!`
+  """
+  category: StyleToneCategory_Order
+  """
+  ✨ Generated from Field `StyleToneOption`.`option` of type `String!`
+  """
+  option: OrderDirection
+}
+"""
+✨ Generated data input type for table 'TechnicalSpecification'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input TechnicalSpecification_Data {
+  """
+  ✨ Generated from Field `TechnicalSpecification`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `TechnicalSpecification`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+  """
+  ✨ Generated from Field `TechnicalSpecification`.`audioQuality` of type `String!`
+  """
+  audioQuality: String
+  """
+  ✨ `_expr` server value variant of `audioQuality` (✨ Generated from Field `TechnicalSpecification`.`audioQuality` of type `String!`)
+  """
+  audioQuality_expr: String_Expr
+  """
+  ✨ Generated from Field `TechnicalSpecification`.`equipment` of type `[String]`
+  """
+  equipment: [String!]
+  """
+  ✨ Generated from Field `TechnicalSpecification`.`postProductionCapabilities` of type `[String]`
+  """
+  postProductionCapabilities: [String!]
+  """
+  ✨ Generated from Field `TechnicalSpecification`.`sampleRate` of type `String!`
+  """
+  sampleRate: String
+  """
+  ✨ `_expr` server value variant of `sampleRate` (✨ Generated from Field `TechnicalSpecification`.`sampleRate` of type `String!`)
+  """
+  sampleRate_expr: String_Expr
+}
+"""
+✨ Generated filter input type for table 'TechnicalSpecification'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input TechnicalSpecification_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [TechnicalSpecification_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: TechnicalSpecification_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [TechnicalSpecification_Filter!]
+  """
+  ✨ Generated from Field `TechnicalSpecification`.`id` of type `UUID!`
+  """
+  id: UUID_Filter
+  """
+  ✨ Generated from Field `TechnicalSpecification`.`audioQuality` of type `String!`
+  """
+  audioQuality: String_Filter
+  """
+  ✨ Generated from Field `TechnicalSpecification`.`equipment` of type `[String]`
+  """
+  equipment: String_ListFilter
+  """
+  ✨ Generated from Field `TechnicalSpecification`.`postProductionCapabilities` of type `[String]`
+  """
+  postProductionCapabilities: String_ListFilter
+  """
+  ✨ Generated from Field `TechnicalSpecification`.`sampleRate` of type `String!`
+  """
+  sampleRate: String_Filter
+  """
+  ✨ Generated from Field `TechnicalSpecification`.`nFTTechnicalSpecifications_on_technicalSpecification` of type `[NFTTechnicalSpecification!]!`
+  """
+  nFTTechnicalSpecifications_on_technicalSpecification: NFTTechnicalSpecification_ListFilter
+  """
+  ✨ Generated from Field `TechnicalSpecification`.`nfts_via_NFTTechnicalSpecification` of type `[NFT!]!`
+  """
+  nfts_via_NFTTechnicalSpecification: NFT_ListFilter
+}
+"""
+✨ Generated first-row input type for table 'TechnicalSpecification'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input TechnicalSpecification_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [TechnicalSpecification_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: TechnicalSpecification_Filter
+}
+"""
+✨ Generated key input type for table 'TechnicalSpecification'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input TechnicalSpecification_Key {
+  """
+  ✨ Generated from Field `TechnicalSpecification`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `TechnicalSpecification`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'TechnicalSpecification'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input TechnicalSpecification_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: TechnicalSpecification_Filter
+}
+"""
+✨ Generated order input type for table 'TechnicalSpecification'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input TechnicalSpecification_Order {
+  """
+  ✨ Generated from Field `TechnicalSpecification`.`id` of type `UUID!`
+  """
+  id: OrderDirection
+  """
+  ✨ Generated from Field `TechnicalSpecification`.`audioQuality` of type `String!`
+  """
+  audioQuality: OrderDirection
+  """
+  ✨ Generated from Field `TechnicalSpecification`.`sampleRate` of type `String!`
+  """
+  sampleRate: OrderDirection
+}
+"""
+✨ Generated data input type for table 'TimeZone'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input TimeZone_Data {
+  """
+  ✨ Generated from Field `TimeZone`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `TimeZone`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+  """
+  ✨ Generated from Field `TimeZone`.`name` of type `String!`
+  """
+  name: String
+  """
+  ✨ `_expr` server value variant of `name` (✨ Generated from Field `TimeZone`.`name` of type `String!`)
+  """
+  name_expr: String_Expr
+}
+"""
+✨ Generated filter input type for table 'TimeZone'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input TimeZone_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [TimeZone_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: TimeZone_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [TimeZone_Filter!]
+  """
+  ✨ Generated from Field `TimeZone`.`id` of type `UUID!`
+  """
+  id: UUID_Filter
+  """
+  ✨ Generated from Field `TimeZone`.`name` of type `String!`
+  """
+  name: String_Filter
+  """
+  ✨ Generated from Field `TimeZone`.`nFTTimeZones_on_timeZone` of type `[NFTTimeZone!]!`
+  """
+  nFTTimeZones_on_timeZone: NFTTimeZone_ListFilter
+  """
+  ✨ Generated from Field `TimeZone`.`nfts_via_NFTTimeZone` of type `[NFT!]!`
+  """
+  nfts_via_NFTTimeZone: NFT_ListFilter
+}
+"""
+✨ Generated first-row input type for table 'TimeZone'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input TimeZone_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [TimeZone_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: TimeZone_Filter
+}
+"""
+✨ Generated key input type for table 'TimeZone'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input TimeZone_Key {
+  """
+  ✨ Generated from Field `TimeZone`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `TimeZone`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'TimeZone'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input TimeZone_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: TimeZone_Filter
+}
+"""
+✨ Generated order input type for table 'TimeZone'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input TimeZone_Order {
+  """
+  ✨ Generated from Field `TimeZone`.`id` of type `UUID!`
+  """
+  id: OrderDirection
+  """
+  ✨ Generated from Field `TimeZone`.`name` of type `String!`
+  """
+  name: OrderDirection
 }
 """
 ✨ Generated data input type for table 'Transaction'. It includes all necessary fields for creating or upserting rows into table.
@@ -613,6 +3425,22 @@ input User_Data {
   """
   email_expr: String_Expr
   """
+  ✨ Generated from Field `User`.`geoLocation` of type `String`
+  """
+  geoLocation: String
+  """
+  ✨ `_expr` server value variant of `geoLocation` (✨ Generated from Field `User`.`geoLocation` of type `String`)
+  """
+  geoLocation_expr: String_Expr
+  """
+  ✨ Generated from Field `User`.`smartContractAddress` of type `String`
+  """
+  smartContractAddress: String
+  """
+  ✨ `_expr` server value variant of `smartContractAddress` (✨ Generated from Field `User`.`smartContractAddress` of type `String`)
+  """
+  smartContractAddress_expr: String_Expr
+  """
   ✨ Generated from Field `User`.`username` of type `String!`
   """
   username: String
@@ -620,6 +3448,14 @@ input User_Data {
   ✨ `_expr` server value variant of `username` (✨ Generated from Field `User`.`username` of type `String!`)
   """
   username_expr: String_Expr
+  """
+  ✨ Generated from Field `User`.`walletAddress` of type `String!`
+  """
+  walletAddress: String
+  """
+  ✨ `_expr` server value variant of `walletAddress` (✨ Generated from Field `User`.`walletAddress` of type `String!`)
+  """
+  walletAddress_expr: String_Expr
 }
 """
 ✨ Generated filter input type for table 'User'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
@@ -654,9 +3490,21 @@ input User_Filter {
   """
   email: String_Filter
   """
+  ✨ Generated from Field `User`.`geoLocation` of type `String`
+  """
+  geoLocation: String_Filter
+  """
+  ✨ Generated from Field `User`.`smartContractAddress` of type `String`
+  """
+  smartContractAddress: String_Filter
+  """
   ✨ Generated from Field `User`.`username` of type `String!`
   """
   username: String_Filter
+  """
+  ✨ Generated from Field `User`.`walletAddress` of type `String!`
+  """
+  walletAddress: String_Filter
   """
   ✨ Generated from Field `User`.`nfts_on_creator` of type `[NFT!]!`
   """
@@ -673,6 +3521,14 @@ input User_Filter {
   ✨ Generated from Field `User`.`transactions_on_seller` of type `[Transaction!]!`
   """
   transactions_on_seller: Transaction_ListFilter
+  """
+  ✨ Generated from Field `User`.`userExperiences_on_user` of type `[UserExperience!]!`
+  """
+  userExperiences_on_user: UserExperience_ListFilter
+  """
+  ✨ Generated from Field `User`.`experienceLevels_via_UserExperience` of type `[ExperienceLevel!]!`
+  """
+  experienceLevels_via_UserExperience: ExperienceLevel_ListFilter
   """
   ✨ Generated from Field `User`.`nfts_via_Ownership` of type `[NFT!]!`
   """
@@ -738,7 +3594,271 @@ input User_Order {
   """
   email: OrderDirection
   """
+  ✨ Generated from Field `User`.`geoLocation` of type `String`
+  """
+  geoLocation: OrderDirection
+  """
+  ✨ Generated from Field `User`.`smartContractAddress` of type `String`
+  """
+  smartContractAddress: OrderDirection
+  """
   ✨ Generated from Field `User`.`username` of type `String!`
   """
   username: OrderDirection
+  """
+  ✨ Generated from Field `User`.`walletAddress` of type `String!`
+  """
+  walletAddress: OrderDirection
+}
+"""
+✨ Generated data input type for table 'UserExperience'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input UserExperience_Data {
+  """
+  ✨ Generated from Field `UserExperience`.`userId` of type `UUID!`
+  """
+  userId: UUID
+  """
+  ✨ `_expr` server value variant of `userId` (✨ Generated from Field `UserExperience`.`userId` of type `UUID!`)
+  """
+  userId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `UserExperience`.`experienceLevelId` of type `UUID!`
+  """
+  experienceLevelId: UUID
+  """
+  ✨ `_expr` server value variant of `experienceLevelId` (✨ Generated from Field `UserExperience`.`experienceLevelId` of type `UUID!`)
+  """
+  experienceLevelId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `UserExperience`.`experienceLevel` of type `ExperienceLevel!`
+  """
+  experienceLevel: ExperienceLevel_Key
+  """
+  ✨ Generated from Field `UserExperience`.`user` of type `User!`
+  """
+  user: User_Key
+}
+"""
+✨ Generated filter input type for table 'UserExperience'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input UserExperience_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [UserExperience_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: UserExperience_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [UserExperience_Filter!]
+  """
+  ✨ Generated from Field `UserExperience`.`userId` of type `UUID!`
+  """
+  userId: UUID_Filter
+  """
+  ✨ Generated from Field `UserExperience`.`experienceLevelId` of type `UUID!`
+  """
+  experienceLevelId: UUID_Filter
+  """
+  ✨ Generated from Field `UserExperience`.`experienceLevel` of type `ExperienceLevel!`
+  """
+  experienceLevel: ExperienceLevel_Filter
+  """
+  ✨ Generated from Field `UserExperience`.`user` of type `User!`
+  """
+  user: User_Filter
+}
+"""
+✨ Generated first-row input type for table 'UserExperience'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input UserExperience_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [UserExperience_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: UserExperience_Filter
+}
+"""
+✨ Generated key input type for table 'UserExperience'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input UserExperience_Key {
+  """
+  ✨ Generated from Field `UserExperience`.`userId` of type `UUID!`
+  """
+  userId: UUID
+  """
+  ✨ `_expr` server value variant of `userId` (✨ Generated from Field `UserExperience`.`userId` of type `UUID!`)
+  """
+  userId_expr: UUID_Expr
+  """
+  ✨ Generated from Field `UserExperience`.`experienceLevelId` of type `UUID!`
+  """
+  experienceLevelId: UUID
+  """
+  ✨ `_expr` server value variant of `experienceLevelId` (✨ Generated from Field `UserExperience`.`experienceLevelId` of type `UUID!`)
+  """
+  experienceLevelId_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'UserExperience'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input UserExperience_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: UserExperience_Filter
+}
+"""
+✨ Generated order input type for table 'UserExperience'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input UserExperience_Order {
+  """
+  ✨ Generated from Field `UserExperience`.`userId` of type `UUID!`
+  """
+  userId: OrderDirection
+  """
+  ✨ Generated from Field `UserExperience`.`experienceLevelId` of type `UUID!`
+  """
+  experienceLevelId: OrderDirection
+  """
+  ✨ Generated from Field `UserExperience`.`experienceLevel` of type `ExperienceLevel!`
+  """
+  experienceLevel: ExperienceLevel_Order
+  """
+  ✨ Generated from Field `UserExperience`.`user` of type `User!`
+  """
+  user: User_Order
+}
+"""
+✨ Generated data input type for table 'VoiceTrait'. It includes all necessary fields for creating or upserting rows into table.
+"""
+input VoiceTrait_Data {
+  """
+  ✨ Generated from Field `VoiceTrait`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `VoiceTrait`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+  """
+  ✨ Generated from Field `VoiceTrait`.`category` of type `String!`
+  """
+  category: String
+  """
+  ✨ `_expr` server value variant of `category` (✨ Generated from Field `VoiceTrait`.`category` of type `String!`)
+  """
+  category_expr: String_Expr
+  """
+  ✨ Generated from Field `VoiceTrait`.`value` of type `String!`
+  """
+  value: String
+  """
+  ✨ `_expr` server value variant of `value` (✨ Generated from Field `VoiceTrait`.`value` of type `String!`)
+  """
+  value_expr: String_Expr
+}
+"""
+✨ Generated filter input type for table 'VoiceTrait'. This input allows filtering objects using various conditions. Use `_or`, `_and`, and `_not` to compose complex filters.
+"""
+input VoiceTrait_Filter {
+  """
+  Apply multiple filter conditions using `AND` logic.
+  """
+  _and: [VoiceTrait_Filter!]
+  """
+  Negate the result of the provided filter condition.
+  """
+  _not: VoiceTrait_Filter
+  """
+  Apply multiple filter conditions using `OR` logic.
+  """
+  _or: [VoiceTrait_Filter!]
+  """
+  ✨ Generated from Field `VoiceTrait`.`id` of type `UUID!`
+  """
+  id: UUID_Filter
+  """
+  ✨ Generated from Field `VoiceTrait`.`category` of type `String!`
+  """
+  category: String_Filter
+  """
+  ✨ Generated from Field `VoiceTrait`.`value` of type `String!`
+  """
+  value: String_Filter
+  """
+  ✨ Generated from Field `VoiceTrait`.`nFTVoiceTraits_on_voiceTrait` of type `[NFTVoiceTrait!]!`
+  """
+  nFTVoiceTraits_on_voiceTrait: NFTVoiceTrait_ListFilter
+  """
+  ✨ Generated from Field `VoiceTrait`.`nfts_via_NFTVoiceTrait` of type `[NFT!]!`
+  """
+  nfts_via_NFTVoiceTrait: NFT_ListFilter
+}
+"""
+✨ Generated first-row input type for table 'VoiceTrait'. This input selects the first row matching the filter criteria, ordered according to the specified conditions.
+"""
+input VoiceTrait_FirstRow {
+  """
+  Order the result by the specified fields.
+  """
+  orderBy: [VoiceTrait_Order!]
+  """
+  Filters rows based on the specified conditions.
+  """
+  where: VoiceTrait_Filter
+}
+"""
+✨ Generated key input type for table 'VoiceTrait'. It represents the primary key fields used to uniquely identify a row in the table.
+"""
+input VoiceTrait_Key {
+  """
+  ✨ Generated from Field `VoiceTrait`.`id` of type `UUID!`
+  """
+  id: UUID
+  """
+  ✨ `_expr` server value variant of `id` (✨ Generated from Field `VoiceTrait`.`id` of type `UUID!`)
+  """
+  id_expr: UUID_Expr
+}
+"""
+✨ Generated list filter input type for table 'VoiceTrait'. This input applies filtering logic based on the count or existence of related objects that matches certain criteria.
+"""
+input VoiceTrait_ListFilter {
+  """
+  The desired number of objects that match the condition (defaults to at least one).
+  """
+  count: Int_Filter = {gt:0}
+  """
+  Condition of the related objects to filter for.
+  """
+  exist: VoiceTrait_Filter
+}
+"""
+✨ Generated order input type for table 'VoiceTrait'. This input defines the sorting order of rows in query results based on one or more fields.
+"""
+input VoiceTrait_Order {
+  """
+  ✨ Generated from Field `VoiceTrait`.`id` of type `UUID!`
+  """
+  id: OrderDirection
+  """
+  ✨ Generated from Field `VoiceTrait`.`category` of type `String!`
+  """
+  category: OrderDirection
+  """
+  ✨ Generated from Field `VoiceTrait`.`value` of type `String!`
+  """
+  value: OrderDirection
 }

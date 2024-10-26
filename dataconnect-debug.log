@@ -1,67 +1,159 @@
-I1026 04:49:39.516797   49922 load.go:37] Reloading schema and connectors...
-E1026 04:49:39.522725   49922 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service "speak-website-data-connect-service". No service has a schema.
-E1026 04:49:39.522970   49922 load.go:79] Could not load sources: <nil>
-I1026 04:49:39.524454   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
-Generated sources: prelude.gql [60423B] 
-I1026 04:49:39.524560   49922 load.go:80] Finished reloading
-I1026 04:49:39.529378   49922 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
-I1026 04:49:39.531698   49922 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399
-I1026 04:49:40.011204   49922 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 1ab6] UpdateSchema(): done sources: 
-I1026 04:49:40.029259   49922 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 1ab6] UpdateSchema(): done sources: 
-I1026 04:49:40.030936   49922 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 1ab6] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
-I1026 04:49:40.032136   49922 service.go:133] Failed to load latest schema: schema/schema.gql:98: Undefined argument to for directive ref.
-I1026 04:58:44.126633   49922 load.go:37] Reloading schema and connectors...
-E1026 04:58:44.134218   49922 load.go:79] Could not load sources: <nil>
-I1026 04:58:44.136844   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
-Generated sources: prelude.gql [60423B] 
-I1026 04:58:44.137408   49922 load.go:80] Finished reloading
-I1026 04:58:51.003037   49922 load.go:37] Reloading schema and connectors...
-E1026 04:58:51.006015   49922 load.go:79] Could not load sources: <nil>
-I1026 04:58:51.006566   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
-Generated sources: prelude.gql [60423B] 
-I1026 04:58:51.006628   49922 load.go:80] Finished reloading
-I1026 05:13:44.932386   49922 load.go:37] Reloading schema and connectors...
-E1026 05:13:44.938147   49922 load.go:79] Could not load sources: <nil>
-I1026 05:13:44.938731   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
-Generated sources: prelude.gql [60423B] 
-I1026 05:13:44.938784   49922 load.go:80] Finished reloading
-I1026 05:15:09.555814   49922 load.go:37] Reloading schema and connectors...
-E1026 05:15:09.559395   49922 load.go:79] Could not load sources: <nil>
-I1026 05:15:09.560098   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
-Generated sources: prelude.gql [60423B] 
-I1026 05:15:09.560162   49922 load.go:80] Finished reloading
-I1026 05:15:17.193430   49922 load.go:37] Reloading schema and connectors...
-E1026 05:15:17.195127   49922 load.go:79] Could not load sources: <nil>
-I1026 05:15:17.195779   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
-Generated sources: prelude.gql [60423B] 
-I1026 05:15:17.195843   49922 load.go:80] Finished reloading
-I1026 05:15:19.554450   49922 load.go:37] Reloading schema and connectors...
-E1026 05:15:19.555990   49922 load.go:79] Could not load sources: <nil>
-I1026 05:15:19.556338   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
-Generated sources: prelude.gql [60423B] 
-I1026 05:15:19.556355   49922 load.go:80] Finished reloading
-I1026 05:15:22.332143   49922 load.go:37] Reloading schema and connectors...
-E1026 05:15:22.338621   49922 load.go:79] Could not load sources: <nil>
-I1026 05:15:22.338988   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
-Generated sources: prelude.gql [60423B] 
-I1026 05:15:22.339008   49922 load.go:80] Finished reloading
-I1026 05:15:24.446031   49922 load.go:37] Reloading schema and connectors...
-E1026 05:15:24.447821   49922 load.go:79] Could not load sources: <nil>
-I1026 05:15:24.448303   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
-Generated sources: prelude.gql [60423B] 
-I1026 05:15:24.448329   49922 load.go:80] Finished reloading
-I1026 05:15:26.914150   49922 load.go:37] Reloading schema and connectors...
-E1026 05:15:26.916910   49922 load.go:79] Could not load sources: <nil>
-I1026 05:15:26.917476   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
-Generated sources: prelude.gql [60423B] 
-I1026 05:15:26.917543   49922 load.go:80] Finished reloading
-I1026 05:15:29.233140   49922 load.go:37] Reloading schema and connectors...
-E1026 05:15:29.234568   49922 load.go:79] Could not load sources: <nil>
-I1026 05:15:29.234839   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
-Generated sources: prelude.gql [60423B] 
-I1026 05:15:29.234859   49922 load.go:80] Finished reloading
-I1026 05:19:22.992280   49922 load.go:37] Reloading schema and connectors...
-E1026 05:19:22.998219   49922 load.go:79] Could not load sources: <nil>
-I1026 05:19:23.000051   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
-Generated sources: prelude.gql [60423B] 
-I1026 05:19:23.000823   49922 load.go:80] Finished reloading
+I1026 06:27:56.187891   82074 load.go:37] Reloading schema and connectors...
+I1026 06:27:56.219588   82074 control.go:45] [engine.Service /emulator/speak-website-data-connect-service e0b2] UpdateSchema(): done sources: schema/schema.gql [1454B] 
+I1026 06:27:56.234795   82074 control.go:73] [engine.Service /emulator/speak-website-data-connect-service e0b2] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
+I1026 06:27:56.263148   82074 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+I1026 06:27:56.272494   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/implicit.gql [1491B] main/input.gql [21448B] main/relation.gql [5127B] main/query.gql [4059B] main/mutation.gql [11489B] 
+I1026 06:27:56.272945   82074 collector.go:107] connector "default" javascriptSdk wrote into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+Generated sources: index.d.ts [616B] esm/index.esm.js [207B] esm/package.json [17B] index.cjs.js [248B] package.json [623B] 
+I1026 06:27:56.277091   82074 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation
+I1026 06:27:56.277175   82074 load.go:115] Finished reloading
+I1026 06:27:56.280064   82074 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:9399
+I1026 06:27:56.280988   82074 dev.go:95] Listening on address (HTTP + gRPC): [::1]:9399
+I1026 06:27:56.638473   82074 migrate.go:28] Running migration SQL:
+Step 1: CREATE EXTENSION IF NOT EXISTS "uuid-ossp"
+Step 2: CREATE TABLE "public"."Users" ("user_id" uuid NOT NULL DEFAULT uuid_generate_v4(), "user_auth" text NOT NULL, "created_at" timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP, "email" text NOT NULL, "username" character varying(30) NOT NULL, PRIMARY KEY ("user_id"))
+Step 3: CREATE TABLE "public"."NFTs" ("nft_id" uuid NOT NULL DEFAULT uuid_generate_v4(), "creator_id" uuid NOT NULL, "created_at" timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP, "description" text NULL, "file_url" text NOT NULL, "price" double precision NOT NULL, "title" text NOT NULL, PRIMARY KEY ("nft_id"), CONSTRAINT "NFTs_creator_id_fkey" FOREIGN KEY ("creator_id") REFERENCES "public"."Users" ("user_id") ON DELETE CASCADE)
+Step 4: CREATE INDEX "NFTs_creatorId_idx" ON "public"."NFTs" ("creator_id")
+Step 5: CREATE TABLE "public"."Ownerships" ("nft_id" uuid NOT NULL, "owner_id" uuid NOT NULL, "acquired_at" timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY ("nft_id", "owner_id"), CONSTRAINT "Ownerships_nft_id_fkey" FOREIGN KEY ("nft_id") REFERENCES "public"."NFTs" ("nft_id") ON DELETE CASCADE, CONSTRAINT "Ownerships_owner_id_fkey" FOREIGN KEY ("owner_id") REFERENCES "public"."Users" ("user_id") ON DELETE CASCADE)
+Step 6: CREATE INDEX "Ownerships_nftId_idx" ON "public"."Ownerships" ("nft_id")
+Step 7: CREATE INDEX "Ownerships_ownerId_idx" ON "public"."Ownerships" ("owner_id")
+Step 8: CREATE TABLE "public"."Transactions" ("transaction_id" uuid NOT NULL DEFAULT uuid_generate_v4(), "buyer_id" uuid NOT NULL, "nft_id" uuid NOT NULL, "seller_id" uuid NOT NULL, "price" double precision NOT NULL, "transaction_date" timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY ("transaction_id"), CONSTRAINT "Transactions_buyer_id_fkey" FOREIGN KEY ("buyer_id") REFERENCES "public"."Users" ("user_id") ON DELETE CASCADE, CONSTRAINT "Transactions_nft_id_fkey" FOREIGN KEY ("nft_id") REFERENCES "public"."NFTs" ("nft_id") ON DELETE CASCADE, CONSTRAINT "Transactions_seller_id_fkey" FOREIGN KEY ("seller_id") REFERENCES "public"."Users" ("user_id") ON DELETE CASCADE)
+Step 9: CREATE INDEX "Transactions_buyerId_idx" ON "public"."Transactions" ("buyer_id")
+Step 10: CREATE INDEX "Transactions_nftId_idx" ON "public"."Transactions" ("nft_id")
+Step 11: CREATE INDEX "Transactions_sellerId_idx" ON "public"."Transactions" ("seller_id")
+I1026 06:27:56.682025   82074 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 145d] UpdateSchema(): done sources: schema/schema.gql [1454B] 
+I1026 06:27:56.682219   82074 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 145d] UpdateConnector(default): done sources: connector/queries.gql [1855B] connector/mutations.gql [1163B] 
+I1026 06:41:56.240854   82074 load.go:37] Reloading schema and connectors...
+I1026 06:41:56.352112   82074 migrate.go:28] Running migration SQL:
+Step 1: ALTER TABLE "public"."Ownerships" ADD COLUMN "ownership_type" text NOT NULL
+Step 2: CREATE TABLE "public"."Categories" ("category_id" uuid NOT NULL DEFAULT uuid_generate_v4(), "name" text NOT NULL, "subcategories" text[] NULL, PRIMARY KEY ("category_id"))
+Step 3: ALTER TABLE "public"."NFTs" ADD COLUMN "geolocation" text NULL
+Step 4: CREATE TABLE "public"."NFTCategories" ("nft_id" uuid NOT NULL, "category_id" uuid NOT NULL, PRIMARY KEY ("nft_id", "category_id"), CONSTRAINT "NFTCategories_category_id_fkey" FOREIGN KEY ("category_id") REFERENCES "public"."Categories" ("category_id") ON DELETE CASCADE, CONSTRAINT "NFTCategories_nft_id_fkey" FOREIGN KEY ("nft_id") REFERENCES "public"."NFTs" ("nft_id") ON DELETE CASCADE)
+Step 5: CREATE INDEX "NFTCategories_categoryId_idx" ON "public"."NFTCategories" ("category_id")
+Step 6: CREATE INDEX "NFTCategories_nftId_idx" ON "public"."NFTCategories" ("nft_id")
+Step 7: CREATE TABLE "public"."ProductionQuality" ("production_quality_id" uuid NOT NULL DEFAULT uuid_generate_v4(), "description" text[] NULL, "quality_type" text NOT NULL, PRIMARY KEY ("production_quality_id"))
+Step 8: CREATE TABLE "public"."NFTProductionQualities" ("nft_id" uuid NOT NULL, "production_quality_id" uuid NOT NULL, PRIMARY KEY ("nft_id", "production_quality_id"), CONSTRAINT "NFTProductionQualities_nft_id_fkey" FOREIGN KEY ("nft_id") REFERENCES "public"."NFTs" ("nft_id") ON DELETE CASCADE, CONSTRAINT "NFTProductionQualities_production_quality_id_fkey" FOREIGN KEY ("production_quality_id") REFERENCES "public"."ProductionQuality" ("production_quality_id") ON DELETE CASCADE)
+Step 9: CREATE INDEX "NFTProductionQualities_nftId_idx" ON "public"."NFTProductionQualities" ("nft_id")
+Step 10: CREATE INDEX "NFTProductionQualities_productionQualityId_idx" ON "public"."NFTProductionQualities" ("production_quality_id")
+Step 11: CREATE TABLE "public"."TechnicalSpecifications" ("tech_spec_id" uuid NOT NULL DEFAULT uuid_generate_v4(), "audio_quality" text NOT NULL, "equipment" text[] NULL, "post_production_capabilities" text[] NULL, "sample_rate" text NOT NULL, PRIMARY KEY ("tech_spec_id"))
+Step 12: CREATE TABLE "public"."NFTTechnicalSpecifications" ("nft_id" uuid NOT NULL, "technical_specification_id" uuid NOT NULL, PRIMARY KEY ("nft_id", "technical_specification_id"), CONSTRAINT "NFTTechnicalSpecifications_nft_id_fkey" FOREIGN KEY ("nft_id") REFERENCES "public"."NFTs" ("nft_id") ON DELETE CASCADE, CONSTRAINT "NFTTechnicalSpecifications_technical_specification_id_fkey" FOREIGN KEY ("technical_specification_id") REFERENCES "public"."TechnicalSpecifications" ("tech_spec_id") ON DELETE CASCADE)
+Step 13: CREATE INDEX "NFTTechnicalSpecifications_nftId_idx" ON "public"."NFTTechnicalSpecifications" ("nft_id")
+Step 14: CREATE INDEX "NFTTechnicalSpecifications_technicalSpecificationId_idx" ON "public"."NFTTechnicalSpecifications" ("technical_specification_id")
+Step 15: CREATE TABLE "public"."VoiceTraits" ("trait_id" uuid NOT NULL DEFAULT uuid_generate_v4(), "category" text NOT NULL, "value" text NOT NULL, PRIMARY KEY ("trait_id"))
+Step 16: CREATE TABLE "public"."NFTVoiceTraits" ("nft_id" uuid NOT NULL, "voice_trait_id" uuid NOT NULL, PRIMARY KEY ("nft_id", "voice_trait_id"), CONSTRAINT "NFTVoiceTraits_nft_id_fkey" FOREIGN KEY ("nft_id") REFERENCES "public"."NFTs" ("nft_id") ON DELETE CASCADE, CONSTRAINT "NFTVoiceTraits_voice_trait_id_fkey" FOREIGN KEY ("voice_trait_id") REFERENCES "public"."VoiceTraits" ("trait_id") ON DELETE CASCADE)
+Step 17: CREATE INDEX "NFTVoiceTraits_nftId_idx" ON "public"."NFTVoiceTraits" ("nft_id")
+Step 18: CREATE INDEX "NFTVoiceTraits_voiceTraitId_idx" ON "public"."NFTVoiceTraits" ("voice_trait_id")
+Step 19: CREATE TABLE "public"."ExperienceLevels" ("experience_level_id" uuid NOT NULL DEFAULT uuid_generate_v4(), "description" text[] NULL, "level" text NOT NULL, PRIMARY KEY ("experience_level_id"))
+Step 20: ALTER TABLE "public"."Users" ADD COLUMN "geo_location" text NULL, ADD COLUMN "primary_language" text NULL, ADD COLUMN "regional_dialect" text NULL, ADD COLUMN "secondary_languages" text[] NULL, ADD COLUMN "studio_availability" text NULL, ADD COLUMN "time_zone" text NULL
+Step 21: CREATE TABLE "public"."UserExperiences" ("user_id" uuid NOT NULL, "experience_level_id" uuid NOT NULL, PRIMARY KEY ("user_id", "experience_level_id"), CONSTRAINT "UserExperiences_experience_level_id_fkey" FOREIGN KEY ("experience_level_id") REFERENCES "public"."ExperienceLevels" ("experience_level_id") ON DELETE CASCADE, CONSTRAINT "UserExperiences_user_id_fkey" FOREIGN KEY ("user_id") REFERENCES "public"."Users" ("user_id") ON DELETE CASCADE)
+Step 22: CREATE INDEX "UserExperiences_experienceLevelId_idx" ON "public"."UserExperiences" ("experience_level_id")
+Step 23: CREATE INDEX "UserExperiences_userId_idx" ON "public"."UserExperiences" ("user_id")
+I1026 06:41:56.418279   82074 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 145d] UpdateSchema(): done sources: schema/schema.gql [4961B] 
+I1026 06:41:56.418387   82074 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 145d] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
+I1026 06:41:56.453602   82074 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+I1026 06:41:56.455505   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/query.gql [15048B] prelude.gql [60423B] main/mutation.gql [43159B] main/implicit.gql [4343B] main/input.gql [69593B] main/relation.gql [19492B] 
+I1026 06:41:56.455880   82074 collector.go:107] connector "default" javascriptSdk wrote into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+Generated sources: index.d.ts [1784B] esm/index.esm.js [207B] esm/package.json [17B] index.cjs.js [248B] package.json [623B] 
+I1026 06:41:56.458607   82074 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation
+I1026 06:41:56.458628   82074 load.go:115] Finished reloading
+I1026 06:50:55.881698   82074 load.go:37] Reloading schema and connectors...
+E1026 06:50:55.895985   82074 load.go:79] Could not load sources: <nil>
+I1026 06:50:55.897635   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/input.gql [69593B] prelude.gql [60423B] main/relation.gql [19492B] main/query.gql [15048B] main/mutation.gql [43159B] main/implicit.gql [4343B] 
+I1026 06:50:55.897688   82074 load.go:80] Finished reloading
+I1026 06:51:20.998362   82074 load.go:37] Reloading schema and connectors...
+E1026 06:51:21.005447   82074 load.go:79] Could not load sources: <nil>
+I1026 06:51:21.006030   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/implicit.gql [4343B] main/input.gql [69593B] main/relation.gql [19492B] main/query.gql [15048B] main/mutation.gql [43159B] 
+I1026 06:51:21.006046   82074 load.go:80] Finished reloading
+I1026 06:51:22.876731   82074 load.go:37] Reloading schema and connectors...
+E1026 06:51:22.885050   82074 load.go:79] Could not load sources: <nil>
+I1026 06:51:22.887474   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/relation.gql [19492B] main/query.gql [15048B] prelude.gql [60423B] main/mutation.gql [43159B] main/implicit.gql [4343B] main/input.gql [69593B] 
+I1026 06:51:22.887521   82074 load.go:80] Finished reloading
+I1026 06:52:17.848700   82074 load.go:37] Reloading schema and connectors...
+E1026 06:52:17.896333   82074 load.go:79] Could not load sources: <nil>
+I1026 06:52:17.899424   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/mutation.gql [43159B] main/implicit.gql [4343B] main/input.gql [69593B] main/relation.gql [19492B] main/query.gql [15048B] prelude.gql [60423B] 
+I1026 06:52:17.899473   82074 load.go:80] Finished reloading
+I1026 06:52:19.758887   82074 load.go:37] Reloading schema and connectors...
+E1026 06:52:19.764924   82074 load.go:79] Could not load sources: <nil>
+I1026 06:52:19.766616   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/relation.gql [19492B] main/query.gql [15048B] main/mutation.gql [43159B] main/implicit.gql [4343B] main/input.gql [69593B] prelude.gql [60423B] 
+I1026 06:52:19.766647   82074 load.go:80] Finished reloading
+I1026 06:52:21.469238   82074 load.go:37] Reloading schema and connectors...
+E1026 06:52:21.475614   82074 load.go:79] Could not load sources: <nil>
+I1026 06:52:21.477459   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/query.gql [15048B] main/mutation.gql [43159B] main/implicit.gql [4343B] prelude.gql [60423B] main/input.gql [69593B] main/relation.gql [19492B] 
+I1026 06:52:21.477486   82074 load.go:80] Finished reloading
+I1026 06:52:58.724767   82074 load.go:37] Reloading schema and connectors...
+E1026 06:52:58.727573   82074 load.go:79] Could not load sources: <nil>
+I1026 06:52:58.728717   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/implicit.gql [4343B] main/input.gql [69593B] main/relation.gql [19492B] main/query.gql [15048B] main/mutation.gql [43159B] 
+I1026 06:52:58.728741   82074 load.go:80] Finished reloading
+I1026 06:53:00.946501   82074 load.go:37] Reloading schema and connectors...
+E1026 06:53:00.955175   82074 load.go:79] Could not load sources: <nil>
+I1026 06:53:00.958439   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/input.gql [69593B] main/relation.gql [19492B] main/query.gql [15048B] main/mutation.gql [43159B] prelude.gql [60423B] main/implicit.gql [4343B] 
+I1026 06:53:00.958535   82074 load.go:80] Finished reloading
+I1026 06:53:02.961385   82074 load.go:37] Reloading schema and connectors...
+E1026 06:53:02.979503   82074 load.go:79] Could not load sources: <nil>
+I1026 06:53:02.981145   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/query.gql [15048B] main/mutation.gql [43159B] main/implicit.gql [4343B] main/input.gql [69593B] prelude.gql [60423B] main/relation.gql [19492B] 
+I1026 06:53:02.981177   82074 load.go:80] Finished reloading
+I1026 06:54:20.804760   82074 load.go:37] Reloading schema and connectors...
+E1026 06:54:20.818823   82074 load.go:79] Could not load sources: <nil>
+I1026 06:54:20.823435   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/input.gql [69593B] main/relation.gql [19492B] main/query.gql [15048B] main/mutation.gql [43159B] main/implicit.gql [4343B] prelude.gql [60423B] 
+I1026 06:54:20.823515   82074 load.go:80] Finished reloading
+I1026 06:54:22.900523   82074 load.go:37] Reloading schema and connectors...
+E1026 06:54:22.913338   82074 load.go:79] Could not load sources: <nil>
+I1026 06:54:22.916101   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/input.gql [69593B] main/relation.gql [19492B] main/query.gql [15048B] main/mutation.gql [43159B] prelude.gql [60423B] main/implicit.gql [4343B] 
+I1026 06:54:22.916151   82074 load.go:80] Finished reloading
+I1026 06:54:24.811392   82074 load.go:37] Reloading schema and connectors...
+E1026 06:54:24.815579   82074 load.go:79] Could not load sources: <nil>
+I1026 06:54:24.817002   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/input.gql [69593B] main/relation.gql [19492B] main/query.gql [15048B] main/mutation.gql [43159B] main/implicit.gql [4343B] 
+I1026 06:54:24.817027   82074 load.go:80] Finished reloading
+I1026 06:59:12.969319   82074 load.go:37] Reloading schema and connectors...
+I1026 06:59:13.068535   82074 migrate.go:28] Running migration SQL:
+Step 1: ALTER TABLE "public"."Users" DROP COLUMN "primary_language", DROP COLUMN "regional_dialect", DROP COLUMN "secondary_languages", DROP COLUMN "studio_availability", DROP COLUMN "time_zone", ADD COLUMN "smart_contract_address" text NULL, ADD COLUMN "wallet_address" text NOT NULL
+Step 2: CREATE TABLE "public"."Languages" ("language_id" uuid NOT NULL DEFAULT uuid_generate_v4(), "name" text NOT NULL, PRIMARY KEY ("language_id"))
+Step 3: ALTER TABLE "public"."NFTs" ADD COLUMN "smart_contract_address" text NULL
+Step 4: CREATE TABLE "public"."NFTLanguages" ("nft_id" uuid NOT NULL, "language_id" uuid NOT NULL, PRIMARY KEY ("nft_id", "language_id"), CONSTRAINT "NFTLanguages_language_id_fkey" FOREIGN KEY ("language_id") REFERENCES "public"."Languages" ("language_id") ON DELETE CASCADE, CONSTRAINT "NFTLanguages_nft_id_fkey" FOREIGN KEY ("nft_id") REFERENCES "public"."NFTs" ("nft_id") ON DELETE CASCADE)
+Step 5: CREATE INDEX "NFTLanguages_languageId_idx" ON "public"."NFTLanguages" ("language_id")
+Step 6: CREATE INDEX "NFTLanguages_nftId_idx" ON "public"."NFTLanguages" ("nft_id")
+Step 7: CREATE TABLE "public"."RegionalDialects" ("regional_dialect_id" uuid NOT NULL DEFAULT uuid_generate_v4(), "name" text NOT NULL, PRIMARY KEY ("regional_dialect_id"))
+Step 8: CREATE TABLE "public"."NFTRegionalDialects" ("nft_id" uuid NOT NULL, "regional_dialect_id" uuid NOT NULL, PRIMARY KEY ("nft_id", "regional_dialect_id"), CONSTRAINT "NFTRegionalDialects_nft_id_fkey" FOREIGN KEY ("nft_id") REFERENCES "public"."NFTs" ("nft_id") ON DELETE CASCADE, CONSTRAINT "NFTRegionalDialects_regional_dialect_id_fkey" FOREIGN KEY ("regional_dialect_id") REFERENCES "public"."RegionalDialects" ("regional_dialect_id") ON DELETE CASCADE)
+Step 9: CREATE INDEX "NFTRegionalDialects_nftId_idx" ON "public"."NFTRegionalDialects" ("nft_id")
+Step 10: CREATE INDEX "NFTRegionalDialects_regionalDialectId_idx" ON "public"."NFTRegionalDialects" ("regional_dialect_id")
+Step 11: CREATE TABLE "public"."SecondaryLanguages" ("secondary_language_id" uuid NOT NULL DEFAULT uuid_generate_v4(), "proficiency" text NOT NULL, PRIMARY KEY ("secondary_language_id"))
+Step 12: CREATE TABLE "public"."NFTSecondaryLanguages" ("nft_id" uuid NOT NULL, "secondary_language_id" uuid NOT NULL, PRIMARY KEY ("nft_id", "secondary_language_id"), CONSTRAINT "NFTSecondaryLanguages_nft_id_fkey" FOREIGN KEY ("nft_id") REFERENCES "public"."NFTs" ("nft_id") ON DELETE CASCADE, CONSTRAINT "NFTSecondaryLanguages_secondary_language_id_fkey" FOREIGN KEY ("secondary_language_id") REFERENCES "public"."SecondaryLanguages" ("secondary_language_id") ON DELETE CASCADE)
+Step 13: CREATE INDEX "NFTSecondaryLanguages_nftId_idx" ON "public"."NFTSecondaryLanguages" ("nft_id")
+Step 14: CREATE INDEX "NFTSecondaryLanguages_secondaryLanguageId_idx" ON "public"."NFTSecondaryLanguages" ("secondary_language_id")
+Step 15: CREATE TABLE "public"."StudioAvailabilities" ("studio_availability_id" uuid NOT NULL DEFAULT uuid_generate_v4(), "availability" text NOT NULL, PRIMARY KEY ("studio_availability_id"))
+Step 16: CREATE TABLE "public"."NFTStudioAvailabilities" ("nft_id" uuid NOT NULL, "studio_availability_id" uuid NOT NULL, PRIMARY KEY ("nft_id", "studio_availability_id"), CONSTRAINT "NFTStudioAvailabilities_nft_id_fkey" FOREIGN KEY ("nft_id") REFERENCES "public"."NFTs" ("nft_id") ON DELETE CASCADE, CONSTRAINT "NFTStudioAvailabilities_studio_availability_id_fkey" FOREIGN KEY ("studio_availability_id") REFERENCES "public"."StudioAvailabilities" ("studio_availability_id") ON DELETE CASCADE)
+Step 17: CREATE INDEX "NFTStudioAvailabilities_nftId_idx" ON "public"."NFTStudioAvailabilities" ("nft_id")
+Step 18: CREATE INDEX "NFTStudioAvailabilities_studioAvailabilityId_idx" ON "public"."NFTStudioAvailabilities" ("studio_availability_id")
+Step 19: CREATE TABLE "public"."StyleToneCategories" ("style_tone_category_id" uuid NOT NULL DEFAULT uuid_generate_v4(), "name" text NOT NULL, PRIMARY KEY ("style_tone_category_id"))
+Step 20: CREATE TABLE "public"."StyleToneOptions" ("style_tone_option_id" uuid NOT NULL DEFAULT uuid_generate_v4(), "category_id" uuid NOT NULL, "option" text NOT NULL, PRIMARY KEY ("style_tone_option_id"), CONSTRAINT "StyleToneOptions_category_id_fkey" FOREIGN KEY ("category_id") REFERENCES "public"."StyleToneCategories" ("style_tone_category_id") ON DELETE CASCADE)
+Step 21: CREATE INDEX "StyleToneOptions_categoryId_idx" ON "public"."StyleToneOptions" ("category_id")
+Step 22: CREATE TABLE "public"."NFTStyleToneOptions" ("nft_id" uuid NOT NULL, "style_tone_option_id" uuid NOT NULL, PRIMARY KEY ("nft_id", "style_tone_option_id"), CONSTRAINT "NFTStyleToneOptions_nft_id_fkey" FOREIGN KEY ("nft_id") REFERENCES "public"."NFTs" ("nft_id") ON DELETE CASCADE, CONSTRAINT "NFTStyleToneOptions_style_tone_option_id_fkey" FOREIGN KEY ("style_tone_option_id") REFERENCES "public"."StyleToneOptions" ("style_tone_option_id") ON DELETE CASCADE)
+Step 23: CREATE INDEX "NFTStyleToneOptions_nftId_idx" ON "public"."NFTStyleToneOptions" ("nft_id")
+Step 24: CREATE INDEX "NFTStyleToneOptions_styleToneOptionId_idx" ON "public"."NFTStyleToneOptions" ("style_tone_option_id")
+Step 25: CREATE TABLE "public"."TimeZones" ("time_zone_id" uuid NOT NULL DEFAULT uuid_generate_v4(), "name" text NOT NULL, PRIMARY KEY ("time_zone_id"))
+Step 26: CREATE TABLE "public"."NFTTimeZones" ("nft_id" uuid NOT NULL, "time_zone_id" uuid NOT NULL, PRIMARY KEY ("nft_id", "time_zone_id"), CONSTRAINT "NFTTimeZones_nft_id_fkey" FOREIGN KEY ("nft_id") REFERENCES "public"."NFTs" ("nft_id") ON DELETE CASCADE, CONSTRAINT "NFTTimeZones_time_zone_id_fkey" FOREIGN KEY ("time_zone_id") REFERENCES "public"."TimeZones" ("time_zone_id") ON DELETE CASCADE)
+Step 27: CREATE INDEX "NFTTimeZones_nftId_idx" ON "public"."NFTTimeZones" ("nft_id")
+Step 28: CREATE INDEX "NFTTimeZones_timeZoneId_idx" ON "public"."NFTTimeZones" ("time_zone_id")
+I1026 06:59:13.138710   82074 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 145d] UpdateSchema(): done sources: schema/schema.gql [8324B] 
+I1026 06:59:13.138803   82074 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 145d] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
+I1026 06:59:13.188168   82074 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+I1026 06:59:13.189971   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/mutation.gql [84222B] main/implicit.gql [8039B] main/input.gql [123471B] main/relation.gql [37367B] prelude.gql [60423B] main/query.gql [29309B] 
+I1026 06:59:13.190290   82074 collector.go:107] connector "default" javascriptSdk wrote into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+Generated sources: index.d.ts [3269B] esm/index.esm.js [207B] esm/package.json [17B] index.cjs.js [248B] package.json [623B] 
+I1026 06:59:13.191528   82074 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation
+I1026 06:59:13.191546   82074 load.go:115] Finished reloading

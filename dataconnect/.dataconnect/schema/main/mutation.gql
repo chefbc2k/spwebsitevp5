@@ -1,5 +1,32 @@
 extend type Mutation {
   """
+  ✨ Insert a single `Category` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  category_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: Category_Data!
+  ): Category_KeyOutput! @fdc_generated(from: "Category", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `ExperienceLevel` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  experienceLevel_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: ExperienceLevel_Data!
+  ): ExperienceLevel_KeyOutput! @fdc_generated(from: "ExperienceLevel", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `Language` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  language_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: Language_Data!
+  ): Language_KeyOutput! @fdc_generated(from: "Language", purpose: INSERT_SINGLE)
+  """
   ✨ Insert a single `NFT` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
   nft_insert(
@@ -9,6 +36,96 @@ extend type Mutation {
     data: NFT_Data!
   ): NFT_KeyOutput! @fdc_generated(from: "NFT", purpose: INSERT_SINGLE)
   """
+  ✨ Insert a single `NFTCategory` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  nFTCategory_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: NFTCategory_Data!
+  ): NFTCategory_KeyOutput! @fdc_generated(from: "NFTCategory", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `NFTLanguage` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  nFTLanguage_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: NFTLanguage_Data!
+  ): NFTLanguage_KeyOutput! @fdc_generated(from: "NFTLanguage", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `NFTProductionQuality` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  nFTProductionQuality_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: NFTProductionQuality_Data!
+  ): NFTProductionQuality_KeyOutput! @fdc_generated(from: "NFTProductionQuality", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `NFTRegionalDialect` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  nFTRegionalDialect_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: NFTRegionalDialect_Data!
+  ): NFTRegionalDialect_KeyOutput! @fdc_generated(from: "NFTRegionalDialect", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `NFTSecondaryLanguage` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  nFTSecondaryLanguage_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: NFTSecondaryLanguage_Data!
+  ): NFTSecondaryLanguage_KeyOutput! @fdc_generated(from: "NFTSecondaryLanguage", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `NFTStudioAvailability` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  nFTStudioAvailability_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: NFTStudioAvailability_Data!
+  ): NFTStudioAvailability_KeyOutput! @fdc_generated(from: "NFTStudioAvailability", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `NFTStyleToneOption` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  nFTStyleToneOption_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: NFTStyleToneOption_Data!
+  ): NFTStyleToneOption_KeyOutput! @fdc_generated(from: "NFTStyleToneOption", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `NFTTechnicalSpecification` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  nFTTechnicalSpecification_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: NFTTechnicalSpecification_Data!
+  ): NFTTechnicalSpecification_KeyOutput! @fdc_generated(from: "NFTTechnicalSpecification", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `NFTTimeZone` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  nFTTimeZone_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: NFTTimeZone_Data!
+  ): NFTTimeZone_KeyOutput! @fdc_generated(from: "NFTTimeZone", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `NFTVoiceTrait` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  nFTVoiceTrait_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: NFTVoiceTrait_Data!
+  ): NFTVoiceTrait_KeyOutput! @fdc_generated(from: "NFTVoiceTrait", purpose: INSERT_SINGLE)
+  """
   ✨ Insert a single `Ownership` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
   ownership_insert(
@@ -17,6 +134,78 @@ extend type Mutation {
     """
     data: Ownership_Data!
   ): Ownership_KeyOutput! @fdc_generated(from: "Ownership", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `ProductionQuality` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  productionQuality_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: ProductionQuality_Data!
+  ): ProductionQuality_KeyOutput! @fdc_generated(from: "ProductionQuality", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `RegionalDialect` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  regionalDialect_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: RegionalDialect_Data!
+  ): RegionalDialect_KeyOutput! @fdc_generated(from: "RegionalDialect", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `SecondaryLanguage` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  secondaryLanguage_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: SecondaryLanguage_Data!
+  ): SecondaryLanguage_KeyOutput! @fdc_generated(from: "SecondaryLanguage", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `StudioAvailability` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  studioAvailability_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: StudioAvailability_Data!
+  ): StudioAvailability_KeyOutput! @fdc_generated(from: "StudioAvailability", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `StyleToneCategory` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  styleToneCategory_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: StyleToneCategory_Data!
+  ): StyleToneCategory_KeyOutput! @fdc_generated(from: "StyleToneCategory", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `StyleToneOption` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  styleToneOption_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: StyleToneOption_Data!
+  ): StyleToneOption_KeyOutput! @fdc_generated(from: "StyleToneOption", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `TechnicalSpecification` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  technicalSpecification_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: TechnicalSpecification_Data!
+  ): TechnicalSpecification_KeyOutput! @fdc_generated(from: "TechnicalSpecification", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `TimeZone` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  timeZone_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: TimeZone_Data!
+  ): TimeZone_KeyOutput! @fdc_generated(from: "TimeZone", purpose: INSERT_SINGLE)
   """
   ✨ Insert a single `Transaction` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
@@ -36,6 +225,51 @@ extend type Mutation {
     data: User_Data!
   ): User_KeyOutput! @fdc_generated(from: "User", purpose: INSERT_SINGLE)
   """
+  ✨ Insert a single `UserExperience` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userExperience_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: UserExperience_Data!
+  ): UserExperience_KeyOutput! @fdc_generated(from: "UserExperience", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert a single `VoiceTrait` into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceTrait_insert(
+    """
+    Data object to insert into the table.
+    """
+    data: VoiceTrait_Data!
+  ): VoiceTrait_KeyOutput! @fdc_generated(from: "VoiceTrait", purpose: INSERT_SINGLE)
+  """
+  ✨ Insert `Category` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  category_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [Category_Data!]!
+  ): [Category_KeyOutput!]! @fdc_generated(from: "Category", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `ExperienceLevel` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  experienceLevel_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [ExperienceLevel_Data!]!
+  ): [ExperienceLevel_KeyOutput!]! @fdc_generated(from: "ExperienceLevel", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `Language` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  language_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [Language_Data!]!
+  ): [Language_KeyOutput!]! @fdc_generated(from: "Language", purpose: INSERT_MULTIPLE)
+  """
   ✨ Insert `NFT` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
   nft_insertMany(
@@ -45,6 +279,96 @@ extend type Mutation {
     data: [NFT_Data!]!
   ): [NFT_KeyOutput!]! @fdc_generated(from: "NFT", purpose: INSERT_MULTIPLE)
   """
+  ✨ Insert `NFTCategory` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  nFTCategory_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [NFTCategory_Data!]!
+  ): [NFTCategory_KeyOutput!]! @fdc_generated(from: "NFTCategory", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `NFTLanguage` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  nFTLanguage_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [NFTLanguage_Data!]!
+  ): [NFTLanguage_KeyOutput!]! @fdc_generated(from: "NFTLanguage", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `NFTProductionQuality` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  nFTProductionQuality_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [NFTProductionQuality_Data!]!
+  ): [NFTProductionQuality_KeyOutput!]! @fdc_generated(from: "NFTProductionQuality", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `NFTRegionalDialect` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  nFTRegionalDialect_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [NFTRegionalDialect_Data!]!
+  ): [NFTRegionalDialect_KeyOutput!]! @fdc_generated(from: "NFTRegionalDialect", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `NFTSecondaryLanguage` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  nFTSecondaryLanguage_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [NFTSecondaryLanguage_Data!]!
+  ): [NFTSecondaryLanguage_KeyOutput!]! @fdc_generated(from: "NFTSecondaryLanguage", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `NFTStudioAvailability` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  nFTStudioAvailability_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [NFTStudioAvailability_Data!]!
+  ): [NFTStudioAvailability_KeyOutput!]! @fdc_generated(from: "NFTStudioAvailability", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `NFTStyleToneOption` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  nFTStyleToneOption_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [NFTStyleToneOption_Data!]!
+  ): [NFTStyleToneOption_KeyOutput!]! @fdc_generated(from: "NFTStyleToneOption", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `NFTTechnicalSpecification` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  nFTTechnicalSpecification_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [NFTTechnicalSpecification_Data!]!
+  ): [NFTTechnicalSpecification_KeyOutput!]! @fdc_generated(from: "NFTTechnicalSpecification", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `NFTTimeZone` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  nFTTimeZone_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [NFTTimeZone_Data!]!
+  ): [NFTTimeZone_KeyOutput!]! @fdc_generated(from: "NFTTimeZone", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `NFTVoiceTrait` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  nFTVoiceTrait_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [NFTVoiceTrait_Data!]!
+  ): [NFTVoiceTrait_KeyOutput!]! @fdc_generated(from: "NFTVoiceTrait", purpose: INSERT_MULTIPLE)
+  """
   ✨ Insert `Ownership` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
   ownership_insertMany(
@@ -53,6 +377,78 @@ extend type Mutation {
     """
     data: [Ownership_Data!]!
   ): [Ownership_KeyOutput!]! @fdc_generated(from: "Ownership", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `ProductionQuality` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  productionQuality_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [ProductionQuality_Data!]!
+  ): [ProductionQuality_KeyOutput!]! @fdc_generated(from: "ProductionQuality", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `RegionalDialect` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  regionalDialect_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [RegionalDialect_Data!]!
+  ): [RegionalDialect_KeyOutput!]! @fdc_generated(from: "RegionalDialect", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `SecondaryLanguage` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  secondaryLanguage_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [SecondaryLanguage_Data!]!
+  ): [SecondaryLanguage_KeyOutput!]! @fdc_generated(from: "SecondaryLanguage", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `StudioAvailability` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  studioAvailability_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [StudioAvailability_Data!]!
+  ): [StudioAvailability_KeyOutput!]! @fdc_generated(from: "StudioAvailability", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `StyleToneCategory` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  styleToneCategory_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [StyleToneCategory_Data!]!
+  ): [StyleToneCategory_KeyOutput!]! @fdc_generated(from: "StyleToneCategory", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `StyleToneOption` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  styleToneOption_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [StyleToneOption_Data!]!
+  ): [StyleToneOption_KeyOutput!]! @fdc_generated(from: "StyleToneOption", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `TechnicalSpecification` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  technicalSpecification_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [TechnicalSpecification_Data!]!
+  ): [TechnicalSpecification_KeyOutput!]! @fdc_generated(from: "TechnicalSpecification", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `TimeZone` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  timeZone_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [TimeZone_Data!]!
+  ): [TimeZone_KeyOutput!]! @fdc_generated(from: "TimeZone", purpose: INSERT_MULTIPLE)
   """
   ✨ Insert `Transaction` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
   """
@@ -72,6 +468,51 @@ extend type Mutation {
     data: [User_Data!]!
   ): [User_KeyOutput!]! @fdc_generated(from: "User", purpose: INSERT_MULTIPLE)
   """
+  ✨ Insert `UserExperience` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  userExperience_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [UserExperience_Data!]!
+  ): [UserExperience_KeyOutput!]! @fdc_generated(from: "UserExperience", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert `VoiceTrait` objects into the table. Columns not specified in `data` will receive defaults (e.g. `null`).
+  """
+  voiceTrait_insertMany(
+    """
+    List of data objects to insert into the table.
+    """
+    data: [VoiceTrait_Data!]!
+  ): [VoiceTrait_KeyOutput!]! @fdc_generated(from: "VoiceTrait", purpose: INSERT_MULTIPLE)
+  """
+  ✨ Insert or update a single `Category` into the table, based on the primary key. Returns the key of the newly inserted `Category`.
+  """
+  category_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: Category_Data!
+  ): Category_KeyOutput! @fdc_generated(from: "Category", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `ExperienceLevel` into the table, based on the primary key. Returns the key of the newly inserted `ExperienceLevel`.
+  """
+  experienceLevel_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: ExperienceLevel_Data!
+  ): ExperienceLevel_KeyOutput! @fdc_generated(from: "ExperienceLevel", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `Language` into the table, based on the primary key. Returns the key of the newly inserted `Language`.
+  """
+  language_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: Language_Data!
+  ): Language_KeyOutput! @fdc_generated(from: "Language", purpose: UPSERT_SINGLE)
+  """
   ✨ Insert or update a single `NFT` into the table, based on the primary key. Returns the key of the newly inserted `NFT`.
   """
   nft_upsert(
@@ -81,6 +522,96 @@ extend type Mutation {
     data: NFT_Data!
   ): NFT_KeyOutput! @fdc_generated(from: "NFT", purpose: UPSERT_SINGLE)
   """
+  ✨ Insert or update a single `NFTCategory` into the table, based on the primary key. Returns the key of the newly inserted `NFTCategory`.
+  """
+  nFTCategory_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: NFTCategory_Data!
+  ): NFTCategory_KeyOutput! @fdc_generated(from: "NFTCategory", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `NFTLanguage` into the table, based on the primary key. Returns the key of the newly inserted `NFTLanguage`.
+  """
+  nFTLanguage_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: NFTLanguage_Data!
+  ): NFTLanguage_KeyOutput! @fdc_generated(from: "NFTLanguage", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `NFTProductionQuality` into the table, based on the primary key. Returns the key of the newly inserted `NFTProductionQuality`.
+  """
+  nFTProductionQuality_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: NFTProductionQuality_Data!
+  ): NFTProductionQuality_KeyOutput! @fdc_generated(from: "NFTProductionQuality", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `NFTRegionalDialect` into the table, based on the primary key. Returns the key of the newly inserted `NFTRegionalDialect`.
+  """
+  nFTRegionalDialect_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: NFTRegionalDialect_Data!
+  ): NFTRegionalDialect_KeyOutput! @fdc_generated(from: "NFTRegionalDialect", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `NFTSecondaryLanguage` into the table, based on the primary key. Returns the key of the newly inserted `NFTSecondaryLanguage`.
+  """
+  nFTSecondaryLanguage_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: NFTSecondaryLanguage_Data!
+  ): NFTSecondaryLanguage_KeyOutput! @fdc_generated(from: "NFTSecondaryLanguage", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `NFTStudioAvailability` into the table, based on the primary key. Returns the key of the newly inserted `NFTStudioAvailability`.
+  """
+  nFTStudioAvailability_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: NFTStudioAvailability_Data!
+  ): NFTStudioAvailability_KeyOutput! @fdc_generated(from: "NFTStudioAvailability", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `NFTStyleToneOption` into the table, based on the primary key. Returns the key of the newly inserted `NFTStyleToneOption`.
+  """
+  nFTStyleToneOption_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: NFTStyleToneOption_Data!
+  ): NFTStyleToneOption_KeyOutput! @fdc_generated(from: "NFTStyleToneOption", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `NFTTechnicalSpecification` into the table, based on the primary key. Returns the key of the newly inserted `NFTTechnicalSpecification`.
+  """
+  nFTTechnicalSpecification_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: NFTTechnicalSpecification_Data!
+  ): NFTTechnicalSpecification_KeyOutput! @fdc_generated(from: "NFTTechnicalSpecification", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `NFTTimeZone` into the table, based on the primary key. Returns the key of the newly inserted `NFTTimeZone`.
+  """
+  nFTTimeZone_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: NFTTimeZone_Data!
+  ): NFTTimeZone_KeyOutput! @fdc_generated(from: "NFTTimeZone", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `NFTVoiceTrait` into the table, based on the primary key. Returns the key of the newly inserted `NFTVoiceTrait`.
+  """
+  nFTVoiceTrait_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: NFTVoiceTrait_Data!
+  ): NFTVoiceTrait_KeyOutput! @fdc_generated(from: "NFTVoiceTrait", purpose: UPSERT_SINGLE)
+  """
   ✨ Insert or update a single `Ownership` into the table, based on the primary key. Returns the key of the newly inserted `Ownership`.
   """
   ownership_upsert(
@@ -89,6 +620,78 @@ extend type Mutation {
     """
     data: Ownership_Data!
   ): Ownership_KeyOutput! @fdc_generated(from: "Ownership", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `ProductionQuality` into the table, based on the primary key. Returns the key of the newly inserted `ProductionQuality`.
+  """
+  productionQuality_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: ProductionQuality_Data!
+  ): ProductionQuality_KeyOutput! @fdc_generated(from: "ProductionQuality", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `RegionalDialect` into the table, based on the primary key. Returns the key of the newly inserted `RegionalDialect`.
+  """
+  regionalDialect_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: RegionalDialect_Data!
+  ): RegionalDialect_KeyOutput! @fdc_generated(from: "RegionalDialect", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `SecondaryLanguage` into the table, based on the primary key. Returns the key of the newly inserted `SecondaryLanguage`.
+  """
+  secondaryLanguage_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: SecondaryLanguage_Data!
+  ): SecondaryLanguage_KeyOutput! @fdc_generated(from: "SecondaryLanguage", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `StudioAvailability` into the table, based on the primary key. Returns the key of the newly inserted `StudioAvailability`.
+  """
+  studioAvailability_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: StudioAvailability_Data!
+  ): StudioAvailability_KeyOutput! @fdc_generated(from: "StudioAvailability", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `StyleToneCategory` into the table, based on the primary key. Returns the key of the newly inserted `StyleToneCategory`.
+  """
+  styleToneCategory_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: StyleToneCategory_Data!
+  ): StyleToneCategory_KeyOutput! @fdc_generated(from: "StyleToneCategory", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `StyleToneOption` into the table, based on the primary key. Returns the key of the newly inserted `StyleToneOption`.
+  """
+  styleToneOption_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: StyleToneOption_Data!
+  ): StyleToneOption_KeyOutput! @fdc_generated(from: "StyleToneOption", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `TechnicalSpecification` into the table, based on the primary key. Returns the key of the newly inserted `TechnicalSpecification`.
+  """
+  technicalSpecification_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: TechnicalSpecification_Data!
+  ): TechnicalSpecification_KeyOutput! @fdc_generated(from: "TechnicalSpecification", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `TimeZone` into the table, based on the primary key. Returns the key of the newly inserted `TimeZone`.
+  """
+  timeZone_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: TimeZone_Data!
+  ): TimeZone_KeyOutput! @fdc_generated(from: "TimeZone", purpose: UPSERT_SINGLE)
   """
   ✨ Insert or update a single `Transaction` into the table, based on the primary key. Returns the key of the newly inserted `Transaction`.
   """
@@ -107,6 +710,96 @@ extend type Mutation {
     """
     data: User_Data!
   ): User_KeyOutput! @fdc_generated(from: "User", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `UserExperience` into the table, based on the primary key. Returns the key of the newly inserted `UserExperience`.
+  """
+  userExperience_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: UserExperience_Data!
+  ): UserExperience_KeyOutput! @fdc_generated(from: "UserExperience", purpose: UPSERT_SINGLE)
+  """
+  ✨ Insert or update a single `VoiceTrait` into the table, based on the primary key. Returns the key of the newly inserted `VoiceTrait`.
+  """
+  voiceTrait_upsert(
+    """
+    Data object to insert or update if it already exists.
+    """
+    data: VoiceTrait_Data!
+  ): VoiceTrait_KeyOutput! @fdc_generated(from: "VoiceTrait", purpose: UPSERT_SINGLE)
+  """
+  ✨ Update a single `Category` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  category_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Category_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Category_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: Category_Data!
+  ): Category_KeyOutput @fdc_generated(from: "Category", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `ExperienceLevel` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  experienceLevel_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: ExperienceLevel_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: ExperienceLevel_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: ExperienceLevel_Data!
+  ): ExperienceLevel_KeyOutput @fdc_generated(from: "ExperienceLevel", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `Language` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  language_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Language_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Language_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: Language_Data!
+  ): Language_KeyOutput @fdc_generated(from: "Language", purpose: UPDATE_SINGLE)
   """
   ✨ Update a single `NFT` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
   """
@@ -132,6 +825,196 @@ extend type Mutation {
     data: NFT_Data!
   ): NFT_KeyOutput @fdc_generated(from: "NFT", purpose: UPDATE_SINGLE)
   """
+  ✨ Update a single `NFTCategory` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  nFTCategory_update(
+    """
+    The key used to identify the object.
+    """
+    key: NFTCategory_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTCategory_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: NFTCategory_Data!
+  ): NFTCategory_KeyOutput @fdc_generated(from: "NFTCategory", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `NFTLanguage` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  nFTLanguage_update(
+    """
+    The key used to identify the object.
+    """
+    key: NFTLanguage_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTLanguage_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: NFTLanguage_Data!
+  ): NFTLanguage_KeyOutput @fdc_generated(from: "NFTLanguage", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `NFTProductionQuality` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  nFTProductionQuality_update(
+    """
+    The key used to identify the object.
+    """
+    key: NFTProductionQuality_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTProductionQuality_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: NFTProductionQuality_Data!
+  ): NFTProductionQuality_KeyOutput @fdc_generated(from: "NFTProductionQuality", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `NFTRegionalDialect` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  nFTRegionalDialect_update(
+    """
+    The key used to identify the object.
+    """
+    key: NFTRegionalDialect_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTRegionalDialect_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: NFTRegionalDialect_Data!
+  ): NFTRegionalDialect_KeyOutput @fdc_generated(from: "NFTRegionalDialect", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `NFTSecondaryLanguage` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  nFTSecondaryLanguage_update(
+    """
+    The key used to identify the object.
+    """
+    key: NFTSecondaryLanguage_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTSecondaryLanguage_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: NFTSecondaryLanguage_Data!
+  ): NFTSecondaryLanguage_KeyOutput @fdc_generated(from: "NFTSecondaryLanguage", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `NFTStudioAvailability` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  nFTStudioAvailability_update(
+    """
+    The key used to identify the object.
+    """
+    key: NFTStudioAvailability_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTStudioAvailability_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: NFTStudioAvailability_Data!
+  ): NFTStudioAvailability_KeyOutput @fdc_generated(from: "NFTStudioAvailability", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `NFTStyleToneOption` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  nFTStyleToneOption_update(
+    """
+    The key used to identify the object.
+    """
+    key: NFTStyleToneOption_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTStyleToneOption_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: NFTStyleToneOption_Data!
+  ): NFTStyleToneOption_KeyOutput @fdc_generated(from: "NFTStyleToneOption", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `NFTTechnicalSpecification` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  nFTTechnicalSpecification_update(
+    """
+    The key used to identify the object.
+    """
+    key: NFTTechnicalSpecification_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTTechnicalSpecification_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: NFTTechnicalSpecification_Data!
+  ): NFTTechnicalSpecification_KeyOutput @fdc_generated(from: "NFTTechnicalSpecification", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `NFTTimeZone` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  nFTTimeZone_update(
+    """
+    The key used to identify the object.
+    """
+    key: NFTTimeZone_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTTimeZone_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: NFTTimeZone_Data!
+  ): NFTTimeZone_KeyOutput @fdc_generated(from: "NFTTimeZone", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `NFTVoiceTrait` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  nFTVoiceTrait_update(
+    """
+    The key used to identify the object.
+    """
+    key: NFTVoiceTrait_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTVoiceTrait_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: NFTVoiceTrait_Data!
+  ): NFTVoiceTrait_KeyOutput @fdc_generated(from: "NFTVoiceTrait", purpose: UPDATE_SINGLE)
+  """
   ✨ Update a single `Ownership` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
   """
   ownership_update(
@@ -150,6 +1033,198 @@ extend type Mutation {
     """
     data: Ownership_Data!
   ): Ownership_KeyOutput @fdc_generated(from: "Ownership", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `ProductionQuality` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  productionQuality_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: ProductionQuality_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: ProductionQuality_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: ProductionQuality_Data!
+  ): ProductionQuality_KeyOutput @fdc_generated(from: "ProductionQuality", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `RegionalDialect` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  regionalDialect_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: RegionalDialect_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: RegionalDialect_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: RegionalDialect_Data!
+  ): RegionalDialect_KeyOutput @fdc_generated(from: "RegionalDialect", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `SecondaryLanguage` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  secondaryLanguage_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: SecondaryLanguage_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: SecondaryLanguage_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: SecondaryLanguage_Data!
+  ): SecondaryLanguage_KeyOutput @fdc_generated(from: "SecondaryLanguage", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `StudioAvailability` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  studioAvailability_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: StudioAvailability_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: StudioAvailability_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: StudioAvailability_Data!
+  ): StudioAvailability_KeyOutput @fdc_generated(from: "StudioAvailability", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `StyleToneCategory` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  styleToneCategory_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: StyleToneCategory_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: StyleToneCategory_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: StyleToneCategory_Data!
+  ): StyleToneCategory_KeyOutput @fdc_generated(from: "StyleToneCategory", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `StyleToneOption` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  styleToneOption_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: StyleToneOption_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: StyleToneOption_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: StyleToneOption_Data!
+  ): StyleToneOption_KeyOutput @fdc_generated(from: "StyleToneOption", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `TechnicalSpecification` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  technicalSpecification_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: TechnicalSpecification_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: TechnicalSpecification_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: TechnicalSpecification_Data!
+  ): TechnicalSpecification_KeyOutput @fdc_generated(from: "TechnicalSpecification", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `TimeZone` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  timeZone_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: TimeZone_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: TimeZone_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: TimeZone_Data!
+  ): TimeZone_KeyOutput @fdc_generated(from: "TimeZone", purpose: UPDATE_SINGLE)
   """
   ✨ Update a single `Transaction` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
   """
@@ -199,6 +1274,106 @@ extend type Mutation {
     data: User_Data!
   ): User_KeyOutput @fdc_generated(from: "User", purpose: UPDATE_SINGLE)
   """
+  ✨ Update a single `UserExperience` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  userExperience_update(
+    """
+    The key used to identify the object.
+    """
+    key: UserExperience_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserExperience_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: UserExperience_Data!
+  ): UserExperience_KeyOutput @fdc_generated(from: "UserExperience", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update a single `VoiceTrait` based on `id`, `key` or `first`, setting columns specified in `data`. Returns `null` if not found.
+  """
+  voiceTrait_update(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: VoiceTrait_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceTrait_FirstRow
+
+    """
+    Data object containing fields to be updated.
+    """
+    data: VoiceTrait_Data!
+  ): VoiceTrait_KeyOutput @fdc_generated(from: "VoiceTrait", purpose: UPDATE_SINGLE)
+  """
+  ✨ Update `Category` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  category_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: Category_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: Category_Data!
+  ): Int! @fdc_generated(from: "Category", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `ExperienceLevel` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  experienceLevel_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: ExperienceLevel_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: ExperienceLevel_Data!
+  ): Int! @fdc_generated(from: "ExperienceLevel", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `Language` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  language_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: Language_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: Language_Data!
+  ): Int! @fdc_generated(from: "Language", purpose: UPDATE_MULTIPLE)
+  """
   ✨ Update `NFT` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
   """
   nft_updateMany(
@@ -218,6 +1393,196 @@ extend type Mutation {
     data: NFT_Data!
   ): Int! @fdc_generated(from: "NFT", purpose: UPDATE_MULTIPLE)
   """
+  ✨ Update `NFTCategory` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  nFTCategory_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: NFTCategory_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: NFTCategory_Data!
+  ): Int! @fdc_generated(from: "NFTCategory", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `NFTLanguage` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  nFTLanguage_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: NFTLanguage_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: NFTLanguage_Data!
+  ): Int! @fdc_generated(from: "NFTLanguage", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `NFTProductionQuality` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  nFTProductionQuality_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: NFTProductionQuality_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: NFTProductionQuality_Data!
+  ): Int! @fdc_generated(from: "NFTProductionQuality", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `NFTRegionalDialect` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  nFTRegionalDialect_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: NFTRegionalDialect_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: NFTRegionalDialect_Data!
+  ): Int! @fdc_generated(from: "NFTRegionalDialect", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `NFTSecondaryLanguage` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  nFTSecondaryLanguage_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: NFTSecondaryLanguage_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: NFTSecondaryLanguage_Data!
+  ): Int! @fdc_generated(from: "NFTSecondaryLanguage", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `NFTStudioAvailability` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  nFTStudioAvailability_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: NFTStudioAvailability_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: NFTStudioAvailability_Data!
+  ): Int! @fdc_generated(from: "NFTStudioAvailability", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `NFTStyleToneOption` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  nFTStyleToneOption_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: NFTStyleToneOption_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: NFTStyleToneOption_Data!
+  ): Int! @fdc_generated(from: "NFTStyleToneOption", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `NFTTechnicalSpecification` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  nFTTechnicalSpecification_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: NFTTechnicalSpecification_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: NFTTechnicalSpecification_Data!
+  ): Int! @fdc_generated(from: "NFTTechnicalSpecification", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `NFTTimeZone` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  nFTTimeZone_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: NFTTimeZone_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: NFTTimeZone_Data!
+  ): Int! @fdc_generated(from: "NFTTimeZone", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `NFTVoiceTrait` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  nFTVoiceTrait_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: NFTVoiceTrait_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: NFTVoiceTrait_Data!
+  ): Int! @fdc_generated(from: "NFTVoiceTrait", purpose: UPDATE_MULTIPLE)
+  """
   ✨ Update `Ownership` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
   """
   ownership_updateMany(
@@ -236,6 +1601,158 @@ extend type Mutation {
     """
     data: Ownership_Data!
   ): Int! @fdc_generated(from: "Ownership", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `ProductionQuality` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  productionQuality_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: ProductionQuality_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: ProductionQuality_Data!
+  ): Int! @fdc_generated(from: "ProductionQuality", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `RegionalDialect` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  regionalDialect_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: RegionalDialect_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: RegionalDialect_Data!
+  ): Int! @fdc_generated(from: "RegionalDialect", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `SecondaryLanguage` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  secondaryLanguage_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: SecondaryLanguage_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: SecondaryLanguage_Data!
+  ): Int! @fdc_generated(from: "SecondaryLanguage", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `StudioAvailability` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  studioAvailability_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: StudioAvailability_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: StudioAvailability_Data!
+  ): Int! @fdc_generated(from: "StudioAvailability", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `StyleToneCategory` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  styleToneCategory_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: StyleToneCategory_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: StyleToneCategory_Data!
+  ): Int! @fdc_generated(from: "StyleToneCategory", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `StyleToneOption` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  styleToneOption_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: StyleToneOption_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: StyleToneOption_Data!
+  ): Int! @fdc_generated(from: "StyleToneOption", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `TechnicalSpecification` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  technicalSpecification_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: TechnicalSpecification_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: TechnicalSpecification_Data!
+  ): Int! @fdc_generated(from: "TechnicalSpecification", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `TimeZone` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  timeZone_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: TimeZone_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: TimeZone_Data!
+  ): Int! @fdc_generated(from: "TimeZone", purpose: UPDATE_MULTIPLE)
   """
   ✨ Update `Transaction` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
   """
@@ -275,6 +1792,101 @@ extend type Mutation {
     data: User_Data!
   ): Int! @fdc_generated(from: "User", purpose: UPDATE_MULTIPLE)
   """
+  ✨ Update `UserExperience` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  userExperience_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: UserExperience_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: UserExperience_Data!
+  ): Int! @fdc_generated(from: "UserExperience", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Update `VoiceTrait` objects matching `where` conditions (or `all`, if true) according to `data`. Returns the number of rows updated.
+  """
+  voiceTrait_updateMany(
+    """
+    Filter condition to specify which rows to update.
+    """
+    where: VoiceTrait_Filter
+
+    """
+    Set to true to update all rows.
+    """
+    all: Boolean = false
+
+    """
+    Data object containing fields to update.
+    """
+    data: VoiceTrait_Data!
+  ): Int! @fdc_generated(from: "VoiceTrait", purpose: UPDATE_MULTIPLE)
+  """
+  ✨ Delete a single `Category` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  category_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Category_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Category_FirstRow
+  ): Category_KeyOutput @fdc_generated(from: "Category", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `ExperienceLevel` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  experienceLevel_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: ExperienceLevel_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: ExperienceLevel_FirstRow
+  ): ExperienceLevel_KeyOutput @fdc_generated(from: "ExperienceLevel", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `Language` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  language_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: Language_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: Language_FirstRow
+  ): Language_KeyOutput @fdc_generated(from: "Language", purpose: DELETE_SINGLE)
+  """
   ✨ Delete a single `NFT` based on `id`, `key` or `first` and return its key (or `null` if not found).
   """
   nft_delete(
@@ -294,6 +1906,146 @@ extend type Mutation {
     first: NFT_FirstRow
   ): NFT_KeyOutput @fdc_generated(from: "NFT", purpose: DELETE_SINGLE)
   """
+  ✨ Delete a single `NFTCategory` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  nFTCategory_delete(
+    """
+    The key used to identify the object.
+    """
+    key: NFTCategory_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTCategory_FirstRow
+  ): NFTCategory_KeyOutput @fdc_generated(from: "NFTCategory", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `NFTLanguage` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  nFTLanguage_delete(
+    """
+    The key used to identify the object.
+    """
+    key: NFTLanguage_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTLanguage_FirstRow
+  ): NFTLanguage_KeyOutput @fdc_generated(from: "NFTLanguage", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `NFTProductionQuality` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  nFTProductionQuality_delete(
+    """
+    The key used to identify the object.
+    """
+    key: NFTProductionQuality_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTProductionQuality_FirstRow
+  ): NFTProductionQuality_KeyOutput @fdc_generated(from: "NFTProductionQuality", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `NFTRegionalDialect` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  nFTRegionalDialect_delete(
+    """
+    The key used to identify the object.
+    """
+    key: NFTRegionalDialect_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTRegionalDialect_FirstRow
+  ): NFTRegionalDialect_KeyOutput @fdc_generated(from: "NFTRegionalDialect", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `NFTSecondaryLanguage` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  nFTSecondaryLanguage_delete(
+    """
+    The key used to identify the object.
+    """
+    key: NFTSecondaryLanguage_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTSecondaryLanguage_FirstRow
+  ): NFTSecondaryLanguage_KeyOutput @fdc_generated(from: "NFTSecondaryLanguage", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `NFTStudioAvailability` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  nFTStudioAvailability_delete(
+    """
+    The key used to identify the object.
+    """
+    key: NFTStudioAvailability_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTStudioAvailability_FirstRow
+  ): NFTStudioAvailability_KeyOutput @fdc_generated(from: "NFTStudioAvailability", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `NFTStyleToneOption` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  nFTStyleToneOption_delete(
+    """
+    The key used to identify the object.
+    """
+    key: NFTStyleToneOption_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTStyleToneOption_FirstRow
+  ): NFTStyleToneOption_KeyOutput @fdc_generated(from: "NFTStyleToneOption", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `NFTTechnicalSpecification` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  nFTTechnicalSpecification_delete(
+    """
+    The key used to identify the object.
+    """
+    key: NFTTechnicalSpecification_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTTechnicalSpecification_FirstRow
+  ): NFTTechnicalSpecification_KeyOutput @fdc_generated(from: "NFTTechnicalSpecification", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `NFTTimeZone` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  nFTTimeZone_delete(
+    """
+    The key used to identify the object.
+    """
+    key: NFTTimeZone_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTTimeZone_FirstRow
+  ): NFTTimeZone_KeyOutput @fdc_generated(from: "NFTTimeZone", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `NFTVoiceTrait` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  nFTVoiceTrait_delete(
+    """
+    The key used to identify the object.
+    """
+    key: NFTVoiceTrait_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: NFTVoiceTrait_FirstRow
+  ): NFTVoiceTrait_KeyOutput @fdc_generated(from: "NFTVoiceTrait", purpose: DELETE_SINGLE)
+  """
   ✨ Delete a single `Ownership` based on `id`, `key` or `first` and return its key (or `null` if not found).
   """
   ownership_delete(
@@ -307,6 +2059,158 @@ extend type Mutation {
     """
     first: Ownership_FirstRow
   ): Ownership_KeyOutput @fdc_generated(from: "Ownership", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `ProductionQuality` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  productionQuality_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: ProductionQuality_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: ProductionQuality_FirstRow
+  ): ProductionQuality_KeyOutput @fdc_generated(from: "ProductionQuality", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `RegionalDialect` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  regionalDialect_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: RegionalDialect_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: RegionalDialect_FirstRow
+  ): RegionalDialect_KeyOutput @fdc_generated(from: "RegionalDialect", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `SecondaryLanguage` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  secondaryLanguage_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: SecondaryLanguage_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: SecondaryLanguage_FirstRow
+  ): SecondaryLanguage_KeyOutput @fdc_generated(from: "SecondaryLanguage", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `StudioAvailability` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  studioAvailability_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: StudioAvailability_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: StudioAvailability_FirstRow
+  ): StudioAvailability_KeyOutput @fdc_generated(from: "StudioAvailability", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `StyleToneCategory` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  styleToneCategory_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: StyleToneCategory_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: StyleToneCategory_FirstRow
+  ): StyleToneCategory_KeyOutput @fdc_generated(from: "StyleToneCategory", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `StyleToneOption` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  styleToneOption_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: StyleToneOption_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: StyleToneOption_FirstRow
+  ): StyleToneOption_KeyOutput @fdc_generated(from: "StyleToneOption", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `TechnicalSpecification` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  technicalSpecification_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: TechnicalSpecification_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: TechnicalSpecification_FirstRow
+  ): TechnicalSpecification_KeyOutput @fdc_generated(from: "TechnicalSpecification", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `TimeZone` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  timeZone_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: TimeZone_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: TimeZone_FirstRow
+  ): TimeZone_KeyOutput @fdc_generated(from: "TimeZone", purpose: DELETE_SINGLE)
   """
   ✨ Delete a single `Transaction` based on `id`, `key` or `first` and return its key (or `null` if not found).
   """
@@ -346,6 +2250,81 @@ extend type Mutation {
     first: User_FirstRow
   ): User_KeyOutput @fdc_generated(from: "User", purpose: DELETE_SINGLE)
   """
+  ✨ Delete a single `UserExperience` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  userExperience_delete(
+    """
+    The key used to identify the object.
+    """
+    key: UserExperience_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: UserExperience_FirstRow
+  ): UserExperience_KeyOutput @fdc_generated(from: "UserExperience", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete a single `VoiceTrait` based on `id`, `key` or `first` and return its key (or `null` if not found).
+  """
+  voiceTrait_delete(
+    """
+    The unique ID of the object.
+    """
+    id: UUID
+
+    """
+    The key used to identify the object.
+    """
+    key: VoiceTrait_Key
+
+    """
+    Fetch the first row based on the filters and ordering.
+    """
+    first: VoiceTrait_FirstRow
+  ): VoiceTrait_KeyOutput @fdc_generated(from: "VoiceTrait", purpose: DELETE_SINGLE)
+  """
+  ✨ Delete `Category` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  category_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: Category_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "Category", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `ExperienceLevel` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  experienceLevel_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: ExperienceLevel_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "ExperienceLevel", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `Language` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  language_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: Language_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "Language", purpose: DELETE_MULTIPLE)
+  """
   ✨ Delete `NFT` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
   """
   nft_deleteMany(
@@ -360,6 +2339,146 @@ extend type Mutation {
     all: Boolean = false
   ): Int! @fdc_generated(from: "NFT", purpose: DELETE_MULTIPLE)
   """
+  ✨ Delete `NFTCategory` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  nFTCategory_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: NFTCategory_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "NFTCategory", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `NFTLanguage` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  nFTLanguage_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: NFTLanguage_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "NFTLanguage", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `NFTProductionQuality` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  nFTProductionQuality_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: NFTProductionQuality_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "NFTProductionQuality", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `NFTRegionalDialect` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  nFTRegionalDialect_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: NFTRegionalDialect_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "NFTRegionalDialect", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `NFTSecondaryLanguage` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  nFTSecondaryLanguage_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: NFTSecondaryLanguage_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "NFTSecondaryLanguage", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `NFTStudioAvailability` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  nFTStudioAvailability_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: NFTStudioAvailability_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "NFTStudioAvailability", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `NFTStyleToneOption` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  nFTStyleToneOption_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: NFTStyleToneOption_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "NFTStyleToneOption", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `NFTTechnicalSpecification` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  nFTTechnicalSpecification_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: NFTTechnicalSpecification_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "NFTTechnicalSpecification", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `NFTTimeZone` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  nFTTimeZone_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: NFTTimeZone_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "NFTTimeZone", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `NFTVoiceTrait` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  nFTVoiceTrait_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: NFTVoiceTrait_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "NFTVoiceTrait", purpose: DELETE_MULTIPLE)
+  """
   ✨ Delete `Ownership` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
   """
   ownership_deleteMany(
@@ -373,6 +2492,118 @@ extend type Mutation {
     """
     all: Boolean = false
   ): Int! @fdc_generated(from: "Ownership", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `ProductionQuality` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  productionQuality_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: ProductionQuality_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "ProductionQuality", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `RegionalDialect` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  regionalDialect_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: RegionalDialect_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "RegionalDialect", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `SecondaryLanguage` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  secondaryLanguage_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: SecondaryLanguage_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "SecondaryLanguage", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `StudioAvailability` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  studioAvailability_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: StudioAvailability_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "StudioAvailability", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `StyleToneCategory` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  styleToneCategory_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: StyleToneCategory_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "StyleToneCategory", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `StyleToneOption` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  styleToneOption_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: StyleToneOption_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "StyleToneOption", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `TechnicalSpecification` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  technicalSpecification_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: TechnicalSpecification_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "TechnicalSpecification", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `TimeZone` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  timeZone_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: TimeZone_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "TimeZone", purpose: DELETE_MULTIPLE)
   """
   ✨ Delete `Transaction` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
   """
@@ -401,4 +2632,32 @@ extend type Mutation {
     """
     all: Boolean = false
   ): Int! @fdc_generated(from: "User", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `UserExperience` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  userExperience_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: UserExperience_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "UserExperience", purpose: DELETE_MULTIPLE)
+  """
+  ✨ Delete `VoiceTrait` objects matching `where` conditions (or `all`, if true). Returns the number of rows deleted.
+  """
+  voiceTrait_deleteMany(
+    """
+    Filter condition to specify which rows to delete.
+    """
+    where: VoiceTrait_Filter
+
+    """
+    Set to true to delete all rows.
+    """
+    all: Boolean = false
+  ): Int! @fdc_generated(from: "VoiceTrait", purpose: DELETE_MULTIPLE)
 }

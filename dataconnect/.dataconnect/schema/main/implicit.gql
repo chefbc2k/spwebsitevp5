@@ -4,6 +4,106 @@ extend type NFT {
   """
   creatorId: UUID! @fdc_generated(from: "NFT.creator", purpose: IMPLICIT_REF_FIELD)
 }
+extend type NFTCategory {
+  """
+  ✨ Implicit foreign key field based on `NFTCategory`.`nft`. It must match the value of `NFT`.`id`. See `@ref` for how to customize it.
+  """
+  nftId: UUID! @fdc_generated(from: "NFTCategory.nft", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `NFTCategory`.`category`. It must match the value of `Category`.`id`. See `@ref` for how to customize it.
+  """
+  categoryId: UUID! @fdc_generated(from: "NFTCategory.category", purpose: IMPLICIT_REF_FIELD)
+}
+extend type NFTLanguage {
+  """
+  ✨ Implicit foreign key field based on `NFTLanguage`.`nft`. It must match the value of `NFT`.`id`. See `@ref` for how to customize it.
+  """
+  nftId: UUID! @fdc_generated(from: "NFTLanguage.nft", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `NFTLanguage`.`language`. It must match the value of `Language`.`id`. See `@ref` for how to customize it.
+  """
+  languageId: UUID! @fdc_generated(from: "NFTLanguage.language", purpose: IMPLICIT_REF_FIELD)
+}
+extend type NFTProductionQuality {
+  """
+  ✨ Implicit foreign key field based on `NFTProductionQuality`.`nft`. It must match the value of `NFT`.`id`. See `@ref` for how to customize it.
+  """
+  nftId: UUID! @fdc_generated(from: "NFTProductionQuality.nft", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `NFTProductionQuality`.`productionQuality`. It must match the value of `ProductionQuality`.`id`. See `@ref` for how to customize it.
+  """
+  productionQualityId: UUID! @fdc_generated(from: "NFTProductionQuality.productionQuality", purpose: IMPLICIT_REF_FIELD)
+}
+extend type NFTRegionalDialect {
+  """
+  ✨ Implicit foreign key field based on `NFTRegionalDialect`.`nft`. It must match the value of `NFT`.`id`. See `@ref` for how to customize it.
+  """
+  nftId: UUID! @fdc_generated(from: "NFTRegionalDialect.nft", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `NFTRegionalDialect`.`regionalDialect`. It must match the value of `RegionalDialect`.`id`. See `@ref` for how to customize it.
+  """
+  regionalDialectId: UUID! @fdc_generated(from: "NFTRegionalDialect.regionalDialect", purpose: IMPLICIT_REF_FIELD)
+}
+extend type NFTSecondaryLanguage {
+  """
+  ✨ Implicit foreign key field based on `NFTSecondaryLanguage`.`nft`. It must match the value of `NFT`.`id`. See `@ref` for how to customize it.
+  """
+  nftId: UUID! @fdc_generated(from: "NFTSecondaryLanguage.nft", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `NFTSecondaryLanguage`.`secondaryLanguage`. It must match the value of `SecondaryLanguage`.`id`. See `@ref` for how to customize it.
+  """
+  secondaryLanguageId: UUID! @fdc_generated(from: "NFTSecondaryLanguage.secondaryLanguage", purpose: IMPLICIT_REF_FIELD)
+}
+extend type NFTStudioAvailability {
+  """
+  ✨ Implicit foreign key field based on `NFTStudioAvailability`.`nft`. It must match the value of `NFT`.`id`. See `@ref` for how to customize it.
+  """
+  nftId: UUID! @fdc_generated(from: "NFTStudioAvailability.nft", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `NFTStudioAvailability`.`studioAvailability`. It must match the value of `StudioAvailability`.`id`. See `@ref` for how to customize it.
+  """
+  studioAvailabilityId: UUID! @fdc_generated(from: "NFTStudioAvailability.studioAvailability", purpose: IMPLICIT_REF_FIELD)
+}
+extend type NFTStyleToneOption {
+  """
+  ✨ Implicit foreign key field based on `NFTStyleToneOption`.`nft`. It must match the value of `NFT`.`id`. See `@ref` for how to customize it.
+  """
+  nftId: UUID! @fdc_generated(from: "NFTStyleToneOption.nft", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `NFTStyleToneOption`.`styleToneOption`. It must match the value of `StyleToneOption`.`id`. See `@ref` for how to customize it.
+  """
+  styleToneOptionId: UUID! @fdc_generated(from: "NFTStyleToneOption.styleToneOption", purpose: IMPLICIT_REF_FIELD)
+}
+extend type NFTTechnicalSpecification {
+  """
+  ✨ Implicit foreign key field based on `NFTTechnicalSpecification`.`nft`. It must match the value of `NFT`.`id`. See `@ref` for how to customize it.
+  """
+  nftId: UUID! @fdc_generated(from: "NFTTechnicalSpecification.nft", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `NFTTechnicalSpecification`.`technicalSpecification`. It must match the value of `TechnicalSpecification`.`id`. See `@ref` for how to customize it.
+  """
+  technicalSpecificationId: UUID! @fdc_generated(from: "NFTTechnicalSpecification.technicalSpecification", purpose: IMPLICIT_REF_FIELD)
+}
+extend type NFTTimeZone {
+  """
+  ✨ Implicit foreign key field based on `NFTTimeZone`.`nft`. It must match the value of `NFT`.`id`. See `@ref` for how to customize it.
+  """
+  nftId: UUID! @fdc_generated(from: "NFTTimeZone.nft", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `NFTTimeZone`.`timeZone`. It must match the value of `TimeZone`.`id`. See `@ref` for how to customize it.
+  """
+  timeZoneId: UUID! @fdc_generated(from: "NFTTimeZone.timeZone", purpose: IMPLICIT_REF_FIELD)
+}
+extend type NFTVoiceTrait {
+  """
+  ✨ Implicit foreign key field based on `NFTVoiceTrait`.`nft`. It must match the value of `NFT`.`id`. See `@ref` for how to customize it.
+  """
+  nftId: UUID! @fdc_generated(from: "NFTVoiceTrait.nft", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `NFTVoiceTrait`.`voiceTrait`. It must match the value of `VoiceTrait`.`id`. See `@ref` for how to customize it.
+  """
+  voiceTraitId: UUID! @fdc_generated(from: "NFTVoiceTrait.voiceTrait", purpose: IMPLICIT_REF_FIELD)
+}
 extend type Ownership {
   """
   ✨ Implicit foreign key field based on `Ownership`.`nft`. It must match the value of `NFT`.`id`. See `@ref` for how to customize it.
@@ -13,6 +113,12 @@ extend type Ownership {
   ✨ Implicit foreign key field based on `Ownership`.`owner`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
   """
   ownerId: UUID! @fdc_generated(from: "Ownership.owner", purpose: IMPLICIT_REF_FIELD)
+}
+extend type StyleToneOption {
+  """
+  ✨ Implicit foreign key field based on `StyleToneOption`.`category`. It must match the value of `StyleToneCategory`.`id`. See `@ref` for how to customize it.
+  """
+  categoryId: UUID! @fdc_generated(from: "StyleToneOption.category", purpose: IMPLICIT_REF_FIELD)
 }
 extend type Transaction {
   """
@@ -27,4 +133,14 @@ extend type Transaction {
   ✨ Implicit foreign key field based on `Transaction`.`seller`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
   """
   sellerId: UUID! @fdc_generated(from: "Transaction.seller", purpose: IMPLICIT_REF_FIELD)
+}
+extend type UserExperience {
+  """
+  ✨ Implicit foreign key field based on `UserExperience`.`user`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  userId: UUID! @fdc_generated(from: "UserExperience.user", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `UserExperience`.`experienceLevel`. It must match the value of `ExperienceLevel`.`id`. See `@ref` for how to customize it.
+  """
+  experienceLevelId: UUID! @fdc_generated(from: "UserExperience.experienceLevel", purpose: IMPLICIT_REF_FIELD)
 }

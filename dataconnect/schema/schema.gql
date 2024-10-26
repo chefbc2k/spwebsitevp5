@@ -1,26 +1,209 @@
-# Users
+# Language Table
+type Language
+  @table(name: "Languages", singular: "language", plural: "languages", key: ["id"]) {
+  id: UUID! @col(name: "language_id") @default(expr: "uuidV4()")
+  name: String! @col(name: "name") # e.g., 'English', 'Spanish'
+}
+
+# NFTLanguage Table (Join Table)
+type NFTLanguage
+  @table(name: "NFTLanguages", key: ["nft", "language"]) {
+  nft: NFT! @ref
+  language: Language! @ref
+}
+
+# Secondary Language Table
+type SecondaryLanguage
+  @table(name: "SecondaryLanguages", singular: "secondaryLanguage", plural: "secondaryLanguages", key: ["id"]) {
+  id: UUID! @col(name: "secondary_language_id") @default(expr: "uuidV4()")
+  proficiency: String! @col(name: "proficiency") # e.g., 'Fluent', 'Conversational'
+}
+
+# NFTSecondaryLanguage Table (Join Table)
+type NFTSecondaryLanguage
+  @table(name: "NFTSecondaryLanguages", key: ["nft", "secondaryLanguage"]) {
+  nft: NFT! @ref
+  secondaryLanguage: SecondaryLanguage! @ref
+}
+
+# Regional Dialect Table
+type RegionalDialect
+  @table(name: "RegionalDialects", singular: "regionalDialect", plural: "regionalDialects", key: ["id"]) {
+  id: UUID! @col(name: "regional_dialect_id") @default(expr: "uuidV4()")
+  name: String! @col(name: "name") # e.g., 'Southern US - Deep South', 'British RP'
+}
+
+# NFTRegionalDialect Table (Join Table)
+type NFTRegionalDialect
+  @table(name: "NFTRegionalDialects", key: ["nft", "regionalDialect"]) {
+  nft: NFT! @ref
+  regionalDialect: RegionalDialect! @ref
+}
+
+# Time Zone Table
+type TimeZone
+  @table(name: "TimeZones", singular: "timeZone", plural: "timeZones", key: ["id"]) {
+  id: UUID! @col(name: "time_zone_id") @default(expr: "uuidV4()")
+  name: String! @col(name: "name") # e.g., 'GMT', 'EST', 'PST'
+}
+
+# NFTTimeZone Table (Join Table)
+type NFTTimeZone
+  @table(name: "NFTTimeZones", key: ["nft", "timeZone"]) {
+  nft: NFT! @ref
+  timeZone: TimeZone! @ref
+}
+
+# Studio Availability Table
+type StudioAvailability
+  @table(name: "StudioAvailabilities", singular: "studioAvailability", plural: "studioAvailabilities", key: ["id"]) {
+  id: UUID! @col(name: "studio_availability_id") @default(expr: "uuidV4()")
+  availability: String! @col(name: "availability") # e.g., 'Remote-only', 'Studio-required'
+}
+
+# NFTStudioAvailability Table (Join Table)
+type NFTStudioAvailability
+  @table(name: "NFTStudioAvailabilities", key: ["nft", "studioAvailability"]) {
+  nft: NFT! @ref
+  studioAvailability: StudioAvailability! @ref
+}
+
+# Style Tone Category Table
+type StyleToneCategory
+  @table(name: "StyleToneCategories", singular: "styleToneCategory", plural: "styleToneCategories", key: ["id"]) {
+  id: UUID! @col(name: "style_tone_category_id") @default(expr: "uuidV4()")
+  name: String! @col(name: "name") # e.g., 'Commercial', 'Narration', 'Character/Animation', 'Corporate'
+}
+
+# Style Tone Option Table
+type StyleToneOption
+  @table(name: "StyleToneOptions", singular: "styleToneOption", plural: "styleToneOptions", key: ["id"]) {
+  id: UUID! @col(name: "style_tone_option_id") @default(expr: "uuidV4()")
+  category: StyleToneCategory! @ref
+  option: String! @col(name: "option") # e.g., 'Upbeat', 'Fiction'
+}
+
+# NFTStyleToneOption Table (Join Table)
+type NFTStyleToneOption
+  @table(name: "NFTStyleToneOptions", key: ["nft", "styleToneOption"]) {
+  nft: NFT! @ref
+  styleToneOption: StyleToneOption! @ref
+}
+
+# Voice Traits Table
+type VoiceTrait
+  @table(name: "VoiceTraits", singular: "voiceTrait", plural: "voiceTraits", key: ["id"]) {
+  id: UUID! @col(name: "trait_id") @default(expr: "uuidV4()")
+  category: String! @col(name: "category") # e.g., 'Pitch', 'Texture', 'Volume Range', 'Versatility'
+  value: String! @col(name: "value") # e.g., 'Bass', 'Smooth'
+}
+
+# NFTVoiceTrait Table (Join Table)
+type NFTVoiceTrait
+  @table(name: "NFTVoiceTraits", key: ["nft", "voiceTrait"]) {
+  nft: NFT! @ref
+  voiceTrait: VoiceTrait! @ref
+}
+
+# Technical Specifications Table
+type TechnicalSpecification
+  @table(name: "TechnicalSpecifications", singular: "technicalSpecification", plural: "technicalSpecifications", key: ["id"]) {
+  id: UUID! @col(name: "tech_spec_id") @default(expr: "uuidV4()")
+  audioQuality: String! @col(name: "audio_quality") # e.g., '16-bit', 'Lossless'
+  sampleRate: String! @col(name: "sample_rate") # e.g., '44.1kHz'
+  equipment: [String] @col(name: "equipment") # e.g., ['Condenser Mic', 'Preamp']
+  postProductionCapabilities: [String] @col(name: "post_production_capabilities")
+}
+
+# NFTTechnicalSpecification Table (Join Table)
+type NFTTechnicalSpecification
+  @table(name: "NFTTechnicalSpecifications", key: ["nft", "technicalSpecification"]) {
+  nft: NFT! @ref
+  technicalSpecification: TechnicalSpecification! @ref
+}
+
+# Production Quality Table
+type ProductionQuality
+  @table(name: "ProductionQuality", singular: "productionQuality", plural: "productionQualities", key: ["id"]) {
+  id: UUID! @col(name: "production_quality_id") @default(expr: "uuidV4()")
+  qualityType: String! @col(name: "quality_type") # e.g., 'Broadcast Ready', 'Professional Grade'
+  description: [String] @col(name: "description") # e.g., ['Mastered', 'Vetted']
+}
+
+# NFTProductionQuality Table (Join Table)
+type NFTProductionQuality
+  @table(name: "NFTProductionQualities", key: ["nft", "productionQuality"]) {
+  nft: NFT! @ref
+  productionQuality: ProductionQuality! @ref
+}
+
+# Categories Table
+type Category
+  @table(name: "Categories", singular: "category", plural: "categories", key: ["id"]) {
+  id: UUID! @col(name: "category_id") @default(expr: "uuidV4()")
+  name: String! @col(name: "name") # e.g., 'Entertainment & Media'
+  subcategories: [String] @col(name: "subcategories") # e.g., ['Animation', 'Film/TV']
+}
+
+# NFTCategory Table (Join Table)
+type NFTCategory
+  @table(name: "NFTCategories", key: ["nft", "category"]) {
+  nft: NFT! @ref
+  category: Category! @ref
+}
+
+# Users Table
 type User
   @table(name: "Users", singular: "user", plural: "users", key: ["id"]) {
   id: UUID! @col(name: "user_id") @default(expr: "uuidV4()")
   auth: String! @col(name: "user_auth") @default(expr: "auth.uid")
+  walletAddress: String! @col(name: "wallet_address") # User's wallet address
+  smartContractAddress: String @col(name: "smart_contract_address") # User's smart contract address
   username: String! @col(name: "username", dataType: "varchar(30)")
   email: String! @col(name: "email")
+  geoLocation: String @col(name: "geo_location")
   createdAt: Timestamp! @col(name: "created_at") @default(expr: "request.time")
 }
 
-# NFTs
+# Experience Levels Table
+type ExperienceLevel
+  @table(name: "ExperienceLevels", singular: "experienceLevel", plural: "experienceLevels", key: ["id"]) {
+  id: UUID! @col(name: "experience_level_id") @default(expr: "uuidV4()")
+  level: String! @col(name: "level") # e.g., 'Novice (<2 years)', 'Expert (10+ years)'
+  description: [String] @col(name: "description") # e.g., ['Training Stage', 'Industry-recognized']
+}
+
+# UserExperience Table (Join Table)
+type UserExperience
+  @table(name: "UserExperiences", key: ["user", "experienceLevel"]) {
+  user: User! @ref
+  experienceLevel: ExperienceLevel! @ref
+}
+
+# NFT Table
 type NFT
   @table(name: "NFTs", singular: "nft", plural: "nfts", key: ["id"]) {
   id: UUID! @col(name: "nft_id") @default(expr: "uuidV4()")
   title: String! @col(name: "title")
   description: String @col(name: "description")
-  creator: User! @ref
+  creator: User! @ref # Creator of the NFT
   createdAt: Timestamp! @col(name: "created_at") @default(expr: "request.time")
   price: Float! @col(name: "price")
   fileUrl: String! @col(name: "file_url")
+  geolocation: String @col(name: "geolocation")
+  smartContractAddress: String @col(name: "smart_contract_address") # NFT's smart contract address
 }
 
-# Transactions
+# Ownership Table
+type Ownership
+  @table(name: "Ownerships", singular: "ownership", plural: "ownerships", key: ["nft", "owner"]) {
+  nft: NFT! @ref
+  owner: User! @ref
+  acquiredAt: Timestamp! @col(name: "acquired_at") @default(expr: "request.time")
+  ownershipType: String! @col(name: "ownership_type") # e.g., 'Primary', 'Secondary'
+}
+
+# Transactions Table
 type Transaction
   @table(name: "Transactions", singular: "transaction", plural: "transactions", key: ["id"]) {
   id: UUID! @col(name: "transaction_id") @default(expr: "uuidV4()")
@@ -29,12 +212,4 @@ type Transaction
   seller: User! @ref
   price: Float! @col(name: "price")
   transactionDate: Timestamp! @col(name: "transaction_date") @default(expr: "request.time")
-}
-
-# Ownerships
-type Ownership
-  @table(name: "Ownerships", singular: "ownership", plural: "ownerships", key: ["nft", "owner"]) {
-  nft: NFT! @ref
-  owner: User! @ref
-  acquiredAt: Timestamp! @col(name: "acquired_at") @default(expr: "request.time")
 }
