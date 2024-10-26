@@ -1,0 +1,196 @@
+extend type NFT {
+  """
+  ✨ List `Ownership` objects in a one-to-many relationship (where `Ownership`.`nft` is this object).
+  """
+  ownerships_on_nft(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: Ownership_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [Ownership_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [Ownership!]! @fdc_generated(from: "Ownership.nft", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `Transaction` objects in a one-to-many relationship (where `Transaction`.`nft` is this object).
+  """
+  transactions_on_nft(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: Transaction_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [Transaction_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [Transaction!]! @fdc_generated(from: "Transaction.nft", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `User` objects using `Ownership` as the join table (a `Ownership` object exists where its `nft` is this and its `owner` is that).
+  """
+  users_via_Ownership(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: Ownership_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [Ownership_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [User!]! @fdc_generated(from: "Ownership", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+}
+extend type User {
+  """
+  ✨ List `NFT` objects in a one-to-many relationship (where `NFT`.`creator` is this object).
+  """
+  nfts_on_creator(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: NFT_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [NFT_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFT!]! @fdc_generated(from: "NFT.creator", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `Ownership` objects in a one-to-many relationship (where `Ownership`.`owner` is this object).
+  """
+  ownerships_on_owner(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: Ownership_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [Ownership_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [Ownership!]! @fdc_generated(from: "Ownership.owner", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `Transaction` objects in a one-to-many relationship (where `Transaction`.`buyer` is this object).
+  """
+  transactions_on_buyer(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: Transaction_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [Transaction_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [Transaction!]! @fdc_generated(from: "Transaction.buyer", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `Transaction` objects in a one-to-many relationship (where `Transaction`.`seller` is this object).
+  """
+  transactions_on_seller(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: Transaction_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [Transaction_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [Transaction!]! @fdc_generated(from: "Transaction.seller", purpose: QUERY_MULTIPLE_ONE_TO_MANY)
+  """
+  ✨ List `NFT` objects using `Ownership` as the join table (a `Ownership` object exists where its `owner` is this and its `nft` is that).
+  """
+  nfts_via_Ownership(
+    """
+    Filter condition to narrow down the query results.
+    """
+    where: Ownership_Filter
+
+    """
+    Order the query results by specific fields.
+    """
+    orderBy: [Ownership_Order!]
+
+    """
+    Number of rows to skip before starting to return the results.
+    """
+    offset: Int
+
+    """
+    Maximum number of rows to return (defaults to 100 rows).
+    """
+    limit: Int = 100
+  ): [NFT!]! @fdc_generated(from: "Ownership", purpose: QUERY_MULTIPLE_MANY_TO_MANY)
+}

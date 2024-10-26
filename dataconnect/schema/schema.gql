@@ -1,119 +1,40 @@
-# Users table to store user information
-type User @table(name: "Users", singular: "user", plural: "users", key: ["id"]) {
+# Users
+type User
+  @table(name: "Users", singular: "user", plural: "users", key: ["id"]) {
   id: UUID! @col(name: "user_id") @default(expr: "uuidV4()")
-  auth: String @col(name: "user_auth") @default(expr: "auth.uid")
+  auth: String! @col(name: "user_auth") @default(expr: "auth.uid")
   username: String! @col(name: "username", dataType: "varchar(30)")
-  email: String! @col(name: "email", dataType: "varchar(255)")
-  profileImage: String @col(name: "profile_image")
-  bio: String @col(name: "bio")
-  followingId: UUID @col(name: "following_id")
+  email: String! @col(name: "email")
   createdAt: Timestamp! @col(name: "created_at") @default(expr: "request.time")
-  updatedAt: Timestamp! @col(name: "updated_at") @default(expr: "request.time")
 }
 
-# NFTs table to store NFT metadata and voice data
-type NFT @table(name: "NFTs", singular: "nft", plural: "nfts", key: ["id"]) {
+# NFTs
+type NFT
+  @table(name: "NFTs", singular: "nft", plural: "nfts", key: ["id"]) {
   id: UUID! @col(name: "nft_id") @default(expr: "uuidV4()")
-  creator: User! @ref(columns: ["id"])
-  owner: User! @ref(columns: ["id"])
+  title: String! @col(name: "title")
   description: String @col(name: "description")
-  voiceUrl: String! @col(name: "voice_url")
-  imageUrl: String @col(name: "image_url")
+  creator: User! @ref
+  createdAt: Timestamp! @col(name: "created_at") @default(expr: "request.time")
   price: Float! @col(name: "price")
-  tokenId: String! @col(name: "token_id")
-  contractAddress: String! @col(name: "contract_address")
-  category: Category! @ref(columns: ["id"])
-  collection: Collection @ref(columns: ["id"])
-  isListed: Boolean! @col(name: "is_listed") @default(expr: "false")
-
-  # Voice Traits
-  pitch: String @col(name: "pitch")
-  texture: String @col(name: "texture")
-  volume: String @col(name: "volume")
-  versatility: String @col(name: "versatility")
-
-  # Location & Language
-  language: String @col(name: "language")
-  secondaryLanguages: String @col(name: "secondary_languages")
-  regionalDialect: String @col(name: "regional_dialect")
-  timeZone: String @col(name: "time_zone")
-  studioAvailability: String @col(name: "studio_availability")
-
-  # Style & Tone
-  commercial: String @col(name: "commercial")
-  narration: String @col(name: "narration")
-  character: String @col(name: "character")
-  corporate: String @col(name: "corporate")
-
-  # Technical Specifications
-  audioQuality: String @col(name: "audio_quality")
-  sampleRate: String @col(name: "sample_rate")
-  equipment: String @col(name: "equipment")
-  postProduction: String @col(name: "post_production")
-
-  # Production Quality
-  broadcast: String @col(name: "broadcast")
-  professional: String @col(name: "professional")
-
-  # Experience Level
-  novice: String @col(name: "novice")
-  expert: String @col(name: "expert")
-
-  createdAt: Timestamp! @col(name: "created_at") @default(expr: "request.time")
-  updatedAt: Timestamp! @col(name: "updated_at") @default(expr: "request.time")
+  fileUrl: String! @col(name: "file_url")
 }
 
-# Collections table to group NFTs
-# Collections table to group NFTs
-type Collection @table(name: "Collections", singular: "collection", plural: "collections", key: ["id"]) {
-  owner: User! @ref # Corrected: Removed the 'columns' argument
-  name: String! @col(name: "name", dataType: "varchar(255)")
-  description: String @col(name: "description")
-}
-
-
-# Categories table for organizing NFTs
-type Category @table(name: "Categories", singular: "category", plural: "categories", key: ["id"]) {
-  id: UUID! @col(name: "category_id") @default(expr: "uuidV4()")
-  name: String! @col(name: "name", dataType: "varchar(100)")
-  description: String @col(name: "description")
-  createdAt: Timestamp! @col(name: "created_at") @default(expr: "request.time")
-}
-
-# Transactions table to track NFT sales/transfers
-type Transaction @table(name: "Transactions", singular: "transaction", plural: "transactions", key: ["id"]) {
+# Transactions
+type Transaction
+  @table(name: "Transactions", singular: "transaction", plural: "transactions", key: ["id"]) {
   id: UUID! @col(name: "transaction_id") @default(expr: "uuidV4()")
-  nft: NFT! @ref(columns: ["id"])
-  seller: User! @ref(columns: ["id"])
-  buyer: User! @ref(columns: ["id"])
+  nft: NFT! @ref
+  buyer: User! @ref
+  seller: User! @ref
   price: Float! @col(name: "price")
-  transactionHash: String! @col(name: "transaction_hash")
-  status: String! @col(name: "status", dataType: "varchar(20)") # pending, completed, failed
-  createdAt: Timestamp! @col(name: "created_at") @default(expr: "request.time")
+  transactionDate: Timestamp! @col(name: "transaction_date") @default(expr: "request.time")
 }
 
-# Comments table for social interaction
-type Comment @table(name: "Comments", singular: "comment", plural: "comments", key: ["id"]) {
-  id: UUID! @col(name: "comment_id") @default(expr: "uuidV4()")
-  user: User! @ref(to: "User", columns: ["id"])
-  nft: NFT! @ref(columns: ["id"])
-  user: User! @ref # Assuming that User type has a UUID field named 'id'
-  nft: NFT! @ref # Assuming that NFT type has a UUID field named 'id'
-  content: String! @col(name: "content")
-}
-
-
-# Likes table for tracking user likes on NFTs
-type Like @table(name: "Likes", key: ["user", "nft"]) {
-  user: User! @ref(columns: ["id"])
-  nft: NFT! @ref(columns: ["id"])
-  createdAt: Timestamp! @col(name: "created_at") @default(expr: "request.time")
-}
-
-# Follows table for user relationships
-type Follow @table(name: "Follows", key: ["follower", "following"]) {
-  followerId: UUID! @col(name: "follower_id")
-  follower: User! @ref(to: "User", field: "followerId", columns: ["id"])
-  followingId: UUID! @col(name: "following_id")
-  following: User! @ref(to: "User", field: "followingId", columns: ["id"])
+# Ownerships
+type Ownership
+  @table(name: "Ownerships", singular: "ownership", plural: "ownerships", key: ["nft", "owner"]) {
+  nft: NFT! @ref
+  owner: User! @ref
+  acquiredAt: Timestamp! @col(name: "acquired_at") @default(expr: "request.time")
 }

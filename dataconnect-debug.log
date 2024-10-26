@@ -10,3 +10,58 @@ I1026 04:49:40.011204   49922 control.go:45] [engine.Service /emulator/speak-web
 I1026 04:49:40.029259   49922 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 1ab6] UpdateSchema(): done sources: 
 I1026 04:49:40.030936   49922 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 1ab6] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
 I1026 04:49:40.032136   49922 service.go:133] Failed to load latest schema: schema/schema.gql:98: Undefined argument to for directive ref.
+I1026 04:58:44.126633   49922 load.go:37] Reloading schema and connectors...
+E1026 04:58:44.134218   49922 load.go:79] Could not load sources: <nil>
+I1026 04:58:44.136844   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+I1026 04:58:44.137408   49922 load.go:80] Finished reloading
+I1026 04:58:51.003037   49922 load.go:37] Reloading schema and connectors...
+E1026 04:58:51.006015   49922 load.go:79] Could not load sources: <nil>
+I1026 04:58:51.006566   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+I1026 04:58:51.006628   49922 load.go:80] Finished reloading
+I1026 05:13:44.932386   49922 load.go:37] Reloading schema and connectors...
+E1026 05:13:44.938147   49922 load.go:79] Could not load sources: <nil>
+I1026 05:13:44.938731   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+I1026 05:13:44.938784   49922 load.go:80] Finished reloading
+I1026 05:15:09.555814   49922 load.go:37] Reloading schema and connectors...
+E1026 05:15:09.559395   49922 load.go:79] Could not load sources: <nil>
+I1026 05:15:09.560098   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+I1026 05:15:09.560162   49922 load.go:80] Finished reloading
+I1026 05:15:17.193430   49922 load.go:37] Reloading schema and connectors...
+E1026 05:15:17.195127   49922 load.go:79] Could not load sources: <nil>
+I1026 05:15:17.195779   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+I1026 05:15:17.195843   49922 load.go:80] Finished reloading
+I1026 05:15:19.554450   49922 load.go:37] Reloading schema and connectors...
+E1026 05:15:19.555990   49922 load.go:79] Could not load sources: <nil>
+I1026 05:15:19.556338   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+I1026 05:15:19.556355   49922 load.go:80] Finished reloading
+I1026 05:15:22.332143   49922 load.go:37] Reloading schema and connectors...
+E1026 05:15:22.338621   49922 load.go:79] Could not load sources: <nil>
+I1026 05:15:22.338988   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+I1026 05:15:22.339008   49922 load.go:80] Finished reloading
+I1026 05:15:24.446031   49922 load.go:37] Reloading schema and connectors...
+E1026 05:15:24.447821   49922 load.go:79] Could not load sources: <nil>
+I1026 05:15:24.448303   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+I1026 05:15:24.448329   49922 load.go:80] Finished reloading
+I1026 05:15:26.914150   49922 load.go:37] Reloading schema and connectors...
+E1026 05:15:26.916910   49922 load.go:79] Could not load sources: <nil>
+I1026 05:15:26.917476   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+I1026 05:15:26.917543   49922 load.go:80] Finished reloading
+I1026 05:15:29.233140   49922 load.go:37] Reloading schema and connectors...
+E1026 05:15:29.234568   49922 load.go:79] Could not load sources: <nil>
+I1026 05:15:29.234839   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+I1026 05:15:29.234859   49922 load.go:80] Finished reloading
+I1026 05:19:22.992280   49922 load.go:37] Reloading schema and connectors...
+E1026 05:19:22.998219   49922 load.go:79] Could not load sources: <nil>
+I1026 05:19:23.000051   49922 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+I1026 05:19:23.000823   49922 load.go:80] Finished reloading

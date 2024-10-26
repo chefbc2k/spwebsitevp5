@@ -1,0 +1,30 @@
+extend type NFT {
+  """
+  ✨ Implicit foreign key field based on `NFT`.`creator`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  creatorId: UUID! @fdc_generated(from: "NFT.creator", purpose: IMPLICIT_REF_FIELD)
+}
+extend type Ownership {
+  """
+  ✨ Implicit foreign key field based on `Ownership`.`nft`. It must match the value of `NFT`.`id`. See `@ref` for how to customize it.
+  """
+  nftId: UUID! @fdc_generated(from: "Ownership.nft", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `Ownership`.`owner`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  ownerId: UUID! @fdc_generated(from: "Ownership.owner", purpose: IMPLICIT_REF_FIELD)
+}
+extend type Transaction {
+  """
+  ✨ Implicit foreign key field based on `Transaction`.`buyer`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  buyerId: UUID! @fdc_generated(from: "Transaction.buyer", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `Transaction`.`nft`. It must match the value of `NFT`.`id`. See `@ref` for how to customize it.
+  """
+  nftId: UUID! @fdc_generated(from: "Transaction.nft", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `Transaction`.`seller`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  sellerId: UUID! @fdc_generated(from: "Transaction.seller", purpose: IMPLICIT_REF_FIELD)
+}

@@ -1554,3 +1554,210 @@ I1026 04:49:31.871481   49665 dev.go:95] Listening on address (HTTP + gRPC): 127
 [debug] [2024-10-26T09:49:40.051Z] >>> [apiv2][query] GET http://127.0.0.1:4400/emulators [none]
 [debug] [2024-10-26T09:49:40.057Z] <<< [apiv2][status] GET http://127.0.0.1:4400/emulators 200
 [debug] [2024-10-26T09:49:40.057Z] <<< [apiv2][body] GET http://127.0.0.1:4400/emulators {"hub":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"name":"hub","host":"127.0.0.1","port":4400},"logging":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"name":"logging","host":"127.0.0.1","port":4500},"dataconnect":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":9399},{"address":"::1","family":"IPv6","port":9399}],"name":"dataconnect","host":"127.0.0.1","port":9399,"pid":49922,"timeout":10000}}
+[warn] ⚠  Data Connect Emulator has exited upon receiving signal: SIGINT 
+[debug] [2024-10-26T09:56:37.004Z] [Firebase Plugin] Activating Firebase extension.
+[debug] [2024-10-26T09:56:37.044Z] [Firebase Plugin] VSCode notification server listening on port 40001
+[debug] [2024-10-26T09:56:38.341Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-10-26T09:56:38.341Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-10-26T09:56:38.341Z] Starting Data Connect Emulator with command {"binary":"/Users/chefb/.cache/firebase/emulators/dataconnect-emulator-1.5.1","args":["--logtostderr","-v=2","dev","--listen=localhost:50001","--config_dir=/Users/chefb/spwebsitevp5/dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"/Users/chefb/.cache/firebase/emulators/dataconnect-emulator-1.5.1\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=localhost:50001\",\"--config_dir=/Users/chefb/spwebsitevp5/dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to dataconnect-debug.log"}}
+[debug] [2024-10-26T09:56:39.480Z] I1026 04:56:38.549453   54790 load.go:37] Reloading schema and connectors...
+E1026 04:56:38.554640   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service "speak-website-data-connect-service". No service has a schema.
+E1026 04:56:38.554857   54790 load.go:79] Could not load sources: <nil>
+I1026 04:56:38.556100   54790 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+I1026 04:56:38.556336   54790 load.go:80] Finished reloading
+I1026 04:56:38.562544   54790 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 04:56:38.549453   54790 load.go:37] Reloading schema and connectors...\nE1026 04:56:38.554640   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service \"speak-website-data-connect-service\". No service has a schema.\nE1026 04:56:38.554857   54790 load.go:79] Could not load sources: <nil>\nI1026 04:56:38.556100   54790 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] \nI1026 04:56:38.556336   54790 load.go:80] Finished reloading\nI1026 04:56:38.562544   54790 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001\n"}}
+[error] [Firebase Plugin] error:  {}
+[error] [Firebase Plugin] error:  {}
+[debug] [2024-10-26T09:58:44.127Z] I1026 04:58:44.126667   54790 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 04:58:44.126667   54790 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T09:58:44.137Z] E1026 04:58:44.136174   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service "speak-website-data-connect-service". No service has a schema.
+E1026 04:58:44.136311   54790 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 04:58:44.136174   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service \"speak-website-data-connect-service\". No service has a schema.\nE1026 04:58:44.136311   54790 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T09:58:44.138Z] I1026 04:58:44.137903   54790 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 04:58:44.137903   54790 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] \n"}}
+[debug] [2024-10-26T09:58:44.138Z] I1026 04:58:44.138098   54790 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 04:58:44.138098   54790 load.go:80] Finished reloading\n"}}
+[error] [Firebase Plugin] error:  {}
+[debug] [2024-10-26T09:58:51.002Z] I1026 04:58:51.002771   54790 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 04:58:51.002771   54790 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T09:58:51.007Z] E1026 04:58:51.007563   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service "speak-website-data-connect-service". No service has a schema.
+E1026 04:58:51.007603   54790 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 04:58:51.007563   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service \"speak-website-data-connect-service\". No service has a schema.\nE1026 04:58:51.007603   54790 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T09:58:51.008Z] I1026 04:58:51.008038   54790 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+I1026 04:58:51.008063   54790 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 04:58:51.008038   54790 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] \nI1026 04:58:51.008063   54790 load.go:80] Finished reloading\n"}}
+[error] [Firebase Plugin] error:  {}
+[debug] [2024-10-26T10:13:44.932Z] I1026 05:13:44.931702   54790 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:13:44.931702   54790 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T10:13:44.936Z] E1026 05:13:44.936182   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service "speak-website-data-connect-service". No service has a schema.
+E1026 05:13:44.936237   54790 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 05:13:44.936182   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service \"speak-website-data-connect-service\". No service has a schema.\nE1026 05:13:44.936237   54790 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T10:13:44.937Z] I1026 05:13:44.937201   54790 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:13:44.937201   54790 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] \n"}}
+[debug] [2024-10-26T10:13:44.937Z] I1026 05:13:44.937258   54790 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:13:44.937258   54790 load.go:80] Finished reloading\n"}}
+[error] [Firebase Plugin] error:  {}
+[debug] [2024-10-26T10:15:08.583Z] I1026 05:15:08.583654   54790 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:15:08.583654   54790 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T10:15:08.587Z] E1026 05:15:08.587738   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service "speak-website-data-connect-service". No service has a schema.
+E1026 05:15:08.587768   54790 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 05:15:08.587738   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service \"speak-website-data-connect-service\". No service has a schema.\nE1026 05:15:08.587768   54790 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T10:15:08.589Z] I1026 05:15:08.589235   54790 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:15:08.589235   54790 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] \n"}}
+[debug] [2024-10-26T10:15:08.589Z] I1026 05:15:08.589264   54790 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:15:08.589264   54790 load.go:80] Finished reloading\n"}}
+[error] [Firebase Plugin] error:  {}
+[debug] [2024-10-26T10:15:17.193Z] I1026 05:15:17.193441   54790 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:15:17.193441   54790 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T10:15:17.195Z] E1026 05:15:17.195007   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service "speak-website-data-connect-service". No service has a schema.
+E1026 05:15:17.195031   54790 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 05:15:17.195007   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service \"speak-website-data-connect-service\". No service has a schema.\nE1026 05:15:17.195031   54790 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T10:15:17.195Z] I1026 05:15:17.195665   54790 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:15:17.195665   54790 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] \n"}}
+[debug] [2024-10-26T10:15:17.195Z] I1026 05:15:17.195698   54790 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:15:17.195698   54790 load.go:80] Finished reloading\n"}}
+[error] [Firebase Plugin] error:  {}
+[debug] [2024-10-26T10:15:18.585Z] I1026 05:15:18.585157   54790 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:15:18.585157   54790 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T10:15:18.586Z] E1026 05:15:18.586464   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service "speak-website-data-connect-service". No service has a schema.
+E1026 05:15:18.586487   54790 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 05:15:18.586464   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service \"speak-website-data-connect-service\". No service has a schema.\nE1026 05:15:18.586487   54790 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T10:15:18.586Z] I1026 05:15:18.586845   54790 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+I1026 05:15:18.586866   54790 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:15:18.586845   54790 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] \nI1026 05:15:18.586866   54790 load.go:80] Finished reloading\n"}}
+[error] [Firebase Plugin] error:  {}
+[debug] [2024-10-26T10:15:22.331Z] I1026 05:15:22.331731   54790 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:15:22.331731   54790 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T10:15:22.334Z] E1026 05:15:22.334218   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service "speak-website-data-connect-service". No service has a schema.
+E1026 05:15:22.334267   54790 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 05:15:22.334218   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service \"speak-website-data-connect-service\". No service has a schema.\nE1026 05:15:22.334267   54790 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T10:15:22.335Z] I1026 05:15:22.334946   54790 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+I1026 05:15:22.334979   54790 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:15:22.334946   54790 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] \nI1026 05:15:22.334979   54790 load.go:80] Finished reloading\n"}}
+[error] [Firebase Plugin] error:  {}
+[debug] [2024-10-26T10:15:24.446Z] I1026 05:15:24.446036   54790 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:15:24.446036   54790 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T10:15:24.448Z] E1026 05:15:24.448859   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service "speak-website-data-connect-service". No service has a schema.
+E1026 05:15:24.448888   54790 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 05:15:24.448859   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service \"speak-website-data-connect-service\". No service has a schema.\nE1026 05:15:24.448888   54790 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T10:15:24.449Z] I1026 05:15:24.449172   54790 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+I1026 05:15:24.449192   54790 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:15:24.449172   54790 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] \nI1026 05:15:24.449192   54790 load.go:80] Finished reloading\n"}}
+[error] [Firebase Plugin] error:  {}
+[debug] [2024-10-26T10:15:26.914Z] I1026 05:15:26.914113   54790 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:15:26.914113   54790 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T10:15:26.917Z] E1026 05:15:26.917024   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service "speak-website-data-connect-service". No service has a schema.
+E1026 05:15:26.917066   54790 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 05:15:26.917024   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service \"speak-website-data-connect-service\". No service has a schema.\nE1026 05:15:26.917066   54790 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T10:15:26.917Z] I1026 05:15:26.917904   54790 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:15:26.917904   54790 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] \n"}}
+[debug] [2024-10-26T10:15:26.918Z] I1026 05:15:26.917940   54790 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:15:26.917940   54790 load.go:80] Finished reloading\n"}}
+[error] [Firebase Plugin] error:  {}
+[debug] [2024-10-26T10:15:28.584Z] I1026 05:15:28.584215   54790 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:15:28.584215   54790 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T10:15:28.586Z] E1026 05:15:28.585995   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service "speak-website-data-connect-service". No service has a schema.
+E1026 05:15:28.586019   54790 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 05:15:28.585995   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service \"speak-website-data-connect-service\". No service has a schema.\nE1026 05:15:28.586019   54790 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T10:15:28.586Z] I1026 05:15:28.586392   54790 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:15:28.586392   54790 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] \n"}}
+[debug] [2024-10-26T10:15:28.586Z] I1026 05:15:28.586411   54790 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:15:28.586411   54790 load.go:80] Finished reloading\n"}}
+[error] [Firebase Plugin] error:  {}
+[debug] [2024-10-26T10:19:22.992Z] I1026 05:19:22.992303   54790 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:19:22.992303   54790 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T10:19:22.997Z] E1026 05:19:22.997607   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service "speak-website-data-connect-service". No service has a schema.
+E1026 05:19:22.997706   54790 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 05:19:22.997607   54790 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service \"speak-website-data-connect-service\". No service has a schema.\nE1026 05:19:22.997706   54790 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T10:19:22.999Z] I1026 05:19:22.999414   54790 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+I1026 05:19:22.999517   54790 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 05:19:22.999414   54790 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] \nI1026 05:19:22.999517   54790 load.go:80] Finished reloading\n"}}
+[error] [Firebase Plugin] error:  {}
+[debug] [2024-10-26T10:30:58.525Z] [Firebase Plugin] Value of process.env.MONOSPACE_ENV: undefined
+[debug] [2024-10-26T10:30:58.525Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2024-10-26T10:30:58.526Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-26T10:30:58.526Z] > authorizing via signed-in user (chefbc2k@gmail.com)
+[debug] [2024-10-26T10:30:58.526Z] Checked if tokens are valid: true, expires at: 1729939773237
+[debug] [2024-10-26T10:30:58.526Z] Checked if tokens are valid: true, expires at: 1729939773237
+[debug] [2024-10-26T10:30:58.527Z] [Firebase Plugin] User found:  chefbc2k@gmail.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2024-10-26T10:30:58.527Z] Checked if tokens are valid: true, expires at: 1729939773237
+[debug] [2024-10-26T10:30:58.528Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2024-10-26T10:30:58.529Z] [Firebase Plugin] Value of process.env.MONOSPACE_ENV: undefined
+[debug] [2024-10-26T10:30:58.529Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2024-10-26T10:30:58.529Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-26T10:30:58.529Z] > authorizing via signed-in user (chefbc2k@gmail.com)
+[debug] [2024-10-26T10:30:58.530Z] Checked if tokens are valid: true, expires at: 1729939773237
+[debug] [2024-10-26T10:30:58.530Z] [Firebase Plugin] User found:  chefbc2k@gmail.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2024-10-26T10:30:58.530Z] Checked if tokens are valid: true, expires at: 1729939773237
+[debug] [2024-10-26T10:30:58.530Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2024-10-26T10:30:58.531Z] >>> [apiv2][query] GET http://127.0.0.1:4400/emulators [none]
+[debug] [2024-10-26T10:30:58.561Z] <<< [apiv2][status] GET http://127.0.0.1:4400/emulators 200
+[debug] [2024-10-26T10:30:58.562Z] <<< [apiv2][body] GET http://127.0.0.1:4400/emulators {"hub":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"name":"hub","host":"127.0.0.1","port":4400},"logging":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"name":"logging","host":"127.0.0.1","port":4500},"dataconnect":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":9399},{"address":"::1","family":"IPv6","port":9399}],"name":"dataconnect","host":"127.0.0.1","port":9399,"pid":49922,"timeout":10000}}
+[debug] [2024-10-26T10:30:58.998Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-10-26T10:30:58.998Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2024-10-26T10:30:59.018Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-10-26T10:30:59.018Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[warn] ⚠  Data Connect Emulator has exited upon receiving signal: SIGINT 
+[debug] [2024-10-26T11:25:22.617Z] [Firebase Plugin] Activating Firebase extension.
+[debug] [2024-10-26T11:25:22.659Z] [Firebase Plugin] VSCode notification server listening on port 40001
+[debug] [2024-10-26T11:25:23.986Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-10-26T11:25:23.986Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-10-26T11:25:23.986Z] Starting Data Connect Emulator with command {"binary":"/Users/chefb/.cache/firebase/emulators/dataconnect-emulator-1.5.1","args":["--logtostderr","-v=2","dev","--listen=localhost:50001","--config_dir=/Users/chefb/spwebsitevp5/dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting Data Connect Emulator with command {\"binary\":\"/Users/chefb/.cache/firebase/emulators/dataconnect-emulator-1.5.1\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=localhost:50001\",\"--config_dir=/Users/chefb/spwebsitevp5/dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: Data Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"Data Connect Emulator logging to dataconnect-debug.log"}}
+[debug] [2024-10-26T11:25:25.344Z] I1026 06:25:24.175867   80150 load.go:37] Reloading schema and connectors...
+E1026 06:25:24.183566   80150 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service "speak-website-data-connect-service". No service has a schema.
+E1026 06:25:24.183683   80150 load.go:79] Could not load sources: <nil>
+I1026 06:25:24.184882   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+I1026 06:25:24.185764   80150 load.go:80] Finished reloading
+I1026 06:25:24.192727   80150 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 06:25:24.175867   80150 load.go:37] Reloading schema and connectors...\nE1026 06:25:24.183566   80150 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service \"speak-website-data-connect-service\". No service has a schema.\nE1026 06:25:24.183683   80150 load.go:79] Could not load sources: <nil>\nI1026 06:25:24.184882   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] \nI1026 06:25:24.185764   80150 load.go:80] Finished reloading\nI1026 06:25:24.192727   80150 dev.go:95] Listening on address (HTTP + gRPC): 127.0.0.1:50001\n"}}
+[error] [Firebase Plugin] error:  {}
+[error] [Firebase Plugin] error:  {}
+[debug] [2024-10-26T11:25:44.191Z] I1026 06:25:44.191810   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 06:25:44.191810   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T11:25:44.204Z] E1026 06:25:44.204551   80150 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service "speak-website-data-connect-service". No service has a schema.
+E1026 06:25:44.204643   80150 load.go:79] Could not load sources: <nil>
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E1026 06:25:44.204551   80150 load.go:69] Could not generate extensions: rpc error: code = NotFound desc = no schema found for service \"speak-website-data-connect-service\". No service has a schema.\nE1026 06:25:44.204643   80150 load.go:79] Could not load sources: <nil>\n"}}
+[debug] [2024-10-26T11:25:44.205Z] I1026 06:25:44.205046   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 06:25:44.205046   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [60423B] \n"}}
+[debug] [2024-10-26T11:25:44.205Z] I1026 06:25:44.205075   80150 load.go:80] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 06:25:44.205075   80150 load.go:80] Finished reloading\n"}}
+[error] [Firebase Plugin] error:  {}
+[debug] [2024-10-26T11:27:13.824Z] I1026 06:27:13.824531   80150 load.go:37] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 06:27:13.824531   80150 load.go:37] Reloading schema and connectors...\n"}}
+[debug] [2024-10-26T11:27:13.856Z] I1026 06:27:13.856007   80150 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateSchema(): done sources: schema/schema.gql [1454B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 06:27:13.856007   80150 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateSchema(): done sources: schema/schema.gql [1454B] \n"}}
+[debug] [2024-10-26T11:27:13.871Z] I1026 06:27:13.870961   80150 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 06:27:13.870961   80150 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 22bc] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] \n"}}
+[debug] [2024-10-26T11:27:13.897Z] I1026 06:27:13.897558   80150 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 06:27:13.897558   80150 codegen.go:82] [connector \"default\" javascriptSdk] Generating sources into \"/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector\"\n"}}
+[debug] [2024-10-26T11:27:13.904Z] I1026 06:27:13.904664   80150 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/mutation.gql [11489B] main/implicit.gql [1491B] main/input.gql [21448B] prelude.gql [60423B] main/relation.gql [5127B] main/query.gql [4059B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 06:27:13.904664   80150 collector.go:107] schema extensions wrote into \"/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema\"\nGenerated sources: main/mutation.gql [11489B] main/implicit.gql [1491B] main/input.gql [21448B] prelude.gql [60423B] main/relation.gql [5127B] main/query.gql [4059B] \n"}}
+[debug] [2024-10-26T11:27:13.905Z] I1026 06:27:13.905631   80150 collector.go:107] connector "default" javascriptSdk wrote into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+Generated sources: esm/index.esm.js [207B] esm/package.json [17B] index.cjs.js [248B] package.json [623B] index.d.ts [616B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 06:27:13.905631   80150 collector.go:107] connector \"default\" javascriptSdk wrote into \"/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector\"\nGenerated sources: esm/index.esm.js [207B] esm/package.json [17B] index.cjs.js [248B] package.json [623B] index.d.ts [616B] \n"}}
+[debug] [2024-10-26T11:27:13.911Z] I1026 06:27:13.911104   80150 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 06:27:13.911104   80150 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation\n"}}
+[debug] [2024-10-26T11:27:13.911Z] I1026 06:27:13.911135   80150 load.go:115] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 06:27:13.911135   80150 load.go:115] Finished reloading\n"}}
+[debug] [2024-10-26T11:27:14.037Z] I1026 06:27:14.037278   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I1026 06:27:14.037278   80150 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 22bc] ExecuteGraphqlRead IntrospectionQuery: succeeded. \n"}}
