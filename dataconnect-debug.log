@@ -542,3 +542,85 @@ I1026 07:47:34.789257   82074 collector.go:107] connector "default" javascriptSd
 Generated sources: package.json [623B] index.d.ts [8341B] esm/index.esm.js [207B] esm/package.json [17B] index.cjs.js [248B] 
 I1026 07:47:34.790882   82074 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation
 I1026 07:47:34.790905   82074 load.go:115] Finished reloading
+I1026 14:49:03.380291   82074 load.go:37] Reloading schema and connectors...
+E1026 14:49:03.396511   82074 load.go:79] Could not load sources: <nil>
+I1026 14:49:03.401145   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/mutation.gql [216677B] prelude.gql [60423B] main/implicit.gql [28419B] main/input.gql [350676B] main/relation.gql [127932B] main/query.gql [75224B] 
+I1026 14:49:03.401651   82074 load.go:80] Finished reloading
+I1026 14:52:33.884500   82074 load.go:37] Reloading schema and connectors...
+E1026 14:52:33.892689   82074 load.go:79] Could not load sources: <nil>
+I1026 14:52:33.894517   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/mutation.gql [216677B] main/implicit.gql [28419B] main/input.gql [350676B] main/relation.gql [127932B] main/query.gql [75224B] 
+I1026 14:52:33.894657   82074 load.go:80] Finished reloading
+I1026 14:52:34.946035   82074 prepare.go:112] [operation "" attempt 1] preparePlan succeeded
+I1026 14:52:34.946290   82074 prepare.go:103] [operation "" attempt 1] DBStats beforePrepare: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}, afterPrepare: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}
+I1026 14:52:34.966801   82074 executor.go:97] [operation "" attempt 1] DBStats beforeRun: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}, afterRun: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}
+I1026 14:52:34.967042   82074 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 145d] ExecuteGraphql : succeeded. 
+I1026 14:57:36.361744   82074 load.go:37] Reloading schema and connectors...
+E1026 14:57:36.369379   82074 load.go:79] Could not load sources: <nil>
+I1026 14:57:36.372356   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/implicit.gql [28419B] main/input.gql [350676B] main/relation.gql [127932B] main/query.gql [75224B] main/mutation.gql [216677B] 
+I1026 14:57:36.372385   82074 load.go:80] Finished reloading
+I1026 14:58:26.619496   82074 prepare.go:112] [operation "" attempt 1] preparePlan succeeded
+I1026 14:58:26.619526   82074 prepare.go:103] [operation "" attempt 1] DBStats beforePrepare: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}, afterPrepare: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}
+I1026 14:58:26.646148   82074 executor.go:97] [operation "" attempt 1] DBStats beforeRun: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}, afterRun: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}
+I1026 14:58:26.646252   82074 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 145d] ExecuteGraphql : succeeded. 
+I1026 14:58:59.899545   82074 load.go:37] Reloading schema and connectors...
+E1026 14:58:59.918688   82074 load.go:79] Could not load sources: <nil>
+I1026 14:58:59.920232   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/mutation.gql [216677B] main/implicit.gql [28419B] main/input.gql [350676B] main/relation.gql [127932B] main/query.gql [75224B] 
+I1026 14:58:59.920260   82074 load.go:80] Finished reloading
+I1026 14:59:01.047018   82074 load.go:37] Reloading schema and connectors...
+I1026 14:59:01.352162   82074 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 145d] UpdateSchema(): done sources: schema/schema.gql [21297B] 
+I1026 14:59:01.352387   82074 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 145d] UpdateConnector(default): done sources: connector/queries.gql [1855B] connector/mutations.gql [1163B] 
+I1026 14:59:01.480133   82074 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+I1026 14:59:01.482631   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/query.gql [75224B] main/mutation.gql [216677B] main/implicit.gql [28419B] main/input.gql [350676B] main/relation.gql [127932B] 
+I1026 14:59:01.483113   82074 collector.go:107] connector "default" javascriptSdk wrote into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+Generated sources: esm/index.esm.js [207B] esm/package.json [17B] index.cjs.js [248B] package.json [623B] index.d.ts [8341B] 
+I1026 14:59:01.488851   82074 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation
+I1026 14:59:01.488892   82074 load.go:115] Finished reloading
+I1026 15:02:56.863554   82074 prepare.go:112] [operation "" attempt 1] preparePlan succeeded
+I1026 15:02:56.863619   82074 prepare.go:103] [operation "" attempt 1] DBStats beforePrepare: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}, afterPrepare: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}
+I1026 15:02:56.865855   82074 executor.go:97] [operation "" attempt 1] DBStats beforeRun: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}, afterRun: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}
+I1026 15:02:56.865900   82074 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 145d] ExecuteGraphql : succeeded. 
+I1026 15:48:55.737143   82074 prepare.go:112] [operation "" attempt 1] preparePlan succeeded
+I1026 15:48:55.737186   82074 prepare.go:103] [operation "" attempt 1] DBStats beforePrepare: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}, afterPrepare: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}
+I1026 15:48:55.810521   82074 executor.go:97] [operation "" attempt 1] DBStats beforeRun: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}, afterRun: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}
+I1026 15:48:55.810579   82074 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 145d] ExecuteGraphql : succeeded. 
+I1026 16:21:57.951212   82074 prepare.go:112] [operation "" attempt 1] preparePlan succeeded
+I1026 16:21:57.951267   82074 prepare.go:103] [operation "" attempt 1] DBStats beforePrepare: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}, afterPrepare: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}
+I1026 16:21:57.986898   82074 executor.go:97] [operation "" attempt 1] DBStats beforeRun: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}, afterRun: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}
+I1026 16:21:57.986950   82074 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 145d] ExecuteGraphql : succeeded. 
+I1026 16:23:49.127060   82074 prepare.go:112] [operation "" attempt 1] preparePlan succeeded
+I1026 16:23:49.127090   82074 prepare.go:103] [operation "" attempt 1] DBStats beforePrepare: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}, afterPrepare: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}
+I1026 16:23:49.144644   82074 executor.go:97] [operation "" attempt 1] DBStats beforeRun: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}, afterRun: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}
+I1026 16:23:49.144711   82074 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 145d] ExecuteGraphql : succeeded. 
+I1026 17:37:20.435087   82074 load.go:37] Reloading schema and connectors...
+E1026 17:37:20.463271   82074 load.go:79] Could not load sources: <nil>
+I1026 17:37:20.467005   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/relation.gql [127932B] prelude.gql [60423B] main/query.gql [75224B] main/mutation.gql [216677B] main/implicit.gql [28419B] main/input.gql [350676B] 
+I1026 17:37:20.467298   82074 load.go:80] Finished reloading
+I1026 17:37:28.728401   82074 load.go:37] Reloading schema and connectors...
+E1026 17:37:28.755245   82074 load.go:79] Could not load sources: <nil>
+I1026 17:37:28.757443   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: main/mutation.gql [216677B] main/implicit.gql [28419B] main/input.gql [350676B] main/relation.gql [127932B] prelude.gql [60423B] main/query.gql [75224B] 
+I1026 17:37:28.757471   82074 load.go:80] Finished reloading
+I1026 17:37:38.914038   82074 load.go:37] Reloading schema and connectors...
+I1026 17:37:39.268410   82074 control.go:45] [engine.Service /emulator/speak-website-data-connect-service 145d] UpdateSchema(): done sources: schema/schema.gql [21298B] 
+I1026 17:37:39.268503   82074 control.go:73] [engine.Service /emulator/speak-website-data-connect-service 145d] UpdateConnector(default): done sources: connector/mutations.gql [1163B] connector/queries.gql [1855B] 
+I1026 17:37:39.390551   82074 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+I1026 17:37:39.393068   82074 collector.go:107] schema extensions wrote into "/Users/chefb/spwebsitevp5/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [60423B] main/query.gql [75224B] main/mutation.gql [216677B] main/implicit.gql [28419B] main/input.gql [350676B] main/relation.gql [127932B] 
+I1026 17:37:39.393589   82074 collector.go:107] connector "default" javascriptSdk wrote into "/Users/chefb/spwebsitevp5/dataconnect-generated/js/default-connector"
+Generated sources: index.d.ts [8341B] esm/index.esm.js [207B] esm/package.json [17B] index.cjs.js [248B] package.json [623B] 
+I1026 17:37:39.395644   82074 installsdk.go:48] Package @firebasegen/default-connector is already installed. Skipping installation
+I1026 17:37:39.396532   82074 load.go:115] Finished reloading
+I1026 17:53:51.004811   82074 prepare.go:112] [operation "" attempt 1] preparePlan succeeded
+I1026 17:53:51.004858   82074 prepare.go:103] [operation "" attempt 1] DBStats beforePrepare: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}, afterPrepare: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}
+I1026 17:53:51.044993   82074 executor.go:97] [operation "" attempt 1] DBStats beforeRun: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}, afterRun: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}
+I1026 17:53:51.045100   82074 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 145d] ExecuteGraphql : succeeded. 
+I1026 18:09:42.290986   82074 prepare.go:112] [operation "" attempt 1] preparePlan succeeded
+I1026 18:09:42.291041   82074 prepare.go:103] [operation "" attempt 1] DBStats beforePrepare: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}, afterPrepare: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}
+I1026 18:09:42.326436   82074 executor.go:97] [operation "" attempt 1] DBStats beforeRun: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}, afterRun: sql.DBStats{MaxOpenConnections:1, OpenConnections:1, InUse:0, Idle:1, WaitCount:0, WaitDuration:0, MaxIdleClosed:0, MaxIdleTimeClosed:0, MaxLifetimeClosed:0}
+I1026 18:09:42.326477   82074 engine.go:148] [engine.Service /emulator/speak-website-data-connect-service 145d] ExecuteGraphql : succeeded. 

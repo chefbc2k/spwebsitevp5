@@ -1,0 +1,102 @@
+# This is a file for you to write an un-named mutation. 
+# Only one un-named mutation is allowed per file.
+mutation {
+  # Remote Work Configurations
+  insertPhoneRecording: studioAvailability_insert(data: { availability: "Phone Recording" })
+  insertEntryLevelHomeStudio: studioAvailability_insert(data: { availability: "Entry-Level Home Studio" })
+  insertIntermediateHomeStudio: studioAvailability_insert(data: { availability: "Intermediate Home Studio" })
+  insertProfessionalHomeStudio: studioAvailability_insert(data: { availability: "Professional Home Studio" })
+  insertAdvancedHomeStudio: studioAvailability_insert(data: { availability: "Advanced Home Studio" })
+  insertContentCreatorHomeStudio: studioAvailability_insert(data: { availability: "Content Creator Home Studio" })
+  insertYouTuberHomeStudio: studioAvailability_insert(data: { availability: "YouTuber Home Studio" })
+  insertPodcasterBasicSetup: studioAvailability_insert(data: { availability: "Podcaster Basic Setup" })
+  insertPodcasterAdvancedSetup: studioAvailability_insert(data: { availability: "Podcaster Advanced Setup" })
+  insertStreamerSetup: studioAvailability_insert(data: { availability: "Streamer Setup" })
+
+  # Studio-Based Configurations
+  insertBasicLocalStudio: studioAvailability_insert(data: { availability: "Basic Local Studio" })
+  insertIntermediateLocalStudio: studioAvailability_insert(data: { availability: "Intermediate Local Studio" })
+  insertProfessionalLocalProduction: studioAvailability_insert(data: { availability: "Professional Local Production" })
+  insertHighEndStudioSetup: studioAvailability_insert(data: { availability: "High-End Studio Setup" })
+
+  # On-site Production Configurations
+  insertOnSiteBasicProduction: studioAvailability_insert(data: { availability: "On-site Basic Production" })
+  insertOnSiteAdvancedProduction: studioAvailability_insert(data: { availability: "On-site Advanced Production" })
+  insertOnSiteFullScaleProduction: studioAvailability_insert(data: { availability: "On-site Full-Scale Production" })
+
+  # Travel Requirements by Region
+  insertLocalOnly: studioAvailability_insert(data: { availability: "Local Only" })
+  insertTravelNortheast: studioAvailability_insert(data: { availability: "Northeast" })
+  insertTravelSoutheast: studioAvailability_insert(data: { availability: "Southeast" })
+  insertTravelEastMidwest: studioAvailability_insert(data: { availability: "East-Midwest" })
+  insertTravelNorthMidwest: studioAvailability_insert(data: { availability: "North-Midwest" })
+  insertTravelSouthMidwest: studioAvailability_insert(data: { availability: "South-Midwest" })
+  insertTravelCentralMidwest: studioAvailability_insert(data: { availability: "Central-Midwest" })
+  insertTravelWestMidwest: studioAvailability_insert(data: { availability: "West-Midwest" })
+  insertTravelSouthwest: studioAvailability_insert(data: { availability: "Southwest" })
+  insertTravelNorthwest: studioAvailability_insert(data: { availability: "Northwest" })
+  insertTravelPacific: studioAvailability_insert(data: { availability: "Pacific" })
+  insertTravelNational: studioAvailability_insert(data: { availability: "National" })
+  insertTravelInternational: studioAvailability_insert(data: { availability: "International" })
+
+  # Combined Configurations
+  insertRemoteAndBasicStudio: studioAvailability_insert(data: { availability: "Remote & Basic Studio" })
+  insertRemoteAndIntermediateStudio: studioAvailability_insert(data: { availability: "Remote & Intermediate Studio" })
+  insertRemoteAndProfessionalStudio: studioAvailability_insert(data: { availability: "Remote & Professional Studio" })
+  
+  insertRemoteAndTravelLocal: studioAvailability_insert(data: { availability: "Remote & Local Travel" })
+  insertRemoteAndTravelNortheast: studioAvailability_insert(data: { availability: "Remote & Northeast Travel" })
+  insertRemoteAndTravelSoutheast: studioAvailability_insert(data: { availability: "Remote & Southeast Travel" })
+  insertRemoteAndTravelEastMidwest: studioAvailability_insert(data: { availability: "Remote & East-Midwest Travel" })
+  insertRemoteAndTravelNorthMidwest: studioAvailability_insert(data: { availability: "Remote & North-Midwest Travel" })
+  insertRemoteAndTravelSouthMidwest: studioAvailability_insert(data: { availability: "Remote & South-Midwest Travel" })
+  insertRemoteAndTravelCentralMidwest: studioAvailability_insert(data: { availability: "Remote & Central-Midwest Travel" })
+  insertRemoteAndTravelWestMidwest: studioAvailability_insert(data: { availability: "Remote & West-Midwest Travel" })
+  insertRemoteAndTravelSouthwest: studioAvailability_insert(data: { availability: "Remote & Southwest Travel" })
+  insertRemoteAndTravelNorthwest: studioAvailability_insert(data: { availability: "Remote & Northwest Travel" })
+  insertRemoteAndTravelPacific: studioAvailability_insert(data: { availability: "Remote & Pacific Travel" })
+  insertRemoteAndTravelNational: studioAvailability_insert(data: { availability: "Remote & National Travel" })
+  insertRemoteAndTravelInternational: studioAvailability_insert(data: { availability: "Remote & International Travel" })
+
+  insertStudioAndTravelLocal: studioAvailability_insert(data: { availability: "Studio & Local Travel" })
+  insertStudioAndTravelNortheast: studioAvailability_insert(data: { availability: "Studio & Northeast Travel" })
+  insertStudioAndTravelSoutheast: studioAvailability_insert(data: { availability: "Studio & Southeast Travel" })
+  insertStudioAndTravelEastMidwest: studioAvailability_insert(data: { availability: "Studio & East-Midwest Travel" })
+  insertStudioAndTravelNorthMidwest: studioAvailability_insert(data: { availability: "Studio & North-Midwest Travel" })
+  insertStudioAndTravelSouthMidwest: studioAvailability_insert(data: { availability: "Studio & South-Midwest Travel" })
+  insertStudioAndTravelCentralMidwest: studioAvailability_insert(data: { availability: "Studio & Central-Midwest Travel" })
+  insertStudioAndTravelWestMidwest: studioAvailability_insert(data: { availability: "Studio & West-Midwest Travel" })
+  insertStudioAndTravelSouthwest: studioAvailability_insert(data: { availability: "Studio & Southwest Travel" })
+  insertStudioAndTravelNorthwest: studioAvailability_insert(data: { availability: "Studio & Northwest Travel" })
+  insertStudioAndTravelPacific: studioAvailability_insert(data: { availability: "Studio & Pacific Travel" })
+  insertStudioAndTravelNational: studioAvailability_insert(data: { availability: "Studio & National Travel" })
+  insertStudioAndTravelInternational: studioAvailability_insert(data: { availability: "Studio & International Travel" })
+
+  insertRemoteStudioAndTravelLocal: studioAvailability_insert(data: { availability: "Remote, Studio & Local Travel" })
+  insertRemoteStudioAndTravelInternational: studioAvailability_insert(data: { availability: "Remote, Studio & International Travel" })
+
+  # Flexible Availability Options
+  insertFlexibleRemote: studioAvailability_insert(data: { availability: "Flexible: Remote" })
+  insertFlexibleStudio: studioAvailability_insert(data: { availability: "Flexible: Studio" })
+  insertFlexibleTravel: studioAvailability_insert(data: { availability: "Flexible: Travel" })
+
+  # Partial Availability Options
+  insertPartialRemote: studioAvailability_insert(data: { availability: "Partial: Remote" })
+  insertPartialStudio: studioAvailability_insert(data: { availability: "Partial: Studio" })
+  insertPartialTravel: studioAvailability_insert(data: { availability: "Partial: Travel" })
+
+  # Specialized Remote Setups
+  insertCreatorHomeStudio: studioAvailability_insert(data: { availability: "Creator Home Studio" })
+  insertInfluencerHomeStudio: studioAvailability_insert(data: { availability: "Influencer Home Studio" })
+  insertStreamerHomeStudio: studioAvailability_insert(data: { availability: "Streamer Home Studio" })
+  insertProfessionalContentCreatorSetup: studioAvailability_insert(data: { availability: "Professional Content Creator Setup" })
+
+  # Hybrid Availability Options
+  insertHybridRemoteStudio: studioAvailability_insert(data: { availability: "Hybrid: Remote & Studio" })
+  insertHybridRemoteTravel: studioAvailability_insert(data: { availability: "Hybrid: Remote & Travel" })
+  insertHybridStudioTravel: studioAvailability_insert(data: { availability: "Hybrid: Studio & Travel" })
+
+  # High-End and Influencer Setups
+  insertOnSiteStudioSetup: studioAvailability_insert(data: { availability: "ON-Site Studio Setup" })
+  insertRemoteSetupStudioSetup: studioAvailability_insert(data: { availability: "Remote Studio Setup" })
+}

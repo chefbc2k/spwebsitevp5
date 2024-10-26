@@ -1,0 +1,71 @@
+# This is a file for you to write an un-named mutation. 
+# Only one un-named mutation is allowed per file.
+mutation {
+  # North America
+  insertEastern: timeZone_insert(data: { name: "Eastern" })
+  insertCentral: timeZone_insert(data: { name: "Central" })
+  insertMountain: timeZone_insert(data: { name: "Mountain" })
+  insertPacific: timeZone_insert(data: { name: "Pacific" })
+  insertAlaskan: timeZone_insert(data: { name: "Alaskan" })
+  insertHawaiiAleutian: timeZone_insert(data: { name: "Hawaii-Aleutian" })
+  insertAtlantic: timeZone_insert(data: { name: "Atlantic" })
+  insertNewfoundland: timeZone_insert(data: { name: "Newfoundland" })
+
+  # Europe
+  insertUTC: timeZone_insert(data: { name: "UTC" })
+  insertGMT: timeZone_insert(data: { name: "GMT" })
+  insertBST: timeZone_insert(data: { name: "BST" }) # British Summer Time
+  insertCEST: timeZone_insert(data: { name: "CEST" }) # Central European Summer Time
+  insertEET: timeZone_insert(data: { name: "EET" }) # Eastern European Time
+  insertWET: timeZone_insert(data: { name: "WET" }) # Western European Time
+
+  # Asia
+  insertChinaStandard: timeZone_insert(data: { name: "China Standard" })
+  insertIndiaStandard: timeZone_insert(data: { name: "India Standard" })
+  insertJapanStandard: timeZone_insert(data: { name: "Japan Standard" })
+  insertKoreaStandard: timeZone_insert(data: { name: "Korea Standard" })
+  insertSingapore: timeZone_insert(data: { name: "Singapore" })
+  insertHongKong: timeZone_insert(data: { name: "Hong Kong" })
+  insertPhilippine: timeZone_insert(data: { name: "Philippine" })
+
+  # Australia
+  insertAustralianEastern: timeZone_insert(data: { name: "Australian Eastern" })
+  insertAustralianCentral: timeZone_insert(data: { name: "Australian Central" })
+  insertAustralianWestern: timeZone_insert(data: { name: "Australian Western" })
+  insertAustralianTasmanian: timeZone_insert(data: { name: "Australian Tasmanian" })
+  insertAustralianQueensland: timeZone_insert(data: { name: "Australian Queensland" })
+
+  # Africa
+  insertSouthAfricaStandard: timeZone_insert(data: { name: "South Africa Standard" })
+  insertWestAfricaStandard: timeZone_insert(data: { name: "West Africa Standard" })
+  insertEastAfricaStandard: timeZone_insert(data: { name: "East Africa Standard" })
+  insertCentralAfricaStandard: timeZone_insert(data: { name: "Central Africa Standard" })
+  insertNamibiaStandard: timeZone_insert(data: { name: "Namibia Standard" })
+
+  # South America
+  insertBrazilianStandard: timeZone_insert(data: { name: "Brazilian Standard" })
+  insertArgentinaStandard: timeZone_insert(data: { name: "Argentina Standard" })
+  insertChileStandard: timeZone_insert(data: { name: "Chile Standard" })
+  insertPeruvianStandard: timeZone_insert(data: { name: "Peruvian Standard" })
+  insertColombianStandard: timeZone_insert(data: { name: "Colombian Standard" })
+  insertVenezuelanStandard: timeZone_insert(data: { name: "Venezuelan Standard" })
+
+  # Middle East
+  insertArabStandard: timeZone_insert(data: { name: "Arab Standard" })
+  insertIsraelStandard: timeZone_insert(data: { name: "Israel Standard" })
+  insertTurkeyStandard: timeZone_insert(data: { name: "Turkey Standard" })
+
+  # Pacific Islands
+  insertHawaii: timeZone_insert(data: { name: "Hawaii" })
+  insertSamoa: timeZone_insert(data: { name: "Samoa" })
+  insertTahiti: timeZone_insert(data: { name: "Tahiti" })
+
+  # Additional Time Zones
+  insertEasternStandardTime: timeZone_insert(data: { name: "Eastern Standard Time (EST)" })
+  insertPacificStandardTime: timeZone_insert(data: { name: "Pacific Standard Time (PST)" })
+  insertGreenwichMeanTime: timeZone_insert(data: { name: "Greenwich Mean Time (GMT)" })
+  insertCentralEuropeanTime: timeZone_insert(data: { name: "Central European Time (CET)" })
+  insertJapanTime: timeZone_insert(data: { name: "Japan Time (JST)" })
+  
+  # Add more time zones as needed
+}
