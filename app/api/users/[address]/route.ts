@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+import { NextResponse, NextRequest } from 'next/server';
 import { getToken } from 'next-auth/jwt';
 import { rateLimit } from '@/lib/rate-limit';
 import { db } from '@/lib/db';
@@ -11,7 +11,7 @@ const limiter = rateLimit({
 });
 
 export async function GET(
-  req: Request,
+  req: NextRequest,
   { params }: { params: { address: string } }
 ) {
   try {
@@ -39,7 +39,7 @@ export async function GET(
 }
 
 export async function PATCH(
-  req: Request,
+  req: NextRequest,
   { params }: { params: { address: string } }
 ) {
   try {

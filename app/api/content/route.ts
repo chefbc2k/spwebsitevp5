@@ -1,9 +1,9 @@
-import { NextResponse } from 'next/server';
+import { NextResponse, NextRequest } from 'next/server';
 import { promises as fs } from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-export async function GET(request: Request) {
+export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
     const type = searchParams.get('type');
@@ -29,12 +29,12 @@ export async function GET(request: Request) {
       case 'help':
         if (!slug) {
           const guides = await fs.readdir(path.join(contentPath, 'help/guides'));
-          content = guides.map(guide => {
-            const fileContent = fs.readFileSync(
+          content = guides.map(async guide => {
+            const fileContent = fs.readFile(
               path.join(contentPath, 'help/guides', guide),
               'utf-8'
             );
-            const { data } = matter(fileContent);
+            const { data } = matter(await fileContent);
             return {
               slug: guide.replace('.mdx', ''),
               ...data,

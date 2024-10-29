@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+import { NextResponse, NextRequest } from 'next/server';
 import { getToken } from 'next-auth/jwt';
 import { Web3Storage } from 'web3.storage';
 import { rateLimit } from '@/lib/rate-limit';
@@ -10,7 +10,7 @@ const limiter = rateLimit({
   uniqueTokenPerInterval: 100,
 });
 
-export async function POST(req: Request) {
+export async function POST(req: NextRequest) {
   try {
     await limiter.check(req, 3); // 3 uploads per minute
 
