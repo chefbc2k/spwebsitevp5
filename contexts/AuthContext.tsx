@@ -1,14 +1,13 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { useAddress, useMetamask, useDisconnect, useSDK } from "@thirdweb-dev/react";
 import { useRouter } from 'next/navigation';
-import { doc, getDoc, setDoc } from 'firebase/firestore';
-import { db } from '@/lib/firebase/client';
+import { supabase } from '../lib/supabase';
 import { toast } from 'sonner';
+import { User, AuthChangeEvent, Session } from '@supabase/supabase-js';
 
 interface UserProfile {
-  address: string;
+  id: string;
   firstName?: string;
   lastName?: string;
   email?: string;
@@ -26,118 +25,159 @@ interface UserProfile {
   isNewUser?: boolean;
 }
 
+interface DatabaseUserProfile {
+  id: string;
+  first_name?: string;
+  last_name?: string;
+  email?: string;
+  profile_image?: string;
+  industry?: string;
+  vocal_specialization?: string;
+  contract_preferences?: string[];
+  social_links?: {
+    twitter?: string;
+    instagram?: string;
+    linkedin?: string;
+  };
+  created_at: string;
+  minting_history: any[];
+  is_new_user?: boolean;
+}
+
 interface AuthContextType {
   isLoggedIn: boolean;
   isAdmin: boolean;
   isLoading: boolean;
   userProfile: UserProfile | null;
-  login: () => Promise<void>;
-  logout: () => void;
-  address: string | undefined;
+  login: (email: string, password: string) => Promise<void>;
+  logout: () => Promise<void>;
+  user: User | null;
   createUserProfile: (data: Partial<UserProfile>) => Promise<void>;
   updateUserProfile: (data: Partial<UserProfile>) => Promise<void>;
-  checkUserExists: (address: string) => Promise<boolean>;
-  createWallet: () => Promise<string>;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
+
+const mapDatabaseProfileToUserProfile = (dbProfile: DatabaseUserProfile): UserProfile => {
+  return {
+    id: dbProfile.id,
+    firstName: dbProfile.first_name,
+    lastName: dbProfile.last_name,
+    email: dbProfile.email,
+    profileImage: dbProfile.profile_image,
+    industry: dbProfile.industry,
+    vocalSpecialization: dbProfile.vocal_specialization,
+    contractPreferences: dbProfile.contract_preferences,
+    socialLinks: dbProfile.social_links,
+    createdAt: new Date(dbProfile.created_at),
+    mintingHistory: dbProfile.minting_history,
+    isNewUser: dbProfile.is_new_user
+  };
+};
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [userProfile, setUserProfile] = useState<UserProfile | null>(null);
+  const [user, setUser] = useState<User | null>(null);
   
-  const address = useAddress();
-  const connect = useMetamask();
-  const disconnect = useDisconnect();
-  const sdk = useSDK();
   const router = useRouter();
 
-  const checkUserExists = async (walletAddress: string): Promise<boolean> => {
-    if (!walletAddress) return false;
-    
-    try {
-      const userDocRef = doc(db, 'users', walletAddress.toLowerCase());
-      const userDoc = await getDoc(userDocRef);
-      return userDoc.exists();
-    } catch (error) {
-      console.error('Error checking user existence:', error);
-      return false;
-    }
-  };
-
-  const loadUserProfile = async (walletAddress: string) => {
-    try {
-      const userDocRef = doc(db, 'users', walletAddress.toLowerCase());
-      const userDoc = await getDoc(userDocRef);
-      
-      if (userDoc.exists()) {
-        setUserProfile(userDoc.data() as UserProfile);
-        setIsLoggedIn(true);
+  useEffect(() => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event: AuthChangeEvent, session: Session | null) => {
+      setUser(session?.user ?? null);
+      setIsLoggedIn(!!session?.user);
+      if (session?.user) {
+        await loadUserProfile(session.user.id);
+        await checkAdminStatus(session.user.id);
       } else {
         setUserProfile(null);
-        setIsLoggedIn(false);
+        setIsAdmin(false);
+      }
+      setIsLoading(false);
+    });
+
+    return () => {
+      subscription.unsubscribe();
+    };
+  }, []);
+
+  const loadUserProfile = async (userId: string) => {
+    try {
+      const { data, error } = await supabase
+        .from('profiles')
+        .select('*')
+        .eq('id', userId)
+        .single();
+      
+      if (error) {
+        throw error;
+      }
+      
+      if (data) {
+        const mappedProfile = mapDatabaseProfileToUserProfile(data as unknown as DatabaseUserProfile);
+        setUserProfile(mappedProfile);
+      } else {
+        setUserProfile(null);
       }
     } catch (error) {
       console.error('Error loading user profile:', error);
       toast.error('Failed to load user profile');
       setUserProfile(null);
-      setIsLoggedIn(false);
     }
   };
 
-  const checkAdminStatus = async (walletAddress: string) => {
+  const checkAdminStatus = async (userId: string) => {
     try {
-      const response = await fetch(`/api/admin/check?address=${walletAddress}`);
-      const data = await response.json();
-      setIsAdmin(data.isAdmin);
+      const { data, error } = await supabase
+        .from('admins')
+        .select('*')
+        .eq('user_id', userId)
+        .single();
+      
+      if (error) {
+        throw error;
+      }
+      
+      setIsAdmin(!!data);
     } catch (error) {
       console.error('Error checking admin status:', error);
       setIsAdmin(false);
     }
   };
 
-  useEffect(() => {
-    const initializeAuth = async () => {
-      setIsLoading(true);
-      if (address) {
-        await loadUserProfile(address);
-        await checkAdminStatus(address);
-      } else {
-        setIsLoggedIn(false);
-        setIsAdmin(false);
-        setUserProfile(null);
-      }
-      setIsLoading(false);
-    };
-
-    initializeAuth();
-  }, [address]);
-
   const createUserProfile = async (data: Partial<UserProfile>) => {
-    if (!address) throw new Error('No wallet connected');
+    if (!user) {
+      throw new Error('No user logged in');
+    }
 
     try {
-      const userProfile: UserProfile = {
-        address,
-        firstName: data.firstName,
-        lastName: data.lastName,
-        email: data.email,
-        profileImage: data.profileImage,
+      const dbProfile = {
+        id: user.id,
+        email: user.email,
+        first_name: data.firstName,
+        last_name: data.lastName,
+        profile_image: data.profileImage,
         industry: data.industry,
-        vocalSpecialization: data.vocalSpecialization,
-        contractPreferences: data.contractPreferences,
-        socialLinks: data.socialLinks,
-        createdAt: new Date(),
-        mintingHistory: [],
-        isNewUser: true,
-        ...data
+        vocal_specialization: data.vocalSpecialization,
+        contract_preferences: data.contractPreferences,
+        social_links: data.socialLinks,
+        created_at: new Date().toISOString(),
+        minting_history: [],
+        is_new_user: true
       };
 
-      await setDoc(doc(db, 'users', address.toLowerCase()), userProfile);
-      setUserProfile(userProfile);
-      setIsLoggedIn(true);
+      const { error } = await supabase
+        .from('profiles')
+        .upsert(dbProfile);
+
+      if (error) {
+        throw error;
+      }
+
+      const mappedProfile = mapDatabaseProfileToUserProfile(dbProfile as DatabaseUserProfile);
+      setUserProfile(mappedProfile);
       toast.success('Profile created successfully');
     } catch (error) {
       console.error('Error creating user profile:', error);
@@ -147,16 +187,36 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const updateUserProfile = async (data: Partial<UserProfile>) => {
-    if (!address || !userProfile) throw new Error('No active user profile');
+    if (!user || !userProfile) {
+      throw new Error('No active user profile');
+    }
 
     try {
+      const dbProfile = {
+        first_name: data.firstName,
+        last_name: data.lastName,
+        profile_image: data.profileImage,
+        industry: data.industry,
+        vocal_specialization: data.vocalSpecialization,
+        contract_preferences: data.contractPreferences,
+        social_links: data.socialLinks,
+        updated_at: new Date().toISOString()
+      };
+
+      const { error } = await supabase
+        .from('profiles')
+        .update(dbProfile)
+        .eq('id', user.id);
+
+      if (error) {
+        throw error;
+      }
+
       const updatedProfile = {
         ...userProfile,
         ...data,
-        updatedAt: new Date()
       };
 
-      await setDoc(doc(db, 'users', address.toLowerCase()), updatedProfile, { merge: true });
       setUserProfile(updatedProfile);
       toast.success('Profile updated successfully');
     } catch (error) {
@@ -166,42 +226,40 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
-  const createWallet = async (): Promise<string> => {
-    if (!sdk) throw new Error('SDK not initialized');
-
+  const login = async (email: string, password: string) => {
     try {
-      const wallet = await sdk.wallet.generate();
-      return wallet.address;
-    } catch (error) {
-      console.error('Error creating wallet:', error);
-      throw error;
-    }
-  };
+      const { error } = await supabase.auth.signInWithPassword({
+        email,
+        password
+      });
 
-  const login = async () => {
-    try {
-      await connect();
-      if (address) {
-        const exists = await checkUserExists(address);
-        if (!exists) {
-          router.push('/auth/signup');
-        } else {
-          await loadUserProfile(address);
-          router.push('/profile');
-        }
+      if (error) {
+        throw error;
       }
+
+      router.push('/profile');
     } catch (error) {
-      console.error('Failed to connect:', error);
-      toast.error('Failed to connect wallet');
+      console.error('Login error:', error);
+      toast.error('Failed to login');
       throw error;
     }
   };
 
-  const logout = () => {
-    disconnect();
-    setUserProfile(null);
-    setIsLoggedIn(false);
-    router.push('/');
+  const logout = async () => {
+    try {
+      const { error } = await supabase.auth.signOut();
+      if (error) {
+        throw error;
+      }
+      
+      setUserProfile(null);
+      setIsLoggedIn(false);
+      router.push('/');
+    } catch (error) {
+      console.error('Logout error:', error);
+      toast.error('Failed to logout');
+      throw error;
+    }
   };
 
   return (
@@ -212,11 +270,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       userProfile,
       login, 
       logout, 
-      address,
+      user,
       createUserProfile,
-      updateUserProfile,
-      checkUserExists,
-      createWallet
+      updateUserProfile
     }}>
       {children}
     </AuthContext.Provider>

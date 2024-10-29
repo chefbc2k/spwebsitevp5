@@ -8,7 +8,7 @@ import { useAuth } from '@/contexts/AuthContext';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { isLoggedIn, isAdmin, login, logout, address } = useAuth();
+  const { isLoggedIn, isAdmin, logout } = useAuth();
 
   return (
     <nav className="bg-navy shadow-md sticky top-0 z-50">
@@ -75,7 +75,7 @@ const Navbar = () => {
             </Button>
             {isLoggedIn ? (
               <Button 
-                onClick={logout} 
+                onClick={() => logout()} 
                 className="text-cream hover:text-yellow flex items-center"
                 variant="ghost"
               >
@@ -83,14 +83,15 @@ const Navbar = () => {
                 Logout
               </Button>
             ) : (
-              <Button 
-                onClick={login} 
-                className="text-cream hover:text-yellow flex items-center"
-                variant="ghost"
-              >
-                <LogIn className="h-5 w-5 mr-2" />
-                Connect Wallet
-              </Button>
+              <Link href="/auth/login">
+                <Button 
+                  className="text-cream hover:text-yellow flex items-center"
+                  variant="ghost"
+                >
+                  <LogIn className="h-5 w-5 mr-2" />
+                  Login
+                </Button>
+              </Link>
             )}
           </div>
         </div>
@@ -176,7 +177,7 @@ const Navbar = () => {
               </div>
               {isLoggedIn ? (
                 <Button 
-                  onClick={logout} 
+                  onClick={() => logout()} 
                   className="w-full text-cream hover:text-yellow flex items-center justify-center"
                   variant="ghost"
                 >
@@ -184,14 +185,15 @@ const Navbar = () => {
                   Logout
                 </Button>
               ) : (
-                <Button 
-                  onClick={login} 
-                  className="w-full text-cream hover:text-yellow flex items-center justify-center"
-                  variant="ghost"
-                >
-                  <LogIn className="h-5 w-5 mr-2" />
-                  Connect Wallet
-                </Button>
+                <Link href="/auth/login" className="w-full">
+                  <Button 
+                    className="w-full text-cream hover:text-yellow flex items-center justify-center"
+                    variant="ghost"
+                  >
+                    <LogIn className="h-5 w-5 mr-2" />
+                    Login
+                  </Button>
+                </Link>
               )}
             </div>
           </div>
