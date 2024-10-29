@@ -1,14 +1,14 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { useAddress, useMetamask, useDisconnect, useSDK } from "@thirdweb-dev/react";
 import { useRouter } from 'next/navigation';
-import { doc, getDoc, setDoc } from 'firebase/firestore';
-import { db } from '@/lib/firebase/client';
+import { supabase } from '../lib/supabase';
 import { toast } from 'sonner';
+import { User } from '@supabase/supabase-js';
+
 
 interface UserProfile {
-  address: string;
+  id: string;
   firstName?: string;
   lastName?: string;
   email?: string;
@@ -30,14 +30,13 @@ interface AuthContextType {
   isLoggedIn: boolean;
   isAdmin: boolean;
   isLoading: boolean;
+  user: User | null;
   userProfile: UserProfile | null;
-  login: () => Promise<void>;
-  logout: () => void;
-  address: string | undefined;
+  login: (email: string, password: string) => Promise<void>;
+  signup: (email: string, password: string) => Promise<void>;
+  logout: () => Promise<void>;
   createUserProfile: (data: Partial<UserProfile>) => Promise<void>;
   updateUserProfile: (data: Partial<UserProfile>) => Promise<void>;
-  checkUserExists: (address: string) => Promise<boolean>;
-  createWallet: () => Promise<string>;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -46,52 +45,45 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [user, setUser] = useState<User | null>(null);
   const [userProfile, setUserProfile] = useState<UserProfile | null>(null);
   
-  const address = useAddress();
-  const connect = useMetamask();
-  const disconnect = useDisconnect();
-  const sdk = useSDK();
   const router = useRouter();
 
-  const checkUserExists = async (walletAddress: string): Promise<boolean> => {
-    if (!walletAddress) return false;
-    
+  const loadUserProfile = async (userId: string) => {
     try {
-      const userDocRef = doc(db, 'users', walletAddress.toLowerCase());
-      const userDoc = await getDoc(userDocRef);
-      return userDoc.exists();
-    } catch (error) {
-      console.error('Error checking user existence:', error);
-      return false;
-    }
-  };
-
-  const loadUserProfile = async (walletAddress: string) => {
-    try {
-      const userDocRef = doc(db, 'users', walletAddress.toLowerCase());
-      const userDoc = await getDoc(userDocRef);
+      const { data, error } = await supabase
+        .from('profiles')
+        .select('*')
+        .eq('id', userId)
+        .single();
       
-      if (userDoc.exists()) {
-        setUserProfile(userDoc.data() as UserProfile);
-        setIsLoggedIn(true);
-      } else {
-        setUserProfile(null);
-        setIsLoggedIn(false);
+      if (error) {
+        throw error;
+      }
+      
+      if (data) {
+        setUserProfile(data as UserProfile);
       }
     } catch (error) {
       console.error('Error loading user profile:', error);
       toast.error('Failed to load user profile');
-      setUserProfile(null);
-      setIsLoggedIn(false);
     }
   };
 
-  const checkAdminStatus = async (walletAddress: string) => {
+  const checkAdminStatus = async (userId: string) => {
     try {
-      const response = await fetch(`/api/admin/check?address=${walletAddress}`);
-      const data = await response.json();
-      setIsAdmin(data.isAdmin);
+      const { data, error } = await supabase
+        .from('admins')
+        .select('*')
+        .eq('user_id', userId)
+        .single();
+
+      if (error) {
+        throw error;
+      }
+
+      setIsAdmin(!!data);
     } catch (error) {
       console.error('Error checking admin status:', error);
       setIsAdmin(false);
@@ -99,45 +91,112 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   useEffect(() => {
-    const initializeAuth = async () => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
       setIsLoading(true);
-      if (address) {
-        await loadUserProfile(address);
-        await checkAdminStatus(address);
+      if (session?.user) {
+        setUser(session.user);
+        setIsLoggedIn(true);
+        await loadUserProfile(session.user.id);
+        await checkAdminStatus(session.user.id);
       } else {
+        setUser(null);
+        setUserProfile(null);
         setIsLoggedIn(false);
         setIsAdmin(false);
-        setUserProfile(null);
       }
       setIsLoading(false);
-    };
+    });
 
-    initializeAuth();
-  }, [address]);
+    return () => {
+      subscription.unsubscribe();
+    };
+  }, []);
+
+  const signup = async (email: string, password: string) => {
+    try {
+      const { data, error } = await supabase.auth.signUp({
+        email,
+        password,
+      });
+
+      if (error) {
+        throw error;
+      }
+
+      if (data.user) {
+        router.push('/auth/verify-email');
+      }
+    } catch (error) {
+      console.error('Error signing up:', error);
+      toast.error('Failed to sign up');
+      throw error;
+    }
+  };
+
+  const login = async (email: string, password: string) => {
+    try {
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
+
+      if (error) {
+        throw error;
+      }
+
+      if (data.user) {
+        await loadUserProfile(data.user.id);
+        router.push('/profile');
+      }
+    } catch (error) {
+      console.error('Failed to login:', error);
+      toast.error('Failed to login');
+      throw error;
+    }
+  };
+
+  const logout = async () => {
+    try {
+      const { error } = await supabase.auth.signOut();
+      
+      if (error) {
+        throw error;
+      }
+
+      setUser(null);
+      setUserProfile(null);
+      setIsLoggedIn(false);
+      router.push('/');
+    } catch (error) {
+      console.error('Error logging out:', error);
+      toast.error('Failed to logout');
+      throw error;
+    }
+  };
 
   const createUserProfile = async (data: Partial<UserProfile>) => {
-    if (!address) throw new Error('No wallet connected');
+    if (!user) {
+      throw new Error('No user logged in');
+    }
 
     try {
-      const userProfile: UserProfile = {
-        address,
-        firstName: data.firstName,
-        lastName: data.lastName,
-        email: data.email,
-        profileImage: data.profileImage,
-        industry: data.industry,
-        vocalSpecialization: data.vocalSpecialization,
-        contractPreferences: data.contractPreferences,
-        socialLinks: data.socialLinks,
+      const profile = {
+        id: user.id,
+        ...data,
         createdAt: new Date(),
         mintingHistory: [],
         isNewUser: true,
-        ...data
       };
 
-      await setDoc(doc(db, 'users', address.toLowerCase()), userProfile);
-      setUserProfile(userProfile);
-      setIsLoggedIn(true);
+      const { error } = await supabase
+        .from('profiles')
+        .insert([profile]);
+
+      if (error) {
+        throw error;
+      }
+
+      setUserProfile(profile as UserProfile);
       toast.success('Profile created successfully');
     } catch (error) {
       console.error('Error creating user profile:', error);
@@ -147,16 +206,26 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const updateUserProfile = async (data: Partial<UserProfile>) => {
-    if (!address || !userProfile) throw new Error('No active user profile');
+    if (!user || !userProfile) {
+      throw new Error('No active user profile');
+    }
 
     try {
       const updatedProfile = {
         ...userProfile,
         ...data,
-        updatedAt: new Date()
+        updatedAt: new Date(),
       };
 
-      await setDoc(doc(db, 'users', address.toLowerCase()), updatedProfile, { merge: true });
+      const { error } = await supabase
+        .from('profiles')
+        .update(updatedProfile)
+        .eq('id', user.id);
+
+      if (error) {
+        throw error;
+      }
+
       setUserProfile(updatedProfile);
       toast.success('Profile updated successfully');
     } catch (error) {
@@ -166,57 +235,18 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
-  const createWallet = async (): Promise<string> => {
-    if (!sdk) throw new Error('SDK not initialized');
-
-    try {
-      const wallet = await sdk.wallet.generate();
-      return wallet.address;
-    } catch (error) {
-      console.error('Error creating wallet:', error);
-      throw error;
-    }
-  };
-
-  const login = async () => {
-    try {
-      await connect();
-      if (address) {
-        const exists = await checkUserExists(address);
-        if (!exists) {
-          router.push('/auth/signup');
-        } else {
-          await loadUserProfile(address);
-          router.push('/profile');
-        }
-      }
-    } catch (error) {
-      console.error('Failed to connect:', error);
-      toast.error('Failed to connect wallet');
-      throw error;
-    }
-  };
-
-  const logout = () => {
-    disconnect();
-    setUserProfile(null);
-    setIsLoggedIn(false);
-    router.push('/');
-  };
-
   return (
     <AuthContext.Provider value={{ 
       isLoggedIn, 
       isAdmin, 
       isLoading,
+      user,
       userProfile,
-      login, 
-      logout, 
-      address,
+      login,
+      signup, 
+      logout,
       createUserProfile,
       updateUserProfile,
-      checkUserExists,
-      createWallet
     }}>
       {children}
     </AuthContext.Provider>
@@ -229,4 +259,4 @@ export const useAuth = () => {
     throw new Error('useAuth must be used within an AuthProvider');
   }
   return context;
-};
+}
